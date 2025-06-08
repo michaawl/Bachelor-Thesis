@@ -1,0 +1,42 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Note 1: the * with \chapter*, which hides it from TOC. 
+% Note 2: \thispagestyle{empty} suppresses page number on the first page
+%         i.e. to be consistent with the other (numbered) chapters.
+\chapter*{Acronyms\thispagestyle{empty}} 
+\label{chap:acronyms}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\TODO{Add acronyms (abbreviations) and their long version. In the text the
+first occurrence will show the full description, further occurrences will 
+show the acronym only.}
+
+% In your text use macro \ac all the time.
+%   E.g.  \ac{MITM}
+% Note for pretty printing the list of acronyms:
+%   First, find out which one will be the longest (here e.g. KISS or MITM).
+%   Then, specify as many chars (e.g. 4 Ms) such as \begin{acronym}[MMMM].
+\footnotesize
+\begin{acronym}[MMMM]
+
+  % MUST be sorted manually:
+  \acro{ABI}  {Application Binary Interface}
+  \acro{DOI}  {Digital Object Identifier}
+  \acro{ISBN} {International Standard Book Number}
+  \acro{MITM} {Man-In-The-Middle}
+  \acro{URL}  {Universal Resource Locator}
+  
+
+  %
+  % You get warnings for unused acronyms, so better disable them
+  %
+  %\acro{ACL} {Access Control List}
+  %\acro{GUI} {Graphical User Interface}
+  %\acro{KISS}{Keep It Small and Simple}
+  %\acro{OS}  {Operating System}
+  %\acro{UART}{Universal Asynchronous Receiver/Transmitter}
+  %\acro{UID} {Unique Identifier}
+
+\end{acronym}
+\normalsize

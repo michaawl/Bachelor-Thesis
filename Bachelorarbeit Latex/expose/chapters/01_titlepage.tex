@@ -1,0 +1,62 @@
+%**********************************************************************
+% right side, if two-sided
+\chapterend
+
+\begin{titlepage}
+
+\begin{center}
+
+\includegraphics[height=1cm]
+                {images/logo_FHJ_100mm_cmyk.pdf}
+\hfill
+
+% the actual title
+\mbox{}\vfill
+
+  \large
+
+  {\huge\bf Exposé \par} % optional: "Scientific Exposé" or "Thesis Proposal"
+  {\huge\bf \title \par}
+  \subtitle
+  \vspace{2.0cm}
+  
+  
+  \mbox{}
+
+  \ifthenelse{\equal{\yourLanguage}{german}}{ % German Version
+
+  {\bf Betreuer/in: \yourAdvisor\\
+   % Zweit-/Firmenbetreuer/in: <Vorname Zuname; Firmenname>
+
+  Eingereicht von: \yourName\\
+  Personenkennzahl: \yourIdentifier}
+  
+  
+  }{ % English Version 
+
+  {\bf Supervisor: \yourAdvisor\\ 
+  % second supervisor: <firstname lastname; company>
+
+  Submitted by: \yourName}
+  
+  }
+
+  \vspace{1.5cm}
+
+   \submissionDate
+  
+  \vspace{1.5cm}
+  \TODO{Specify the title, sub title, place, date, study, language, 
+  your name, advisor and your id in the main \emph{expose.tex} file.\\
+  Finally, remove all \emph{TODOs} within your \LaTeX source code.}
+
+\end{center}
+
+\vfill\mbox{}
+
+
+\end{titlepage}
+
+
+
+%**********************************************************************

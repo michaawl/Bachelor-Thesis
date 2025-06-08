@@ -1,0 +1,38 @@
+\thispagestyle{empty} % no headers on this page!
+%**********************************************************************
+%\begin{titlepage}
+\begin{center}
+\includegraphics[height=1cm]
+                {images/logo_FHJ_100mm_cmyk.pdf}
+
+  \large
+  {\huge\bf Exposé \par} % optional: "Scientific Exposé" or "Thesis Proposal"
+  {\huge\bf \title \par}
+  \subtitle
+  \vspace{1.0cm}
+  
+  \ifthenelse{\equal{\yourLanguage}{german}}{ % German Version
+  {\bf Betreuer/in: \yourAdvisor\\
+  Eingereicht von: \yourName\\
+  Personenkennzahl: \yourIdentifier}
+  }{ % English Version 
+  {\bf Supervisor: \yourAdvisor\\ 
+  Submitted by: \yourName\\
+  Personal identifier: \yourIdentifier}
+  }
+  
+  \vspace{0.5cm}
+  
+  \submissionDate
+  
+  \vspace{0.5cm}
+  
+  \TODO{Specify the title, sub title, place, date, study, language, 
+  your name, advisor and your id in the main \emph{expose-minimalistic.tex} file.\\
+  Finally, remove all \emph{TODOs} within your \LaTeX source code.}
+\end{center}
+%\end{titlepage}
+
+
+
+%**********************************************************************
