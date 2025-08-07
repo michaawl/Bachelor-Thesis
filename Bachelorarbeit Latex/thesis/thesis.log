@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  8 JUN 2025 13:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  9 JUN 2025 22:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1146,34 +1146,7 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 Package babel Info: 'german' activates 'german' shorthands.
 (babel)             Reported  on input line 11.
  (./chapters/03_abstract.aux)
-(./chapters/09_latex_info.aux
-
-LaTeX Warning: Label `a' multiply defined.
-
-
-LaTeX Warning: Label `a@cref' multiply defined.
-
-
-LaTeX Warning: Label `a' multiply defined.
-
-
-LaTeX Warning: Label `a@cref' multiply defined.
-
-
-LaTeX Warning: Label `a' multiply defined.
-
-
-LaTeX Warning: Label `a@cref' multiply defined.
-
-
-LaTeX Warning: Label `a' multiply defined.
-
-
-LaTeX Warning: Label `a@cref' multiply defined.
-
-) (./chapters/10_introduction.aux) (./chapters/20_related.aux)
-(./chapters/40_concept.aux) (./chapters/60_implementation.aux)
-(./chapters/80_evaluation.aux) (./chapters/90_conclusion.aux)
+(./chapters/01_Einleitung.aux) (./chapters/02_Hauptteil.aux)
 (./chapters/99_acronyms.aux))
 \openout1 = `thesis.aux'.
 
@@ -1295,7 +1268,7 @@ Package hyperref Info: Link coloring ON on input line 62.
 \openout2 = `chapters/01_titlepage.aux'.
 
  (./chapters/01_titlepage.tex
-<images/logo_FHJ_100mm_cmyk.pdf, id=79, 285.065pt x 58.2175pt>
+<images/logo_FHJ_100mm_cmyk.pdf, id=47, 285.065pt x 58.2175pt>
 File: images/logo_FHJ_100mm_cmyk.pdf Graphic file (type pdf)
 <use images/logo_FHJ_100mm_cmyk.pdf>
 Package pdftex.def Info: images/logo_FHJ_100mm_cmyk.pdf  used on input line 12.
@@ -1335,41 +1308,41 @@ been already used, duplicate ignored
 l.49 \end{abstract}
                     [1]) (./thesis.toc
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 8.
+ 9.
 
 (c:/texlive/2025/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 8.
+ 9.
 
 (c:/texlive/2025/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 8.
+ 9.
 
 (c:/texlive/2025/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 8.
+ 9.
 
 (c:/texlive/2025/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 8
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 9
 .
 
 (c:/texlive/2025/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
 )
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
@@ -1401,38 +1374,14 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 
 
 ]
-\openout2 = `chapters/09_latex_info.aux'.
+\openout2 = `chapters/01_Einleitung.aux'.
 
- (./chapters/09_latex_info.tex
+ (./chapters/01_Einleitung.tex
 Kapitel 1.
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 2
 .
 (c:/texlive/2025/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 25
-.
-
-(c:/texlive/2025/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
-9.
-
-(c:/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 
 
@@ -1440,60 +1389,109 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34 	\end{itemize}
-                    [1
+l.35 D
+      ie Implementierung von gRPC in React ist komplexer, da dadurch zusÃ¤tz...
+[1
+
+
+
+]
+
+Package babel Info: 'german' activates 'german' shorthands.
+(babel)             Reported  on input line 55.
+[2])
+\openout2 = `chapters/02_Hauptteil.aux'.
+
+ (./chapters/02_Hauptteil.tex
+Kapitel 2.
+
+
+[3
+
+
 
 
 
 {c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-Package acronym Info: Label `acro:DOI' newly defined as it shall be overridden
-although it is yet undefined on input line 107.
-Package acronym Info: Label `acro:ISBN' newly defined as it shall be overridden
+Overfull \hbox (8.02321pt too wide) in paragraph at lines 22--23
+\T1/ptm/m/n/12 vie-len Pro-gram-mier-spra-chen Ver-wen-dung fin-det. Das For-ma
+t ba-siert auf ei-ner Schlüssel-
+ []
 
-although it is yet undefined on input line 110.
-Package acronym Info: Label `acro:URL' newly defined as it shall be overridden
-although it is yet undefined on input line 111.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
+5.
+(c:/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
 
+[4]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 49
+.
+ (c:/texlive/2025/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
 
-Package babel Info: 'german' activates 'german' shorthands.
-(babel)             Reported  on input line 112.
-[2]
+[5]
+<images/http1_theory.jpg, id=119, 197.4285pt x 148.1535pt>
+File: images/http1_theory.jpg Graphic file (type jpg)
+<use images/http1_theory.jpg>
+Package pdftex.def Info: images/http1_theory.jpg  used on input line 79.
+(pdftex.def)             Requested size: 288.79422pt x 216.73862pt.
 
-[3]
-Package acronym Info: Label `acro:ABI' newly defined as it shall be overridden
-although it is yet undefined on input line 175.
-Package acronym Info: Label `acro:MITM' newly defined as it shall be overridden
-
-although it is yet undefined on input line 175.
-<images/engine.jpg, id=213, 192.72pt x 144.54pt>
-File: images/engine.jpg Graphic file (type jpg)
-<use images/engine.jpg>
-Package pdftex.def Info: images/engine.jpg  used on input line 192.
-(pdftex.def)             Requested size: 391.93546pt x 293.9512pt.
-
-Underfull \hbox (badness 1067) in paragraph at lines 208--208
-[][][][]\T1/ptm/m/n/10 Find the full list of sup-por-ted pro-gram-ming lan-gua-
-ges at [][]$\T1/pcr/m/n/10 https : / / www . overleaf . com /
+Overfull \hbox (6.15869pt too wide) in paragraph at lines 84--85
+[]\T1/ptm/m/n/12 Der Ver-bin-dungs-auf-bau er-folgt da-bei mit-tels ei-nes Tran
+s-mis-si-on Con-trol Pro-to-col (TCP)
  []
 
 
 
-[4]
-
-[5{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./ima
-ges/engine.jpg>]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 318.
- (./src/closure.js)
-
-[6]
+[6 <./images/http1_theory.jpg>]
 
 [7])
-\openout2 = `chapters/10_introduction.aux'.
+\openout2 = `chapters/99_acronyms.aux'.
 
- (./chapters/10_introduction.tex
-Kapitel 2.
+ (./chapters/99_acronyms.tex
 
+LaTeX Warning: Hyper reference `acro:ABI' on page 8 undefined on input line 24.
+
+
+
+LaTeX Warning: Hyper reference `acro:ABI' on page 8 undefined on input line 24.
+
+
+
+LaTeX Warning: Hyper reference `acro:DOI' on page 8 undefined on input line 25.
+
+
+
+LaTeX Warning: Hyper reference `acro:DOI' on page 8 undefined on input line 25.
+
+
+
+LaTeX Warning: Hyper reference `acro:ISBN' on page 8 undefined on input line 26
+.
+
+
+LaTeX Warning: Hyper reference `acro:ISBN' on page 8 undefined on input line 26
+.
+
+
+LaTeX Warning: Hyper reference `acro:MITM' on page 8 undefined on input line 27
+.
+
+
+LaTeX Warning: Hyper reference `acro:MITM' on page 8 undefined on input line 27
+.
+
+
+LaTeX Warning: Hyper reference `acro:URL' on page 8 undefined on input line 28.
+
+
+
+LaTeX Warning: Hyper reference `acro:URL' on page 8 undefined on input line 28.
+
+
+)
 
 [8
 
@@ -1503,163 +1501,27 @@ Kapitel 2.
 
 ]
 
-[9])
-\openout2 = `chapters/20_related.aux'.
+[9
 
- (./chapters/20_related.tex
-Kapitel 3.
 
+]
 
 [10
 
+]
 
+Package biblatex Warning: No driver for 'standard'.
+(biblatex)                Using fallback driver on input line 189.
 
-
-
-])
-\openout2 = `chapters/40_concept.aux'.
-
- (./chapters/40_concept.tex
-Kapitel 4.
 
 
 [11
 
-
-
-
-
-])
-\openout2 = `chapters/60_implementation.aux'.
-
- (./chapters/60_implementation.tex
-Kapitel 5.
-
-
-[12
-
-
-
-
-
-])
-\openout2 = `chapters/80_evaluation.aux'.
-
- (./chapters/80_evaluation.tex
-Kapitel 6.
-
-
-[13
-
-
-
-
-
-])
-\openout2 = `chapters/90_conclusion.aux'.
-
- (./chapters/90_conclusion.tex
-Kapitel 7.
-
-
-[14
-
-
-
-
-
-])
-\openout2 = `chapters/99_acronyms.aux'.
-
- (./chapters/99_acronyms.tex
-
-LaTeX Warning: Hyper reference `acro:ABI' on page 15 undefined on input line 24
-.
-
-
-LaTeX Warning: Hyper reference `acro:ABI' on page 15 undefined on input line 24
-.
-
-
-LaTeX Warning: Hyper reference `acro:DOI' on page 15 undefined on input line 25
-.
-
-
-LaTeX Warning: Hyper reference `acro:DOI' on page 15 undefined on input line 25
-.
-
-
-LaTeX Warning: Hyper reference `acro:ISBN' on page 15 undefined on input line 2
-6.
-
-
-LaTeX Warning: Hyper reference `acro:ISBN' on page 15 undefined on input line 2
-6.
-
-
-LaTeX Warning: Hyper reference `acro:MITM' on page 15 undefined on input line 2
-7.
-
-
-LaTeX Warning: Hyper reference `acro:MITM' on page 15 undefined on input line 2
-7.
-
-
-LaTeX Warning: Hyper reference `acro:URL' on page 15 undefined on input line 28
-.
-
-
-LaTeX Warning: Hyper reference `acro:URL' on page 15 undefined on input line 28
-.
-
-)
-
-[15
-
-
-
-
-
 ]
 
-[16
-
-
-]
-Overfull \hbox (11.73627pt too wide) in paragraph at lines 189--189
-\T1/ptm/m/it/12 cu-ri-ty and Pri-va-cy (RFI-DSec'11)\T1/ptm/m/n/12 . Springer-V
-erlag, S. 183^^U201. \T1/ptm/m/n/10.95 ISBN [][]\T1/ptm/m/n/12 9783642252853[][
-].
- []
-
-
-Overfull \hbox (1.22667pt too wide) in paragraph at lines 189--189
-\T1/ptm/m/n/12 ^^R  A Sca-la-ble RFID Au-then-ti-ca-ti-on Pro-to-col Sup-por-ti
-ng Ow-ner-ship Trans-fer and Con-
- []
-
-
-
-[17
-
-]
-Overfull \hbox (9.74301pt too wide) in paragraph at lines 189--189
-[][]\T1/ptm/m/n/12 Zobel, J. (Apr. 2004). \T1/ptm/m/it/12 Wri-ting for Com-pu-t
-er Science\T1/ptm/m/n/12 . 2. Aufl. Sprin-ger. \T1/ptm/m/n/10.95 ISBN [][]\T1/p
-tm/m/n/12 1852338024[][]
- []
-
-
-
-[18]
-
-[19
-
-] (./thesis.aux (./chapters/01_titlepage.aux) (./chapters/03_abstract.aux)
-(./chapters/09_latex_info.aux) (./chapters/10_introduction.aux)
-(./chapters/20_related.aux) (./chapters/40_concept.aux)
-(./chapters/60_implementation.aux) (./chapters/80_evaluation.aux)
-(./chapters/90_conclusion.aux) (./chapters/99_acronyms.aux))
+[12] (./thesis.aux (./chapters/01_titlepage.aux) (./chapters/03_abstract.aux)
+(./chapters/01_Einleitung.aux) (./chapters/02_Hauptteil.aux)
+(./chapters/99_acronyms.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-14>
@@ -1668,43 +1530,30 @@ L3 programming layer <2025-04-14>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 00CA452B035DADF2E486F1DF52661CD5;2710.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                thesis
-(biblatex)                and rerun LaTeX afterwards.
-
+(rerunfilecheck)             Checksum: 1D3964329308D1E80F00C2681A89027E;1390.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37227 strings out of 469608
- 699123 string characters out of 5474779
- 1620247 words of memory out of 5000000
- 63264 multiletter control sequences out of 15000+600000
- 723928 words of font info for 165 fonts, out of 8000000 for 9000
+ 36410 strings out of 469608
+ 685290 string characters out of 5474779
+ 1528728 words of memory out of 5000000
+ 62570 multiletter control sequences out of 15000+600000
+ 674882 words of font info for 92 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 104i,11n,104p,1199b,2348s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/tex
-live/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dis
-t/fonts/type1/public/cm-super/sfss0600.pfb><c:/texlive/2025/texmf-dist/fonts/ty
-pe1/public/cm-super/sfss0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/co
-urier/ucrb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb
-><c:/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/20
-25/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2025/texmf-dist/fonts
-/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/u
-tmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texl
-ive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (25 pages, 343839 bytes).
+ 104i,6n,104p,1199b,2348s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/texl
+ive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2025/texmf-d
+ist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1
+/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.
+pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/20
+25/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on thesis.pdf (18 pages, 168214 bytes).
 PDF statistics:
- 479 PDF objects out of 1000 (max. 8388607)
- 419 compressed objects within 5 object streams
- 113 named destinations out of 1000 (max. 500000)
- 167 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 244 PDF objects out of 1000 (max. 8388607)
+ 205 compressed objects within 3 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 103 words of extra memory for PDF output out of 10000 (max. 10000000)
 

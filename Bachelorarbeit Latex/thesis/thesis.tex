@@ -50,10 +50,10 @@
 \input{chapters/00_preamble} 
 
 % Add one (or multiple) file(s) with bibliography entries:
-%   here "thesis.bib" i.e. pdflatex sets \jobname to 'thesis'
+%   here "thesis.bib" i.e. pdflatex sets \ to 'thesis'
 %   the name specified when running pdflatex
 %   \addbibresource{thesis.bib}
-\addbibresource{\jobname.bib}
+\addbibresource{thesis.bib}
 
 
 
@@ -133,23 +133,23 @@
 
 
 % remove this, when starting to write your thesis:
-\include{chapters/09_latex_info}     % LaTeX examples  
+\include{chapters/01_Einleitung}     % LaTeX examples  
 
 
 
 % Add chapters as required. For example 
 
-\include{chapters/10_introduction}   % framing the problem 
+%\include{chapters/10_introduction}   % framing the problem 
                                      % research questions
                                      % hypothesis
                                      % method
 
-\include{chapters/20_related}        % research related (to your!) work 
+\include{chapters/02_Hauptteil}        % research related (to your!) work 
 %\include{chapters/30_background}    % if necessary, explain possilby unknown terms or technologies used
-\include{chapters/40_concept}        % concept/design of solution
-\include{chapters/60_implementation} % implementation, prototype
-\include{chapters/80_evaluation}     % evaluation of prototype and reflection of the results
-\include{chapters/90_conclusion}     % summary, your conclusions/outlook
+%\include{chapters/40_concept}        % concept/design of solution
+%\include{chapters/60_implementation} % implementation, prototype
+%\include{chapters/80_evaluation}     % evaluation of prototype and reflection of the results
+%\include{chapters/90_conclusion}     % summary, your conclusions/outlook
 
 \appendix
 \include{chapters/99_acronyms}       % optional: abbreviations

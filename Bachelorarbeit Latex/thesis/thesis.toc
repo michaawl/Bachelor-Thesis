@@ -5,28 +5,23 @@
 \babel@toc {german}{}\relax 
 \contentsline {chapter}{Abbildungsverzeichnis}{ii}{chapter*.1}%
 \contentsline {chapter}{Tabellenverzeichnis}{iii}{chapter*.2}%
-\contentsline {chapter}{\numberline {1}Writing a Thesis Using \LaTeX {} }{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Hints on Scientific Writing}{1}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}How to Write an Abstract}{1}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Research Resources}{2}{subsection.1.1.2}%
-\contentsline {subsection}{\numberline {1.1.3}Citation Styles}{2}{subsection.1.1.3}%
-\contentsline {subsection}{\numberline {1.1.4}Bibliography Entries}{2}{subsection.1.1.4}%
-\contentsline {subsection}{\numberline {1.1.5}Scientific Writing Resources}{3}{subsection.1.1.5}%
-\contentsline {section}{\numberline {1.2}\LaTeX {} Formatting Hints}{4}{section.1.2}%
-\contentsline {paragraph}{Background.}{4}{section*.7}%
-\contentsline {paragraph}{Terms and definitions.}{4}{section*.8}%
-\contentsline {paragraph}{Visual elements.}{4}{section*.11}%
-\contentsline {subsection}{\numberline {1.2.1}Prototype}{6}{subsection.1.2.1}%
-\contentsline {section}{\numberline {1.3}Sentences and Praragraphs}{6}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Red Thread}{6}{section.1.4}%
-\contentsline {chapter}{\numberline {2}Introduction}{8}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Problem Statement}{8}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Research Questions}{8}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Hypothesis}{8}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Method}{9}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Related Work}{10}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Concept}{11}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Implementation}{12}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Evaluation}{13}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Conclusion and Outlook}{14}{chapter.7}%
-\contentsline {chapter}{Literaturverzeichnis}{17}{appendix*.17}%
+\contentsline {chapter}{\numberline {1} Einleitung }{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Forschungsfragen}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Hypothese}{2}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Methodik}{2}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Hauptteil}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Theoretischer Hintergrund:}{3}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Serialisierungsformate}{4}{subsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.1.1}JSON}{4}{subsubsection.2.1.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.1.2}Protocol Buffers}{4}{subsubsection.2.1.1.2}%
+\contentsline {subsection}{\numberline {2.1.2}Transportprotokolle}{5}{subsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.1}HTTP/1.1}{6}{subsubsection.2.1.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.2.2}HTTP/2}{7}{subsubsection.2.1.2.2}%
+\contentsline {subsection}{\numberline {2.1.3}API-Technologien}{7}{subsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.3.1}REST}{7}{subsubsection.2.1.3.1}%
+\contentsline {subsubsection}{\numberline {2.1.3.2}GraphQL}{7}{subsubsection.2.1.3.2}%
+\contentsline {subsubsection}{\numberline {2.1.3.3}gRPC}{7}{subsubsection.2.1.3.3}%
+\contentsline {subsection}{\numberline {2.1.4}Begriffe}{7}{subsection.2.1.4}%
+\contentsline {subsubsection}{\numberline {2.1.4.1}Latenz}{7}{subsubsection.2.1.4.1}%
+\contentsline {chapter}{Literaturverzeichnis}{10}{appendix*.5}%

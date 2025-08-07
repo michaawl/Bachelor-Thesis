@@ -1,0 +1,55 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{ Einleitung }
+\label{chap:info_REMOVE_ME}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapterstart
+
+\section{Motivation}
+Bei Echtzeitanwendungen wie Chat-Applikationen oder Streaming Diensten werden
+oft große Datenmengen ausgetauscht. Dabei ist eine effiziente Übertragung der Daten
+essenziell, damit die Latenz so klein wie möglich bleibt. Eine Methode um dies in
+einem Softwareprojekt zu implementieren ist das gRPC Framework, indem die Daten
+binär kodiert mittels dem http/2 Protokoll übertragen werden.
+Der Hauptanwendungsbereich von gRPC ist die Kommunikation bei sogenannten Microservices
+in der Backend Kommunikation, während bei der Kommunikation zwischen
+Frontend und Backend meist aufgrund von Kompatibilitäts- und Komplexitätsgründen
+REST oder GraphQL Technologien dominieren. Eine gRPC-Übertragung
+wird in der Regel nur verwendet, wenn eine effiziente und schnelle Kommunikation
+besonders wichtig ist. Ziel der Bachelorarbeit ist es verschieden API - Übertragungstechnologien
+vor allem mit dem Fokus auf Latenz, Effizienz und Skalierbarkeit in Bezug
+auf Frontend-Backend-Kommunikation zu überprüfen und zu vergleichen.
+
+\section{Forschungsfragen}
+Wie wirkt sich die Verwendung von gRPC im Vergleich zu REST
+und GraphQL auf die Latenz, Effizienz und Ressourcennutzung in der Frontend-Backend-
+Kommunikation aus?
+
+Unter welchen Bedingungen ist der Einsatz von gRPC für die
+Frontend-Backend-Kommunikation sinnvoller als REST oder GraphQL?
+
+\section{Hypothese}
+
+Die Nutzung von gRPC reduziert die Latenz und erhöht die Effizienz im
+Vergleich zu REST und GraphQL, vor allem bei Echtzeitanwendungen mit hohen Datenmengen.
+
+Die Implementierung von gRPC in React ist komplexer, da dadurch zusätzliche
+Tools verwendet werden müssen damit eine Browser Kompatibilität garantiert
+werden kann. REST ist geeigneter für einfache Anwendungen mit niedrigeren
+Anforderungen an Echtzeitkommunikation.
+
+\section{Methodik}
+Theoretische Analyse:
+- Untersuchung und Vergleich der Kommunikationsprotokolle gRPC und REST/GraphQL
+in Bezug auf Latenz, Effizienz und Skalierbarkeit.
+- Analyse von gRPC-Web zur Integration in Frontend-Architekturen (in React).
+Erstellen von Prototypen:
+Im Zuge der Bachelorarbeit werden Prototypen, mittels den jeweiligen Kommunikationsprotokollen
+oder API Gateway erstellt und die Eigenschaften der verschiedenen
+Übertragungstechniken verglichen. Dabei werden Performance Tests, Benchmarking,
+Skalierbarkeitstests durchgeführt
+Verwandte Arbeiten und Stand der Forschung:
+Zu den oben genannten Fragestellungen und Technologien sollen verwandte Arbeiten
+analysiert und der aktuelle Stand der Forschung erfasst werden.
+
+
+\chapterend
