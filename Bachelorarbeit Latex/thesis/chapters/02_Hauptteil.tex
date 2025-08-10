@@ -361,16 +361,16 @@ Auch Entwicklerumfragen zeigen auf, dass REST die am einfachste zu erlerndende T
 \clearpage
 \section{Praktischer Teil}
 \subsection{Einleitung}
-Um Unterschiede bezogen auf Latenz und Performance von gRPC-Web, gRPC, REST und GraphQl in einem konkreten Anwendungsfall zu ermitteln, wurde ein Prototyp erstellt, bei dem jeweilige Messungen zwischen einem Client und der dementsprechenden Technologie durchgeführt. Dabei werden mittels eine erstellte web api mit mehreren services daten gesendet und diese anschließend ausgewertet. Ziel des Prototypes ist es zu zeigen, ob die in den Grundlagen und dem theortischem teil ermittelten Daten mit der praxis übereinstimmen.
+Um Unterschiede bezogen auf Latenz und Performance von gRPC-Web, gRPC, REST und GraphQl in einem konkreten Anwendungsfall zu ermitteln, wurde ein Prototyp erstellt, bei dem  Messungen zwischen einem Client und einem Server mit der dementsprechenden Technologie durchgeführt wurden. Dabei wurde der Datenaustausch zwischen den Kommunikationsteilnehmern erfasst und anschließend ausgewertet. Ziel des Prototypes ist es zu zeigen, ob die in den Grundlagen und dem theortischem Teil ermittelten Daten mit der Praxis übereinstimmen.
 
 \subsection{Zielsetzung}
-Ziel des praktischen Teil ist, Unterschiede in der Datenübertragung zwischen REST, GraphQL und gRPC Web in Bezug auf Performance und Latenz in einem zwischen der Frontend und Backendkommunikation zu untersuchen. Der Fokus bei den Messungen liegt auf der End-zu-End Latenz aus der Sicht des Clients, welcher die Übertragung, Serververarbeitung und das client seitige parsing umfasst. 
+Ziel des praktischen Teil ist es, Unterschiede in der Datenübertragung zwischen REST, GraphQL und gRPC Web in Bezug auf Performance und Latenz zwischen der Frontend und Backendkommunikation zu untersuchen. Der Fokus bei den Messungen liegt auf der End-zu-End Latenz aus der Sicht des Clients, welche die Übertragung, Serververarbeitung und das client seitige parsing umfasst. 
 
 Konkret wurden folgende Messungen durchgeführt: 
 \begin{itemize}
 	\item Vergleich der Protokolle bei Einzelabfragen ( 1 Request ) und Mehrfachabfragen ( 20 Requests ). Die Messungen zeigen ergebnisse über Latenz und Performance
 	\item Unterschiede bei der Nutzung von verschiedenen Browsern, um den Einfluss des Webbrowsers auf die messungen zu identifizieren.
-	\item Gegenüberstellung der Response Zeiten zwischen Microservice ähnlichen Konsolen Client und Browser Client. Die Messung zeigt, wie stark sich die Architektur auf die Effizienz der Kommunikation auswirkt. Außerdem können beim Konsolen Client gRPC und gRPC gegenüber gestellt werden.
+	\item Gegenüberstellung der Response Zeiten zwischen Microservice ähnlichen Konsolen Client und Browser Client. Die Messung zeigt, wie stark sich die Architektur auf die Effizienz der Kommunikation auswirkt. Außerdem können beim Konsolen Client gRPC und gRPC-Web gegenüber gestellt werden.
 \end{itemize}
 
 Ziel ist es anhand der Messungen Unterschiede sichtbar zu machen und anschließend, in Einschließung des Rechercheteils, Rückschlüsse auf die Eignung der Technologien in Front End Anwendungen zu ziehen.
@@ -407,7 +407,6 @@ Im Backend-System wurden verschiedene Services implementiert, weche jeweils vers
 
 Für jeden Service wurde jeweils folgende APIS implementiert:
 
-Für jeden Service wurde jeweils folgende APIS implementiert:
 
 \begin{itemize}
 	\item Browser-Client: REST, GraphQL und gRPC Web. 
