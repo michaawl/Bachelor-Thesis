@@ -10,7 +10,7 @@ In diesem Kapitel soll eine Basis für die Grundlegenden Technologien, Standards
 
 Die Arbeit Untersucht die Kommunikation zwischen Frontend zu Backend Komponenten, im industriellen als auch wissenschafltichem Kontext sind diese Begriffe wie folgt definiert:
 
-\chapquote{"Das Frontend ist das, was Ihre Benutzer sehen, und enthält visuelle Elemente wie Schaltflächen, Kontrollkästchen, Grafiken und Textnachrichten. Es ermöglicht den Benutzern, mit Ihrer Anwendung zu interagieren. Das Backend sind die Daten und die Infrastruktur, die dafür sorgen, dass Ihre Anwendung funktioniert. Es speichert und verarbeitet Anwendungsdaten für Ihre Benutzer.“}
+\chapquote{Das Frontend ist das, was Ihre Benutzer sehen, und enthält visuelle Elemente wie Schaltflächen, Kontrollkästchen, Grafiken und Textnachrichten. Es ermöglicht den Benutzern, mit Ihrer Anwendung zu interagieren. Das Backend sind die Daten und die Infrastruktur, die dafür sorgen, dass Ihre Anwendung funktioniert. Es speichert und verarbeitet Anwendungsdaten für Ihre Benutzer.}
 {\cite{awsfrontendbackend}}
 
 Wie aus dieser Definition ersichtlich beinhaltet das Front-End den benutzerspezifischen Teil und das backend den Datenverarbeitungsteil. Im Zuge der Bachelorarbeit werden anschlieden für die Front End Komponente ebenso das Wort „Client“ und für die Backend Komponente das wort „Server“ verwendet.
@@ -361,92 +361,366 @@ Auch Entwicklerumfragen zeigen auf, dass REST die am einfachste zu erlerndende T
 \clearpage
 \section{Praktischer Teil}
 \subsection{Einleitung}
-Um Unterschiede bezogen auf Latenz und Performance von gRPC-Web, gRPC, REST und GraphQL in einem konkreten Anwendungsfall zu ermitteln, wurde ein Prototyp erstellt, bei dem jeweilige Messungen zwischen einem Client und der entsprechenden Technologie durchgeführt wurden.
-Dabei werden mittels einer erstellten Web-API mit mehreren Services Daten gesendet und anschließend ausgewertet.
-Ziel des Prototyps ist es zu zeigen, ob die im theoretischen Teil ermittelten Daten mit der Praxis übereinstimmen.
+Um Unterschiede bezogen auf Latenz und Performance von gRPC-Web, gRPC, REST und GraphQl in einem konkreten Anwendungsfall zu ermitteln, wurde ein Prototyp erstellt, bei dem jeweilige Messungen zwischen einem Client und der dementsprechenden Technologie durchgeführt. Dabei werden mittels eine erstellte web api mit mehreren services daten gesendet und diese anschließend ausgewertet. Ziel des Prototypes ist es zu zeigen, ob die in den Grundlagen und dem theortischem teil ermittelten Daten mit der praxis übereinstimmen.
 
 \subsection{Zielsetzung}
-Ziel des praktischen Teils ist es, Unterschiede in der Datenübertragung zwischen REST, GraphQL und gRPC-Web in Bezug auf Performance und Latenz in einer Frontend-Backend-Kommunikation zu untersuchen.
-Der Fokus liegt auf der End-to-End-Latenz aus Sicht des Clients, die Übertragung, Serververarbeitung und clientseitiges Parsing umfasst.
+Ziel des praktischen Teil ist, Unterschiede in der Datenübertragung zwischen REST, GraphQL und gRPC Web in Bezug auf Performance und Latenz in einem zwischen der Frontend und Backendkommunikation zu untersuchen. Der Fokus bei den Messungen liegt auf der End-zu-End Latenz aus der Sicht des Clients, welcher die Übertragung, Serververarbeitung und das client seitige parsing umfasst. 
 
-Konkret wurden folgende Messungen durchgeführt:
+Konkret wurden folgende Messungen durchgeführt: 
 \begin{itemize}
-	\item Vergleich der Protokolle bei Einzelabfragen (1 Request) und Mehrfachabfragen (20 Requests) mit Messung von Latenz und Performance.
-	\item Untersuchung des Einflusses verschiedener Browser auf die Messergebnisse.
-	\item Gegenüberstellung der Response-Zeiten zwischen einem Microservice-ähnlichen Konsolen-Client und einem Browser-Client.
+	\item Vergleich der Protokolle bei Einzelabfragen ( 1 Request ) und Mehrfachabfragen ( 20 Requests ). Die Messungen zeigen ergebnisse über Latenz und Performance
+	\item Unterschiede bei der Nutzung von verschiedenen Browsern, um den Einfluss des Webbrowsers auf die messungen zu identifizieren.
+	\item Gegenüberstellung der Response Zeiten zwischen Microservice ähnlichen Konsolen Client und Browser Client. Die Messung zeigt, wie stark sich die Architektur auf die Effizienz der Kommunikation auswirkt. Außerdem können beim Konsolen Client gRPC und gRPC gegenüber gestellt werden.
 \end{itemize}
+
+Ziel ist es anhand der Messungen Unterschiede sichtbar zu machen und anschließend, in Einschließung des Rechercheteils, Rückschlüsse auf die Eignung der Technologien in Front End Anwendungen zu ziehen.
 
 \subsection{Versuchsaufbau}
-\subsubsection{Architektur}
-Der Prototyp umfasst:
-\begin{itemize}
-	\item Eine Web-API mit verschiedenen Services (Text, Medien, Blog).
-	\item Ein Frontend (React), das Requests an REST, GraphQL oder gRPC-Web sendet.
-	\item Einen Konsolen-Client, der zusätzlich auch natives gRPC unterstützt.
-\end{itemize}
+Bei dem Prototypen wurde eine Web-API die verschiedene Services mit verschiedenen Datentypen bereitstellt die mittels Dotnet Core in Visual Studio und um einen Web Client der mittels React umgesetzt wurde. Außerdem wurde ein Microservice ähnlicher Client erstellt, um zu vermitteln in wie fern die Latenz zwischen Front-End und Back-End Services variieren.
 
-\subsubsection{Messmethodik}
-Um einen fairen Vergleich herzustellen, wurden alle Requests ausschließlich mit dem HTTP/2.0-Protokoll durchgeführt und mit HTTPS verschlüsselt.
-Die Response-Zeit ist die End-to-End-Latenz aus Sicht des Nutzers, also die Zeit vom Absenden des Requests bis zur vollständigen Verfügbarkeit der Daten im Client.
-Dies umfasst:
+Um einen fairen Vergleich herzustellen, wurden alle Requests ausschließlich mit dem HTTP/2.0 Protokoll durchgeführt und wurden verschlüsselt mit HTTPS verwendet. Bei der Response-Zeit handelt es sich jeweils um die End-to-End-Latenz aus der Sicht des Nutzers. Es wird dabei die Zeit dem absenden des Requestes und der Zeit bis die tatächlichen Daten im Client bereit stehen. Die Response Zeit beinhaltet also: 
+
 \begin{enumerate}
-	\item Transportzeit über das Netzwerk (Hin- und Rückweg).
-	\item Serverseitige Bearbeitung.
-	\item Antwortübertragung (inklusive Header und Payload).
-	\item Clientseitige Verarbeitung (Parsing, Deserialisierung).
+	\item die Transportzeit über das Netzwerk:
+	Zeit für den Hin- und Rückweg des Pakets durch das Netzwerk.
+	
+	\item Back-End-Verarbeitung:
+	Die Serverseitige Bearbeitung des Requests
+	
+	\item Antwortübertragung:
+	Zeit für das Senden der Antwort( inklusive Header und Payload) zurück an den Client.
+	
+	\item Client-seitige Verarbeitung:
+	die Verarbeitung des Responses, sodass die Daten tatsächlich im Client verwendet werden können. (JSON Parsing, Binär-Parser).
+	
 \end{enumerate}
 
-\subsubsection{Clients}
-\begin{description}
-	\item[Web-Client:] Kommunikation zwischen Browser und Backend (REST, GraphQL, gRPC-Web).
-	\item[Konsolen-Client:] Kommunikation zwischen Microservice-ähnlicher Anwendung und Backend (REST, GraphQL, gRPC, gRPC-Web).
-\end{description}
+\begin{enumerate}
+	\item Ein Web-Client, die Übertragung findet dabei zwischen einem Browser und dem Back-End Service statt. 
+	\item Ein Konsolen Client, die Übertragung findet zwischen einer Micro Service ähnlichen Anwendung und dem Back-End Service statt. 
+	
+\end{enumerate}
 
-\subsubsection{Backend-Service}
-Im Backend wurden verschiedene Services implementiert, die typische Frontend-Daten bereitstellen:
+Backend Service:
+
+Im Backend-System wurden verschiedene Services implementiert, weche jeweils verschiedene Daten zur Verfügung stellen, die mit den demenstsprechenden APIs abgefragt werden können. 
+
+Für jeden Service wurde jeweils folgende APIS implementiert:
+
+Für jeden Service wurde jeweils folgende APIS implementiert:
+
 \begin{itemize}
-	\item \textbf{Text-Service:} Textdaten in Größen von 1\,kB, 10\,kB und 100\,kB.
-	\item \textbf{Media-Service:} Bild (4\,MB), Audio (30\,MB), Video (100\,MB).
-	\item \textbf{Blog-Service:} 10\,kB große strukturierte Daten mit Text-, Zahlen- und Datumsfeldern.
+	\item Browser-Client: REST, GraphQL und gRPC Web. 
+	\item Konsolen-Client: REST, GraphQl, gRPC und gRPC Web
 \end{itemize}
 
-Alle Services wurden modular in .NET~9 umgesetzt und mit getrennten APIs (REST, GraphQL, gRPC, gRPC-Web) bereitgestellt.
+Da es in Web Browsern nicht möglich ist raw gRPC zu verwenden, konnte diese Messung im Rahmen des Browser-Client-Versuchsaufbaus nicht durchgeführt werden. Um Messwerte zwischen gRPC und gRPC-Web zu vergleichen, und um zu sehen in wiefern sich die Performance zwischen Browser – Backend und Microservice – Backend wurde ein zweiter Versuchsaufbau mittels eines Konsolen Clients durchgeführt.
 
-\subsection{Testumgebung}
-Die Messungen wurden lokal (\texttt{localhost}) durchgeführt, um externe Einflüsse wie Paketverlust oder Routing-Latenz auszuschließen.
-Hardware:
+Die Daten können jeweils von den jeweiligen Clients abgefragt werden. Grundlage der gesendeten Daten, sind Datentypen, die oft in Front-End Services versendet werden:
+
 \begin{itemize}
-	\item Lenovo ThinkPad X1 Carbon Gen 10
-	\item Intel Core i5-1245U (10 Cores)
-	\item 16\,GB LPDDR5 RAM
-	\item 512\,GB NVMe SSD
-	\item Windows 11 Pro (Build 26100)
+	\item Text – Service: 
+	Der Text-Service stellt einen Text im Datentyp „string“ zur Verfügung. Dabei können mit den Datengrößen 1 kB, 10 kB und 100 kB abgefragt werden.
+	
+	\item Media – Service:
+	Der Media-Service stellt Medien zur Verfügung, die mittels eines byte[] verschickt werden. Bei den Medien handelt sich um ein Bild (4 MB), einer Audio-Datei ( 30 MB) und einer Video Datei ( 100 MB ). 
+	
+	\item Blog - Service: 
+	Bei dem Blog Service handelt sich um einen 10 kB großen Datentypen, der verschachtelt andere Datentypen ( Text, Zahlen und Datum ) versendet.
+	
 \end{itemize}
 
+\subsubsection{Testumgebung und Implementierungsstrategie}
+Die Messungen wurden ausschließlich lokal auf localhost durchgeführt. Dadurch können zusätzliche Einflüsse wie Paketverlust, Routing-Latenz oder Bandbreitenschwankungen, die bei realen Bedingungen auftreten würden, ausgeschlossen worden. Ziel der Messungen war es, tatsächliche Unterschiede zwischen den API Technologien (gRPC, gRPC-Web, REST, GraphQL) unter optimalen Bedingungen und reproduzierbar zu ermitteln.
+Die Ergebnisse repräsentieren daher keine realen Szenarien. Der Fokus wurde ausschließlich auf den Vergleich der Kommunikationsprotokolle und deren Verarbeitung gelegt.
+
+Um die Vergleichbarkeit weiter zu erhöhen, wurden alle Clients und Services so minimalistisch wie möglich umgesetzt, da weitere Frameworks oder Logik die Datenverarbeitung beeinflussen, und somit die tatsächlichen Zeiten verzerren könnten.
+Jeder Service liefert ausschließlich den für den Testfall angeforderten Daten. 
+
+\subsubsection{Backend Service:}
+
+Der Backend Service wurde modular und technisch getrennt umgesetzt, um die Technologien getrennt und unabhängig voneinander vergleichen zu können. Die Implementierung basiert auf .NET 9, einer plattformunabhängigen Open-Source-Laufzeitumgebung von Microsoft, die für moderne Web- und Microservice-Anwendungen konzipiert ist.
+Die APIs stellen jeweils dieselben Daten zur Verfügung und können folgendermaßen Abgefragt werden:
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{images/prakt1.png}
+	\caption{Daten}
+\end{figure}
+
+Die Struktur des Backend-Services gliedert sich in 4 eigenständige Projekte:
+
+\begin{enumerate}
+\item Common:
+Das Common Projekt stellt die Testdaten zentral zur Verfügung. Damit die Testdaten bei einem Request nicht zuerst aus der Datei gelesen werden müssen, werden diese bei Programmstart einmal in den Arbeitsspeicher geladen. Zu diesem Zweck wurde ein API – Cache erstellt, der alle Text und Medienobjekte vorab einliest, die Daten können dann zur Laufzeit direkt vom Cache abgefragt werden.
+ 
+Für die Testdaten wurden Datentypen die typischerweise an Web Clients gesendet werden ausgwählt und beinhalten:
+
+
+\begin{itemize}
+	\item Texte in drei Größen: 1\,kB, 10\,kB, 100\,kB
+	\item Medieninhalte: 3\,MB Foto, 30\,MB Audio-Datei, 100\,MB Video-Datei
+	\item Strukturierte Binärdaten: ein selbst definierter Datentyp mit verschachtelten Abschnitten, Metadaten, Zahlenblöcken und Autoreninformationen
+\end{itemize}
+\item RestAPI:
+Die REST API wurde mittels einem Controller Muster von ASP.NET Core implementiert und stellt 3 eigenständige Endpunkte zur Verfügung. Die Kommunikation erfolgt ausschließlich über http GET.
+
+Die Controller sind wie folgt definiert:
+
+\begin{itemize}
+	\item \textbf{TextController}: Stellt Textdaten in drei Größen zur Verfügung.\\
+	\emph{Rückgabeformat}: \texttt{application/json}
+	\item \textbf{MediaController}: Stellt ein Bild, eine Audiodatei und ein Video bereit.\\
+	\emph{Rückgabeformat}: Binärdaten (\texttt{byte[]}) mit MIME-Type \texttt{image/jpeg}, \texttt{audio/wav}, \texttt{video/mp4}
+	\item \textbf{BlogController}: Stellt einen vordefinierten Blogeintrag bereit.\\
+	\emph{Rückgabeformat}: \texttt{application/json}
+\end{itemize}
+
+\item GraphQlAPI:
+Die GraphQL-API wurde mittels des \texttt{.NET}-Frameworks \texttt{HotChocolate} implementiert.
+Als Einstiegspunkt wurde eine \texttt{Query}-Klasse definiert, welche für die verschiedenen Services (Text, Medien, Blog) mit jeweiligen Teildateien erweitert wurde.
+
+Folgende Queries wurden definiert:
+\begin{itemize}
+	\item \textbf{TextQuery}: Stellt die Felder \texttt{small}, \texttt{medium} und \texttt{large} bereit, welche jeweils Textinhalte als \texttt{string} zurückgeben.
+	\item \textbf{MediaQuery}: Stellt die Felder \texttt{image}, \texttt{audio} und \texttt{video} bereit, welche in der GraphQL-Antwort Base64-kodiert übertragen werden.
+	\item \textbf{BlogQuery}: Stellt das Feld \texttt{posts} zur Verfügung, welches die für den Blogpost definierten Daten enthält.
+\end{itemize}
+
+Alle Abfragen erfolgen über \texttt{HTTP~POST}-Anfragen an den Endpunkt \texttt{/graphql} und haben das Format \texttt{application/json}.
+
+\item GrpcWebAPI: 
+Die gRPC-Web-API basiert auf den definierten \texttt{.proto}-Dateien (\texttt{text.proto}, \texttt{media.proto}, \texttt{blog.proto}). In den Proto-Dateien wurden sowohl die \emph{Messages} und Datentypen der Testdaten als auch die \emph{Services}, mit denen auf die Messages zugegriffen werden kann, definiert. 
+
+Die Services implementieren folgende Methoden:
+\begin{itemize}
+	\item \textbf{TextService}: Rückgabe der drei Textgrößen über die Methoden \texttt{GetSmall()}, \texttt{GetMedium()} und \texttt{GetLarge()}.\\
+	\emph{Rückgabeformat}: \texttt{TextResponse}-Message mit einem \texttt{string}-Feld (\texttt{content}), serialisiert im Protocol-Buffers-(binary)-Format.
+	
+	\item \textbf{MediaService}: Streaming von Binärdaten in 64\,kB-Chunks über die Methoden \texttt{GetImage()}, \texttt{GetAudio()} und \texttt{GetVideo()}. Anders als bei den anderen Services werden hier die Mediendateien nicht als vollständige Datei, sondern als 64\,kB-Chunks gestreamt. Da gRPC nicht dafür konzipiert wurde, große Dateien am Stück zu übertragen, ist dies die empfohlene Vorgehensweise für den Umgang mit großen Dateien. Bei REST und GraphQL hingegen wurde auf ein solches Streaming verzichtet, da entsprechende Mechanismen nicht nativ unterstützt werden.\\
+	\emph{Rückgabeformat}: Server-Streaming von Chunk-Nachrichten (\texttt{bytes}-Feld), serialisiert als Protocol-Buffers-Stream über HTTP/2.
+	
+	\item \textbf{BlogService}: Rückgabe strukturierter Blogposts via \texttt{GetAll()}.\\
+	\emph{Rückgabeformat}: \texttt{BlogPostsResponse} (Liste von \texttt{BlogPost}-Nachrichten), ebenfalls als Protocol Buffers (binary) kodiert.
+\end{itemize}
+
+Die API wurde so konfiguriert, dass sowohl normales gRPC als auch gRPC-Web verwendet werden kann. Die Implementierung für gRPC-Web wird mittels des Pakets \texttt{Grpc.AspNetCore.Web} bereitgestellt. Die Generierung der gRPC-eigenen Klassen erfolgte mittels \emph{gRPC Tools}. \emph{gRPC Tools} erstellt dabei bei jedem Build die im Proto-File definierten Klassen, die anschließend im Code verwendet werden können.
+
+\begin{table}[h]
+	\centering
+	\caption{Verwendete Technologien}
+	\begin{tabular}{lll}
+		\hline
+		\textbf{Komponente} & \textbf{Technologie/Tool} & \textbf{Version} \\
+		\hline
+		Backend-Framework & \texttt{.NET~SDK} & 9.0 \\
+		REST API & \texttt{ASP.NET~Core~Web~API} & 9.0.5 \\
+		GraphQL & \texttt{HotChocolate} & 15.1.5 \\
+		gRPC & \texttt{Grpc.AspNetCore} & 2.71.0 \\
+		gRPC-Web & \texttt{Grpc.AspNetCore.Web} & 2.71.0 \\
+		Protobuf Tools & \texttt{Grpc.Tools} / \texttt{protoc} & 2.72.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsubsection{Web-Client:}
+Um die Messungen aus der Sicht eines Front-End-Clients durchzuführen, wurde ein Web-Client erstellt, von dem aus die jeweiligen Requests gesendet werden können und der die gemessenen Daten grafisch darstellt. Neben der grafischen Darstellung werden im Client auch die End-to-End-Latenz und die Payloadgröße ermittelt. Die Anwendung wurde mit \texttt{React} und \texttt{TypeScript} erstellt und mithilfe von \texttt{Vite} gebündelt und lokal bereitgestellt.
+
+\subsection*{Architektur und Aufbau}
+Der Web-Client dient primär als Simulation eines realen Benutzerverhaltens einer Front-End-Anwendung. Über ein einfaches Interface kann ausgewählt werden:
+\begin{itemize}
+	\item Gegen welche API-Schnittstelle (\texttt{REST}, \texttt{GraphQL}, \texttt{gRPC-Web}) ein Request ausgeführt werden soll
+	\item Welche Datenart (Text, Medien, strukturierter Blog-Inhalt) und welche Datenmenge übertragen werden soll
+	\item Ob ein einzelner Request oder eine Mehrfachanfrage parallel durchgeführt werden soll
+\end{itemize}
+
+Sowohl bei REST als auch bei GraphQL wird im Frontend die browsernative \texttt{fetch}-API für die Kommunikation mit dem Backend verwendet.  
+Für die Kommunikation mit der gRPC-Web-Schnittstelle werden gRPC-Bibliotheken eingesetzt. Die Generierung der gRPC-Klassen erfolgt mittels der \texttt{ts-protoc-gen}-Bibliothek mit folgendem Befehl:
+
+\begin{verbatim}
+	npx protoc --ts_out src/api/generated --proto_path=src/proto src/proto/*.proto
+\end{verbatim}
+
+\subsection*{Clientseitige Datenverarbeitung}
+Nach erfolgreichem Empfang der Daten vom Server müssen die Daten vom Client verarbeitet werden, damit diese anschließend verwendet werden können. Abhängig vom ausgewählten API-Typ und der Datenmenge werden die Daten jeweils unterschiedlich verarbeitet. 
+
+\paragraph{Textdaten}
+\begin{itemize}
+	\item Bei REST und GraphQL erfolgt das Parsen des gesendeten JSON mittels der nativen \texttt{fetch}-API.
+	\item Bei gRPC-Web wird die Protobuf-Nachricht automatisch über die generierten TypeScript-Klassen des \texttt{protobuf-ts}-Plugins deserialisiert.
+\end{itemize}
+
+\paragraph{Mediendaten}
+Medieninhalte werden binär als \texttt{byte[]} übertragen.
+\begin{itemize}
+	\item Bei REST erfolgt der Empfang direkt als Blob über \texttt{response.blob()}.
+	\item Bei GraphQL werden die Binärdaten Base64-kodiert als String im JSON-Response übertragen und im Client manuell dekodiert.
+	\item Bei gRPC-Web werden die Binärdaten als Daten-Chunks gestreamt. Die Chunks werden im Client rekonstruiert.
+\end{itemize}
+
+\paragraph{Blogdaten}
+\begin{itemize}
+	\item Bei REST und GraphQL werden JSON-Objekte mit verschachtelter Struktur geparst.
+	\item Bei gRPC-Web erfolgt die Deserialisierung über generierte Protobuf-Klassen.
+\end{itemize}
+
+\begin{table}[h]
+	\centering
+	\caption{Verwendete Frontend-Technologien}
+	\begin{tabular}{lll}
+		\hline
+		\textbf{Komponente} & \textbf{Technologie/Tool} & \textbf{Version} \\
+		\hline
+		Frontend-Framework & \texttt{React} & 19.1.0 \\
+		Bundler & \texttt{Vite} & 6.3.5 \\
+		TypeScript Compiler & \texttt{TypeScript} & 5.8.3 \\
+		REST & \texttt{fetch API} (Browser native) & (native) \\
+		GraphQL Client & \texttt{fetch API} (Browser native) & (native) \\
+		gRPC-Web Transport & \texttt{grpcweb-transport} & 2.11.0 \\
+		Protobuf TS Plugin & \texttt{protobuf-ts} & 2.11.0 \\
+		Protoc Codegen Plugin & \texttt{ts-protoc-gen} & 0.15.0 \\
+		gRPC-Web Codegen & \texttt{protoc-gen-grpc-web} & 1.5.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsubsection{Konsolen-Client}
+Die Messung des Konsolen-Clients erlaubt auch die Implementierung von gRPC. Dadurch können Response-Zeiten zwischen gRPC und gRPC-Web direkt miteinander verglichen werden. Außerdem kann aufgezeigt werden, wie sich gRPC-Technologien, welche für Microservice-Architekturen erstellt wurden, im direkten Vergleich zur Kommunikation zu Web-Clients verhalten. 
+
+Der Konsolen-Client kann alle unterstützten APIs (\texttt{REST}, \texttt{GraphQL}, \texttt{gRPC} und \texttt{gRPC-Web}) ansprechen und führt Messungen über ein textbasiertes Menüsystem durch.  
+Es werden nur Einzel-Requests unterstützt.
+
+\subsection*{Kommunikationsmechanismen}
+Die Kommunikation erfolgt jeweils über folgende Mechanismen:
+\begin{itemize}
+	\item \textbf{REST}: per \texttt{HttpClient} mit JSON-Deserialisierung
+	\item \textbf{GraphQL}: per \texttt{GraphQL.Client}-Bibliothek
+	\item \textbf{gRPC}: über \texttt{Grpc.Net.Client} direkt als native gRPC-Kommunikation
+	\item \textbf{gRPC-Web}: über \texttt{Grpc.Net.Client.Web} mittels spezieller Web-Handler, angepasst an das gRPC-Web-Protokoll
+\end{itemize}
+
+Die interne Verarbeitung wurde so implementiert, dass die Messungen der Response-Zeit analog zum Web-Client das Empfangen und anschließend das Parsen beinhalten.  
+Bei den Mediendaten findet auf Client-Seite keine weitere Verarbeitung des \texttt{byte[]}-Arrays statt, daher ist hier eine Gegenüberstellung zum Web-Client nicht sinnvoll.
+
+\begin{table}[h]
+	\centering
+	\caption{Verwendete Technologien des Konsolen-Clients}
+	\begin{tabular}{lll}
+		\hline
+		\textbf{Komponente} & \textbf{Technologie/Tool} & \textbf{Version} \\
+		\hline
+		Client-Framework & \texttt{.NET~SDK} & 9.0 \\
+		GraphQL Client & \texttt{GraphQL.Client} & 6.1.0 \\
+		GraphQL Client Serializer & \texttt{GraphQL.Client.Serializer.Newtonsoft} & 6.1.0 \\
+		gRPC Client & \texttt{Grpc.Net.Client} & 2.71.0 \\
+		gRPC-Web Client & \texttt{Grpc.Net.Client.Web} & 2.71.0 \\
+		gRPC Code Generator & \texttt{Grpc.Tools} & 2.72.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+	
+\end{enumerate}
+
+\clearpage
+\subsection{Spezifikationen des Testsystems}
+Um die Messergebnisse korrekt und vergleichbar einordnen zu können, ist es notwendig darzustellen, unter welchen technischen Rahmenbedingungen die jeweiligen Messungen durchgeführt wurden. Da die Leistungsfähigkeit der Hardware sowie die Softwareversionen die Messzeiten beeinflussen können, werden in diesem Abschnitt die relevanten Komponenten des Testsystems dargestellt.
+
+Für die Messungen wurde folgendes Testgerät verwendet:  
+Lenovo ThinkPad X1 Carbon der 10.\ Generation (Modellbezeichnung: 21CB)
+
+\paragraph{Hardwarekonfiguration}
+\begin{itemize}
+	\item \textbf{Prozessor (CPU)}: 12th Gen Intel\textsuperscript{\textregistered} Core\texttrademark{} i5-1245U, 1600\,MHz, 10~Kerne
+	\item \textbf{Arbeitsspeicher (RAM)}: 16\,GB LPDDR5, 5200\,MT/s
+	\item \textbf{Massenspeicher (SSD)}: 512\,GB NVMe SSD
+\end{itemize}
+
+\paragraph{Betriebssystem}
+Microsoft Windows 11 Pro (Version: 10.0.26100, Build 26100)
+
+\clearpage
 \subsection{Messung}
-Es wurden Einzelrequests, 20 parallele Requests sowie browserabhängige Messungen durchgeführt.  
-Getestete Technologien:
-\begin{itemize}
-	\item REST
-	\item GraphQL
-	\item gRPC-Web
-	\item gRPC (nur im Konsolen-Client)
-\end{itemize}
+Ziel der Messungen ist es, die End-to-End-Latenz und Performance bei der Datenübertragung zwischen Front-End und Back-End zu quantifizieren und somit die im theoretischen Teil beschriebenen Eigenschaften der verschiedenen API-Technologien zu vergleichen.  
+Die Responsezeiten beschreiben die tatsächliche Zeit, bis die jeweiligen Daten im Client bereitstehen (Datenübertragung und Parsing). Dabei wurden unterschiedliche Datenarten verwendet, die häufig in der Frontend-zu-Backend-Kommunikation zum Einsatz kommen.  
 
-\subsection{Ergebnisse (Kurzfassung)}
-\begin{enumerate}
-	\item gRPC-Web ist bei kleinen Datenmengen schnell, verliert aber bei großen Payloads deutlich an Performance.
-	\item REST ist bei Mediendaten am schnellsten, insbesondere durch Blob-Streaming.
-	\item GraphQL war bei parallelen Requests am performantesten.
-	\item Die Latenz hängt stark vom verwendeten Browser ab (Edge vor Chrome vor Firefox).
-	\item gRPC im Konsolen-Client deutlich schneller als gRPC-Web.
-\end{enumerate}
+Untersucht wurde die Response-Zeit von Einzel-Requests, Mehrfachabfragen (20 parallele Requests) und browserabhängige Unterschiede in einem Web-Client. Zusätzlich wurden alle Technologien, einschließlich gRPC, im Konsolen-Client getestet, um Unterschiede zwischen browserbasierter und microservice-orientierter Kommunikation sichtbar zu machen und Unterschiede zwischen gRPC und gRPC-Web zu ermitteln.
 
-\subsection{Fazit}
-gRPC ist in der Backend-zu-Backend-Kommunikation klar führend, verliert aber durch das gRPC-Web-Protokoll im Browser einen Teil seiner Vorteile.
-REST ist für große Mediendaten oft die beste Wahl.
-GraphQL kann bei parallelen Abfragen Vorteile bringen.
-Die Wahl der Technologie hängt stark von Datenmenge, Anwendungsfall und Client-Umgebung ab.
+Die Ergebnisse der Messungen liefern eine Grundlage zur Beantwortung der Forschungsfragen, inwiefern sich die Schnittstellentechnologien hinsichtlich der Effizienz und Eignung für typische Frontend-Szenarien unterscheiden.  
+Die nachfolgenden Abschnitte stellen die gemessenen Daten dar und geben einen direkten Vergleich der Technologien.
+
+\clearpage
+\subsubsection*{Messdaten: Web-Client (Einzel-Request)}
+
+Bei der Messung der End-To-End Latenz ergaben sich zwischen den einzelnen Technologien erhebliche Unterschiede. 
+Für eine sinnvolle Auswertung der Daten, wurden jeweils 30 Requests unabhängig voneinander durchgeführt die Durschnittszeiten und der Median der aus den gemessenen Daten ermittelt. 
+
+
+\textbf{TextService:}  
+Es ist zu erkennen, dass kleinere Textdaten (1kB – 10 kB) von allen Schnittstellen relativ schnell verarbeitet werden konnten. gRPC Web und GraphQL weisen hierbei jedoch die geringsten Antwortzeiten auf ( 7-8 ms ), REST benötigte ca 8-9 ms für kleinere Textdaten. Bei größeren Textmengen von ( 200 kB ) steigt die Latenz erwartungsgemäß bei allen Technologien etwas an, wobei diese bei GraphQl mit 10 ms und REST mit 13 ms deutlich schneller als bei gRPC Web ( 19 ms ) bereitstehen. 
+
+\textbf{MediaService:}  
+Besonders Auffällig ist der Leistungsunterschied bei der Übertragung von Mediendaten.
+Hierbei war entgegen der theortischen Erwartungen REST die schnellste Technologie für alle Medienarten. Für Bilder ( 4MB) lag dabei die mittlere Antwortzeit bei 36 ms, deutlich vor gRPC ( 182 ms ) und GraqhQL ( 511 ms ).
+Ähnliches Verhalten zeigte sich bei der Übertragung von Audiodateien (30 MB), hierbei wurde mit REST eine mittlere Antwortzeit von 150 ms gemessen, mit deutlichem Abstand gefolgt von gRPC ( 2372 mms) und GraphQL ( 5870  ms ).
+Bei der Übertagung von Videodaten (100 MB ) konnte in Chrome keine vergleichbare Messung der Antwortzeiten durchgeführt werden. Die Übertragung war nur über die REST-API erfolgreich. Es ergab sich dabei eine durchschnittliche Antwortzeit von 365 ms. Wegen großer Ladezeit bzw. Instabilitäten des Clients konnten für graphQL und Grpc-WEB keine Daten gemessen werden. 
+
+
+\textbf{BlogService:}  
+Bei der Messung der Blog-Datenstrukturen, konnten geringe Unterschiede in den Abfragezeiten zwischen den Technologien identifiziert werden. GraphQl war hierbei mit einer mittleren latenz von 7.6 ms leicht schneller als gprc ( 7.9 ms / 7.8 ms) und Rest ( 8.6 ms.
+
+\clearpage
+\subsubsection{Browser-Vergleich}
+Derselbe Versuch mit Einzel-Requests wurde anschließend in zwei weiteren Web Browsern durchgeführt, um festzustellen, ob es bei der Performance der APIs eine Abhängigkeit vom Webbrowser gibt. 
+Bei der Messung wurden jeweils 10 Requests pro Technologie und Service durchgeführt und daraus der Durchschnitt und der Median ermittelt.
+
+
+\textbf{Textdaten:}  
+Bei den Messungen reagierte Edge in allen Schnittstellen mit den niedrigsten Antwortzeiten. Vorallem bei REST und GraphQL konnten deutliche Unterschiede gemessen werden, hierbei hatte REST in Edge für kleine Textdaten im Mittel nur etwa 4-6 ms, während Chrome und Firefox 8-9 ms benötigten. Bei größeren Textmengen blieg Edge mit 9.5 ms bei Rest im Vergleich zu 13 ms in Chrome und 11 ms in Firefox weiterhin am besten.
+Auch gRPC konnte in Edge am schnellsten verarbeitet werden, wobei bei größere Textdaten sowohl Edge und Chrome 19 ms benötigen und Firefox 24 ms. 
+
+
+\textbf{Medieninhalte (Foto, Audio, Video)}  
+Beim Senden von Mediendaten hatte hatten Chrome und Edge im Gegensatz zu Edge eine ähnlich gute Performance. Bei REST und gRPC konnte Edge und Chrome die kürzesten Antwortzeiten für Fotos ( 36 ms) und Audiodateien ( 150 ms)  liefern. Bei Firefox lagen diese bei REST bei 55 ms und 250 ms bzw. bei gRP-Web bei 250 ms und 2455 ms.
+
+Bei dem Senden von Videodaten war Chrome am performantesten. Hier hatte REST eine Antwortzeit von 365 ms, Edge 423 ms und Firefox 676 ms. Im Gegensatz zu Chrome, konnten das Video in Firefox mit gRPC (8984 ms) und Edge ( 7984) und in Firefox auch mit GraphQL (90091 ms), auch wenn sehr langsam, dargestellt werden.
+
+
+\textbf{Blogdaten:}  
+Ähnliche Ergebnisse wie bei Textdaten: Edge meist am schnellsten, gefolgt von Chrome, dann Firefox.
+
+\clearpage
+\subsubsection{20 parallele Requests}
+Bei der Durchführung von 20 parallelen Requests wurden jeweils pro API und Service 30 Messwerte ( bei MedienService Messwerte) gemessen und anschließend der Durchschnittswert und Median berechnet. Es zeigten sich erwartungsgemäß höhere Latenzen gegenüber denr Einzelabfragen. 
+
+\textbf{TextService:}  
+Während kleinere Textdaten noch performant verarbeitet werden können, nehmen die Unterschiede bei größeren Lasten stärker zu. Bei sehr kleinen Textdaten von 1 KB sind gRPC und graphql jeweils mit ungefähr 30 ms gleich auf, bei 10 kB ist graphQl mit 35 ms ungefähr 9 ms schneller als gRPC mit 44 ms. je größer die Daten werden, desto langsamer wird gRPC. Rest benötigte dabei jeweils 45 ms btw. 62 ms. Auch bei größeren Textdaten ist graphQl mit je 71 ms am schnellsten, gefolgt von REST mit 92 ms und gRPC mit 145 ms. 
+
+\textbf{MediaService:}  
+Bei der Verarbeitung von Medien kam es wie bereits durch die einzelabfragen erwartet zu größeren unterschieden. REST schnitt auch hier mit 384 ms für Fotos, 2420 ms für Audiodaten am besten ab. Gefolgt von gRPC mit 5736 ms für das Foto und 126026 ms für die Audiodatei. Bei GraphQl dauerte der Request für die Fotodaten 16159 ms.
+Für Videodateien bzw. Audiodateien ( GraphQl ) wurde in dieser Testreihe aufgrund der bereits in den Einzelabfragen instabilen Ladeverhaltens, keine weiteren Messungen vorgenommen.
+
+
+\textbf{BlogService:}  
+Bei den Abfragen der Blogdaten lagen die Antwortzeiten aller Technologien im zweistelligen ms bereich. Ähnlich wie bei geringen Textdaten, sind gRPC und graphQl mit jeweis 34 ms gleichauf, gefolgt von REST mit 53 ms.
+
+\clearpage
+\subsubsection{Messungen im Konsolen-Client}
+Um die Kommunikationsleistung der einzelnen Technologien ohne Einfluss eines Browers zu ermitteln, und um einen direkten Performancevergleich zwischen gRPC und gRPC-Web zu ermitteln wurden ebenfalls Messungen in der Kommunikation innerhalb einer Microservice basierten Architektur untersucht. Wie erwartet sind die Messewerte in dieser Messung zum größten Teil deutlich besser als zwischen Web-Client und Backend Service.  
+
+\textbf{TextService:}  
+Alle viel Technologien zeigten bei kleinen und mittleren Textdaten sehr geringe Antwortzeiten. gRPC hatte hier jedoch die schnellste respond Zeit mit nur ungefähr 1 ms. REST, GraphQl und gRPC haben ungefähr die selbe Zeit von 2-3 ms.
+Auch bei großen Textdaten ist gRPC mit 4.1ms am schnellste, gefolgt von GraphQl mit 5.5 ms, REST mit 6.4 ms und gRPC Web mit 6.8 ms.
+
+
+\textbf{MediaService:}  
+Bis auf REST, war die Übertragung der Mediadaten im Konsolen-Client schneller als im Web-Client. gRPC hatte mit 43 ms die schnellste Übertragung von Fotos gefolgt von REST mit 46 ms, gRPC Web mit 51 ms und GraphQL mit 5716 ms. Bei den 30 Mb Audiodaten sind REST, gRPC und gRPC-Web gleichauf mit 250 ms. Nur bei großen Binärdaten ist REST mit 540 ms schneller als gRPC (610) und gRPC-Web (705 ms). Für GraphQL konnte keine sinnvolle Messung für Audio oder Fotos durchgeführt werden.
+
+\textbf{BlogService:}  
+Bei den Senden von strukturierten Bloddaten liegen gRPC und REST mit ungefähr 1 ms ungefähr gleich auf, gefolgt von GraphQl mit 2,4 und gRPC-Web mit 2.9 ms.
+
+\clearpage
+\subsubsection*{Fazit der Messungen}
+Aus den mit den Prototypen durchgeführten Messungen, können einige Annahmen getroffen und Unterschiede aufzeigen. Zu einem großen Teil konnten die im theoretischen Teil beschriebenen Annahmen zu den Unterschieden zwischen REST, GraphQl, gRPC und gRPC-Web bestätigt werden, gleichzeitig wurden einige andere Erkenntnisse hervorgebracht. Folgende Unterschiede bzw. Erkenntnisse konnten gewonnen werden:
 
 \chapterend
 
