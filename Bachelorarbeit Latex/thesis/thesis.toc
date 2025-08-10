@@ -37,3 +37,31 @@
 \contentsline {paragraph}{Nachteile:}{15}{section*.9}%
 \contentsline {subsubsection}{\numberline {2.2.0.3}gRPC}{16}{subsubsection.2.2.0.3}%
 \contentsline {paragraph}{Vorteile:}{16}{section*.10}%
+\contentsline {paragraph}{Nachteile:}{16}{section*.11}%
+\contentsline {subsection}{\numberline {2.2.1}Effizienzvergleich: Latenz, Datenvolumen und Ressourcenverbrauch}{17}{subsection.2.2.1}%
+\contentsline {paragraph}{Latenz und Antwortzeit:}{17}{section*.12}%
+\contentsline {paragraph}{Datenvolumen:}{17}{section*.13}%
+\contentsline {paragraph}{CPU- und Ressourcenverbrauch:}{17}{section*.14}%
+\contentsline {subsection}{\numberline {2.2.2}Erlernbarkeit}{18}{subsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.1}REST}{18}{subsubsection.2.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2.2}GraphQL}{18}{subsubsection.2.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.3}gRPC}{18}{subsubsection.2.2.2.3}%
+\contentsline {section}{\numberline {2.3}Praktischer Teil}{19}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Einleitung}{19}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Zielsetzung}{19}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Versuchsaufbau}{19}{subsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.3.1}Testumgebung und Implementierungsstrategie}{21}{subsubsection.2.3.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.3.2}Backend Service:}{21}{subsubsection.2.3.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3.3}Web-Client:}{24}{subsubsection.2.3.3.3}%
+\contentsline {paragraph}{Textdaten}{25}{section*.18}%
+\contentsline {paragraph}{Mediendaten}{25}{section*.19}%
+\contentsline {paragraph}{Blogdaten}{25}{section*.20}%
+\contentsline {subsubsection}{\numberline {2.3.3.4}Konsolen-Client}{26}{subsubsection.2.3.3.4}%
+\contentsline {subsection}{\numberline {2.3.4}Spezifikationen des Testsystems}{27}{subsection.2.3.4}%
+\contentsline {paragraph}{Hardwarekonfiguration}{27}{section*.24}%
+\contentsline {paragraph}{Betriebssystem}{27}{section*.25}%
+\contentsline {subsection}{\numberline {2.3.5}Messung}{28}{subsection.2.3.5}%
+\contentsline {subsubsection}{\numberline {2.3.5.1}Browser-Vergleich}{30}{subsubsection.2.3.5.1}%
+\contentsline {subsubsection}{\numberline {2.3.5.2}20 parallele Requests}{31}{subsubsection.2.3.5.2}%
+\contentsline {subsubsection}{\numberline {2.3.5.3}Messungen im Konsolen-Client}{32}{subsubsection.2.3.5.3}%
+\contentsline {chapter}{Literaturverzeichnis}{36}{appendix*.29}%

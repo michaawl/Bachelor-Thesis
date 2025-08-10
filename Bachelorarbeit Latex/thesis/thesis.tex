@@ -168,25 +168,29 @@
 
 
 %For disabling "Further reading" section, remove \nocite: 
+
 \nocite{*}
 
 % Note 1: With heading=bibintoc we list the biblio in table-of-contents 
 % Note 2: Special case for German: 
 %  rename "Literatur" to "Literaturverzeichnis" 
 \ifthenelse{\equal{\yourLanguage}{german}}{
-  % renaming "Literatur"
-  % cited entries
-  \printbibliography[title={Literaturverzeichnis},heading=bibintoc, category=cited]
-  % Optionally, (if /nocite{*} enabled) we show non-cited entries
-  \printbibliography[title={Weiterführende Literatur},notcategory=cited]
-
+	% renaming "Literatur"
+	% cited entries
+	\printbibliography[title={Literaturverzeichnis},heading=bibintoc, category=cited]
+	% Optionally, (if /nocite{*} enabled) we show non-cited entries
+	\printbibliography[title={Weiterführende Literatur},notcategory=cited]
+	
 }{  
-  % default English title "Bibliography"
-  % cited entries
-  \printbibliography[heading=bibintoc, category=cited]
-  % Optionally, (if /nocite{*} enabled) we show non-cited entries
-  \printbibliography[title={Further Reading},notcategory=cited]
+	% default English title "Bibliography"
+	% cited entries
+	\printbibliography[heading=bibintoc, category=cited]
+	% Optionally, (if /nocite{*} enabled) we show non-cited entries
+	\printbibliography[title={Further Reading},notcategory=cited]
 }
+
+
+
 
 \end{document}
 
