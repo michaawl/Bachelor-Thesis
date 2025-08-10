@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  9 JUN 2025 22:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  10 AUG 2025 20:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1146,8 +1146,7 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 Package babel Info: 'german' activates 'german' shorthands.
 (babel)             Reported  on input line 11.
  (./chapters/03_abstract.aux)
-(./chapters/01_Einleitung.aux) (./chapters/02_Hauptteil.aux)
-(./chapters/99_acronyms.aux))
+(./chapters/01_Einleitung.aux) (./chapters/02_Hauptteil.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
@@ -1425,20 +1424,20 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 
 [4]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 49
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 50
 .
  (c:/texlive/2025/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 
 [5]
-<images/http1_theory.jpg, id=119, 197.4285pt x 148.1535pt>
+<images/http1_theory.jpg, id=114, 197.4285pt x 148.1535pt>
 File: images/http1_theory.jpg Graphic file (type jpg)
 <use images/http1_theory.jpg>
-Package pdftex.def Info: images/http1_theory.jpg  used on input line 79.
+Package pdftex.def Info: images/http1_theory.jpg  used on input line 84.
 (pdftex.def)             Requested size: 288.79422pt x 216.73862pt.
 
-Overfull \hbox (6.15869pt too wide) in paragraph at lines 84--85
+Overfull \hbox (6.15869pt too wide) in paragraph at lines 89--90
 []\T1/ptm/m/n/12 Der Ver-bin-dungs-auf-bau er-folgt da-bei mit-tels ei-nes Tran
 s-mis-si-on Con-trol Pro-to-col (TCP)
  []
@@ -1447,81 +1446,124 @@ s-mis-si-on Con-trol Pro-to-col (TCP)
 
 [6 <./images/http1_theory.jpg>]
 
-[7])
-\openout2 = `chapters/99_acronyms.aux'.
+[7]
 
- (./chapters/99_acronyms.tex
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
-LaTeX Warning: Hyper reference `acro:ABI' on page 8 undefined on input line 24.
-
-
-
-LaTeX Warning: Hyper reference `acro:ABI' on page 8 undefined on input line 24.
+ []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
-LaTeX Warning: Hyper reference `acro:DOI' on page 8 undefined on input line 25.
+ []
 
 
 
-LaTeX Warning: Hyper reference `acro:DOI' on page 8 undefined on input line 25.
-
-
-
-LaTeX Warning: Hyper reference `acro:ISBN' on page 8 undefined on input line 26
-.
-
-
-LaTeX Warning: Hyper reference `acro:ISBN' on page 8 undefined on input line 26
-.
-
-
-LaTeX Warning: Hyper reference `acro:MITM' on page 8 undefined on input line 27
-.
-
-
-LaTeX Warning: Hyper reference `acro:MITM' on page 8 undefined on input line 27
-.
-
-
-LaTeX Warning: Hyper reference `acro:URL' on page 8 undefined on input line 28.
-
-
-
-LaTeX Warning: Hyper reference `acro:URL' on page 8 undefined on input line 28.
-
-
-)
-
-[8
-
-
-
-
-
-]
-
-[9
-
-
-]
+[9]
 
 [10
 
 ]
 
-Package biblatex Warning: No driver for 'standard'.
-(biblatex)                Using fallback driver on input line 189.
-
-
-
 [11
 
 ]
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family ptm in TS1 encoding.
+            Default family used instead on input line 232.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family ptm in TS1 encoding.
+            Default family used instead on input line 233.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family ptm in TS1 encoding.
+            Default family used instead on input line 237.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family ptm in TS1 encoding.
+            Default family used instead on input line 238.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family ptm in TS1 encoding.
+            Default family used instead on input line 241.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family ptm in TS1 encoding.
+            Default family used instead on input line 242.
 
-[12] (./thesis.aux (./chapters/01_titlepage.aux) (./chapters/03_abstract.aux)
+
+[12{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+
+[13
+
+]
+Overfull \hbox (1.02625pt too wide) in paragraph at lines 288--289
+\T1/ptm/m/n/12 gibt klar de-fi-nier-te End-punk-te die ei-ne ge-wis-sen Da-ten-
+an-satz zu-rück-lie-fern. Hier-
+ []
+
+
+
+[14
+
+]
+
+[15]
+
+[16]
+
+[17]
+
+[18]
+Overfull \hbox (1.37157pt too wide) in paragraph at lines 369--371
+\T1/ptm/m/n/12 Ziel des prak-ti-schen Teils ist es, Un-ter-schie-de in der Da-t
+en-über-tra-gung zwi-schen REST,
+ []
+
+
+Overfull \hbox (2.59377pt too wide) in paragraph at lines 376--377
+[]\T1/ptm/m/n/12 Gegenüberstellung der Response-Zeiten zwi-schen ei-nem Microse
+rvice-ähnlichen
+ []
+
+
+
+[19
+
+]
+Overfull \hbox (12.04683pt too wide) in paragraph at lines 401--402
+[]\T1/ptm/m/n/12 Kommunikation zwi-schen Brow-ser und Backend (REST, Gra-ph-QL,
+ gRPC-
+ []
+
+
+Overfull \hbox (0.98209pt too wide) in paragraph at lines 402--403
+[]\T1/ptm/m/n/12 Kommunikation zwi-schen Microservice-ähnlicher An-wen-dung und
+
+ []
+
+
+Overfull \hbox (0.95172pt too wide) in paragraph at lines 406--408
+\T1/ptm/m/n/12 Im Backend wur-den ver-schie-de-ne Ser-vices im-ple-men-tiert, d
+ie ty-pi-sche Frontend-Daten
+ []
+
+
+
+[20]
+
+[21] (./thesis.aux (./chapters/01_titlepage.aux) (./chapters/03_abstract.aux)
 (./chapters/01_Einleitung.aux) (./chapters/02_Hauptteil.aux)
-(./chapters/99_acronyms.aux))
+Runaway argument?
+{\contentsline 
+! File ended while scanning use of \@writefile.
+<inserted text> 
+                \par 
+l.17 \@input{chapters/02_Hauptteil.aux}
+                                       
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-14>
@@ -1530,30 +1572,54 @@ L3 programming layer <2025-04-14>
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 1D3964329308D1E80F00C2681A89027E;1390.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: DFE7776BCC78ABC31EEFB7853D24E62C;1479
+(rerunfilecheck)             After:  6A5465C5D125B6CE6701C798519B3BB9;1690.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                thesis
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
- ) 
+ ) )
+(\end occurred when \iftrue on line 147 was incomplete)
+(\end occurred when \ifx on line 147 was incomplete)
+(\end occurred when \ifnum on line 147 was incomplete) 
 Here is how much of TeX's memory you used:
- 36410 strings out of 469608
- 685290 string characters out of 5474779
- 1528728 words of memory out of 5000000
- 62570 multiletter control sequences out of 15000+600000
- 674882 words of font info for 92 fonts, out of 8000000 for 9000
+ 36397 strings out of 469608
+ 683832 string characters out of 5474779
+ 1515453 words of memory out of 5000000
+ 62509 multiletter control sequences out of 15000+600000
+ 675402 words of font info for 102 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 104i,6n,104p,1199b,2348s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/texl
-ive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2025/texmf-d
-ist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1
-/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.
-pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/20
-25/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (18 pages, 168214 bytes).
+ 104i,9n,104p,1343b,2348s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{cite.0@awsfrontendbackend} has been referenced but 
+does not exist, replaced by a fixed one
+
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texliv
+e/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2025/tex
+mf-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/texlive/2025/texmf-dist/fo
+nts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/he
+lvetic/uhvr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><
+c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/te
+xmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/typ
+e1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri
+8a.pfb>
+Output written on thesis.pdf (27 pages, 197198 bytes).
 PDF statistics:
- 244 PDF objects out of 1000 (max. 8388607)
- 205 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
+ 316 PDF objects out of 1000 (max. 8388607)
+ 262 compressed objects within 3 object streams
+ 101 named destinations out of 1000 (max. 500000)
  103 words of extra memory for PDF output out of 10000 (max. 10000000)
 

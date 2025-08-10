@@ -67,7 +67,6 @@
       \field{note}{Accessed: 2024-06-09}
       \field{title}{{The difference between frontend and backend explained}}
       \field{year}{2024}
-      \true{nocite}
       \verb{urlraw}
       \verb https://aws.amazon.com/de/compare/the-difference-between-frontend-and-backend/
       \endverb
@@ -308,6 +307,51 @@
       \field{year}{2024}
       \true{nocite}
     \endentry
+    \entry{kurose2021computernetworking}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=940597b1d3215b2b17b93101036fbb5e}{%
+           family={Kurose},
+           familyi={K\bibinitperiod},
+           given={James\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c2e119f22d4ef9df7cfb63c82975b459}{%
+           family={Ross},
+           familyi={R\bibinitperiod},
+           given={Keith\bibnamedelima W.},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{79b9c386af384b822481cee1fccbb76a}
+      \strng{fullhash}{79b9c386af384b822481cee1fccbb76a}
+      \strng{fullhashraw}{79b9c386af384b822481cee1fccbb76a}
+      \strng{bibnamehash}{79b9c386af384b822481cee1fccbb76a}
+      \strng{authorbibnamehash}{79b9c386af384b822481cee1fccbb76a}
+      \strng{authornamehash}{79b9c386af384b822481cee1fccbb76a}
+      \strng{authorfullhash}{79b9c386af384b822481cee1fccbb76a}
+      \strng{authorfullhashraw}{79b9c386af384b822481cee1fccbb76a}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{8}
+      \field{isbn}{978-0-13-668155-7}
+      \field{note}{Online‑PDF über Harsh K. Kapadia, abgerufen Juni 2025}
+      \field{title}{Computer Networking: A Top‐Down Approach}
+      \field{year}{2021}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://networking.harshkapadia.me/files/books/computer-networking-a-top-down-approach-8th-edition.pdf
+      \endverb
+      \verb{url}
+      \verb https://networking.harshkapadia.me/files/books/computer-networking-a-top-down-approach-8th-edition.pdf
+      \endverb
+    \endentry
     \entry{diva2024kafka}{thesis}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=a364253e96d87ed9938b1009bd917862}{%
@@ -376,6 +420,37 @@
       \field{title}{{Genereller Vergleich von REST, GraphQL und gRPC}}
       \field{year}{2024}
       \true{nocite}
+    \endentry
+    \entry{koponen2024rpc}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cfba1205f74dea786625b48b25885143}{%
+           family={{Ruupert Koponen}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{cfba1205f74dea786625b48b25885143}
+      \strng{fullhash}{cfba1205f74dea786625b48b25885143}
+      \strng{fullhashraw}{cfba1205f74dea786625b48b25885143}
+      \strng{bibnamehash}{cfba1205f74dea786625b48b25885143}
+      \strng{authorbibnamehash}{cfba1205f74dea786625b48b25885143}
+      \strng{authornamehash}{cfba1205f74dea786625b48b25885143}
+      \strng{authorfullhash}{cfba1205f74dea786625b48b25885143}
+      \strng{authorfullhashraw}{cfba1205f74dea786625b48b25885143}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2024-06-11}
+      \field{title}{{Understanding re-emergence of the RPC model in web development}}
+      \field{year}{2024}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/380547826_Understanding_re-emergence_of_the_RPC_model_in_web_development
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/380547826_Understanding_re-emergence_of_the_RPC_model_in_web_development
+      \endverb
     \endentry
   \enddatalist
 \endrefsection
