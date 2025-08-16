@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  10 AUG 2025 23:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  16 AUG 2025 19:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1146,8 +1146,36 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 Package babel Info: 'german' activates 'german' shorthands.
 (babel)             Reported  on input line 11.
  (./chapters/03_abstract.aux)
-(./chapters/01_Einleitung.aux) (./chapters/02_Hauptteil.aux)
-(./chapters/99_acronyms.aux))
+(./chapters/01_Einleitung.aux) (./chapters/02_TheoretischeGrundlagen.aux)
+(./chapters/03_VerwandteArbeiten.aux
+
+LaTeX Warning: Label `chap:intro' multiply defined.
+
+
+LaTeX Warning: Label `chap:intro@cref' multiply defined.
+
+) (./chapters/04_AnalyseUndVergleich.aux
+
+LaTeX Warning: Label `chap:intro' multiply defined.
+
+
+LaTeX Warning: Label `chap:intro@cref' multiply defined.
+
+) (./chapters/05_PraktischerTeil.aux
+
+LaTeX Warning: Label `chap:intro' multiply defined.
+
+
+LaTeX Warning: Label `chap:intro@cref' multiply defined.
+
+) (./chapters/06_DiskussionUndAusblick.aux
+
+LaTeX Warning: Label `chap:intro' multiply defined.
+
+
+LaTeX Warning: Label `chap:intro@cref' multiply defined.
+
+) (./chapters/99_acronyms.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
@@ -1268,7 +1296,7 @@ Package hyperref Info: Link coloring ON on input line 62.
 \openout2 = `chapters/01_titlepage.aux'.
 
  (./chapters/01_titlepage.tex
-<images/logo_FHJ_100mm_cmyk.pdf, id=55, 285.065pt x 58.2175pt>
+<images/logo_FHJ_100mm_cmyk.pdf, id=115, 285.065pt x 58.2175pt>
 File: images/logo_FHJ_100mm_cmyk.pdf Graphic file (type pdf)
 <use images/logo_FHJ_100mm_cmyk.pdf>
 Package pdftex.def Info: images/logo_FHJ_100mm_cmyk.pdf  used on input line 12.
@@ -1343,10 +1371,6 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
-)
-\tf@toc=\write6
-\openout6 = `thesis.toc'.
-
 
 
 [1
@@ -1355,13 +1379,21 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 
 
 
-] (./thesis.lof)
+])
+\tf@toc=\write6
+\openout6 = `thesis.toc'.
+
+
+
+Package babel Info: 'german' activates 'german' shorthands.
+(babel)             Reported  on input line 110.
+[2] (./thesis.lof)
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
 
 
 
-[2
+[3
 
 
 ] (./thesis.lot)
@@ -1370,7 +1402,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 
 
 
-[3
+[4
 
 
 ]
@@ -1397,13 +1429,17 @@ l.35 D
 
 ]
 
-Package babel Info: 'german' activates 'german' shorthands.
-(babel)             Reported  on input line 55.
 [2])
-\openout2 = `chapters/02_Hauptteil.aux'.
+\openout2 = `chapters/02_TheoretischeGrundlagen.aux'.
 
- (./chapters/02_Hauptteil.tex
+ (./chapters/02_TheoretischeGrundlagen.tex
 Kapitel 2.
+
+Overfull \hbox (8.02321pt too wide) in paragraph at lines 20--21
+\T1/ptm/m/n/12 vie-len Pro-gram-mier-spra-chen Ver-wen-dung fin-det. Das For-ma
+t ba-siert auf ei-ner Schlüssel-
+ []
+
 
 
 [3
@@ -1413,32 +1449,28 @@ Kapitel 2.
 
 
 {c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-Overfull \hbox (8.02321pt too wide) in paragraph at lines 22--23
-\T1/ptm/m/n/12 vie-len Pro-gram-mier-spra-chen Ver-wen-dung fin-det. Das For-ma
-t ba-siert auf ei-ner Schlüssel-
- []
-
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
-5.
+3.
+
 (c:/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 
 [4]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 50
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 48
 .
  (c:/texlive/2025/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 
 [5]
-<images/http1_theory.jpg, id=137, 197.4285pt x 148.1535pt>
+<images/http1_theory.jpg, id=216, 197.4285pt x 148.1535pt>
 File: images/http1_theory.jpg Graphic file (type jpg)
 <use images/http1_theory.jpg>
-Package pdftex.def Info: images/http1_theory.jpg  used on input line 84.
+Package pdftex.def Info: images/http1_theory.jpg  used on input line 82.
 (pdftex.def)             Requested size: 288.79422pt x 216.73862pt.
 
-Overfull \hbox (6.15869pt too wide) in paragraph at lines 89--90
+Overfull \hbox (6.15869pt too wide) in paragraph at lines 87--88
 []\T1/ptm/m/n/12 Der Ver-bin-dungs-auf-bau er-folgt da-bei mit-tels ei-nes Tran
 s-mis-si-on Con-trol Pro-to-col (TCP)
  []
@@ -1450,12 +1482,12 @@ s-mis-si-on Con-trol Pro-to-col (TCP)
 [7]
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
  []
 
@@ -1472,100 +1504,185 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--177
 ]
 LaTeX Info: Symbol \textrightarrow not provided by
             font family ptm in TS1 encoding.
-            Default family used instead on input line 232.
+            Default family used instead on input line 230.
 LaTeX Info: Symbol \textrightarrow not provided by
             font family ptm in TS1 encoding.
-            Default family used instead on input line 233.
+            Default family used instead on input line 231.
 LaTeX Info: Symbol \textrightarrow not provided by
             font family ptm in TS1 encoding.
-            Default family used instead on input line 237.
+            Default family used instead on input line 235.
 LaTeX Info: Symbol \textrightarrow not provided by
             font family ptm in TS1 encoding.
-            Default family used instead on input line 238.
+            Default family used instead on input line 236.
 LaTeX Info: Symbol \textrightarrow not provided by
             font family ptm in TS1 encoding.
-            Default family used instead on input line 241.
+            Default family used instead on input line 239.
 LaTeX Info: Symbol \textrightarrow not provided by
             font family ptm in TS1 encoding.
-            Default family used instead on input line 242.
+            Default family used instead on input line 240.
 
 
 [12{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
 [13
 
+])
+\openout2 = `chapters/03_VerwandteArbeiten.aux'.
+
+ (./chapters/03_VerwandteArbeiten.tex
+Kapitel 3.
+
+
+[14
+
+
+
+
+
+])
+\openout2 = `chapters/04_AnalyseUndVergleich.aux'.
+
+ (./chapters/04_AnalyseUndVergleich.tex
+Kapitel 4.
+
+Overfull \hbox (57.46356pt too wide) in paragraph at lines 7--7
+[]\T1/ptm/b/n/17.28 Theoretische Ana-ly-se und Ver-gleich der API-Technologien:
+ 
+ []
+
+
+
+[15
+
+
+
+
+
 ]
-Overfull \hbox (1.02625pt too wide) in paragraph at lines 287--288
+Overfull \hbox (1.02625pt too wide) in paragraph at lines 30--31
 \T1/ptm/m/n/12 gibt klar de-fi-nier-te End-punk-te die ei-ne ge-wis-sen Da-ten-
 an-satz zu-rück-lie-fern. Hier-
  []
 
 
 
-[14
 
-]
-
-[15]
+Overfull \hbox (58.32544pt too wide) has occurred while \output is active
+\T1/ptm/m/sl/12 KAPITEL 4.  THEORETISCHE ANALYSE UND VERGLEICH DER API-TECHNOLO
+GIEN: \T1/ptm/m/n/12 16
+ []
 
 [16]
 
+
+Overfull \hbox (58.32544pt too wide) has occurred while \output is active
+\T1/ptm/m/sl/12 KAPITEL 4.  THEORETISCHE ANALYSE UND VERGLEICH DER API-TECHNOLO
+GIEN: \T1/ptm/m/n/12 17
+ []
+
 [17]
+
+
+Overfull \hbox (58.32544pt too wide) has occurred while \output is active
+\T1/ptm/m/sl/12 KAPITEL 4.  THEORETISCHE ANALYSE UND VERGLEICH DER API-TECHNOLO
+GIEN: \T1/ptm/m/n/12 18
+ []
 
 [18]
 
-[19
+
+Overfull \hbox (58.32544pt too wide) has occurred while \output is active
+\T1/ptm/m/sl/12 KAPITEL 4.  THEORETISCHE ANALYSE UND VERGLEICH DER API-TECHNOLO
+GIEN: \T1/ptm/m/n/12 19
+ []
+
+[19]
+
+
+Overfull \hbox (58.32544pt too wide) has occurred while \output is active
+\T1/ptm/m/sl/12 KAPITEL 4.  THEORETISCHE ANALYSE UND VERGLEICH DER API-TECHNOLO
+GIEN: \T1/ptm/m/n/12 20
+ []
+
+[20])
+\openout2 = `chapters/05_PraktischerTeil.aux'.
+
+ (./chapters/05_PraktischerTeil.tex
+Kapitel 5.
+
+Overfull \hbox (24.41089pt too wide) in paragraph at lines 13--15
+\T1/ptm/m/n/12 Ziel des prak-ti-schen Teils ist es die Lei-stungs-fä-hig-keit v
+on den ge-nann-ten API-Technologien
+ []
+
+
+Overfull \hbox (0.2319pt too wide) in paragraph at lines 16--18
+\T1/ptm/m/n/12 auf die Eig-nung der ein-zel-nen Tech-no-lo-gie für die Kom-mu-n
+i-ka-ti-on zwi-schen Frontend-
+ []
+
+
+
+[21
+
+
+
+
 
 ]
 
-[20]
-Overfull \hbox (13.71968pt too wide) in paragraph at lines 440--442
+[22]
+
+[23]
+Overfull \hbox (13.71968pt too wide) in paragraph at lines 91--93
 \T1/ptm/m/n/12 tie-rung ba-siert auf .NET 9, ei-ner platt-for-mu-n-ab-hän-gi-ge
 n Open-Source-Laufzeitumgebung
  []
 
-<images/prakt1.png, id=252, 338.76563pt x 82.80937pt>
+<images/prakt1.png, id=338, 338.76563pt x 82.80937pt>
 File: images/prakt1.png Graphic file (type png)
 <use images/prakt1.png>
-Package pdftex.def Info: images/prakt1.png  used on input line 445.
+Package pdftex.def Info: images/prakt1.png  used on input line 96.
 (pdftex.def)             Requested size: 288.79422pt x 70.59677pt.
 
 
-[21]
-Overfull \hbox (41.48607pt too wide) in paragraph at lines 477--480
+[24
+
+ <./images/prakt1.png>]
+Overfull \hbox (41.48607pt too wide) in paragraph at lines 128--131
 []\T1/ptm/m/n/12 GraphQlAPI: Die GraphQL-API wur-de mit-tels des \T1/pcr/m/n/12
  .NET\T1/ptm/m/n/12 -Frameworks \T1/pcr/m/n/12 HotChocolate
  []
 
 
-
-[22 <./images/prakt1.png>]
-Overfull \hbox (9.36418pt too wide) in paragraph at lines 488--489
+Overfull \hbox (9.36418pt too wide) in paragraph at lines 139--140
 []\T1/ptm/m/n/12 Alle Ab-fra-gen er-fol-gen über \T1/pcr/m/n/12 HTTP POST\T1/pt
 m/m/n/12 -Anfragen an den End-punkt \T1/pcr/m/n/12 /graphql
  []
 
 
-Overfull \hbox (19.51959pt too wide) in paragraph at lines 495--497
+
+[25]
+Overfull \hbox (19.51959pt too wide) in paragraph at lines 146--148
 []\T1/ptm/b/n/12 TextService\T1/ptm/m/n/12 : Rück-ga-be der drei Text-grö-ÿen ü
 ber die Me-tho-den \T1/pcr/m/n/12 GetSmall()\T1/ptm/m/n/12 ,
  []
 
 
-Overfull \hbox (44.33504pt too wide) in paragraph at lines 495--497
+Overfull \hbox (44.33504pt too wide) in paragraph at lines 146--148
 \T1/ptm/m/it/12 Rückgabeformat\T1/ptm/m/n/12 : \T1/pcr/m/n/12 TextResponse\T1/p
 tm/m/n/12 -Message mit ei-nem \T1/pcr/m/n/12 string\T1/ptm/m/n/12 -Feld (\T1/pc
 r/m/n/12 content\T1/ptm/m/n/12 ),
  []
 
 
-Overfull \hbox (3.36693pt too wide) in paragraph at lines 498--500
+Overfull \hbox (3.36693pt too wide) in paragraph at lines 149--151
 \T1/ptm/m/it/12 Rückgabeformat\T1/ptm/m/n/12 : Server-Streaming von Chunk-Nachr
 ichten (\T1/pcr/m/n/12 bytes\T1/ptm/m/n/12 -Feld),
  []
 
 
-Overfull \hbox (29.80365pt too wide) in paragraph at lines 501--503
+Overfull \hbox (29.80365pt too wide) in paragraph at lines 152--154
 \T1/ptm/m/it/12 Rückgabeformat\T1/ptm/m/n/12 : \T1/pcr/m/n/12 BlogPostsResponse
  \T1/ptm/m/n/12 (Li-ste von \T1/pcr/m/n/12 BlogPost\T1/ptm/m/n/12 -Nachrichten)
 ,
@@ -1573,84 +1690,60 @@ Overfull \hbox (29.80365pt too wide) in paragraph at lines 501--503
 
 
 
-[23]
-Overfull \hbox (0.93062pt too wide) in paragraph at lines 535--537
+[26]
+Overfull \hbox (0.93062pt too wide) in paragraph at lines 186--188
 \T1/ptm/m/n/12 setzt. Die Ge-ne-rie-rung der gRPC-Klassen er-folgt mit-tels der
  \T1/pcr/m/n/12 ts-protoc-gen\T1/ptm/m/n/12 -
  []
 
 
-Overfull \hbox (185.60948pt too wide) in paragraph at lines 540--540
- [] \T1/pcr/m/n/12 npx protoc --ts_out src/api/generated --proto_path=src/proto
- src/proto/*.proto[] 
+Overfull \hbox (192.80948pt too wide) in paragraph at lines 191--191
+ []  \T1/pcr/m/n/12 npx protoc --ts_out src/api/generated --proto_path=src/prot
+o src/proto/*.proto[] 
  []
 
 
 
-[24]
-Overfull \hbox (11.00758pt too wide) in paragraph at lines 562--563
+[27]
+Overfull \hbox (11.00758pt too wide) in paragraph at lines 213--214
 []\T1/ptm/m/n/12 Bei gRPC-Web er-folgt die De-se-ria-li-sie-rung über ge-ne-rie
 r-te Protobuf-Klassen. 
  []
 
 
-Overfull \hbox (0.30214pt too wide) in paragraph at lines 586--587
+Overfull \hbox (0.30214pt too wide) in paragraph at lines 237--238
 \T1/ptm/m/n/12 Die Mes-sung des Konsolen-Clients er-laubt auch die Im-ple-men-t
 ie-rung von gRPC.
  []
 
 
 
-[25]
-Overfull \hbox (0.7612pt too wide) in paragraph at lines 596--597
+[28]
+Overfull \hbox (0.7612pt too wide) in paragraph at lines 247--248
 []\T1/ptm/b/n/12 gRPC\T1/ptm/m/n/12 : über \T1/pcr/m/n/12 Grpc.Net.Client \T1/p
 tm/m/n/12 di-rekt als na-ti-ve gRPC-Kommunikation 
  []
 
 
-Overfull \hbox (18.91922pt too wide) in paragraph at lines 597--598
+Overfull \hbox (18.91922pt too wide) in paragraph at lines 248--249
 []\T1/ptm/b/n/12 gRPC-Web\T1/ptm/m/n/12 : über \T1/pcr/m/n/12 Grpc.Net.Client.W
 eb \T1/ptm/m/n/12 mit-tels spe-zi-el-ler Web-Handler,
  []
 
 
-Overfull \hbox (18.53038pt too wide) in paragraph at lines 600--602
+Overfull \hbox (18.53038pt too wide) in paragraph at lines 251--253
 []\T1/ptm/m/n/12 Die in-ter-ne Ver-ar-bei-tung wur-de so im-ple-men-tiert, dass
  die Mes-sun-gen der Response-
  []
 
 
-Overfull \hbox (48.7368pt too wide) in paragraph at lines 606--618
+Overfull \hbox (48.7368pt too wide) in paragraph at lines 257--269
  [][] 
  []
 
 
 
-[26]
-
-[27
-
-]
-
-[28
-
-]
-Overfull \hbox (8.47922pt too wide) in paragraph at lines 659--664
-\T1/ptm/m/n/12 von Me-di-en-da-ten. Hier-bei war ent-ge-gen der theor-ti-schen 
-Er-war-tun-gen REST die schnell-
- []
-
-
-
-[29
-
-]
-Overfull \hbox (3.53085pt too wide) in paragraph at lines 671--673
-\T1/ptm/m/n/12 Derselbe Ver-such mit Einzel-Requests wur-de an-schlie-ÿend in z
-wei wei-te-ren Web Brow-
- []
-
-
+[29]
 
 [30
 
@@ -1659,60 +1752,97 @@ wei wei-te-ren Web Brow-
 [31
 
 ]
+Overfull \hbox (8.47922pt too wide) in paragraph at lines 310--315
+\T1/ptm/m/n/12 von Me-di-en-da-ten. Hier-bei war ent-ge-gen der theor-ti-schen 
+Er-war-tun-gen REST die schnell-
+ []
+
+
 
 [32
 
 ]
+Overfull \hbox (3.53085pt too wide) in paragraph at lines 322--324
+\T1/ptm/m/n/12 Derselbe Ver-such mit Einzel-Requests wur-de an-schlie-ÿend in z
+wei wei-te-ren Web Brow-
+ []
+
+
 
 [33
+
+]
+
+[34
+
+]
+
+[35
+
+]
+
+[36
+
+])
+\openout2 = `chapters/06_DiskussionUndAusblick.aux'.
+
+ (./chapters/06_DiskussionUndAusblick.tex
+Kapitel 6.
+
+
+[37
+
+
+
+
 
 ])
 \openout2 = `chapters/99_acronyms.aux'.
 
  (./chapters/99_acronyms.tex
 
-LaTeX Warning: Hyper reference `acro:ABI' on page 34 undefined on input line 24
+LaTeX Warning: Hyper reference `acro:ABI' on page 38 undefined on input line 24
 .
 
 
-LaTeX Warning: Hyper reference `acro:ABI' on page 34 undefined on input line 24
+LaTeX Warning: Hyper reference `acro:ABI' on page 38 undefined on input line 24
 .
 
 
-LaTeX Warning: Hyper reference `acro:DOI' on page 34 undefined on input line 25
+LaTeX Warning: Hyper reference `acro:DOI' on page 38 undefined on input line 25
 .
 
 
-LaTeX Warning: Hyper reference `acro:DOI' on page 34 undefined on input line 25
+LaTeX Warning: Hyper reference `acro:DOI' on page 38 undefined on input line 25
 .
 
 
-LaTeX Warning: Hyper reference `acro:ISBN' on page 34 undefined on input line 2
+LaTeX Warning: Hyper reference `acro:ISBN' on page 38 undefined on input line 2
 6.
 
 
-LaTeX Warning: Hyper reference `acro:ISBN' on page 34 undefined on input line 2
+LaTeX Warning: Hyper reference `acro:ISBN' on page 38 undefined on input line 2
 6.
 
 
-LaTeX Warning: Hyper reference `acro:MITM' on page 34 undefined on input line 2
+LaTeX Warning: Hyper reference `acro:MITM' on page 38 undefined on input line 2
 7.
 
 
-LaTeX Warning: Hyper reference `acro:MITM' on page 34 undefined on input line 2
+LaTeX Warning: Hyper reference `acro:MITM' on page 38 undefined on input line 2
 7.
 
 
-LaTeX Warning: Hyper reference `acro:URL' on page 34 undefined on input line 28
+LaTeX Warning: Hyper reference `acro:URL' on page 38 undefined on input line 28
 .
 
 
-LaTeX Warning: Hyper reference `acro:URL' on page 34 undefined on input line 28
+LaTeX Warning: Hyper reference `acro:URL' on page 38 undefined on input line 28
 .
 
 )
 
-[34
+[38
 
 
 
@@ -1720,26 +1850,28 @@ LaTeX Warning: Hyper reference `acro:URL' on page 34 undefined on input line 28
 
 ]
 
-[35
+[39
 
 
 ]
 
-[36
+[40
 
 ]
 
 Package biblatex Warning: No driver for 'standard'.
-(biblatex)                Using fallback driver on input line 190.
+(biblatex)                Using fallback driver on input line 196.
 
 
 
-[37
+[41
 
 ]
 
-[38] (./thesis.aux (./chapters/01_titlepage.aux) (./chapters/03_abstract.aux)
-(./chapters/01_Einleitung.aux) (./chapters/02_Hauptteil.aux)
+[42] (./thesis.aux (./chapters/01_titlepage.aux) (./chapters/03_abstract.aux)
+(./chapters/01_Einleitung.aux) (./chapters/02_TheoretischeGrundlagen.aux)
+(./chapters/03_VerwandteArbeiten.aux) (./chapters/04_AnalyseUndVergleich.aux)
+(./chapters/05_PraktischerTeil.aux) (./chapters/06_DiskussionUndAusblick.aux)
 (./chapters/99_acronyms.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
@@ -1749,20 +1881,23 @@ L3 programming layer <2025-04-14>
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 7E1B720BC18F17F787DBDBD529618855;1837.
+(rerunfilecheck)             Checksum: D765BFA4B812B28C4D01E5A3B5CC0697;4617.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36569 strings out of 469608
- 687747 string characters out of 5474779
- 1528808 words of memory out of 5000000
- 62617 multiletter control sequences out of 15000+600000
+ 36695 strings out of 469608
+ 692679 string characters out of 5474779
+ 1539431 words of memory out of 5000000
+ 62704 multiletter control sequences out of 15000+600000
  685607 words of font info for 110 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 104i,9n,104p,1343b,2348s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 104i,9n,104p,1311b,2357s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texl
 ive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2025/t
 exmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/texlive/2025/texmf-dist/
@@ -1772,10 +1907,10 @@ helvetic/uhvr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/symbol/usyr.pfb
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utm
 ri8a.pfb>
-Output written on thesis.pdf (44 pages, 253368 bytes).
+Output written on thesis.pdf (49 pages, 261287 bytes).
 PDF statistics:
- 485 PDF objects out of 1000 (max. 8388607)
- 410 compressed objects within 5 object streams
- 155 named destinations out of 1000 (max. 500000)
- 124 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 574 PDF objects out of 1000 (max. 8388607)
+ 494 compressed objects within 5 object streams
+ 166 named destinations out of 1000 (max. 500000)
+ 244 words of extra memory for PDF output out of 10000 (max. 10000000)
 

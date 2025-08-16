@@ -3,65 +3,68 @@
 \babel@toc {english}{}\relax 
 \babel@toc {german}{}\relax 
 \babel@toc {german}{}\relax 
-\contentsline {chapter}{Abbildungsverzeichnis}{ii}{chapter*.1}%
-\contentsline {chapter}{Tabellenverzeichnis}{iii}{chapter*.2}%
+\contentsline {chapter}{Abbildungsverzeichnis}{iii}{chapter*.1}%
+\contentsline {chapter}{Tabellenverzeichnis}{iv}{chapter*.2}%
 \contentsline {chapter}{\numberline {1} Einleitung }{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Forschungsfragen}{1}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Hypothese}{2}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Methodik}{2}{section.1.4}%
-\contentsline {chapter}{\numberline {2}Hauptteil}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Theoretischer Hintergrund:}{3}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Serialisierungsformate}{4}{subsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.1.1}JSON}{4}{subsubsection.2.1.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.1.2}Protocol Buffers}{4}{subsubsection.2.1.1.2}%
-\contentsline {subsection}{\numberline {2.1.2}Übertragung binärer Daten (Blob)}{5}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Transportprotokolle}{6}{subsection.2.1.3}%
-\contentsline {subsubsection}{\numberline {2.1.3.1}HTTP/1.1}{6}{subsubsection.2.1.3.1}%
-\contentsline {subsubsection}{\numberline {2.1.3.2}HTTP/2}{7}{subsubsection.2.1.3.2}%
-\contentsline {subsection}{\numberline {2.1.4}API-Technologien}{7}{subsection.2.1.4}%
-\contentsline {subsubsection}{\numberline {2.1.4.1}Representational State Transfer (REST)}{8}{subsubsection.2.1.4.1}%
-\contentsline {subsubsection}{\numberline {2.1.4.2}GraphQL}{10}{subsubsection.2.1.4.2}%
-\contentsline {subsubsection}{\numberline {2.1.4.3}Google Remote Procedure Calls (gRPC)}{11}{subsubsection.2.1.4.3}%
-\contentsline {subsection}{\numberline {2.1.5}gRPC Web}{11}{subsection.2.1.5}%
-\contentsline {subsection}{\numberline {2.1.6}Begriffe}{13}{subsection.2.1.6}%
-\contentsline {subsubsection}{\numberline {2.1.6.1}Latenz}{13}{subsubsection.2.1.6.1}%
-\contentsline {subsubsection}{\numberline {2.1.6.2}Durchschnitt und Median}{13}{subsubsection.2.1.6.2}%
-\contentsline {subsection}{\numberline {2.1.7}Theoretische Analyse und Vergleich der API-Technologien:}{14}{subsection.2.1.7}%
-\contentsline {section}{\numberline {2.2}Vor- und Nachteile der API-Technologien}{14}{section.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.0.1}REST}{14}{subsubsection.2.2.0.1}%
-\contentsline {paragraph}{Vorteile:}{14}{section*.6}%
-\contentsline {paragraph}{Nachteile:}{14}{section*.7}%
-\contentsline {subsubsection}{\numberline {2.2.0.2}GraphQL}{15}{subsubsection.2.2.0.2}%
+\contentsline {chapter}{\numberline {2}Theoretische Grundlagen}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Frontend und Backend}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Serialisierungsformate}{3}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}JSON}{4}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Protocol Buffers}{4}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Übertragung binärer Daten (Blob)}{5}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Transportprotokolle}{6}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}HTTP/1.1}{6}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}HTTP/2}{7}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}API-Technologien}{7}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Representational State Transfer (REST)}{8}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}GraphQL}{10}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Google Remote Procedure Calls (gRPC)}{11}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}gRPC Web}{11}{subsection.2.4.4}%
+\contentsline {section}{\numberline {2.5}Begriffe}{13}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Verwandte Arbeiten}{14}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Ähnliche Arbeiten}{14}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Theoretische Analyse und Vergleich der API-Technologien:}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Theoretische Analyse und Vergleich der API-Technologien:}{15}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Vor- und Nachteile der API-Technologien}{15}{subsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.1.1}REST}{15}{subsubsection.4.1.1.1}%
 \contentsline {paragraph}{Vorteile:}{15}{section*.8}%
-\contentsline {paragraph}{Nachteile:}{15}{section*.9}%
-\contentsline {subsubsection}{\numberline {2.2.0.3}gRPC}{16}{subsubsection.2.2.0.3}%
+\contentsline {paragraph}{Nachteile:}{16}{section*.9}%
+\contentsline {subsubsection}{\numberline {4.1.1.2}GraphQL}{16}{subsubsection.4.1.1.2}%
 \contentsline {paragraph}{Vorteile:}{16}{section*.10}%
 \contentsline {paragraph}{Nachteile:}{16}{section*.11}%
-\contentsline {subsection}{\numberline {2.2.1}Effizienzvergleich: Latenz, Datenvolumen und Ressourcenverbrauch}{17}{subsection.2.2.1}%
-\contentsline {paragraph}{Latenz und Antwortzeit:}{17}{section*.12}%
-\contentsline {paragraph}{Datenvolumen:}{17}{section*.13}%
-\contentsline {paragraph}{CPU- und Ressourcenverbrauch:}{17}{section*.14}%
-\contentsline {subsection}{\numberline {2.2.2}Erlernbarkeit}{18}{subsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.2.1}REST}{18}{subsubsection.2.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2.2}GraphQL}{18}{subsubsection.2.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.2.3}gRPC}{18}{subsubsection.2.2.2.3}%
-\contentsline {section}{\numberline {2.3}Praktischer Teil}{19}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Einleitung}{19}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Zielsetzung}{19}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Versuchsaufbau}{19}{subsection.2.3.3}%
-\contentsline {subsubsection}{\numberline {2.3.3.1}Testumgebung und Implementierungsstrategie}{21}{subsubsection.2.3.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.3.2}Backend Service:}{21}{subsubsection.2.3.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.3.3}Web-Client:}{24}{subsubsection.2.3.3.3}%
-\contentsline {paragraph}{Textdaten}{25}{section*.18}%
-\contentsline {paragraph}{Mediendaten}{25}{section*.19}%
-\contentsline {paragraph}{Blogdaten}{25}{section*.20}%
-\contentsline {subsubsection}{\numberline {2.3.3.4}Konsolen-Client}{26}{subsubsection.2.3.3.4}%
-\contentsline {subsection}{\numberline {2.3.4}Spezifikationen des Testsystems}{27}{subsection.2.3.4}%
-\contentsline {paragraph}{Hardwarekonfiguration}{27}{section*.24}%
-\contentsline {paragraph}{Betriebssystem}{27}{section*.25}%
-\contentsline {subsection}{\numberline {2.3.5}Messung}{28}{subsection.2.3.5}%
-\contentsline {subsubsection}{\numberline {2.3.5.1}Browser-Vergleich}{30}{subsubsection.2.3.5.1}%
-\contentsline {subsubsection}{\numberline {2.3.5.2}20 parallele Requests}{31}{subsubsection.2.3.5.2}%
-\contentsline {subsubsection}{\numberline {2.3.5.3}Messungen im Konsolen-Client}{32}{subsubsection.2.3.5.3}%
-\contentsline {chapter}{Literaturverzeichnis}{36}{appendix*.29}%
+\contentsline {subsubsection}{\numberline {4.1.1.3}gRPC}{17}{subsubsection.4.1.1.3}%
+\contentsline {paragraph}{Vorteile:}{17}{section*.12}%
+\contentsline {paragraph}{Nachteile:}{17}{section*.13}%
+\contentsline {subsection}{\numberline {4.1.2}Effizienzvergleich: Latenz, Datenvolumen und Ressourcenverbrauch}{18}{subsection.4.1.2}%
+\contentsline {paragraph}{Latenz und Antwortzeit:}{18}{section*.14}%
+\contentsline {paragraph}{Datenvolumen:}{18}{section*.15}%
+\contentsline {paragraph}{CPU- und Ressourcenverbrauch:}{19}{section*.16}%
+\contentsline {subsection}{\numberline {4.1.3}Erlernbarkeit}{19}{subsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.3.1}REST}{19}{subsubsection.4.1.3.1}%
+\contentsline {subsubsection}{\numberline {4.1.3.2}GraphQL}{19}{subsubsection.4.1.3.2}%
+\contentsline {subsubsection}{\numberline {4.1.3.3}gRPC}{20}{subsubsection.4.1.3.3}%
+\contentsline {chapter}{\numberline {5}Entwicklung und Umsetzung des Prototyps}{21}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Versuchsaufbau}{22}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Implementierung:}{24}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Backend Service:}{24}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Web-Client:}{27}{subsection.5.2.2}%
+\contentsline {paragraph}{Textdaten}{27}{section*.21}%
+\contentsline {paragraph}{Mediendaten}{28}{section*.22}%
+\contentsline {paragraph}{Blogdaten}{28}{section*.23}%
+\contentsline {subsection}{\numberline {5.2.3}Konsolen-Client}{28}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Spezifikationen des Testsystems}{30}{section.5.3}%
+\contentsline {paragraph}{Hardwarekonfiguration}{30}{section*.27}%
+\contentsline {paragraph}{Betriebssystem}{30}{section*.28}%
+\contentsline {section}{\numberline {5.4}Messung}{31}{section.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.0.1}Browser-Vergleich}{33}{subsubsection.5.4.0.1}%
+\contentsline {subsubsection}{\numberline {5.4.0.2}20 parallele Requests}{34}{subsubsection.5.4.0.2}%
+\contentsline {subsubsection}{\numberline {5.4.0.3}Messungen im Konsolen-Client}{35}{subsubsection.5.4.0.3}%
+\contentsline {chapter}{\numberline {6}Diskussion und Ausblick}{37}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Diskussion}{37}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Zusammenfassung}{37}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Ausblick}{37}{section.6.3}%
+\contentsline {chapter}{Literaturverzeichnis}{40}{appendix*.32}%
