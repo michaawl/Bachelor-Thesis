@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  16 AUG 2025 19:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  17 AUG 2025 00:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1630,141 +1630,148 @@ i-ka-ti-on zwi-schen Frontend-
 
 
 ]
+Overfull \hbox (3.31836pt too wide) in paragraph at lines 41--42
+\T1/ptm/m/n/12 Back-End Ser-vice statt. Der Web-Client kann auf die REST, Gra-p
+h-QL und gRPC-
+ []
+
+
 
 [22]
+Overfull \hbox (15.05551pt too wide) in paragraph at lines 83--84
+\T1/ptm/m/n/12 HTT-P/2.0 Pro-to-koll durch-ge-führt und ver-schlüs-selt mit htt
+-ps ver-sen-det. Bei der Response-
+ []
+
+
 
 [23]
-Overfull \hbox (13.71968pt too wide) in paragraph at lines 91--93
+
+[24]
+Overfull \hbox (13.71968pt too wide) in paragraph at lines 114--116
 \T1/ptm/m/n/12 tie-rung ba-siert auf .NET 9, ei-ner platt-for-mu-n-ab-hän-gi-ge
 n Open-Source-Laufzeitumgebung
  []
 
-<images/prakt1.png, id=338, 338.76563pt x 82.80937pt>
+<images/prakt1.png, id=348, 338.76563pt x 82.80937pt>
 File: images/prakt1.png Graphic file (type png)
 <use images/prakt1.png>
-Package pdftex.def Info: images/prakt1.png  used on input line 96.
+Package pdftex.def Info: images/prakt1.png  used on input line 119.
 (pdftex.def)             Requested size: 288.79422pt x 70.59677pt.
 
 
-[24
+[25
 
  <./images/prakt1.png>]
-Overfull \hbox (41.48607pt too wide) in paragraph at lines 128--131
+Overfull \hbox (41.48607pt too wide) in paragraph at lines 151--154
 []\T1/ptm/m/n/12 GraphQlAPI: Die GraphQL-API wur-de mit-tels des \T1/pcr/m/n/12
  .NET\T1/ptm/m/n/12 -Frameworks \T1/pcr/m/n/12 HotChocolate
  []
 
 
-Overfull \hbox (9.36418pt too wide) in paragraph at lines 139--140
+
+[26]
+Overfull \hbox (9.36418pt too wide) in paragraph at lines 162--163
 []\T1/ptm/m/n/12 Alle Ab-fra-gen er-fol-gen über \T1/pcr/m/n/12 HTTP POST\T1/pt
 m/m/n/12 -Anfragen an den End-punkt \T1/pcr/m/n/12 /graphql
  []
 
 
-
-[25]
-Overfull \hbox (19.51959pt too wide) in paragraph at lines 146--148
+Overfull \hbox (19.51959pt too wide) in paragraph at lines 169--171
 []\T1/ptm/b/n/12 TextService\T1/ptm/m/n/12 : Rück-ga-be der drei Text-grö-ÿen ü
 ber die Me-tho-den \T1/pcr/m/n/12 GetSmall()\T1/ptm/m/n/12 ,
  []
 
 
-Overfull \hbox (44.33504pt too wide) in paragraph at lines 146--148
+Overfull \hbox (44.33504pt too wide) in paragraph at lines 169--171
 \T1/ptm/m/it/12 Rückgabeformat\T1/ptm/m/n/12 : \T1/pcr/m/n/12 TextResponse\T1/p
 tm/m/n/12 -Message mit ei-nem \T1/pcr/m/n/12 string\T1/ptm/m/n/12 -Feld (\T1/pc
 r/m/n/12 content\T1/ptm/m/n/12 ),
  []
 
 
-Overfull \hbox (3.36693pt too wide) in paragraph at lines 149--151
+Overfull \hbox (3.36693pt too wide) in paragraph at lines 172--174
 \T1/ptm/m/it/12 Rückgabeformat\T1/ptm/m/n/12 : Server-Streaming von Chunk-Nachr
 ichten (\T1/pcr/m/n/12 bytes\T1/ptm/m/n/12 -Feld),
  []
 
 
-Overfull \hbox (29.80365pt too wide) in paragraph at lines 152--154
+Overfull \hbox (29.80365pt too wide) in paragraph at lines 175--177
 \T1/ptm/m/it/12 Rückgabeformat\T1/ptm/m/n/12 : \T1/pcr/m/n/12 BlogPostsResponse
  \T1/ptm/m/n/12 (Li-ste von \T1/pcr/m/n/12 BlogPost\T1/ptm/m/n/12 -Nachrichten)
 ,
  []
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[26]
-Overfull \hbox (0.93062pt too wide) in paragraph at lines 186--188
+
+
+[27]
+Overfull \hbox (0.93062pt too wide) in paragraph at lines 209--211
 \T1/ptm/m/n/12 setzt. Die Ge-ne-rie-rung der gRPC-Klassen er-folgt mit-tels der
  \T1/pcr/m/n/12 ts-protoc-gen\T1/ptm/m/n/12 -
  []
 
 
-Overfull \hbox (192.80948pt too wide) in paragraph at lines 191--191
+Overfull \hbox (192.80948pt too wide) in paragraph at lines 214--214
  []  \T1/pcr/m/n/12 npx protoc --ts_out src/api/generated --proto_path=src/prot
 o src/proto/*.proto[] 
  []
 
 
 
-[27]
-Overfull \hbox (11.00758pt too wide) in paragraph at lines 213--214
+[28]
+Overfull \hbox (11.00758pt too wide) in paragraph at lines 236--237
 []\T1/ptm/m/n/12 Bei gRPC-Web er-folgt die De-se-ria-li-sie-rung über ge-ne-rie
 r-te Protobuf-Klassen. 
  []
 
 
-Overfull \hbox (0.30214pt too wide) in paragraph at lines 237--238
+Overfull \hbox (0.30214pt too wide) in paragraph at lines 260--261
 \T1/ptm/m/n/12 Die Mes-sung des Konsolen-Clients er-laubt auch die Im-ple-men-t
 ie-rung von gRPC.
  []
 
 
 
-[28]
-Overfull \hbox (0.7612pt too wide) in paragraph at lines 247--248
+[29]
+Overfull \hbox (0.7612pt too wide) in paragraph at lines 270--271
 []\T1/ptm/b/n/12 gRPC\T1/ptm/m/n/12 : über \T1/pcr/m/n/12 Grpc.Net.Client \T1/p
 tm/m/n/12 di-rekt als na-ti-ve gRPC-Kommunikation 
  []
 
 
-Overfull \hbox (18.91922pt too wide) in paragraph at lines 248--249
+Overfull \hbox (18.91922pt too wide) in paragraph at lines 271--272
 []\T1/ptm/b/n/12 gRPC-Web\T1/ptm/m/n/12 : über \T1/pcr/m/n/12 Grpc.Net.Client.W
 eb \T1/ptm/m/n/12 mit-tels spe-zi-el-ler Web-Handler,
  []
 
 
-Overfull \hbox (18.53038pt too wide) in paragraph at lines 251--253
+Overfull \hbox (18.53038pt too wide) in paragraph at lines 274--276
 []\T1/ptm/m/n/12 Die in-ter-ne Ver-ar-bei-tung wur-de so im-ple-men-tiert, dass
  die Mes-sun-gen der Response-
  []
 
 
-Overfull \hbox (48.7368pt too wide) in paragraph at lines 257--269
+Overfull \hbox (48.7368pt too wide) in paragraph at lines 280--292
  [][] 
  []
 
 
 
-[29]
-
-[30
-
-]
+[30]
 
 [31
 
 ]
-Overfull \hbox (8.47922pt too wide) in paragraph at lines 310--315
-\T1/ptm/m/n/12 von Me-di-en-da-ten. Hier-bei war ent-ge-gen der theor-ti-schen 
-Er-war-tun-gen REST die schnell-
- []
-
-
 
 [32
 
 ]
-Overfull \hbox (3.53085pt too wide) in paragraph at lines 322--324
-\T1/ptm/m/n/12 Derselbe Ver-such mit Einzel-Requests wur-de an-schlie-ÿend in z
-wei wei-te-ren Web Brow-
+Overfull \hbox (8.47922pt too wide) in paragraph at lines 333--338
+\T1/ptm/m/n/12 von Me-di-en-da-ten. Hier-bei war ent-ge-gen der theor-ti-schen 
+Er-war-tun-gen REST die schnell-
  []
 
 
@@ -1772,6 +1779,12 @@ wei wei-te-ren Web Brow-
 [33
 
 ]
+Overfull \hbox (3.53085pt too wide) in paragraph at lines 345--347
+\T1/ptm/m/n/12 Derselbe Ver-such mit Einzel-Requests wur-de an-schlie-ÿend in z
+wei wei-te-ren Web Brow-
+ []
+
+
 
 [34
 
@@ -1783,6 +1796,10 @@ wei wei-te-ren Web Brow-
 
 [36
 
+]
+
+[37
+
 ])
 \openout2 = `chapters/06_DiskussionUndAusblick.aux'.
 
@@ -1790,7 +1807,7 @@ wei wei-te-ren Web Brow-
 Kapitel 6.
 
 
-[37
+[38
 
 
 
@@ -1801,61 +1818,61 @@ Kapitel 6.
 
  (./chapters/99_acronyms.tex
 
-LaTeX Warning: Hyper reference `acro:ABI' on page 38 undefined on input line 24
+LaTeX Warning: Hyper reference `acro:ABI' on page 39 undefined on input line 24
 .
 
 
-LaTeX Warning: Hyper reference `acro:ABI' on page 38 undefined on input line 24
+LaTeX Warning: Hyper reference `acro:ABI' on page 39 undefined on input line 24
 .
 
 
-LaTeX Warning: Hyper reference `acro:DOI' on page 38 undefined on input line 25
+LaTeX Warning: Hyper reference `acro:DOI' on page 39 undefined on input line 25
 .
 
 
-LaTeX Warning: Hyper reference `acro:DOI' on page 38 undefined on input line 25
+LaTeX Warning: Hyper reference `acro:DOI' on page 39 undefined on input line 25
 .
 
 
-LaTeX Warning: Hyper reference `acro:ISBN' on page 38 undefined on input line 2
+LaTeX Warning: Hyper reference `acro:ISBN' on page 39 undefined on input line 2
 6.
 
 
-LaTeX Warning: Hyper reference `acro:ISBN' on page 38 undefined on input line 2
+LaTeX Warning: Hyper reference `acro:ISBN' on page 39 undefined on input line 2
 6.
 
 
-LaTeX Warning: Hyper reference `acro:MITM' on page 38 undefined on input line 2
+LaTeX Warning: Hyper reference `acro:MITM' on page 39 undefined on input line 2
 7.
 
 
-LaTeX Warning: Hyper reference `acro:MITM' on page 38 undefined on input line 2
+LaTeX Warning: Hyper reference `acro:MITM' on page 39 undefined on input line 2
 7.
 
 
-LaTeX Warning: Hyper reference `acro:URL' on page 38 undefined on input line 28
+LaTeX Warning: Hyper reference `acro:URL' on page 39 undefined on input line 28
 .
 
 
-LaTeX Warning: Hyper reference `acro:URL' on page 38 undefined on input line 28
+LaTeX Warning: Hyper reference `acro:URL' on page 39 undefined on input line 28
 .
 
 )
 
-[38
-
-
-
-
-
-]
-
 [39
+
+
+
 
 
 ]
 
 [40
+
+
+]
+
+[41
 
 ]
 
@@ -1864,11 +1881,11 @@ Package biblatex Warning: No driver for 'standard'.
 
 
 
-[41
+[42
 
 ]
 
-[42] (./thesis.aux (./chapters/01_titlepage.aux) (./chapters/03_abstract.aux)
+[43] (./thesis.aux (./chapters/01_titlepage.aux) (./chapters/03_abstract.aux)
 (./chapters/01_Einleitung.aux) (./chapters/02_TheoretischeGrundlagen.aux)
 (./chapters/03_VerwandteArbeiten.aux) (./chapters/04_AnalyseUndVergleich.aux)
 (./chapters/05_PraktischerTeil.aux) (./chapters/06_DiskussionUndAusblick.aux)
@@ -1885,16 +1902,16 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: D765BFA4B812B28C4D01E5A3B5CC0697;4617.
+(rerunfilecheck)             Checksum: EBFEA167AA1B40EA30CB5EB3419A1CFF;4617.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36695 strings out of 469608
- 692679 string characters out of 5474779
- 1539431 words of memory out of 5000000
- 62704 multiletter control sequences out of 15000+600000
+ 36709 strings out of 469608
+ 692845 string characters out of 5474779
+ 1539429 words of memory out of 5000000
+ 62712 multiletter control sequences out of 15000+600000
  685607 words of font info for 110 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  104i,9n,104p,1311b,2357s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1907,10 +1924,10 @@ helvetic/uhvr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/symbol/usyr.pfb
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utm
 ri8a.pfb>
-Output written on thesis.pdf (49 pages, 261287 bytes).
+Output written on thesis.pdf (50 pages, 263509 bytes).
 PDF statistics:
- 574 PDF objects out of 1000 (max. 8388607)
- 494 compressed objects within 5 object streams
- 166 named destinations out of 1000 (max. 500000)
+ 585 PDF objects out of 1000 (max. 8388607)
+ 503 compressed objects within 6 object streams
+ 172 named destinations out of 1000 (max. 500000)
  244 words of extra memory for PDF output out of 10000 (max. 10000000)
 

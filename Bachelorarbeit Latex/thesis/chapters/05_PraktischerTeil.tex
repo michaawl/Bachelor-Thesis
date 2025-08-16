@@ -9,7 +9,7 @@ Bei den Messungen wurde die Zeit des Datenaustauschs zwischen den zwei Kommunika
 Die so gewonnenen Daten sollen anschließend die Basis dafür bilden, 
 um die zuvor theoretisch untersuchten Eigenschaften der Technologien unter realen Bedingungen zu überprüfen.
 
-\section*{Zielsetzung}
+\subsection*{Zielsetzung}
 Ziel des praktischen Teils ist es die Leistungsfähigkeit von den genannten API-Technologien zu untersuchen und gegenüberzustellen. Der Prototyp soll so implementiert werden, sodass für jede Technologie eine vergleichbare Umgebung mit den ähnlichen Bedingungen entsteht. 
 Im Fokus der Messungen steht die End-To-End Latenz, also jene Zeitspanne vom Absenden einer Anfrage bis zur vollständigen Verarbeitung und Bereitstellung der Antwort im Client. 
 
@@ -18,16 +18,69 @@ Auf dieser Grundlage und mit Rücksichtnahme auf den Rechercheteil, werden ansch
 
 
 \section{Versuchsaufbau}
-Bei dem Prototypen wurde eine Web-API die verschiedene Services mit verschiedenen Datentypen bereitstellt die mittels Dotnet Core in Visual Studio und um einen Web Client der mittels React umgesetzt wurde. Außerdem wurde ein Microservice ähnlicher Client erstellt, um zu vermitteln in wie fern die Latenz zwischen Front-End und Back-End Services variieren.
+Der entwickelte Prototyp besteht grundsätzlich aus 3 verschiedenen Komponenten: 
+Ein Backend-Service, ein Web-Client und ein Microservice ähnlicher Konsolen-Client.
 
-Konkret wurden folgende Messungen durchgeführt: 
+Abbildung X [TO-DO] zeigt den schematischen Aufbau des Versuches.
+
+Die zwei verschiedenen Client-Typen können hierbei mit dem gemeinsamen Backend-System kommunizieren.
+
+Der Schwerpunkt der Messungen liegt in folgenden Bereichen:
+
+\begin{itemize}
+	\item Vergleich einzelner und mehrfacher Requests
+	\item Einfluss verschiedener Browser
+	\item Unterschiede zwischen Microservice-Client und Browser-Client
+\end{itemize}
+
+\subsection*{Systemarchitektur:}
+
+\subsubsection*{Front-End Clients:}
+Der Versuchsaufbau beinhaltet zwei unabhängige Clients, welche jeweils auf einer unterschiedliche Art auf den Backend-Service zugreifen:
+\begin{enumerate}
+	\item Web-Client: die Übertragung findet dabei zwischen einem Browser und dem Back-End Service statt. Der Web-Client kann auf die REST, GraphQL und gRPC-Web API zugreifen.
+	\item Konsolen Client: die Übertragung findet zwischen einer Micro-Service ähnlichen Konsolenanwendung und dem Back-End Service statt. Der Konsolen Client kann auf die REST, GraphQl, gRPC und gRPC-Web API zugreifen.
+	
+\end{enumerate}
+
+\subsubsection*{Backend Service:}
+Der Backend-Service stellt verschiedene Services zur Verfügung und kann von beiden Front-End Clients Anfragen entgegen nehmen.
+Die verschiedenen Services wurden so ausgewählt, sodass die gesendeten Daten möglichst realitätsnahe Anwendungsfälle der Frontend-Backend Kommunikation abdecken.
+
+Grundsätzlich, kann auf 3 verschiedene Services zugegriffen werden:
+
+\begin{itemize}
+	\item Text – Service: 
+	Der Text-Service stellt einen Text im Datentyp „string“ zur Verfügung. Dabei können mit den Datengrößen 1 kB, 10 kB und 100 kB abgefragt werden.
+	
+	\item Media – Service:
+	Der Media-Service stellt Medien zur Verfügung, die mittels eines byte[] verschickt werden. Bei den Medien handelt sich um ein Bild (4 MB), einer Audio-Datei ( 30 MB) und einer Video Datei ( 100 MB ). 
+	
+	\item Blog - Service: 
+	Bei dem Blog Service handelt sich um einen 10 kB großen Datentypen, der verschachtelt andere Datentypen ( Text - "string", Zahlen - "int" und Datum - "DateTime" ) versendet.
+	
+\end{itemize}
+
+Die in den Services verwendeten Datentypen, sind die gängigsten Datentypen in der Frontend-Backend Kommunikation.
+
+Alle Services wurden seperat mit den Technologien REST, GraphQl, gRPC und gRPC-Web implementiert und können somit von den jeweiligen Clients abgefragt und verglichen werden.
+
+Abbildung X [TO-DO] zeigt den schematischen Aufbau der Backend-Services.
+
+\subsection*{Testfälle:}
+Zur Analyse der Client-Server Kommunikation wurden folgende Testfälle definiert, welche relevante Aspekte der Front-End Kommunikation abdecken und für einen adäquaten Vergleich der API-Technologien herangezogen werden können: 
 \begin{itemize}
 	\item Vergleich der Protokolle bei Einzelabfragen ( 1 Request ) und Mehrfachabfragen ( 20 Requests ). Die Messungen zeigen ergebnisse über Latenz und Performance
 	\item Unterschiede bei der Nutzung von verschiedenen Browsern, um den Einfluss des Webbrowsers auf die messungen zu identifizieren.
 	\item Gegenüberstellung der Response Zeiten zwischen Microservice ähnlichen Konsolen Client und Browser Client. Die Messung zeigt, wie stark sich die Architektur auf die Effizienz der Kommunikation auswirkt. Außerdem können beim Konsolen Client gRPC und gRPC-Web gegenüber gestellt werden.
 \end{itemize}
 
-Um einen fairen Vergleich herzustellen, wurden alle Requests ausschließlich mit dem HTTP/2.0 Protokoll durchgeführt und wurden verschlüsselt mit HTTPS verwendet. Bei der Response-Zeit handelt es sich jeweils um die End-to-End-Latenz aus der Sicht des Nutzers. Es wird dabei die Zeit dem absenden des Requestes und der Zeit bis die tatächlichen Daten im Client bereit stehen. Die Response Zeit beinhaltet also: 
+Da es in Web Browsern nicht möglich ist raw gRPC zu verwenden, konnte diese Messung im Rahmen des Browser-Client-Versuchsaufbaus nicht durchgeführt werden. Um Messwerte zwischen gRPC und gRPC-Web zu vergleichen, und um zu sehen in wiefern sich die Performance zwischen Browser – Backend und Microservice – Backend wurde ein zweiter Versuchsaufbau mittels eines Konsolen Clients durchgeführt.
+
+Die gesendeten Daten können jeweils von den jeweiligen Clients abgefragt werden. Grundlage der gesendeten Daten, sind Datentypen, die oft in Front-End Services versendet werden:
+
+\subsection*{Rahmenbedingungen}
+Um einen fairen Vergleich herzustellen, wurden alle Requests ausschließlich mit dem HTTP/2.0 Protokoll durchgeführt und verschlüsselt mit https versendet. Bei der Response-Zeit handelt es sich jeweils um die End-to-End-Latenz aus der Sicht des Nutzers. Es wird dabei die Zeit ab dem Absenden des Requestes bis zu dem Zeitpunkt, ab dem die Daten tatächlichen im Client fertig verarbeitet bereitstehen gemessen. Die Response Zeit beinhaltet also: 
 
 \begin{enumerate}
 	\item die Transportzeit über das Netzwerk:
@@ -39,47 +92,17 @@ Um einen fairen Vergleich herzustellen, wurden alle Requests ausschließlich mit
 	\item Antwortübertragung:
 	Zeit für das Senden der Antwort( inklusive Header und Payload) zurück an den Client.
 	
-	\item Client-seitige Verarbeitung:
+	\item Clientseitige Verarbeitung:
 	die Verarbeitung des Responses, sodass die Daten tatsächlich im Client verwendet werden können. (JSON Parsing, Binär-Parser).
 	
 \end{enumerate}
 
-\begin{enumerate}
-	\item Ein Web-Client, die Übertragung findet dabei zwischen einem Browser und dem Back-End Service statt. 
-	\item Ein Konsolen Client, die Übertragung findet zwischen einer Micro Service ähnlichen Anwendung und dem Back-End Service statt. 
-	
-\end{enumerate}
-
-Backend Service:
-
-Im Backend-System wurden verschiedene Services implementiert, weche jeweils verschiedene Daten zur Verfügung stellen, die mit den demenstsprechenden APIs abgefragt werden können. 
-
-Für jeden Service wurde jeweils folgende APIS implementiert:
-
-
-\begin{itemize}
-	\item Browser-Client: REST, GraphQL und gRPC Web. 
-	\item Konsolen-Client: REST, GraphQl, gRPC und gRPC Web
-\end{itemize}
-
-Da es in Web Browsern nicht möglich ist raw gRPC zu verwenden, konnte diese Messung im Rahmen des Browser-Client-Versuchsaufbaus nicht durchgeführt werden. Um Messwerte zwischen gRPC und gRPC-Web zu vergleichen, und um zu sehen in wiefern sich die Performance zwischen Browser – Backend und Microservice – Backend wurde ein zweiter Versuchsaufbau mittels eines Konsolen Clients durchgeführt.
-
-Die Daten können jeweils von den jeweiligen Clients abgefragt werden. Grundlage der gesendeten Daten, sind Datentypen, die oft in Front-End Services versendet werden:
-
-\begin{itemize}
-	\item Text – Service: 
-	Der Text-Service stellt einen Text im Datentyp „string“ zur Verfügung. Dabei können mit den Datengrößen 1 kB, 10 kB und 100 kB abgefragt werden.
-	
-	\item Media – Service:
-	Der Media-Service stellt Medien zur Verfügung, die mittels eines byte[] verschickt werden. Bei den Medien handelt sich um ein Bild (4 MB), einer Audio-Datei ( 30 MB) und einer Video Datei ( 100 MB ). 
-	
-	\item Blog - Service: 
-	Bei dem Blog Service handelt sich um einen 10 kB großen Datentypen, der verschachtelt andere Datentypen ( Text, Zahlen und Datum ) versendet.
-	
-\end{itemize}
-
 \clearpage
 \section{Implementierung:}
+
+Bei dem Prototypen wurde eine Web-API die verschiedene Services mit verschiedenen Datentypen bereitstellt die mittels Dotnet Core in Visual Studio und um einen Web Client der mittels React umgesetzt wurde. Außerdem wurde ein Microservice ähnlicher Client erstellt, um zu vermitteln in wie fern die Latenz zwischen Front-End und Back-End Services variieren.
+
+
 Die Messungen wurden ausschließlich lokal auf localhost durchgeführt. Dadurch können zusätzliche Einflüsse wie Paketverlust, Routing-Latenz oder Bandbreitenschwankungen, die bei realen Bedingungen auftreten würden, ausgeschlossen worden. Ziel der Messungen war es, tatsächliche Unterschiede zwischen den API Technologien (gRPC, gRPC-Web, REST, GraphQL) unter optimalen Bedingungen und reproduzierbar zu ermitteln.
 Die Ergebnisse repräsentieren daher keine realen Szenarien. Der Fokus wurde ausschließlich auf den Vergleich der Kommunikationsprotokolle und deren Verarbeitung gelegt.
 
@@ -284,7 +307,7 @@ Lenovo ThinkPad X1 Carbon der 10.\ Generation (Modellbezeichnung: 21CB)
 	\item \textbf{Massenspeicher (SSD)}: 512\,GB NVMe SSD
 \end{itemize}
 
-\paragraph{Betriebssystem}
+\paragraph{Betriebssystem:}
 Microsoft Windows 11 Pro (Version: 10.0.26100, Build 26100)
 
 \clearpage
