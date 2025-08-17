@@ -55,16 +55,18 @@
 \contentsline {paragraph}{Textdaten}{29}{section*.26}%
 \contentsline {paragraph}{Mediendaten}{29}{section*.27}%
 \contentsline {paragraph}{Blogdaten}{29}{section*.28}%
-\contentsline {subsection}{\numberline {5.2.3}Konsolen-Client}{30}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5.3}Spezifikationen des Testsystems}{31}{section.5.3}%
-\contentsline {paragraph}{Hardwarekonfiguration}{31}{section*.32}%
-\contentsline {paragraph}{Betriebssystem:}{31}{section*.33}%
-\contentsline {section}{\numberline {5.4}Messung}{32}{section.5.4}%
-\contentsline {subsubsection}{\numberline {5.4.0.1}Browser-Vergleich}{34}{subsubsection.5.4.0.1}%
-\contentsline {subsubsection}{\numberline {5.4.0.2}20 parallele Requests}{35}{subsubsection.5.4.0.2}%
-\contentsline {subsubsection}{\numberline {5.4.0.3}Messungen im Konsolen-Client}{36}{subsubsection.5.4.0.3}%
-\contentsline {chapter}{\numberline {6}Diskussion und Ausblick}{38}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Diskussion}{38}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Zusammenfassung}{38}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Ausblick}{38}{section.6.3}%
-\contentsline {chapter}{Literaturverzeichnis}{41}{appendix*.37}%
+\contentsline {subsection}{\numberline {5.2.3}Konsolen-Client}{29}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Spezifikationen des Testsystems}{32}{section.5.3}%
+\contentsline {paragraph}{Hardwarekonfiguration}{32}{section*.32}%
+\contentsline {paragraph}{Betriebssystem:}{32}{section*.33}%
+\contentsline {section}{\numberline {5.4}Messung}{33}{section.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.0.1}20 parallele Requests}{36}{subsubsection.5.4.0.1}%
+\contentsline {subsubsection}{\numberline {5.4.0.2}Browser-Vergleich}{38}{subsubsection.5.4.0.2}%
+\contentsline {subsubsection}{\numberline {5.4.0.3}Messungen im Konsolen-Client}{40}{subsubsection.5.4.0.3}%
+\contentsline {chapter}{\numberline {6}Diskussion und Ausblick}{43}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Diskussion}{43}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Zusammenfassung}{43}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Ausblick}{43}{section.6.3}%
+\contentsline {chapter}{Literaturverzeichnis}{46}{appendix*.41}%
+\contentsline {chapter}{\numberline {A}Anhang}{49}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Rohdaten der Messungen}{49}{section.A.1}%

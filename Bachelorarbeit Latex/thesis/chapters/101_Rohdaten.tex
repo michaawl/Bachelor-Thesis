@@ -1,0 +1,250 @@
+\chapter{Anhang}
+\label{chap:anhang}
+
+\section{Rohdaten der Messungen}
+Im folgenden werden die Rohdaten aller durchgeführen Messungen des Prototyps angeführt. 
+Pro Testreihe wurden je API-Technologie, je Service und je Datengröße jeweils 30 Einzelmessungen durchgeführt. Die in den Diagrammen und Tabellen im Haupttext angegebenen Mittel- und Medianwerte wurden aus diesen Daten berechnet.
+
+
+% ============================
+% Rohdaten: Web-Client Einzel-Request (30 Messungen)
+% ============================ 
+
+\begin{landscape}
+	\begin{table}[p]
+		\centering
+		\caption{Rohdaten: Web-Client Einzelrequests – Chrome (Antwortzeit in ms; 30 Messungen je Kombination)}
+		\label{tab:raw-chrome-single}
+		\setlength{\tabcolsep}{2pt}
+		\renewcommand{\arraystretch}{1.0}
+		\resizebox{\linewidth}{!}{%
+			\begin{tabular}{|l|l|l|*{30}{r}|}
+				\hline
+				\textbf{Technologie} & \textbf{Service} & \textbf{Datentyp} &
+				\textbf{1}&\textbf{2}&\textbf{3}&\textbf{4}&\textbf{5}&\textbf{6}&\textbf{7}&\textbf{8}&\textbf{9}&\textbf{10}&
+				\textbf{11}&\textbf{12}&\textbf{13}&\textbf{14}&\textbf{15}&\textbf{16}&\textbf{17}&\textbf{18}&\textbf{19}&\textbf{20}&
+				\textbf{21}&\textbf{22}&\textbf{23}&\textbf{24}&\textbf{25}&\textbf{26}&\textbf{27}&\textbf{28}&\textbf{29}&\textbf{30}\\
+				\hline
+				REST & Text  & small text  & 9.2&9.7&8.2&8.7&7.3&7.9&11.9&8.4&9.5&7.4&9.2&10.1&9.4&7.7&9.2&8.7&9.7&9.2&7.5&8.7&7.5&7.9&7.3&8.8&7.4&9.3&7.9&7.7&8.9&7.6 \\
+				REST & Text  & medium text & 8.6&7.6&9.6&8.7&7.8&8.8&9.0&7.7&9.8&9.5&8.8&9.0&8.6&8.5&9.8&12.0&9.5&8.0&9.4&7.6&9.2&8.3&8.7&7.9&8.8&7.8&10.0&8.7&8.5&13.9 \\
+				REST & Text  & large text  & 13.4&15.0&12.2&13.3&12.2&13.5&20.2&14.1&13.9&12.5&12.8&13.0&15.1&11.7&14.1&12.8&14.4&12.2&14.5&14.9&12.3&11.7&11.8&13.1&9.3&12.8&12.3&14.2&11.0&12.3 \\
+				REST & Media & Foto        & 22.4&44.4&26.0&34.2&25.1&36.3&32.3&26.7&45.9&30.2&36.8&38.0&36.1&37.3&29.6&40.5&35.2&32.5&41.3&36.6&37.9&40.6&41.0&34.7&35.3&43.5&44.5&34.7&45.8&38.4 \\
+				REST & Media & Audio       & 175.3&150.5&130.4&125.0&144.4&148.3&141.4&127.3&129.9&136.8&158.2&156.5&136.8&152.8&139.2&131.7&155.1&155.6&161.5&161.8&174.5&140.5&164.5&152.6&156.6&175.5&155.4&158.7&127.2&143.5 \\
+				REST & Media & Video       & 353.2&392.7&399.9&398.6&337.2&341.2&332.7&401.2&373.2&312.8&392.9&343.7&339.8&376.2&351.7&340.6&416.8&405.1&366.4&354.0&372.5&352.8&336.2&386.0&346.6&346.2&342.4&400.3&386.5&351.3 \\
+				REST & Blog  & —           & 8.2&7.9&7.4&13.9&8.2&8.6&7.8&7.5&8.2&8.5&9.5&7.7&10.2&7.7&10.6&10.3&8.6&8.6&8.7&7.8&10.1&7.8&8.0&9.5&7.7&7.3&8.1&8.7&7.8&7.5 \\
+				\hline
+				GraphQL & Text  & small text  & 7.5&7.1&5.5&10.2&6.6&6.5&7.5&8.3&6.8&10.9&7.4&7.0&7.4&7.5&7.4&8.6&6.8&6.8&6.6&7.7&7.6&10.6&8.4&7.2&7.8&7.9&6.5&7.4&7.0&8.3 \\
+				GraphQL & Text  & medium text & 7.8&7.9&7.4&8.3&9.2&7.7&7.5&7.3&8.4&8.0&7.6&8.1&7.9&10.7&7.4&7.4&7.5&7.8&6.3&7.4&7.6&6.7&7.6&6.6&7.7&8.3&6.7&7.3&7.1&7.4 \\
+				GraphQL & Text  & large text  & 12.5&10.5&10.8&9.1&11.4&9.5&7.7&10.0&10.8&8.5&11.5&11.0&8.9&10.3&9.4&10.1&9.6&10.5&11.4&7.6&16.4&7.9&10.5&9.2&8.8&13.2&9.1&9.2&9.3&9.1 \\
+				GraphQL & Media & Foto        & 378.7&671.5&418.5&391.1&459.3&403.5&534.4&536.3&409.3&589.7&669.9&703.8&657.1&424.3&430.7&353.3&521.7&363.3&665.4&419.6&396.6&442.4&412.4&351.4&602.8&657.1&577.1&665.0&688.6&557.5 \\
+				GraphQL & Media & Audio       & 5441.9&6626.5&5337.3&7689.2&7138.3&5708.4&5119.7&6504.3&4999.1&5662.9&5683.2&6117.4&5028.2&5300.6&5138.4&5000.3&5829.4&7507.8&5416.1&5653.7&6113.1&4930.8&5319.7&7180.0&5168.1&5221.8&7857.7&5452.2&6798.7&5961.7 \\
+				GraphQL & Media & Video       & \multicolumn{30}{c|}{—} \\
+				GraphQL & Blog  & —           & 5.9&7.5&10.7&8.1&7.0&6.7&6.3&6.9&6.3&6.9&8.5&7.1&7.3&10.3&6.3&6.9&8.4&7.7&7.1&7.5&8.0&6.6&7.5&10.7&6.4&7.9&6.7&9.6&9.1&6.4 \\
+				\hline
+				gRPC & Text  & small text  & 7.2&7.6&7.7&6.8&7.3&7.3&6.9&7.5&10.2&7.5&8.9&7.5&7.9&6.9&7.2&8.5&5.3&7.8&7.6&7.1&11.2&7.6&7.0&6.5&7.4&7.8&6.6&7.6&6.5&6.6 \\
+				gRPC & Text  & medium text & 8.2&8.7&8.5&10.5&8.4&8.5&8.0&7.5&7.6&8.8&11.4&8.1&8.3&9.5&7.8&8.3&7.5&8.6&8.7&7.7&9.1&8.2&7.1&8.0&7.3&8.5&8.3&7.0&8.6&7.9 \\
+				gRPC & Text  & large text  & 16.9&19.7&19.6&21.9&17.6&21.6&19.0&19.2&18.6&17.7&17.2&19.0&15.4&18.8&17.0&20.2&18.2&18.8&18.4&17.7&19.3&22.7&20.1&19.9&16.2&18.8&19.1&22.0&16.8&16.3 \\
+				gRPC & Media & Foto        & 128.4&121.1&193.0&125.8&158.4&243.7&160.0&248.2&170.5&182.3&239.6&151.9&278.7&182.4&154.0&158.4&364.9&155.3&277.4&165.2&142.5&156.8&215.6&169.4&165.9&116.3&120.3&148.3&211.3&153.7 \\
+				gRPC & Media & Audio       & 2283.3&2643.5&1726.5&2356.3&2366.4&2107.2&1967.7&2393.3&1924.8&2390.3&1974.8&1606.8&2506.9&2374.6&2145.8&2306.7&2575.3&2109.4&2168.8&2501.5&3549.0&3192.8&2165.9&2942.9&2431.4&2425.1&2353.6&2308.2&3079.1&2295.9 \\
+				gRPC & Media & Video       & \multicolumn{30}{c|}{—} \\
+				gRPC & Blog  & —           & 7.7&8.3&7.5&7.6&7.8&6.4&7.0&7.7&7.0&8.7&6.7&8.2&6.2&8.1&7.5&11.9&7.9&7.4&8.3&6.8&7.9&7.2&8.1&7.3&8.3&7.8&6.5&7.9&12.3&8.2 \\
+				\hline
+		\end{tabular}}
+	\end{table}
+\end{landscape}
+
+
+
+
+\clearpage
+
+\begin{landscape}
+	\begin{table}[p]
+		\centering
+		\caption{Rohdaten: Web-Client \emph{20 parallele Requests} – Chrome (Antwortzeit in ms; bis zu 30 Messungen je Kombination)}
+		\label{tab:raw-20par-chrome}
+		\setlength{\tabcolsep}{2pt}
+		\renewcommand{\arraystretch}{1.0}
+		\resizebox{\linewidth}{!}{%
+			\begin{tabular}{lll*{30}{r}}
+				\toprule
+				\textbf{Technologie} & \textbf{Service} & \textbf{Datentyp} &
+				\textbf{1}&\textbf{2}&\textbf{3}&\textbf{4}&\textbf{5}&\textbf{6}&\textbf{7}&\textbf{8}&\textbf{9}&\textbf{10}&
+				\textbf{11}&\textbf{12}&\textbf{13}&\textbf{14}&\textbf{15}&\textbf{16}&\textbf{17}&\textbf{18}&\textbf{19}&\textbf{20}&
+				\textbf{21}&\textbf{22}&\textbf{23}&\textbf{24}&\textbf{25}&\textbf{26}&\textbf{27}&\textbf{28}&\textbf{29}&\textbf{30}\\
+				\midrule
+				REST & Text & small text &
+				45.8&52.4&42.7&30.2&37.6&37.7&35.0&30.7&54.5&38.1&45.3&51.4&33.6&47.8&30.2&76.6&30.4&57.0&59.5&32.4&23.6&69.6&63.1&33.8&42.0&58.2&68.4&51.4&45.6&40.1\\
+				REST & Text & medium text &
+				61.7&48.9&55.6&82.8&50.2&84.3&64.0&35.8&63.2&70.7&57.6&52.6&58.3&47.0&83.5&62.2&42.6&49.4&62.4&87.0&68.0&59.7&72.5&41.9&79.1&52.2&67.1&36.9&84.4&74.0\\
+				REST & Text & large text &
+				113.6&139.5&100.8&76.7&109.6&94.5&98.7&89.0&84.3&102.4&82.0&79.7&94.0&100.8&98.2&110.3&107.5&69.6&85.3&80.7&87.1&93.2&64.2&96.3&106.0&61.6&83.7&96.1&73.5&84.1\\
+				REST & Media & Foto &
+				360.9&453.2&370.0&423.0&415.8&399.2&400.4&362.4&368.5&304.4&\multicolumn{20}{c}{\textemdash}\\
+				REST & Media & Audio &
+				2770.0&2400.8&2282.5&2350.9&2391.0&2367.5&2361.6&2450.4&2395.7&2430.4&\multicolumn{20}{c}{\textemdash}\\
+				REST & Media & Video &
+				\multicolumn{30}{c}{\textemdash}\\
+				REST & Blog & — &
+				72.6&72.2&62.8&39.2&74.6&42.4&42.4&83.6&44.9&30.5&43.9&42.2&60.1&50.6&43.3&69.4&65.5&34.1&60.9&69.6&36.2&39.6&61.0&60.3&32.7&32.7&45.9&40.3&71.9&65.1\\
+				
+				GraphQL & Text & small text &
+				26.2&32.8&26.8&26.2&29.1&33.8&43.7&29.9&28.9&33.4&34.8&35.5&31.4&29.5&27.3&30.3&23.7&54.7&26.4&26.3&25.6&27.9&35.2&27.6&28.7&26.0&26.8&46.3&27.4&41.1\\
+				GraphQL & Text & medium text &
+				32.3&27.7&35.3&35.6&54.5&39.7&58.5&38.0&28.9&26.1&45.7&39.1&29.1&30.5&33.1&33.6&31.2&27.8&29.0&27.7&49.5&31.8&28.2&30.0&40.9&34.0&33.6&31.2&33.8&44.7\\
+				GraphQL & Text & large text &
+				61.2&75.4&59.6&83.2&73.2&64.3&59.0&81.5&72.9&65.9&58.9&82.4&77.5&83.3&69.7&83.3&67.7&53.2&60.4&71.5&85.0&66.9&63.0&62.5&84.3&99.0&64.5&87.6&66.7&50.9\\
+				GraphQL & Media & Foto &
+				17657.2&19009.6&16089.2&15402.1&19715.3&14381.0&13484.4&16510.5&14588.1&14758.3&\multicolumn{20}{c}{\textemdash}\\
+				GraphQL & Media & Audio &
+				\multicolumn{30}{c}{\textemdash}\\
+				GraphQL & Media & Video &
+				\multicolumn{30}{c}{\textemdash}\\
+				GraphQL & Blog & — &
+				42.3&68.2&36.3&58.7&32.7&29.2&33.4&38.1&48.2&41.1&35.8&26.5&17.8&35.3&25.4&28.1&29.8&30.2&39.6&27.3&24.4&23.2&29.4&36.6&28.3&43.9&28.7&26.4&33.3&40.0\\
+				
+				gRPC & Text & small text &
+				26.4&40.1&28.5&29.3&51.3&39.7&26.4&35.2&30.9&24.4&40.5&33.3&33.4&26.8&21.3&46.9&29.5&17.3&25.3&30.1&38.7&44.3&41.9&30.5&29.5&43.4&39.4&34.1&33.2&30.7\\
+				gRPC & Text & medium text &
+				39.5&39.2&46.1&39.2&43.6&65.2&46.6&36.8&42.1&56.4&49.5&36.3&32.3&45.1&35.7&34.7&28.8&35.5&34.6&37.8&45.8&44.9&63.3&65.1&49.7&57.2&48.9&39.6&35.1&30.6\\
+				gRPC & Text & large text &
+				135.9&132.6&130.3&145.3&143.8&146.4&121.6&152.5&171.1&128.5&143.2&141.4&156.8&139.6&146.9&148.7&157.8&145.6&147.5&151.6&145.5&145.2&163.5&127.7&132.2&169.1&147.1&141.4&141.1&158.5\\
+				gRPC & Media & Foto &
+				5423.3&6538.4&5350.4&5636.5&5728.3&6121.5&5925.4&5520.5&5293.3&5824.7&\multicolumn{20}{c}{\textemdash}\\
+				gRPC & Media & Audio &
+				100343.2&101637.3&103693.2&108612.8&161328.4&233593.4&110382.3&107263.2&103128.3&130283.2&\multicolumn{20}{c}{\textemdash}\\
+				gRPC & Media & Video &
+				\multicolumn{30}{c}{\textemdash}\\
+				gRPC & Blog & — &
+				29.2&30.8&30.4&52.4&34.4&26.2&41.8&31.0&29.2&37.8&35.4&27.8&39.2&31.5&38.6&28.4&39.0&42.4&28.8&39.5&28.2&28.0&36.9&28.2&48.8&30.7&45.3&37.3&29.8&28.6\\
+				\bottomrule
+		\end{tabular}}
+	\end{table}
+\end{landscape}
+
+
+
+	\begin{table}[p]
+		\centering
+		\caption{Rohdaten: Web-Client Einzel-Request Firefox (Antwortzeit in ms; 10 Messungen je Kombination)}
+		\label{tab:raw-single-web-firefox}
+		\setlength{\tabcolsep}{2pt}
+		\renewcommand{\arraystretch}{1.0}
+		\resizebox{\linewidth}{!}{%
+			\begin{tabular}{|l|l|l|*{10}{r}|}
+				\hline
+				\textbf{Technologie} & \textbf{Service} & \textbf{Datentyp} &
+				\textbf{1}&\textbf{2}&\textbf{3}&\textbf{4}&\textbf{5}&\textbf{6}&\textbf{7}&\textbf{8}&\textbf{9}&\textbf{10} \\
+				\hline
+				REST & Text  & small text  & 8 & 9 & 5 & 3 & 7 & 8 & 12 & 10 & 16 & 7 \\
+				REST & Text  & medium text & 8 & 8 & 8 & 9 & 15 & 15 & 8 & 9 & 7 & 6 \\
+				REST & Text  & large text  & 13 & 12 & 10 & 12 & 11 & 10 & 10 & 15 & 10 & 11 \\
+				REST & Media & Foto        & 29 & 63 & 43 & 77 & 50 & 49 & 54 & 55 & 56 & 68 \\
+				REST & Media & Audio       & 269 & 324 & 222 & 238 & 247 & 243 & 257 & 214 & 224 & 249 \\
+				REST & Media & Video       & 701 & 649 & 688 & 677 & 702 & 631 & 680 & 648 & 717 & 671 \\
+				REST & Blog  & —           & 7 & 5 & 4 & 7 & 14 & 5 & 6 & 6 & 7 & 6 \\
+				GraphQL & Text & small text  & 7 & 14 & 7 & 7 & 15 & 10 & 7 & 8 & 11 & 8 \\
+				GraphQL & Text & medium text & 13 & 7 & 8 & 9 & 16 & 12 & 8 & 12 & 10 & 16 \\
+				GraphQL & Text & large text  & 29 & 15 & 10 & 12 & 11 & 23 & 14 & 19 & 10 & 15 \\
+				GraphQL & Media & Foto       & 2099 & 1691 & 1736 & 1667 & 1684 & 1689 & 1799 & 1688 & 1709 & 1672 \\
+				GraphQL & Media & Audio      & 13638 & 14587 & 13308 & 12725 & 13592 & 12436 & 13036 & 12866 & 13221 & 13124 \\
+				GraphQL & Media & Video      & 47634 & 49843 & 46806 & 52938 & 46273 & 40856 & 44876 & 48937 & 472374 & 50373 \\
+				GraphQL & Blog  & —          & 11 & 16 & 7 & 11 & 9 & 7 & 5 & 9 & 14 & 7 \\
+				gRPC & Text & small text     & 11 & 11 & 7 & 8 & 15 & 6 & 13 & 7 & 6 & 10 \\
+				gRPC & Text & medium text    & 11 & 7 & 9 & 12 & 14 & 9 & 9 & 6 & 7 & 10 \\
+				gRPC & Text & large text     & 11 & 24 & 27 & 28 & 26 & 29 & 26 & 20 & 31 & 20 \\
+				gRPC & Media & Foto          & 11 & 260 & 265 & 292 & 236 & 277 & 293 & 269 & 321 & 257 \\
+				gRPC & Media & Audio         & 11 & 2723 & 2837 & 2800 & 2797 & 2677 & 2529 & 3000 & 2616 & 2566 \\
+				gRPC & Media & Video         & 11 & 12029 & 9728 & 9500 & 10178 & 9506 & 10608 & 9923 & 10191 & 8174 \\
+				gRPC & Blog  & —             & 11 & 10 & 7 & 6 & 8 & 9 & 7 & 7 & 8 & 7 \\
+				\hline
+		\end{tabular}}
+	\end{table}
+	
+		\begin{table}[p]
+			\centering
+			\caption{Rohdaten: Web-Client Einzel-Request Edge (Antwortzeit in ms; 10 Messungen je Kombination)}
+			\label{tab:raw-single-web-edge}
+			\setlength{\tabcolsep}{2pt}
+			\renewcommand{\arraystretch}{1.0}
+			\resizebox{\linewidth}{!}{%
+				\begin{tabular}{|l|l|l|*{10}{r}|}
+					\hline
+					\textbf{Technologie} & \textbf{Service} & \textbf{Datentyp} &
+					\textbf{1}&\textbf{2}&\textbf{3}&\textbf{4}&\textbf{5}&\textbf{6}&\textbf{7}&\textbf{8}&\textbf{9}&\textbf{10} \\
+					\hline
+					REST & Text  & small text  & 5.4 & 5 & 5.6 & 4.8 & 5.4 & 3.7 & 4.5 & 3.7 & 4.9 & 5.4 \\
+					REST & Text  & medium text & 7.7 & 5.6 & 6.6 & 5.3 & 6.2 & 5.6 & 6 & 5.9 & 6.8 & 7.4 \\
+					REST & Text  & large text  & 7.2 & 10.5 & 9.5 & 7.6 & 9.2 & 9.8 & 10.3 & 10.3 & 11.1 & 9.5 \\
+					REST & Media & Foto        & 36.7 & 23.4 & 39 & 38.1 & 38.6 & 53.6 & 33.8 & 24.7 & 35.9 & 39.1 \\
+					REST & Media & Audio       & 159.2 & 148.8 & 168.3 & 136.6 & 138.9 & 150.9 & 128.2 & 140.4 & 146.3 & 131.2 \\
+					REST & Media & Video       & 524 & 342 & 458.5 & 466.3 & 413 & 384.2 & 398.8 & 395.6 & 373.2 & 472.3 \\
+					REST & Blog  & —           & 7.5 & 8.5 & 7.4 & 7.7 & 8.5 & 8.4 & 7.8 & 8.7 & 7.2 & 7.1 \\
+					GraphQL & Text & small text  & 5.5 & 7.7 & 5.2 & 6.2 & 5.2 & 5.7 & 5.2 & 5.5 & 5.1 & 4.8 \\
+					GraphQL & Text & medium text & 6.3 & 4.4 & 5.1 & 4.9 & 6 & 6 & 5.5 & 7.2 & 5.5 & 5.9 \\
+					GraphQL & Text & large text  & 9.3 & 8.3 & 6.5 & 7 & 7 & 12.2 & 7.4 & 10.2 & 6.9 & 7.3 \\
+					GraphQL & Media & Foto       & 376.6 & 403.9 & 399.4 & 389.8 & 370.5 & 455 & 526.2 & 384.1 & 355 & 367 \\
+					GraphQL & Media & Audio      & 4803.3 & 9124 & 6786 & 6241.3 & 6525 & 6942.1 & 4940.9 & 6190.2 & 5521.3 & 7346.6 \\
+					GraphQL & Media & Video      & \multicolumn{10}{c|}{—} \\
+					GraphQL & Blog  & —          & 8.5 & 4.3 & 5.6 & 4.1 & 5.8 & 4.5 & 7.9 & 4.9 & 5.4 & 4.9 \\
+					gRPC & Text & small text     & 5.4 & 4 & 5.7 & 7.7 & 5.3 & 5.1 & 4.9 & 5.7 & 4.4 & 6.8 \\
+					gRPC & Text & medium text    & 7 & 5.6 & 6.3 & 5.7 & 5.1 & 4.5 & 5.9 & 5.1 & 6.1 & 5.6 \\
+					gRPC & Text & large text     & 17.7 & 19.1 & 25.8 & 23.9 & 21.5 & 23.6 & 17.3 & 16.9 & 16.8 & 20.5 \\
+					gRPC & Media & Foto          & 216.5 & 172.5 & 236.7 & 179.7 & 215.5 & 177.9 & 139.3 & 174.4 & 133.1 & 218.3 \\
+					gRPC & Media & Audio         & 4060.4 & 2417.1 & 2734.9 & 2471.9 & 2219.3 & 2523.1 & 2849.8 & 2518.3 & 3002.1 & 2652.4 \\
+					gRPC & Media & Video         & 7957.2 & 8901.1 & 7430.3 & 8105.8 & 7471.8 & 8650.3 & 7792.9 & 7561.1 & 7745.5 & 8230.2 \\
+					gRPC & Blog  & —             & 5 & 4.8 & 4.9 & 5 & 5 & 5.5 & 5 & 6.4 & 5.3 & 5.3 \\
+					\hline
+			\end{tabular}}
+		\end{table}
+	
+
+\begin{table}[p]
+	\centering
+	\caption{Rohdaten: Konsolen-Client (Microservice) – Einzel-Requests (Antwortzeit in ms; 10 Messungen je Kombination)}
+	\label{tab:raw-microservice-single}
+	\setlength{\tabcolsep}{2pt}
+	\renewcommand{\arraystretch}{1.0}
+	\resizebox{\linewidth}{!}{%
+		\begin{tabular}{|l|l|l|*{10}{r}|}
+			\hline
+			\textbf{Technologie} & \textbf{Service} & \textbf{Datentyp} &
+			\textbf{1}&\textbf{2}&\textbf{3}&\textbf{4}&\textbf{5}&\textbf{6}&\textbf{7}&\textbf{8}&\textbf{9}&\textbf{10}\\
+			\hline
+			REST & Text  & small text  & 2 & 3 & 2 & 3 & 2 & 2 & 2 & 2 & 3 & 2 \\
+			REST & Text  & medium text & 3 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 \\
+			REST & Text  & large text  & 7 & 7 & 7 & 7 & 7 & 10 & 3 & 6 & 6 & 4 \\
+			REST & Media & Foto        & 80 & 52 & 39 & 48 & 59 & 34 & 44 & 30 & 37 & 36 \\
+			REST & Media & Audio       & 252 & 260 & 298 & 252 & 247 & 282 & 240 & 230 & 213 & 230 \\
+			REST & Media & Video       & 680 & 688 & 500 & 556 & 481 & 573 & 458 & 530 & 472 & 464 \\
+			REST & Blog  & —           & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+			\hline
+			GraphQL & Text  & small text  & 3 & 2 & 2 & 2 & 2 & 2 & 3 & 2 & 2 & 3 \\
+			GraphQL & Text  & medium text & 2 & 2 & 2 & 2 & 3 & 2 & 2 & 2 & 2 & 3 \\
+			GraphQL & Text  & large text  & 5 & 6 & 5 & 7 & 6 & 5 & 5 & 5 & 4 & 7 \\
+			GraphQL & Media & Foto        & 4658 & 5972 & 6171 & 5790 & 5694 & 6102 & 5611 & 5591 & 5966 & 5607 \\
+			GraphQL & Media & Audio       & \multicolumn{10}{c|}{—} \\
+			GraphQL & Media & Video       & \multicolumn{10}{c|}{—} \\
+			GraphQL & Blog  & —           & 3 & 2 & 2 & 2 & 3 & 3 & 2 & 2 & 3 & 2 \\
+			\hline
+			gRPC-Web & Text  & small text  & 2 & 3 & 2 & 3 & 2 & 2 & 2 & 2 & 2 & 2 \\
+			gRPC-Web & Text  & medium text & 3 & 3 & 3 & 3 & 2 & 3 & 3 & 2 & 3 & 3 \\
+			gRPC-Web & Text  & large text  & 7 & 7 & 6 & 7 & 7 & 7 & 7 & 6 & 7 & 7 \\
+			gRPC-Web & Media & Foto        & 55 & 50 & 40 & 37 & 53 & 55 & 53 & 53 & 69 & 48 \\
+			gRPC-Web & Media & Audio       & 267 & 238 & 254 & 263 & 245 & 244 & 275 & 236 & 251 & 241 \\
+			gRPC-Web & Media & Video       & 625 & 649 & 696 & 729 & 745 & 750 & 717 & 718 & 702 & 720 \\
+			gRPC-Web & Blog  & —           & 3 & 2 & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 3 \\
+			\hline
+			gRPC & Text  & small text  & 1 & 1 & 1 & 1 & 2 & 2 & 1 & 1 & 1 & 1 \\
+			gRPC & Text  & medium text & 1 & 2 & 1 & 2 & 2 & 1 & 2 & 2 & 1 & 1 \\
+			gRPC & Text  & large text  & 3 & 4 & 4 & 4 & 4 & 4 & 4 & 5 & 5 & 4 \\
+			gRPC & Media & Foto        & 38 & 40 & 52 & 38 & 44 & 43 & 40 & 39 & 51 & 42 \\
+			gRPC & Media & Audio       & 217 & 248 & 292 & 241 & 257 & 243 & 250 & 238 & 251 & 284 \\
+			gRPC & Media & Video       & 624 & 609 & 632 & 621 & 605 & 582 & 625 & 583 & 589 & 630 \\
+			gRPC & Blog  & —           & 1 & 1 & 1 & 1 & 2 & 1 & 1 & 1 & 1 & 1 \\
+			\hline
+	\end{tabular}}
+\end{table}
+
+
+\chapterend
