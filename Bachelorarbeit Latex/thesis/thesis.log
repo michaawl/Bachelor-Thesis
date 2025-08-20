@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  17 AUG 2025 22:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  20 AUG 2025 15:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1520,7 +1520,7 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 
 [6]
-<images/http1_theory.jpg, id=249, 197.4285pt x 148.1535pt>
+<images/http1_theory.jpg, id=251, 197.4285pt x 148.1535pt>
 File: images/http1_theory.jpg Graphic file (type jpg)
 <use images/http1_theory.jpg>
 Package pdftex.def Info: images/http1_theory.jpg  used on input line 82.
@@ -1721,7 +1721,7 @@ Overfull \hbox (1.72pt too wide) in paragraph at lines 110--112
 en-Source-Laufzeitumgebung
  []
 
-<images/prakt1.png, id=380, 338.76563pt x 82.80937pt>
+<images/prakt1.png, id=383, 338.76563pt x 82.80937pt>
 File: images/prakt1.png Graphic file (type png)
 <use images/prakt1.png>
 Package pdftex.def Info: images/prakt1.png  used on input line 121.
@@ -2011,15 +2011,21 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 38AD2F8DF266A1A5F0659916FAEB1FD7;4900.
+
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: C68C966FD0B618816CB867F043B578D7;4900
+(rerunfilecheck)             After:  C04250AF0C17E6D5D82C044097C2B810;5067.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36919 strings out of 469608
- 697670 string characters out of 5474779
+ 36922 strings out of 469608
+ 697703 string characters out of 5474779
  1610258 words of memory out of 5000000
  62880 multiletter control sequences out of 15000+600000
  685607 words of font info for 110 fonts, out of 8000000 for 9000
@@ -2034,10 +2040,10 @@ helvetic/uhvr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/symbol/usyr.pfb
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utm
 ri8a.pfb>
-Output written on thesis.pdf (61 pages, 290603 bytes).
+Output written on thesis.pdf (61 pages, 291104 bytes).
 PDF statistics:
- 664 PDF objects out of 1000 (max. 8388607)
- 571 compressed objects within 6 object streams
- 194 named destinations out of 1000 (max. 500000)
+ 667 PDF objects out of 1000 (max. 8388607)
+ 574 compressed objects within 6 object streams
+ 197 named destinations out of 1000 (max. 500000)
  260 words of extra memory for PDF output out of 10000 (max. 10000000)
 

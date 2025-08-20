@@ -31,7 +31,7 @@ Aus der dargestellten Situation und den Einbußen welche mit der Implementierung
 Diese Forschungsfragen bilden die Grundlage für die theoretische Analyse sowie die praktische Untersuchung der genannten API-Technologien. Ziel ist es, anhand dieser Fragen sowohl die Stärken, als auch die Schwächen von gRPC-Web in Webumgebungen zu identifizieren.
 
 \section{Hypothese}
-Die formulierten Forschungsfragen geben an, dass vorallem der Vergleich von Latenz und Performance von Interesse ist. Für eine strukturiertere Herangehensweise, werden folgende Hypothese formuliert, die die erwarteten Unterschiede darstellen:
+Für eine strukturiertere Herangehensweise, werden folgende Hypothese formuliert, die die erwarteten Ergebnisse darstellen:
 
 \begin{itemize}
 	\item Es wird angenommen, dass die Nutzung von gRPC im Vergleich zu REST und GraphQl die Latenz reduziert und die Effizienz erhöht, insbesondere bei Echtzeitanwendungen mit hohen Datenmengen. Vorallem durch das Verwenden von Protocol Buffers, ein binäres Serialisierungsformat welches auch bei gRPC-Web verwendet wird, ist eine Effizienz im Gegensatz zum klassichen JSON Format zu erwarten, wodurch sich auch beim Datenaustausch bei praktischen Messungen eine geringere Latenz zeigen sollte.
@@ -43,18 +43,22 @@ Die formulierten Forschungsfragen geben an, dass vorallem der Vergleich von Late
 \end{itemize}
 
 \section{Methodik}
-Theoretische Analyse:
-- Untersuchung und Vergleich der Kommunikationsprotokolle gRPC und REST/GraphQL
-in Bezug auf Latenz, Effizienz und Skalierbarkeit.
-- Analyse von gRPC-Web zur Integration in Frontend-Architekturen (in React).
-Erstellen von Prototypen:
-Im Zuge der Bachelorarbeit werden Prototypen, mittels den jeweiligen Kommunikationsprotokollen
-oder API Gateway erstellt und die Eigenschaften der verschiedenen
-Übertragungstechniken verglichen. Dabei werden Performance Tests, Benchmarking,
-Skalierbarkeitstests durchgeführt
-Verwandte Arbeiten und Stand der Forschung:
-Zu den oben genannten Fragestellungen und Technologien sollen verwandte Arbeiten
-analysiert und der aktuelle Stand der Forschung erfasst werden.
+Folgende methodische herangehensweise wird für die Beantwortung der Forschungsfragen angewendet:
+
+\subsubsection*{Theoretische Analyse:}
+\begin{itemize}
+	\item Systematische Literaturrecherche der theoretischen Grundlagen
+	\item Ermittlung des aktuellen Stand der Technik auf Basis wissenschaftlicher Publikationen und relevanter Industriestandards
+	\item Vergleich sowie Gegenüberstellung der Vor- und Nachteile der betrachteten API-Technologien unter Berücksichtigung der identifizierten Grundlagen und wissenschaftlichen Erkenntnisse.
+\end{itemize}
+
+\subsubsection*{Erstellen eines Prototyps:}
+\begin{itemize}
+	\item Experimentelle Methodik: Im praktischen Abschnitt der Arbeit wird ein Prototyp entwickelt, der die ausgewählten  API-Technologien implementiert.
+	\item Auf Basis dieses Prototyps werden Performance Messungen durchgeführt, wodurch es möglich ist die Technologien auch anhand eines praktischen Beispiels gegenüber zu stellen und zu vergleichen.
+\end{itemize}
 
 
+
+Basierend auf den theoretisch und praktischen Ermittelten Daten, werden anschließend die Forschungsfragen beantwortet.
 \chapterend
