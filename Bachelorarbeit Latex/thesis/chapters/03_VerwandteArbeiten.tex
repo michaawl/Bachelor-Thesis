@@ -2,11 +2,81 @@
 \chapter{Stand der Technik}
 \label{chap:intro}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Moderne Webanwendungen verwenden je nach Anforderungen eine Vielzahl an verschiedenen Technologien und Frameworks. Um zu ermitteln inwiefern sich die Implementierungen von REST, GraphQl und gRPC-Web nach aktuellem Stand unterscheiden, und in welchen Szenario welche API-Technologie bevorzugt eingesetzt wird, werden aktuelle Statistiken wissenschaftliche Arbeiten zu dem Thema analysiert.
+
 \chapterstart
-\section{Ähnliche Arbeiten}
-Moderne Webanwendungen verwenden je nach Anforderungen und Alter eine Vielzahl an Technologien und Frameworks. Um zu ermitteln inwiefern sich die Implementierungen von REST, GraphQl und gRPC nach aktuellem Stand unterscheiden, und in welchen Szenario welche API-Technologie bevorzugt eingesetzt wird, werden aktuelle wissenschaftliche Arbeiten zu dem Thema analysiert.
+\section{Industrielle Standards}
+\subsection{Verbreitung der API-Technologien:}
+Sowohl REST, GraphQl, als auch gRPC sind momentan weit verbreitet API-Architekturen, wobei der Verbreitungsgrad zwischen den Architekturen stark varriert. Bezogen auf den „State oft he APIs Report“ Bericht der populärsten API-Technologien von Postman aus den Jahren 2022 und 2023, deren Ergebnisse auf einer weltweiten Umfrage unter 40.261 Entwicklern und API-Professional sowie aggregierten Daten der Postman-Platform basieren, ergeben sich folgende Ergebnisse:
+
+\begin{itemize}
+	\item REST ist mit Abstand die populärste API. Während die Verwendung in den letzten Jahren aufgrund von neuen Architekturen langsam Abnahm, gaben 86\% der Befragten an REST zu benutzen. In den Jahren zuvor waren dies 89\% (2022) und 92\% (2021).
+	\item GraphQl ist nach Webhooks momentan die Drittbeliebteste API-Architektur, 29\% der Befragten benutzten GraphQl. Der Trend zeigt jedoch, dass die Technologie in den letzten Jahren an Beliebtheit dazugewann. In den Jahren zuvor nutzten 28\% (2022) bzw. 24\% (2021) GraphQl.
+	\item gRPC ist in dem Report auf Platz 6, 11\% der Befragten benutzten die API-Technologie. Damit stagnierte gRPC im Vergleich zum Vorjahr indem ebenfalls 11\% (2022) der befragten gRPC nutzten, im Jahr 2021 waren es noch 8\%. Hier ist anzumerken, dass es nicht ersichtlich ist, wie viele der Befragten gRPC-Web benutzten. Da der Hauptanwendungsbereich von gRPC jedoch bei Anwendungen mit MicroService Architekturen liegt, ist anzunehmen, dass dies nur ein sehr kleiner Bruchteil ist, und gRPC-Web derzeit nicht sehr populär ist.
+	
+	
+	Entsprechend der Popularität liegen auch REST, GraphQl und gRPC dementsprechende Test, Debugging und Monitoring Tools vor. Für gRPC wurden in Eigenrecherche kaum Tools dieser Art vorgefunden. Dies könnte daran liegen, dass gRPC-Web noch relativ neu ist (JAHRESZAHL), jedoch lässt es auch vermuten, dass die Nutzung von gRPC-Web nicht sehr verbreitet ist.
+\end{itemize}
+
+\subsection{Verbreitung von Web-Frontend Frameworks:}
+Neben API-Technologien beschäftigt sich die Arbeit vorallem mit der Kommunikation von Datenströmen auf der Sicht einer Web Front-End Anwendung. Laut der Stack Overflow Developer Survey 2023 gehören React, Angular und Vue.js  zu den am häufigsten verwendeten Webframeworks, wobei React derzeit am weitesten verbreitet ist. Wie in der implementierung des Praktischen Teil verdeutlicht, bestehen auch zu allen analysierten API-Architekturen der Arbeit entsprechende Bibliotheken und Tools für eine Implementierung in React. 
+
+\subsection{Einsatzbereiche der API-Architekturen der Industrie:}
+Um die Relevanz der Untersuchten Technologien in der gegenwärtigen Industrie zu verdeutlichen, und aufzuzeigen, für welche Einsatzbereiche sie dort verwendet werden, werden im Folgenden ausgewählte Praxisbeispiele großer internationaler Unternehmen betrachtet. Die Beispiele zeigen auf in welchen Kontexten REST, GraphQl und gRPC verwendet werden und geben Hinweise für die Einordnung in praktischen realen Anwendungen.
+
+\begin{itemize}
+	\item REST gilt nach wie vor als Standard für öffentlichen Web-APIs und Web-Services, und wird somit flächendeckend in der Industrie verwendet. Beispiele der Einsätze sind:
+		\begin{itemize}
+			\item Führende Cloud-Anbieter wie Amazon Web Servics (AWS), Microsoft Azure und die Google Cloud Platform(GCP)  nutzen REST-APIs  für den primären Datenzugriff für  die Dienste wie Cloud-Speicherung, Datenverarbeitung, KI-Dienste, ..
+			\item Unternehmen oder E-Commerce-Plattformen wie eBay bieten oft umfangfreiche REST-Apis an damit Entwickler Daten und Funktionen der Plattform in ihre eigenen Anwendungen integrieren können. . In dem Fall für eBay wären dies etwa ein Zugriff auf Produkt, Angebits. Oder Bestelldaten.
+		\end{itemize}
+		
+	https://blog.postman.com/rest-api-examples/
+		
+	\item GraphQl:
+		\begin{itemize}
+			 \item GraphQl wurde von im Jahr 2012 von Facebook entwickelt und 2015 als Open-Source-Projekt bereitgestellt. Der Hauptgrund dafür war, dass Facebook während der Entwicklung deren nativen Apps einen effizienten Austausch von Daten ermöglichen wollte um das Problem von Over- und Underfetching zu vermeiden.
+			\item PayPal nutzt GraphQl seit 2018, Grund der Umstellung war die zuvor fragmentierte API-Landschaft zu vereinheitlichen und die Developer Experience zu verbessern. Durch den sprachunabhängigen Endpunkt wird die Entwicklung beschleunigt und die Integration für externe Händler vereinfacht. 
+			\item Netflix nutzt seit 2021 GraphQl-Microservices um Datenbanken schnell als APIs bereitzustellen, um CRUD-Anwendungen effizienter entwickeln zu können und somit die Produktivität der Teams zu erhöhen.
+			\item GitHub stellt seit 2016 eine öffentliche GraphQl-API zur Verfügung, damit Entwickler gezielt nur die benötigten Daten in einem einzigen Aufruf Abfragen können und um die Integration mit externen Services zu vereinfachen.
+			\item Shopify führte 2018 GraphQl für eine Admin-API ein, dabei wurde eine Admin-API um Probleme mit dem Client-Server-Datenmapping bei REST lösen. Bei der REST API waren externe Developer bei jedem API Update gezwungen deren Code anzupassen.
+			
+		\end{itemize}
+	\item gRPC:
+		\begin{itemize}
+			 \item gRPC wurde von Google selbst entwickelt und wird dort sowohl für die interne Service-zu-Service-Kommunikation als auch in zahlreichen Google-Cloud-APIs eingesetzt.genutzt. Hauptgrund für die Entwicklung war die Notwendigkeit eines leistungsfähigen, modernen und effizienten Frameworks für RPC Calls. 
+			\item Netflix benutzt gRPC intensic für die interne Kommunikation zwischen seinen hunderten Microservices. Dabei wird es vorallem dafür benutzt damit Backend-zu-Backend Aufrufe so effizient wie möglich stattfinden.
+			\item Roblox, ein populäres Videospiel mit Millionen gleichzeitig aktiven Nutzern, nutzt gRPC und Protobuf intern für die Kommuniktaion zwischen den Backendservices und um  die Skalierbarkeit der Infrastruktur zu gewährleisten.
+			\item Spotify nutzt seit 2019 gRPC in der Kommuniktaion zwischen seinen Backend-Services,  um eine effizientere und performantere Infrastruktur für seine Streaming-Plattform bereitzustellen.
+		\end{itemize}
+\end{itemize}
+
+Die jeweiligen Beispiele zeigen klar die Haupteinsatzfelder der API-Architekturen auf. So kann abschließend gesagt werden, dass   REST wegen der weiten Verbreitung und Stabilität oft für öffentliche APIs genutzt wird und sich besonders für breite Entwickler-Communities und externe Integrationen eignet.
+GraphQL benutzt wird wenn flexible Datenabfragen und Minimierung von Over-/Underfetching entscheidend sind, die zeigt auch das Nutzen in komplexen Frontend-Apps wie Facebook.
+gRPc wird hauptsächlich für interne Kommunikation mit großer Datenabfragedichte genutzt, was zeigt, dass es sich besonders für performante, hochskalierende Microservice-Architekturen und Echtzeitanwendungen eignet, in denen geringe Latenz wichtig ist.
+
 
 \section{Ähnliche Arbeiten}
+Neben dem industriellen Stand der Technik ist es im Zuge der Arbeit auch wichtig zu ermitteln, welche wissenschaftlichen Arbeiten es bereits bezogen auf die betrachteten Forschungsfragen gibt. Es wurden mehrere vergleichende Studien, Bachelor- und Masterarbeiten sowie wissenschaftliche Artikel zu dem Thema „Vergleich von REST, GraphQl und gRPC in Systemen mit microservice Architekturen gefunden“. Im folgenden werden einige relevante Arbeiten davon aufgezeigt. Während zahlreiche Arbeiten die Technologien im Kontext von Microservices untersuchen, fehlen vergleichende Studien aus der Perspektive von Webanwendungen, insbesondere in Bezug auf die Kommunikation zwischen Frontend und Backend.
+
+\subsection{Comparative review of selected Internet communication protocols}
+Die einzige Arbeit die gefunden wurde, die auch einen Bezug zwischen Webserver und Clients herstellt ist von Kaminski und weiteren Autoren. Die Autoren der Arbeit implementieren hierbei mehrer Webserver mit REST, gRPC, GraphQL und WebSockets in Python und passende Python-Clients um die Protokolle in verschiedenen CRUD-Szenarien zu benchmarken. Wichtig hierbei ist anzumerken, dass die Arbeit zwar von „Webclients“ spricht, es sich  im Versuch jeodch nicht um Browser-basierten Frontends handelt und somit nicht gRPC-Web verwendet werden musste. Die Ergebnisse der Arbeit zeigen, dass gRPC in den meisten Tests die beste Performancewerte hatte, vorallem bei mehreren gleichzeitigen Requests. REST lag im Mittelfeld und GraphQl war im Vergleich am langsamsten. 
+
+\subsection{Bolanowski et al. (2022): Efficiency of REST and gRPC realizing communication tasks in microservice-based ecosystems}
+Bolanowski et al. (2022) untersucht die Effizienz von REST und gRPC in Microservice Architekturen mit mehreren Testszenarien. Dabei werden Daten von kleineren Payloads (kurzer String oder Integer mit wenigen Bytes) über strukturierte Daten mit ein paar hundert Bytes bis hin zu Dateien mit einigen kB oder MB gesendet. Der Server wurde mit C\# .NET 5 implementiert und Messungen fanden mit JMeter und IxLoad statt.
+Ergebnisse zeigen, dass REST bei sehr kleinen Datenmengen im Bytes Bereich schneller ist, während gRPC bei größeren Payloads (ab einigen zehn kB bis MB) deutliche Vorteile in der Performance aufweist. Die Arbeit zeigt, dass die Wahl der Technologie von der Datenmenge abhängt. Vorallem bei datenintensiven Transferen.
+
+\subsection{Berg \& Redi (2023): Benchmarking the request throughput of conventional API calls and gRPC}
+Die Bachelorabreit … stellte einen Vergleich zwischen REST (HTTP/1.1 + JSON) und gRPC (HTTP/2 + Protobuf) an und hat dabei den Request Throughput mit einem eigenen Benchmarking-Client gemessen. Es gab vier Klassen von Payloads:
+XS: 73 B, S: 246 B, M: 4KB, L: 40kB.
+Die Tests fanden auf einem lokalen Netzwerkstatt und die Ergebnisse zeigten: 
+Bei den Klassen XS und S erreichte REST den höheren Durchsatzm bei M und L war gRPC deutlich effizizienter und skalierte besser. Begründet wurden die Ergebnisse damit, dass,  ReST weniger Overhead bei winzigen Nachrichten hat und  daher bei sehr kleinen Requests im Vorteil ist, wobei die binäre Serialisierung und  Multiplexing von HTTP/2 Vorteile bringt, sobald mehr Daten übertragen werden und die Anfragefrequenz höher ist. Die Erkenntnis ist daher auch, dass die Wahl der Technologie stark von der Größe der Payload abhängt und.
+
+\subsection{Performance evaluation of microservices communication with REST, GraphQL, and gRPC:}
+Niswar et al verlgeichen die drei API-Protokolle REST, GraphQl und gRPC in einer Microservice-Architektur. In der Arbeit wurden 3 Services in Containern mit Redis und MySql implementiert die Flat Data und Nested Data abrufen können. Die Performance der Protokolle wird anhand von Responsezeiten und CPU-Auslastungen bei 100 bis 500 Requests sowohl gleichzeigtig als auch aufeinander abgesendet, gemessen.
+Die Ergebnisse zeigen aufm dass gRPC die schnellste Antwortzeit und geringste CPU Last aufweist, erklärt wird dies durch http/2.
+Rest wies eine mittlere Leistung auf, wobei GraphQl die langsamste Antwortzeiten und höchste CPU-Belastung, besonders bei steigender Last aufwies. Das Fazit des Papers ist daher, dass gRPC am performantesten in der Microservice-Kommunikation ist, gefolgt von REST, welches sinnvoll sein kann wenn Einfachheit im Vordergrund steht. GraphQl ist am resroucenintensivsten bietet jedoch Flexibilität.
 
 
 

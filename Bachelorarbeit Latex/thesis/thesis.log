@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  20 AUG 2025 15:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  24 AUG 2025 23:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1327,7 +1327,7 @@ Package hyperref Info: Link coloring ON on input line 65.
 \openout2 = `chapters/01_titlepage.aux'.
 
  (./chapters/01_titlepage.tex
-<images/logo_FHJ_100mm_cmyk.pdf, id=123, 285.065pt x 58.2175pt>
+<images/logo_FHJ_100mm_cmyk.pdf, id=127, 285.065pt x 58.2175pt>
 File: images/logo_FHJ_100mm_cmyk.pdf Graphic file (type pdf)
 <use images/logo_FHJ_100mm_cmyk.pdf>
 Package pdftex.def Info: images/logo_FHJ_100mm_cmyk.pdf  used on input line 12.
@@ -1520,7 +1520,7 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 
 [6]
-<images/http1_theory.jpg, id=251, 197.4285pt x 148.1535pt>
+<images/http1_theory.jpg, id=256, 197.4285pt x 148.1535pt>
 File: images/http1_theory.jpg Graphic file (type jpg)
 <use images/http1_theory.jpg>
 Package pdftex.def Info: images/http1_theory.jpg  used on input line 82.
@@ -1588,6 +1588,18 @@ LaTeX Info: Symbol \textrightarrow not provided by
  (./chapters/03_VerwandteArbeiten.tex
 Kapitel 3.
 
+Overfull \hbox (17.70322pt too wide) in paragraph at lines 11--12
+\T1/ptm/m/n/12 Sowohl REST, Gra-ph-Ql, als auch gRPC sind mo-men-tan weit ver-b
+rei-tet API-Architekturen,
+ []
+
+
+Overfull \hbox (1.73154pt too wide) in paragraph at lines 11--12
+\T1/ptm/m/n/12 un-ter 40.261 Ent-wick-lern und API-Professional so-wie ag-gre-g
+ier-ten Da-ten der Postman-
+ []
+
+
 
 [15
 
@@ -1595,7 +1607,47 @@ Kapitel 3.
 
 
 
-])
+]
+Overfull \hbox (7.68176pt too wide) in paragraph at lines 29--31
+[]\T1/ptm/m/n/12 REST gilt nach wie vor als Stan-dard für öf-fent-li-chen Web-A
+PIs und Web-Services,
+ []
+
+
+Overfull \hbox (4.4445pt too wide) in paragraph at lines 31--32
+[]\T1/ptm/m/n/12 Führende Cloud-Anbieter wie Ama-zon Web Ser-vics (AWS), Mi-cro
+-soft Azu-
+ []
+
+
+
+[16]
+
+[17]
+Overfull \hbox (18.23138pt too wide) in paragraph at lines 51--52
+[]\T1/ptm/m/n/12 Spotify nutzt seit 2019 gRPC in der Kom-mu-nik-tai-on zwi-sche
+n sei-nen Backend-
+ []
+
+
+Overfull \hbox (1.51468pt too wide) in paragraph at lines 55--58
+\T1/ptm/m/n/12 Sta-bi-li-tät oft für öf-fent-li-che APIs ge-nutzt wird und sich
+ be-son-ders für brei-te Entwickler-
+ []
+
+
+
+[18]
+
+[19]
+Overfull \hbox (5.23303pt too wide) in paragraph at lines 76--76
+[]\T1/ptm/b/n/14.4 Performance eva-lua-ti-on of mi-cro-ser-vices com-mu-ni-ca-t
+i-on with
+ []
+
+
+
+[20])
 \openout2 = `chapters/04_AnalyseUndVergleich.aux'.
 
  (./chapters/04_AnalyseUndVergleich.tex
@@ -1608,7 +1660,7 @@ Overfull \hbox (57.46356pt too wide) in paragraph at lines 7--7
 
 
 
-[16
+[21
 
 
 
@@ -1625,42 +1677,42 @@ an-satz zu-rück-lie-fern. Hier-
 
 Overfull \hbox (58.32544pt too wide) has occurred while \output is active
 \T1/ptm/m/sl/12 KAPITEL 4.  THEORETISCHE ANALYSE UND VERGLEICH DER API-TECHNOLO
-GIEN: \T1/ptm/m/n/12 17
+GIEN: \T1/ptm/m/n/12 22
  []
 
-[17]
+[22]
 
 
 Overfull \hbox (58.32544pt too wide) has occurred while \output is active
 \T1/ptm/m/sl/12 KAPITEL 4.  THEORETISCHE ANALYSE UND VERGLEICH DER API-TECHNOLO
-GIEN: \T1/ptm/m/n/12 18
+GIEN: \T1/ptm/m/n/12 23
  []
 
-[18]
+[23]
 
 
 Overfull \hbox (58.32544pt too wide) has occurred while \output is active
 \T1/ptm/m/sl/12 KAPITEL 4.  THEORETISCHE ANALYSE UND VERGLEICH DER API-TECHNOLO
-GIEN: \T1/ptm/m/n/12 19
+GIEN: \T1/ptm/m/n/12 24
  []
 
-[19]
+[24]
 
 
 Overfull \hbox (58.32544pt too wide) has occurred while \output is active
 \T1/ptm/m/sl/12 KAPITEL 4.  THEORETISCHE ANALYSE UND VERGLEICH DER API-TECHNOLO
-GIEN: \T1/ptm/m/n/12 20
+GIEN: \T1/ptm/m/n/12 25
  []
 
-[20]
+[25]
 
 
 Overfull \hbox (58.32544pt too wide) has occurred while \output is active
 \T1/ptm/m/sl/12 KAPITEL 4.  THEORETISCHE ANALYSE UND VERGLEICH DER API-TECHNOLO
-GIEN: \T1/ptm/m/n/12 21
+GIEN: \T1/ptm/m/n/12 26
  []
 
-[21])
+[26])
 \openout2 = `chapters/05_PraktischerTeil.aux'.
 
  (./chapters/05_PraktischerTeil.tex
@@ -1679,7 +1731,7 @@ i-ka-ti-on zwi-schen Frontend-
 
 
 
-[22
+[27
 
 
 
@@ -1693,7 +1745,7 @@ h-QL und gRPC-
 
 
 
-[23]
+[28]
 Overfull \hbox (2.09242pt too wide) in paragraph at lines 73--74
 []\T1/ptm/b/n/12 Einzelabfragen - Web-Client (1 Re-quest): \T1/ptm/m/n/12 Ver-g
 leich der Tech-no-lo-gi-en bei beim
@@ -1707,7 +1759,7 @@ ern durch-ge-führt. Durch
 
 
 
-[24]
+[29]
 Overfull \hbox (15.05551pt too wide) in paragraph at lines 82--83
 \T1/ptm/m/n/12 HTT-P/2.0 Pro-to-koll durch-ge-führt und ver-schlüs-selt mit htt
 -ps ver-sen-det. Bei der Response-
@@ -1715,20 +1767,20 @@ Overfull \hbox (15.05551pt too wide) in paragraph at lines 82--83
 
 
 
-[25]
+[30]
 Overfull \hbox (1.72pt too wide) in paragraph at lines 110--112
 \T1/ptm/m/n/12 rung ba-siert auf .NET 9, ei-ner platt-for-mu-n-ab-hän-gi-gen Op
 en-Source-Laufzeitumgebung
  []
 
-<images/prakt1.png, id=383, 338.76563pt x 82.80937pt>
+<images/prakt1.png, id=415, 338.76563pt x 82.80937pt>
 File: images/prakt1.png Graphic file (type png)
 <use images/prakt1.png>
 Package pdftex.def Info: images/prakt1.png  used on input line 121.
 (pdftex.def)             Requested size: 288.79422pt x 70.59677pt.
 
 
-[26
+[31
 
  <./images/prakt1.png>]
 Overfull \hbox (41.48607pt too wide) in paragraph at lines 154--157
@@ -1744,7 +1796,7 @@ m/m/n/12 -Anfragen an den End-punkt \T1/pcr/m/n/12 /graphql
 
 
 
-[27]
+[32]
 Overfull \hbox (19.51959pt too wide) in paragraph at lines 172--174
 []\T1/ptm/b/n/12 TextService\T1/ptm/m/n/12 : Rück-ga-be der drei Text-grö-ÿen ü
 ber die Me-tho-den \T1/pcr/m/n/12 GetSmall()\T1/ptm/m/n/12 ,
@@ -1775,7 +1827,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[28]
+[33]
 Overfull \hbox (0.93062pt too wide) in paragraph at lines 216--218
 \T1/ptm/m/n/12 setzt. Die Ge-ne-rie-rung der gRPC-Klassen er-folgt mit-tels der
  \T1/pcr/m/n/12 ts-protoc-gen\T1/ptm/m/n/12 -
@@ -1789,7 +1841,7 @@ o src/proto/*.proto[]
 
 
 
-[29]
+[34]
 Overfull \hbox (11.00758pt too wide) in paragraph at lines 243--244
 []\T1/ptm/m/n/12 Bei gRPC-Web er-folgt die De-se-ria-li-sie-rung über ge-ne-rie
 r-te Protobuf-Klassen. 
@@ -1800,7 +1852,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[30]
+[35]
 Overfull \hbox (0.7612pt too wide) in paragraph at lines 279--280
 []\T1/ptm/b/n/12 gRPC\T1/ptm/m/n/12 : über \T1/pcr/m/n/12 Grpc.Net.Client \T1/p
 tm/m/n/12 di-rekt als na-ti-ve gRPC-Kommunikation 
@@ -1828,48 +1880,16 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[31]
+[36]
 
-[32]
+[37]
 
-[33
+[38
 
 ]
 Overfull \hbox (12.65056pt too wide) in paragraph at lines 329--330
 \T1/ptm/m/n/12 Client ge-te-stet, um Un-ter-schie-de zwi-schen brow-ser-ba-sier
 -ter und microservice-orientierter
- []
-
-
-
-[34
-
-]
-
-[35
-
-]
-Overfull \hbox (8.47922pt too wide) in paragraph at lines 383--388
-\T1/ptm/m/n/12 von Me-di-en-da-ten. Hier-bei war ent-ge-gen der theor-ti-schen 
-Er-war-tun-gen REST die schnell-
- []
-
-
-
-[36
-
-]
-
-[37
-
-]
-
-[38
-
-]
-Overfull \hbox (3.53085pt too wide) in paragraph at lines 447--449
-\T1/ptm/m/n/12 Derselbe Ver-such mit Einzel-Requests wur-de an-schlie-ÿend in z
-wei wei-te-ren Web Brow-
  []
 
 
@@ -1881,6 +1901,12 @@ wei wei-te-ren Web Brow-
 [40
 
 ]
+Overfull \hbox (8.47922pt too wide) in paragraph at lines 383--388
+\T1/ptm/m/n/12 von Me-di-en-da-ten. Hier-bei war ent-ge-gen der theor-ti-schen 
+Er-war-tun-gen REST die schnell-
+ []
+
+
 
 [41
 
@@ -1892,6 +1918,32 @@ wei wei-te-ren Web Brow-
 
 [43
 
+]
+Overfull \hbox (3.53085pt too wide) in paragraph at lines 447--449
+\T1/ptm/m/n/12 Derselbe Ver-such mit Einzel-Requests wur-de an-schlie-ÿend in z
+wei wei-te-ren Web Brow-
+ []
+
+
+
+[44
+
+]
+
+[45
+
+]
+
+[46
+
+]
+
+[47
+
+]
+
+[48
+
 ])
 \openout2 = `chapters/06_DiskussionUndAusblick.aux'.
 
@@ -1899,7 +1951,7 @@ wei wei-te-ren Web Brow-
 Kapitel 6.
 
 
-[44
+[49
 
 
 
@@ -1910,48 +1962,48 @@ Kapitel 6.
 
  (./chapters/99_acronyms.tex
 
-LaTeX Warning: Hyper reference `acro:ABI' on page 45 undefined on input line 24
+LaTeX Warning: Hyper reference `acro:ABI' on page 50 undefined on input line 24
 .
 
 
-LaTeX Warning: Hyper reference `acro:ABI' on page 45 undefined on input line 24
+LaTeX Warning: Hyper reference `acro:ABI' on page 50 undefined on input line 24
 .
 
 
-LaTeX Warning: Hyper reference `acro:DOI' on page 45 undefined on input line 25
+LaTeX Warning: Hyper reference `acro:DOI' on page 50 undefined on input line 25
 .
 
 
-LaTeX Warning: Hyper reference `acro:DOI' on page 45 undefined on input line 25
+LaTeX Warning: Hyper reference `acro:DOI' on page 50 undefined on input line 25
 .
 
 
-LaTeX Warning: Hyper reference `acro:ISBN' on page 45 undefined on input line 2
+LaTeX Warning: Hyper reference `acro:ISBN' on page 50 undefined on input line 2
 6.
 
 
-LaTeX Warning: Hyper reference `acro:ISBN' on page 45 undefined on input line 2
+LaTeX Warning: Hyper reference `acro:ISBN' on page 50 undefined on input line 2
 6.
 
 
-LaTeX Warning: Hyper reference `acro:MITM' on page 45 undefined on input line 2
+LaTeX Warning: Hyper reference `acro:MITM' on page 50 undefined on input line 2
 7.
 
 
-LaTeX Warning: Hyper reference `acro:MITM' on page 45 undefined on input line 2
+LaTeX Warning: Hyper reference `acro:MITM' on page 50 undefined on input line 2
 7.
 
 
-LaTeX Warning: Hyper reference `acro:URL' on page 45 undefined on input line 28
+LaTeX Warning: Hyper reference `acro:URL' on page 50 undefined on input line 28
 .
 
 
-LaTeX Warning: Hyper reference `acro:URL' on page 45 undefined on input line 28
+LaTeX Warning: Hyper reference `acro:URL' on page 50 undefined on input line 28
 .
 
 )
 
-[45
+[50
 
 
 
@@ -1959,12 +2011,12 @@ LaTeX Warning: Hyper reference `acro:URL' on page 45 undefined on input line 28
 
 ]
 
-[46
+[51
 
 
 ]
 
-[47
+[52
 
 ]
 
@@ -1973,29 +2025,29 @@ Package biblatex Warning: No driver for 'standard'.
 
 
 
-[48
+[53
 
 ]
 
-[49]
+[54]
 \openout2 = `chapters/101_Rohdaten.aux'.
 
  (./chapters/101_Rohdaten.tex
 Anhang A.
 
 
-[50
+[55
 
 
 ]
 
-[51]
+[56]
 
-[52]
+[57]
 
-[53]
+[58]
 
-[54]) (./thesis.aux (./chapters/01_titlepage.aux) (./chapters/03_abstract.aux)
+[59]) (./thesis.aux (./chapters/01_titlepage.aux) (./chapters/03_abstract.aux)
 (./chapters/01_Einleitung.aux) (./chapters/02_TheoretischeGrundlagen.aux)
 (./chapters/03_VerwandteArbeiten.aux) (./chapters/04_AnalyseUndVergleich.aux)
 (./chapters/05_PraktischerTeil.aux) (./chapters/06_DiskussionUndAusblick.aux)
@@ -2011,23 +2063,17 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: C68C966FD0B618816CB867F043B578D7;4900
-(rerunfilecheck)             After:  C04250AF0C17E6D5D82C044097C2B810;5067.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 0356BC1C853C91891DE0DB3C93278B6E;5089.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36922 strings out of 469608
- 697703 string characters out of 5474779
+ 36935 strings out of 469608
+ 697863 string characters out of 5474779
  1610258 words of memory out of 5000000
- 62880 multiletter control sequences out of 15000+600000
+ 62881 multiletter control sequences out of 15000+600000
  685607 words of font info for 110 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  104i,10n,104p,1311b,2357s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2040,10 +2086,10 @@ helvetic/uhvr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/symbol/usyr.pfb
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utm
 ri8a.pfb>
-Output written on thesis.pdf (61 pages, 291104 bytes).
+Output written on thesis.pdf (66 pages, 303327 bytes).
 PDF statistics:
- 667 PDF objects out of 1000 (max. 8388607)
- 574 compressed objects within 6 object streams
- 197 named destinations out of 1000 (max. 500000)
- 260 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 701 PDF objects out of 1000 (max. 8388607)
+ 602 compressed objects within 7 object streams
+ 209 named destinations out of 1000 (max. 500000)
+ 268 words of extra memory for PDF output out of 10000 (max. 10000000)
 
