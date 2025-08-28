@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  24 AUG 2025 23:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  28 AUG 2025 11:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1901,7 +1901,7 @@ Overfull \hbox (12.65056pt too wide) in paragraph at lines 329--330
 [40
 
 ]
-Overfull \hbox (8.47922pt too wide) in paragraph at lines 383--388
+Overfull \hbox (8.47922pt too wide) in paragraph at lines 385--390
 \T1/ptm/m/n/12 von Me-di-en-da-ten. Hier-bei war ent-ge-gen der theor-ti-schen 
 Er-war-tun-gen REST die schnell-
  []
@@ -1919,7 +1919,7 @@ Er-war-tun-gen REST die schnell-
 [43
 
 ]
-Overfull \hbox (3.53085pt too wide) in paragraph at lines 447--449
+Overfull \hbox (3.53085pt too wide) in paragraph at lines 449--451
 \T1/ptm/m/n/12 Derselbe Ver-such mit Einzel-Requests wur-de an-schlie-ÿend in z
 wei wei-te-ren Web Brow-
  []
@@ -2086,7 +2086,7 @@ helvetic/uhvr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/symbol/usyr.pfb
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utm
 ri8a.pfb>
-Output written on thesis.pdf (66 pages, 303327 bytes).
+Output written on thesis.pdf (66 pages, 303673 bytes).
 PDF statistics:
  701 PDF objects out of 1000 (max. 8388607)
  602 compressed objects within 7 object streams

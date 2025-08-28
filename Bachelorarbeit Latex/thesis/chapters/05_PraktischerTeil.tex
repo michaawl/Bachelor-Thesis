@@ -328,6 +328,8 @@ Die Responsezeiten beschreiben die tatsächliche Zeit, bis die jeweiligen Daten 
 
 Untersucht wurde die Response-Zeit von Einzel-Requests, Mehrfachabfragen (20 parallele Requests) und browserabhängige Unterschiede in einem Web-Client. Zusätzlich wurden alle Technologien (REST, GraphQl, gRPC-Web und gRPC) im Konsolen-Client getestet, um Unterschiede zwischen browserbasierter und microservice-orientierter Kommunikation sichtbar zu machen und Unterschiede zwischen gRPC und gRPC-Web zu ermitteln.
 
+Für den Vergleich der Messwerte wurde der gerundete arithmetische Mittelwert herangezogen, sofern die Abweichung zum Median nicht zu groß war und damit ausgeschlossen werden konnte, dass der Mittelwert durch Ausreißer verzerrt ist.
+
 Die Messungen wurden ausschließlich lokal auf localhost durchgeführt. Dadurch können zusätzliche Einflüsse wie Paketverlust, Routing-Latenz oder Bandbreitenschwankungen, die bei realen Bedingungen auftreten würden, ausgeschlossen worden. Ziel der Messungen war es, tatsächliche Unterschiede zwischen den API Technologien (gRPC, gRPC-Web, REST, GraphQL) unter optimalen Bedingungen und reproduzierbar zu ermitteln.
 Die Ergebnisse repräsentieren daher keine realen Szenarien. Der Fokus wurde ausschließlich auf den Vergleich der Kommunikationsprotokolle und deren Verarbeitung gelegt.
 
@@ -378,17 +380,17 @@ Für eine sinnvolle Auswertung der Daten, wurden jeweils 30 Requests unabhängig
 
 \clearpage
 \textbf{TextService:}  
-Es ist zu erkennen, dass kleinere Textdaten (1kB – 10 kB) von allen Schnittstellen relativ schnell verarbeitet werden konnten. gRPC Web und GraphQL weisen hierbei jedoch die geringsten Antwortzeiten auf ( 7-8 ms ), REST benötigte ca 8-9 ms für kleinere Textdaten. Bei größeren Textmengen von ( 200 kB ) steigt die Latenz erwartungsgemäß bei allen Technologien etwas an, wobei diese bei GraphQl mit 10 ms und REST mit 13 ms deutlich schneller als bei gRPC Web ( 19 ms ) bereitstehen. 
+Es ist zu erkennen, dass kleinere Textdaten (1–10 kB) von allen Schnittstellen relativ schnell verarbeitet werden konnten. gRPC Web und GraphQL weisen hierbei jedoch die geringsten Antwortzeiten (7.5-8.5 ms) auf, REST benötigte ungefähr 8-9 ms für kleinere Textdaten. Bei größeren Textmengen (200 kB) steigt die Latenz erwartungsgemäß bei allen Technologien etwas an, wobei diese bei GraphQl mit 10 ms und REST mit 13 ms deutlich schneller als bei gRPC Web (19 ms) bereitstehen. 
 
 \textbf{MediaService:}  
 Besonders Auffällig ist der Leistungsunterschied bei der Übertragung von Mediendaten.
 Hierbei war entgegen der theortischen Erwartungen REST die schnellste Technologie für alle Medienarten. Für Bilder ( 4MB) lag dabei die mittlere Antwortzeit bei 36 ms, deutlich vor gRPC ( 182 ms ) und GraqhQL ( 511 ms ).
-Ähnliches Verhalten zeigte sich bei der Übertragung von Audiodateien (30 MB), hierbei wurde mit REST eine mittlere Antwortzeit von 150 ms gemessen, mit deutlichem Abstand gefolgt von gRPC ( 2372 mms) und GraphQL ( 5870  ms ).
+Ähnliches Verhalten zeigte sich bei der Übertragung von Audiodateien (30 MB), hierbei wurde mit REST eine mittlere Antwortzeit von 149 ms gemessen, mit deutlichem Abstand gefolgt von gRPC ( 2372 mms) und GraphQL ( 5897  ms ).
 Bei der Übertagung von Videodaten (100 MB ) konnte in Chrome keine vergleichbare Messung der Antwortzeiten durchgeführt werden. Die Übertragung war nur über die REST-API erfolgreich. Es ergab sich dabei eine durchschnittliche Antwortzeit von 365 ms. Wegen großer Ladezeit bzw. Instabilitäten des Clients konnten für graphQL und Grpc-WEB keine Daten gemessen werden. 
 
 
 \textbf{BlogService:}  
-Bei der Messung der Blog-Datenstrukturen, konnten geringe Unterschiede in den Abfragezeiten zwischen den Technologien identifiziert werden. GraphQl war hierbei mit einer mittleren latenz von 7.6 ms leicht schneller als gprc ( 7.9 ms / 7.8 ms) und Rest ( 8.6 ms.
+Bei der Messung der Blog-Datenstrukturen, konnten geringe Unterschiede in den Abfragezeiten zwischen den Technologien identifiziert werden. GraphQl war hierbei mit einer mittleren latenz von 7.6 ms leicht schneller als gprc ( 7.9 ms) und Rest (8.6 ms).
 
 \clearpage
 \subsubsection{20 parallele Requests}
@@ -415,7 +417,7 @@ Bei der Durchführung von 20 parallelen Requests wurden jeweils pro API und Serv
 		&       & medium text & 35.4 & 33.4 \\
 		&       & large text  & 71.1 & 68.7 \\
 		& Media & Foto        & 16159.6 & 15745.7 \\
-		&       & Audio       & 16159.6 & — \\
+		&       & Audio       & - & — \\
 		&       & Video       & — & — \\
 		& Blog  & —           & 34.6 & 33.0 \\
 		\hline
@@ -432,15 +434,15 @@ Bei der Durchführung von 20 parallelen Requests wurden jeweils pro API und Serv
 
 \clearpage
 \textbf{TextService:}  
-Während kleinere Textdaten noch performant verarbeitet werden können, nehmen die Unterschiede bei größeren Lasten stärker zu. Bei sehr kleinen Textdaten von 1 KB sind gRPC und graphql jeweils mit ungefähr 30 ms gleich auf, bei 10 kB ist graphQl mit 35 ms ungefähr 9 ms schneller als gRPC mit 44 ms. je größer die Daten werden, desto langsamer wird gRPC. Rest benötigte dabei jeweils 45 ms btw. 62 ms. Auch bei größeren Textdaten ist graphQl mit je 71 ms am schnellsten, gefolgt von REST mit 92 ms und gRPC mit 145 ms. 
+Während kleinere Textdaten noch performant verarbeitet werden können, nehmen die Unterschiede bei größeren Lasten stärker zu. Bei sehr kleinen Textdaten von 1 KB sind gRPC und Graph!l jeweils mit einer Antwortzeit von 31ms bei GraphQl und 33 ms bei gRPC-Web gleichauf, bei 10 kB ist graphQl mit 35 ms ungefähr 9 ms schneller als gRPC mit 44 ms. Je größer die Daten werden, desto langsamer wird gRPC. Rest benötigte bei den kleineren Lasen 46 ms für 1Kb und 62 ms für 10kB. Auch bei größeren Textdaten ist GraphQl mit 71 ms am schnellsten, gefolgt von REST mit 92 ms und gRPC mit 145 ms. 
 
 \textbf{MediaService:}  
-Bei der Verarbeitung von Medien kam es wie bereits durch die einzelabfragen erwartet zu größeren unterschieden. REST schnitt auch hier mit 384 ms für Fotos, 2420 ms für Audiodaten am besten ab. Gefolgt von gRPC mit 5736 ms für das Foto und 126026 ms für die Audiodatei. Bei GraphQl dauerte der Request für die Fotodaten 16159 ms.
+Bei der Verarbeitung von Medien kam es wie bereits durch die einzelabfragen erwartet zu größeren unterschieden. REST schnitt auch hier mit 386 ms für Fotos, 2420 ms für Audiodaten am besten ab. Gefolgt von gRPC mit 5736 ms für das Foto und 126026 ms für die Audiodatei. Bei GraphQl dauerte der Request für die Fotodaten 16159 ms.
 Für Videodateien bzw. Audiodateien ( GraphQl ) wurde in dieser Testreihe aufgrund der bereits in den Einzelabfragen instabilen Ladeverhaltens, keine weiteren Messungen vorgenommen.
 
 
 \textbf{BlogService:}  
-Bei den Abfragen der Blogdaten lagen die Antwortzeiten aller Technologien im zweistelligen ms bereich. Ähnlich wie bei geringen Textdaten, sind gRPC und graphQl mit jeweis 34 ms gleichauf, gefolgt von REST mit 53 ms.
+Bei den Abfragen der Blogdaten lagen die Antwortzeiten aller Technologien im zweistelligen ms bereich. Ähnlich wie bei geringen Textdaten, sind gRPC und graphQl mit jeweis 35 ms gleichauf, gefolgt von REST mit 53 ms.
 
 \clearpage
 \subsubsection{Browser-Vergleich}
@@ -485,19 +487,17 @@ Bei der Messung wurden jeweils 10 Requests pro Technologie und Service durchgef�
 
 \clearpage
 \textbf{Textdaten:}  
-Bei den Messungen reagierte Edge in allen Schnittstellen mit den niedrigsten Antwortzeiten. Vorallem bei REST und GraphQL konnten deutliche Unterschiede gemessen werden, hierbei hatte REST in Edge für kleine Textdaten im Mittel nur etwa 4-6 ms, während Chrome und Firefox 8-9 ms benötigten. Bei größeren Textmengen blieg Edge mit 9.5 ms bei Rest im Vergleich zu 13 ms in Chrome und 11 ms in Firefox weiterhin am besten.
-Auch gRPC konnte in Edge am schnellsten verarbeitet werden, wobei bei größere Textdaten sowohl Edge und Chrome 19 ms benötigen und Firefox 24 ms. 
+Bei den Messungen reagierte Edge in allen Schnittstellen mit den niedrigsten Antwortzeiten, dabei konnten bei allen drei API-Architekturen deutliche Unterschiede gemessen werden. Für kleinere Textdaten (1 kB und 10 kB) benötigten Chrome und Firefox bei REST 8.5-9.5 ms während Edge nur 4.8 und 6.3 ms benötigten. Ähnlich ist das Verhalten bei GraphQl und gRPC wobei Chrome bei diesen Architekturen deutlich schneller als Firefox ist. Auch bei größeren Textmengen blieg Edge bei allen Technologien am performantesten. Bei GraphQl und gRPC war Chrome wieder schneller als Firefox, bei dem REST Service war Firefox jedoch mit 11 ms schneller als CHrome (13 ms).
 
 
 \textbf{Medieninhalte (Foto, Audio, Video)}  
-Beim Senden von Mediendaten hatte hatten Chrome und Edge im Gegensatz zu Edge eine ähnlich gute Performance. Bei REST und gRPC konnte Edge und Chrome die kürzesten Antwortzeiten für Fotos ( 36 ms) und Audiodateien ( 150 ms)  liefern. Bei Firefox lagen diese bei REST bei 55 ms und 250 ms bzw. bei gRP-Web bei 250 ms und 2455 ms.
+Beim Senden von Mediendaten hatte hatten Chrome und Edge im Gegensatz zu Edge eine ähnliche Performance. Bei REST und gRPC konnte Edge und Chrome die kürzesten Antwortzeiten für Fotos ( 36 ms) und Audiodateien (ungefähr 150 ms)  liefern. Bei Firefox lagen diese bei REST bei 54 ms und 249 ms bzw. bei gRPC-Web bei 250 ms und 2455 ms.
 
 Bei dem Senden von Videodaten war Chrome am performantesten. Hier hatte REST eine Antwortzeit von 365 ms, Edge 423 ms und Firefox 676 ms. Im Gegensatz zu Chrome, konnten das Video in Firefox mit gRPC (8984 ms) und Edge ( 7984) und in Firefox auch mit GraphQL (90091 ms), auch wenn sehr langsam, dargestellt werden.
 
 
 \textbf{Blogdaten:}  
-Ähnliche Ergebnisse wie bei Textdaten: Edge meist am schnellsten, gefolgt von Chrome, dann Firefox.
-
+Ähnliche Ergebnisse wie bei Textdaten ist Edge auch bei dem senden von Blogdaten bei in allen Kategorien am schnellsten. Während Chrome und Firefox bei gRPC mit 8 ms gleich schnell sind, ist Firefox bei REST mit 7 ms zu 9 ms und Chrome bei GraphQl mit 8 ms zu 10 ms schneller als der jeweils andere Browser.
 
 
 \clearpage
@@ -550,15 +550,15 @@ Um die Kommunikationsleistung der einzelnen Technologien ohne Einfluss eines Bro
 
 \clearpage
 \textbf{TextService:}  
-Alle viel Technologien zeigten bei kleinen und mittleren Textdaten sehr geringe Antwortzeiten. gRPC hatte hier jedoch die schnellste respond Zeit mit nur ungefähr 1 ms. REST, GraphQl und gRPC haben ungefähr die selbe Zeit von 2-3 ms.
+Alle Technologien zeigten bei kleinen und mittleren Textdaten im Konsolen-Client sehr geringe Antwortzeiten. gRPC hatte hier jedoch eindeutlig die schnellste Response Zeit mit nur 1.2 für 1kB und 1.5 ms für 10 kB. REST, GraphQl und gRPC-Wen haben ungefähr die selbe Zeit von 2 ms für beide Textgrößen wobei gRPC-Web mit 2.2 ms für 1kB und für  2.8 ms für 10kB am langsamsten ist.
 Auch bei großen Textdaten ist gRPC mit 4.1ms am schnellste, gefolgt von GraphQl mit 5.5 ms, REST mit 6.4 ms und gRPC Web mit 6.8 ms.
 
 
 \textbf{MediaService:}  
-Bis auf REST, war die Übertragung der Mediadaten im Konsolen-Client schneller als im Web-Client. gRPC hatte mit 43 ms die schnellste Übertragung von Fotos gefolgt von REST mit 46 ms, gRPC Web mit 51 ms und GraphQL mit 5716 ms. Bei den 30 Mb Audiodaten sind REST, gRPC und gRPC-Web gleichauf mit 250 ms. Nur bei großen Binärdaten ist REST mit 540 ms schneller als gRPC (610) und gRPC-Web (705 ms). Für GraphQL konnte keine sinnvolle Messung für Audio oder Fotos durchgeführt werden.
+Bis auf REST, war die Übertragung der Mediadaten auch im Konsolen-Client schneller als im Web-Client. gRPC hatte mit 43 ms die schnellste Übertragung von Fotos gefolgt von REST mit 46 ms, gRPC-Web war mit 51 ms etwas langsamer und GraphQL mit 5716 ms deutlich am langsamsten. Bei den 30 Mb Audiodaten sind REST, gRPC und gRPC-Web mit ungefähr 250 ms gleichauf. Nur bei großen Binärdaten ist REST mit 540 ms schneller als gRPC (610) und gRPC-Web (705 ms). Für GraphQL konnte keine sinnvolle Messung für Audio oder Videodaten durchgeführt werden.
 
 \textbf{BlogService:}  
-Bei den Senden von strukturierten Bloddaten liegen gRPC und REST mit ungefähr 1 ms ungefähr gleich auf, gefolgt von GraphQl mit 2,4 und gRPC-Web mit 2.9 ms.
+Bei dem Senden von strukturierten Bloddaten liegen gRPC und REST mit ungefähr 1 ms ungefähr gleich auf, gefolgt von GraphQl mit 2,4 und gRPC-Web mit 2.9 ms. Auch hier werden die Daten deutlich schneller als im Web-Client gesendet.
 
 \clearpage
 \section*{Fazit der Messungen}
