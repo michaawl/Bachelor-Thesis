@@ -561,7 +561,18 @@ Bis auf REST, war die Übertragung der Mediadaten auch im Konsolen-Client schnel
 Bei dem Senden von strukturierten Bloddaten liegen gRPC und REST mit ungefähr 1 ms ungefähr gleich auf, gefolgt von GraphQl mit 2,4 und gRPC-Web mit 2.9 ms. Auch hier werden die Daten deutlich schneller als im Web-Client gesendet.
 
 \clearpage
-\section*{Fazit der Messungen}
-Aus den mit den Prototypen durchgeführten Messungen, können einige Annahmen getroffen und Unterschiede aufzeigen. Zu einem großen Teil konnten die im theoretischen Teil beschriebenen Annahmen zu den Unterschieden zwischen REST, GraphQl, gRPC und gRPC-Web bestätigt werden, gleichzeitig wurden einige andere Erkenntnisse hervorgebracht. Folgende Unterschiede bzw. Erkenntnisse konnten gewonnen werden:
+\section*{Diskussion der Messungen}
+Die mit dem Prototypen durchgeführten Messungen zeigen einige Unterschiede je nach Datenart, Lastszenario und Clienttyp (Browser vs. Konsolenclient), aufgezeigt werden. Während einige der im theoretischen Teil beschriebenen Annahmen zu den Unterschieden zwischen REST, GraphQl, gRPC und gRPC-Web bestätigt werden konnten, ergaben sich durch die Messungen folgende Erkenntnise:
+
+\begin{itemize}
+	\item \textbf{Textdaten und Blogdaten im Browser:} Bei kleinen Textlasten und generell Datenstrukturen (Blog-Daten) sind GraphQl und gRPC-Web die schnellste Architektur, REST lag in fast allen Browser-Messungen leicht dahinter. Bei größeren Textlasten ist gRPC-Web am langsamsten. Es zeigt, dass gRPC-Web ab einer bestimmten Datenmenge nicht mehr performant ist. Der Versuch mit der hohen Parallelität bestätigte dieses Verhalten.
+	\item \textbf{Mediendaten im Browser:} Für Mediendaten (Binärdaten im MB Bereich) zeigt sich REST in allen Kategorien als klar überlegen dar. GraphQL und gRPC-Web weisen ab einer gewissen Datenmenge sehr hohe Latenzen auf und können nicht mehr von allen Browsernengines verarbeitet werden.
+	
+	\item \textbf{Browservergleich:} Der Browser beeinflusst die Ergebnisse spürbar. Es zeigen sich sowohl deutlich messbare Unterschiede in der Latenz als auch Mediendaten können von bestimmten Browsern besser bzw. schlechter verarbeitet werdenl. Die Messungen zeigen eine deutliche Abhängigekeit der Performance vom Webbrowser auf, was durch die unterschiedlichen Brwoser Engines erklärt werden kann.
+	
+	\item \textbf{Konsolenclient (Microservice-Szenario):} Ohne Browser-Overhead und mit dem "tatsächlichen" gRPC Protokoll, zeigt sich gRPC bis zu einer Datenmenge von 30Mb am performantesten, während REST auch noch bei sehr großen Dateien (Video) weiterhin gut funktionierte. gRPC-Web lag hier konstant hinter REST und gRPC. Die Messungen zeigten auf, dass es deutliche Unterschiede zwischen der Performance von gRPC und gRPC-Web Protokollen gibt.
+\end{itemize}
+
+Damit lässt sich festhalten, dass die Wahl der Architektur stark vom Einsatzzweck abhängt: während für Abfragen in Microservice-Architekturen gRPC bis zu einer gewissen Datenmenge am performantesten ist, stimmt dies nicht so mit gRPC-Web in der Browserumgebungen, in denen gRPC-Web zwar bei kleineren Daten performant ist, aber bereits ab grüßeren Textdaten deutlich langsamer ist. Außerdem zeigen die Messungen, dass REST für Mediendaten eindeutig am besten geeignet ist, es klare Performacneunterschiede zwischen gRPC und gRPC-Web gibt und die Browserumgebung die Performance eindeutig beeinflusst.
 
 \chapterend

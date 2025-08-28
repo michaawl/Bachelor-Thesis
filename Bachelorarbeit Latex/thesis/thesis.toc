@@ -25,6 +25,9 @@
 \contentsline {subsection}{\numberline {2.4.3}Google Remote Procedure Calls (gRPC)}{12}{subsection.2.4.3}%
 \contentsline {subsection}{\numberline {2.4.4}gRPC Web}{12}{subsection.2.4.4}%
 \contentsline {section}{\numberline {2.5}Begriffe}{14}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Latenz}{14}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Durchschnitt und Median}{14}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Browser Engines}{14}{subsection.2.5.3}%
 \contentsline {chapter}{\numberline {3}Stand der Technik}{15}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Industrielle Standards}{15}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Verbreitung der API-Technologien:}{15}{subsection.3.1.1}%
@@ -39,18 +42,18 @@
 \contentsline {section}{\numberline {4.1}Theoretische Analyse und Vergleich der API-Technologien:}{21}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Vor- und Nachteile der API-Technologien}{21}{subsection.4.1.1}%
 \contentsline {subsubsection}{\numberline {4.1.1.1}REST}{21}{subsubsection.4.1.1.1}%
-\contentsline {paragraph}{Vorteile:}{21}{section*.10}%
-\contentsline {paragraph}{Nachteile:}{22}{section*.11}%
+\contentsline {paragraph}{Vorteile:}{21}{section*.8}%
+\contentsline {paragraph}{Nachteile:}{22}{section*.9}%
 \contentsline {subsubsection}{\numberline {4.1.1.2}GraphQL}{22}{subsubsection.4.1.1.2}%
-\contentsline {paragraph}{Vorteile:}{22}{section*.12}%
-\contentsline {paragraph}{Nachteile:}{22}{section*.13}%
+\contentsline {paragraph}{Vorteile:}{22}{section*.10}%
+\contentsline {paragraph}{Nachteile:}{22}{section*.11}%
 \contentsline {subsubsection}{\numberline {4.1.1.3}gRPC}{23}{subsubsection.4.1.1.3}%
-\contentsline {paragraph}{Vorteile:}{23}{section*.14}%
-\contentsline {paragraph}{Nachteile:}{23}{section*.15}%
+\contentsline {paragraph}{Vorteile:}{23}{section*.12}%
+\contentsline {paragraph}{Nachteile:}{23}{section*.13}%
 \contentsline {subsection}{\numberline {4.1.2}Effizienzvergleich: Latenz, Datenvolumen und Ressourcenverbrauch}{24}{subsection.4.1.2}%
-\contentsline {paragraph}{Latenz und Antwortzeit:}{24}{section*.16}%
-\contentsline {paragraph}{Datenvolumen:}{24}{section*.17}%
-\contentsline {paragraph}{CPU- und Ressourcenverbrauch:}{25}{section*.18}%
+\contentsline {paragraph}{Latenz und Antwortzeit:}{24}{section*.14}%
+\contentsline {paragraph}{Datenvolumen:}{24}{section*.15}%
+\contentsline {paragraph}{CPU- und Ressourcenverbrauch:}{25}{section*.16}%
 \contentsline {subsection}{\numberline {4.1.3}Erlernbarkeit}{25}{subsection.4.1.3}%
 \contentsline {subsubsection}{\numberline {4.1.3.1}REST}{25}{subsubsection.4.1.3.1}%
 \contentsline {subsubsection}{\numberline {4.1.3.2}GraphQL}{25}{subsubsection.4.1.3.2}%
@@ -60,21 +63,20 @@
 \contentsline {section}{\numberline {5.2}Implementierung:}{31}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Backend Service:}{31}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Web-Client:}{34}{subsection.5.2.2}%
-\contentsline {paragraph}{Textdaten}{35}{section*.28}%
-\contentsline {paragraph}{Mediendaten}{35}{section*.29}%
-\contentsline {paragraph}{Blogdaten}{35}{section*.30}%
+\contentsline {paragraph}{Textdaten}{35}{section*.26}%
+\contentsline {paragraph}{Mediendaten}{35}{section*.27}%
+\contentsline {paragraph}{Blogdaten}{35}{section*.28}%
 \contentsline {subsection}{\numberline {5.2.3}Konsolen-Client}{35}{subsection.5.2.3}%
 \contentsline {section}{\numberline {5.3}Spezifikationen des Testsystems}{38}{section.5.3}%
-\contentsline {paragraph}{Hardwarekonfiguration}{38}{section*.34}%
-\contentsline {paragraph}{Betriebssystem:}{38}{section*.35}%
+\contentsline {paragraph}{Hardwarekonfiguration}{38}{section*.32}%
+\contentsline {paragraph}{Betriebssystem:}{38}{section*.33}%
 \contentsline {section}{\numberline {5.4}Messung}{39}{section.5.4}%
 \contentsline {subsubsection}{\numberline {5.4.0.1}20 parallele Requests}{42}{subsubsection.5.4.0.1}%
 \contentsline {subsubsection}{\numberline {5.4.0.2}Browser-Vergleich}{44}{subsubsection.5.4.0.2}%
 \contentsline {subsubsection}{\numberline {5.4.0.3}Messungen im Konsolen-Client}{46}{subsubsection.5.4.0.3}%
-\contentsline {chapter}{\numberline {6}Diskussion und Ausblick}{49}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Diskussion}{49}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Zusammenfassung}{49}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Ausblick}{49}{section.6.3}%
-\contentsline {chapter}{Literaturverzeichnis}{52}{appendix*.43}%
-\contentsline {chapter}{\numberline {A}Anhang}{55}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Rohdaten der Messungen}{55}{section.A.1}%
+\contentsline {chapter}{\numberline {6}Zusammenfassung und Fazit}{50}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Beantwortung der Forschungsfragen}{50}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Ausblick}{53}{section.6.2}%
+\contentsline {chapter}{Literaturverzeichnis}{56}{appendix*.43}%
+\contentsline {chapter}{\numberline {A}Anhang}{59}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Rohdaten der Messungen}{59}{section.A.1}%
