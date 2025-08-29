@@ -19,6 +19,41 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global/global}
+    \entry{Ahmad2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=21d73b282329dfd1f20694a366b33e76}{%
+           family={Ahmad},
+           familyi={A\bibinitperiod},
+           given={Arslan},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{21d73b282329dfd1f20694a366b33e76}
+      \strng{fullhash}{21d73b282329dfd1f20694a366b33e76}
+      \strng{fullhashraw}{21d73b282329dfd1f20694a366b33e76}
+      \strng{bibnamehash}{21d73b282329dfd1f20694a366b33e76}
+      \strng{authorbibnamehash}{21d73b282329dfd1f20694a366b33e76}
+      \strng{authornamehash}{21d73b282329dfd1f20694a366b33e76}
+      \strng{authorfullhash}{21d73b282329dfd1f20694a366b33e76}
+      \strng{authorfullhashraw}{21d73b282329dfd1f20694a366b33e76}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Blog post on DesignGurus.io}
+      \field{month}{8}
+      \field{note}{Accessed: 2025-08-29}
+      \field{title}{REST vs GraphQL vs gRPC}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.designgurus.io/blog/rest-graphql-grpc-system-design
+      \endverb
+      \verb{url}
+      \verb https://www.designgurus.io/blog/rest-graphql-grpc-system-design
+      \endverb
+    \endentry
     \entry{Alkhodary2022}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=7709da8f2e7507eec82cb5f25bfc1306}{%
@@ -72,6 +107,41 @@
       \endverb
       \verb{url}
       \verb https://aws.amazon.com/de/compare/the-difference-between-frontend-and-backend/
+      \endverb
+    \endentry
+    \entry{Brandhorst2019}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6d67217c63205758858a756d221f8933}{%
+           family={Brandhorst},
+           familyi={B\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6d67217c63205758858a756d221f8933}
+      \strng{fullhash}{6d67217c63205758858a756d221f8933}
+      \strng{fullhashraw}{6d67217c63205758858a756d221f8933}
+      \strng{bibnamehash}{6d67217c63205758858a756d221f8933}
+      \strng{authorbibnamehash}{6d67217c63205758858a756d221f8933}
+      \strng{authornamehash}{6d67217c63205758858a756d221f8933}
+      \strng{authorfullhash}{6d67217c63205758858a756d221f8933}
+      \strng{authorfullhashraw}{6d67217c63205758858a756d221f8933}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Blog post on gRPC.io}
+      \field{month}{1}
+      \field{note}{Accessed: 2025-08-29}
+      \field{title}{The state of gRPC in the browser}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://grpc.io/blog/state-of-grpc-web/
+      \endverb
+      \verb{url}
+      \verb https://grpc.io/blog/state-of-grpc-web/
       \endverb
     \endentry
     \entry{ecma404-2017}{standard}{}{}
@@ -211,6 +281,7 @@
       \strng{authornamehash}{a3a4dde425c214175e79ec479deea1fa}
       \strng{authorfullhash}{a3a4dde425c214175e79ec479deea1fa}
       \strng{authorfullhashraw}{a3a4dde425c214175e79ec479deea1fa}
+      \field{extraname}{1}
       \field{sortinit}{g}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{extradatescope}{labelyear}
@@ -226,6 +297,37 @@
       \endverb
       \verb{url}
       \verb https://grpc.io/docs/
+      \endverb
+    \endentry
+    \entry{gRPCAbout}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a3a4dde425c214175e79ec479deea1fa}{%
+           family={{gRPC Authors}},
+           familyi={g\bibinitperiod}}}%
+      }
+      \strng{namehash}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{fullhash}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{fullhashraw}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{bibnamehash}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{authorbibnamehash}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{authornamehash}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{authorfullhash}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{authorfullhashraw}{a3a4dde425c214175e79ec479deea1fa}
+      \field{extraname}{2}
+      \field{sortinit}{g}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-08-29}
+      \field{title}{{About gRPC}}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://grpc.io/about/
+      \endverb
+      \verb{url}
+      \verb https://grpc.io/about/
       \endverb
     \endentry
     \entry{http2spec}{misc}{}{}

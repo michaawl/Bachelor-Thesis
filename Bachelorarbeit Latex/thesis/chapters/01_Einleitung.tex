@@ -5,19 +5,13 @@
 \chapterstart
 
 \section{Motivation}
-Bei Echtzeitanwendungen wie Chat-Applikationen oder Streaming Diensten werden
-oft große Datenmengen ausgetauscht. Dabei ist eine effiziente Übertragung der Daten
-essenziell, damit die Latenz so klein wie möglich bleibt. Eine Methode um dies in 
-einem Softwareprojekt zu implementieren ist das gRPC Framework, indem die Daten
-binär kodiert mittels dem http/2 Protokoll übertragen werden. Während sich diese Strategie für Datenströme in Backend-Architekturen und insbesondere in Microservice-Umgebungen bereits etabliert haben, ist eine nahtlose Implementierung von gRPC in Frontendanwendungen in Web-Browsern noch nicht möglich. Hauptgrund dafür, sind fehlende HTTP/2-Features in den Browsern (z. B. bidirektionales Streaming) welche eine Voraussetzung für eine Implementierung von gRPC darstellen. 
-Eine Abhilfe dafür ist gRPC-Web, eine angepasste Variante von gRPC, die dafür entwickelt wurde, gRPC auch in Webbrowsern nutzbar zu machen.
-Während durch die Verwendung von gRPC-Web einige  Features verloren gehen, bleiben auch wichtige Vorteile, wie etwa die Nutzung von Protocol Buffers, erhalten.
-In der Praxis wird eine gRPC-Übertragung in der Regel nur verwendet, wenn eine effiziente und schnelle Kommunikation
-besonders wichtig ist. Ziel der Bachelorarbeit ist es zu untersuchen, inwiefern sich gRPC beziehungsweise gRPC-Web auch in Frontend-Anwendungen sinnvoll einsetzen lassen. Hierfür werden verschieden API - Übertragungstechnologien, welche sich bereits in der Frontend- zu Backendkommunikation etabliert haben mit gRPC und gRPC-Web
-überpüft und verglichen. Der Schwerpunkt liegt auf den Kriterien Latenz, Effizienz und den generellen Vor- und Nachteilen die beim Einsatz der jeweiligen Technologien zum Vorschein kommen. Die Bewertung erfolgt sowohl auf theoretischer Grundlage als auch anhand einer praktischen Untersuchungen.
+Bei Echtzeitanwendungen wie Chat-Applikationen oder Streaming Diensten werden oft große Datenmengen ausgetauscht. Dabei ist eine effiziente Übertragung der Daten essenziell, damit die Latenz so klein wie möglich bleibt. Eine Methode um dies in einem Softwareprojekt zu implementieren ist das gRPC Framework, indem die Daten binär kodiert mittels dem HTTP/2 Protokoll übertragen werden. (\parencite{gRPCAbout})
+Während sich diese Strategie für Datenströme in Backend-Architekturen und insbesondere in Microservice-Umgebungen bereits etabliert hat, ist eine nahtlose Implementierung von gRPC in Frontendanwendungen in Web-Browsern noch nicht möglich. Hauptgrund dafür, sind fehlende HTTP/2-Features in den Browsern (z. B. bidirektionales Streaming) welche eine Voraussetzung für eine Implementierung von gRPC darstellen. Eine Abhilfe dafür ist gRPC-Web, eine angepasste Variante von gRPC, die dafür entwickelt wurde, gRPC auch in Webbrowsern nutzbar zu machen. Während durch die Verwendung von gRPC-Web einige Features verloren gehen, bleiben auch wichtige Vorteile, wie etwa die Nutzung von Protocol Buffers, erhalten. (\parencite{Brandhorst2019}) In der Praxis wird eine gRPC-Übertragung in der Regel nur verwendet, wenn eine effiziente und schnelle Kommunikation besonders wichtig ist. Ziel der Bachelorarbeit ist es zu untersuchen, inwiefern sich gRPC beziehungsweise gRPC-Web auch in Frontend-Anwendungen sinnvoll einsetzen lassen. Hierfür werden verschieden API-Übertragungsarchitekturen (REST und GraphQL), welche sich bereits in der Frontend-zu-Backendkommunikation etabliert haben, mit gRPC und gRPC-Web überprüft und verglichen. (\parencite{Ahmad2025}) Der Schwerpunkt liegt auf den Kriterien Latenz, Effizienz und den generellen Vor- und Nachteilen, die beim Einsatz der jeweiligen Technologien zum Vorschein kommen. Die Bewertung erfolgt sowohl auf theoretischer Grundlage als auch anhand einer praktischen Untersuchung.
 
 \section{Forschungsfragen}
-Aus der dargestellten Situation und den Einbußen welche mit der Implementierung von gRPC in Webanwendungen einhergehen, ergibt stellt sich die Motivation, die gRPC / gRPC-Web mit den etablierten API-Ansätzen für die Frontend- zu Backendkommunikation zu vergleichen. Um eine diesbezügliche Eignung  von gRPC bzw. gRPC-Web feststellen zu können, werden im Rahmen der Bachelorarbeit folgende Forschungsfragen untersucht:
+Aus der dargestellten Situation und den Einbußen welche mit der Implementierung von
+gRPC in Webanwendungen einhergehen, ergibt sich die Motivation, gRPC /
+gRPC-Web mit den etablierten API-Ansätzen für die Frontend- zu Backendkommunikation zu vergleichen. Dafür werden im Rahmen der Bachelorarbeit folgende Forschungsfragen untersucht:
 
 \begin{itemize}
 	\item Wie wirkt sich die Verwendung von gRPC bzw. gRPC-Web im Vergleich zu REST
@@ -28,37 +22,46 @@ Aus der dargestellten Situation und den Einbußen welche mit der Implementierung
 	
 \end{itemize}
 
-Diese Forschungsfragen bilden die Grundlage für die theoretische Analyse sowie die praktische Untersuchung der genannten API-Technologien. Ziel ist es, anhand dieser Fragen sowohl die Stärken, als auch die Schwächen von gRPC-Web in Webumgebungen zu identifizieren.
+Diese Forschungsfragen bilden die Grundlage für die theoretische Analyse sowie die
+praktische Untersuchung der genannten API-Technologien. Ziel ist es, anhand dieser
+Fragen sowohl die Stärken als auch die Schwächen von gRPC-Web in Webumgebungen
+zu identifizieren.
+
 
 \section{Hypothese}
-Für eine strukturiertere Herangehensweise, werden folgende Hypothese formuliert, die die erwarteten Ergebnisse darstellen:
+Für eine strukturiertere Herangehensweise werden folgende Hypothesen formuliert, die
+die erwarteten Ergebnisse darstellen:
 
 \begin{itemize}
-	\item Es wird angenommen, dass die Nutzung von gRPC im Vergleich zu REST und GraphQl die Latenz reduziert und die Effizienz erhöht, insbesondere bei Echtzeitanwendungen mit hohen Datenmengen. Vorallem durch das Verwenden von Protocol Buffers, ein binäres Serialisierungsformat welches auch bei gRPC-Web verwendet wird, ist eine Effizienz im Gegensatz zum klassichen JSON Format zu erwarten, wodurch sich auch beim Datenaustausch bei praktischen Messungen eine geringere Latenz zeigen sollte.
+	\item Es wird angenommen, dass die Nutzung von gRPC im Vergleich zu REST und
+	GraphQL die Latenz reduziert und die Effizienz erhöht. Vor allem durch das Verwenden
+	von Protocol Buffers, ein binäres Serialisierungsformat welches auch
+	bei gRPC-Web verwendet wird, ist eine Effizienzsteigerung im Gegensatz zum klassischen JSON-Format zu erwarten, wodurch sich auch beim Datenaustausch bei praktischen Messungen eine geringere Latenz zeigen sollte.
 	
-	\item Für gRPC-Web wird angenommen, dass sich zwar performancetechnische Vorteile ergeben werden, sich die Implementierung in Projekten der Frontendanwendung jedoch als komplexer gestalten wird. Das Konzept von Protocol Buffers und gRPC ist komplexer als REST/GraphQl und durch den nicht so häufigen Gebrauch in Frontend Anwendungen, gibt es weniger Dokumentation und Diskussionen in Onlineforen. 
-	Außerdem wird angenommen, dass eine Vielzahl der Entwickler bereits Vorerfarhungen mit REST bzw. Kenntnisse zu http Methoden  gesammelt haben.
+	\item Für gRPC-Web wird angenommen, dass sich zwar performancetechnische Vorteile
+	ergeben werden, sich die Implementierung in Projekten der Frontendanwendung
+	jedoch als komplexer gestalten wird. Demnach wird der Einsatz von gRPC-Web ähnlich vor allem bei Anforderungen mit hohen Datenmengen sinnvoll sein.
 
 	
 \end{itemize}
 
 \section{Methodik}
-Folgende methodische herangehensweise wird für die Beantwortung der Forschungsfragen angewendet:
+Folgende methodische Herangehensweise wird für die Beantwortung der Forschungsfragen angewendet:
 
 \subsubsection*{Theoretische Analyse:}
 \begin{itemize}
-	\item Systematische Literaturrecherche der theoretischen Grundlagen
-	\item Ermittlung des aktuellen Stand der Technik auf Basis wissenschaftlicher Publikationen und relevanter Industriestandards
-	\item Vergleich sowie Gegenüberstellung der Vor- und Nachteile der betrachteten API-Technologien unter Berücksichtigung der identifizierten Grundlagen und wissenschaftlichen Erkenntnisse.
+	\item Systematische Literaturrecherche der theoretischen Grundlagen.
+	\item Ermittlung des aktuellen Stands der Technik auf Basis wissenschaftlicher Publikationen und relevanter Industriestandards.
+	\item Vergleich sowie Gegenüberstellung der Vor- und Nachteile der betrachteten API-Architekturen.
 \end{itemize}
 
 \subsubsection*{Erstellen eines Prototyps:}
 \begin{itemize}
-	\item Experimentelle Methodik: Im praktischen Abschnitt der Arbeit wird ein Prototyp entwickelt, der die ausgewählten  API-Technologien implementiert.
-	\item Auf Basis dieses Prototyps werden Performance Messungen durchgeführt, wodurch es möglich ist die Technologien auch anhand eines praktischen Beispiels gegenüber zu stellen und zu vergleichen.
+	\item Experimentelle Methodik: Im praktischen Abschnitt der Arbeit wird ein Prototyp
+	entwickelt, der die ausgewählten API-Technologien implementiert.
+	\item Auf Basis dieses Prototyps werden Messreihen durchgeführt, welche zur Beantwortung der Forschungsfragen beitragen.
 \end{itemize}
 
-
-
-Basierend auf den theoretisch und praktischen Ermittelten Daten, werden anschließend die Forschungsfragen beantwortet.
+Basierend auf den theoretisch und praktisch ermittelten Daten, werden anschließend
+die Forschungsfragen beantwortet.
 \chapterend

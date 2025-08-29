@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  28 AUG 2025 23:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  29 AUG 2025 21:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1476,19 +1476,18 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.19 \section
-             {Forschungsfragen} [1
+l.10 
+      [1
 
 
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
-3.
-
-(c:/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
+7.
+ (c:/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Overfull \hbox (1.19005pt too wide) in paragraph at lines 26--28
+Overfull \hbox (1.19005pt too wide) in paragraph at lines 20--22
 []\T1/ptm/m/n/12 Unter wel-chen Be-din-gun-gen ist der Ein-satz von gRPC für di
 e Frontend-Backend-
  []
@@ -1526,7 +1525,7 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 
 [6]
-<images/http1_theory.jpg, id=251, 197.4285pt x 148.1535pt>
+<images/http1_theory.jpg, id=257, 197.4285pt x 148.1535pt>
 File: images/http1_theory.jpg Graphic file (type jpg)
 <use images/http1_theory.jpg>
 Package pdftex.def Info: images/http1_theory.jpg  used on input line 82.
@@ -1779,7 +1778,7 @@ Overfull \hbox (1.72pt too wide) in paragraph at lines 110--112
 en-Source-Laufzeitumgebung
  []
 
-<images/prakt1.png, id=411, 338.76563pt x 82.80937pt>
+<images/prakt1.png, id=417, 338.76563pt x 82.80937pt>
 File: images/prakt1.png Graphic file (type png)
 <use images/prakt1.png>
 Package pdftex.def Info: images/prakt1.png  used on input line 121.
@@ -2102,13 +2101,13 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36941 strings out of 469608
- 697929 string characters out of 5474779
- 1610260 words of memory out of 5000000
- 62881 multiletter control sequences out of 15000+600000
+ 36962 strings out of 469608
+ 698521 string characters out of 5474779
+ 1610515 words of memory out of 5000000
+ 62899 multiletter control sequences out of 15000+600000
  685607 words of font info for 110 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 104i,10n,104p,1311b,2357s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 104i,10n,104p,1660b,2357s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texl
 ive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2025/t
 exmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/texlive/2025/texmf-dist/
@@ -2118,10 +2117,10 @@ helvetic/uhvr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/symbol/usyr.pfb
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utm
 ri8a.pfb>
-Output written on thesis.pdf (70 pages, 315881 bytes).
+Output written on thesis.pdf (70 pages, 316469 bytes).
 PDF statistics:
- 717 PDF objects out of 1000 (max. 8388607)
- 614 compressed objects within 7 object streams
- 215 named destinations out of 1000 (max. 500000)
+ 736 PDF objects out of 1000 (max. 8388607)
+ 633 compressed objects within 7 object streams
+ 218 named destinations out of 1000 (max. 500000)
  260 words of extra memory for PDF output out of 10000 (max. 10000000)
 
