@@ -9,6 +9,7 @@
 \usepackage[utf8]{inputenc}     % for UTF-8 (äöü, etc.)
 \usepackage{pdflscape}          % landscape pages
 \usepackage{booktabs}       
+
 %**********************************************************************
 % YOUR SETTINGS - START
 %**********************************************************************
@@ -58,22 +59,16 @@
 %   \addbibresource{thesis.bib}
 \addbibresource{thesis.bib}
 
-
-
-
-
 \begin{document}
 %**********************************************************************
 % Structure of thesis: inclusion of chapters
 %**********************************************************************
+
 \ifthenelse{\equal{\yourLanguage}{german}}{
   \selectlanguage{german}
 }{ % else: default language = english
   \selectlanguage{english}
 }
-
-
-
 
 \ifthenelse{\equal{\thisDocumentIsA}{Thesis}}{  
   % a title page is included for BA/MA Thesis only

@@ -6,18 +6,20 @@
 
 \section{Frontend und Backend}
 
-Die Arbeit Untersucht die Kommunikation zwischen Frontend zu Backend Komponenten, im industriellen als auch wissenschafltichem Kontext sind diese Begriffe wie folgt definiert:
+Die Arbeit untersucht die Kommunikation zwischen Frontend zu Backend Komponenten, im technischen Kontext sind diese Begriffe wie folgt definiert:
 
-\chapquote{Das Frontend ist das, was Ihre Benutzer sehen, und enthält visuelle Elemente wie Schaltflächen, Kontrollkästchen, Grafiken und Textnachrichten. Es ermöglicht den Benutzern, mit Ihrer Anwendung zu interagieren. Das Backend sind die Daten und die Infrastruktur, die dafür sorgen, dass Ihre Anwendung funktioniert. Es speichert und verarbeitet Anwendungsdaten für Ihre Benutzer.}
+\chapquote{Das Frontend ist das, was die Benutzer sehen, und enthält visuelle Elemente wie Schaltflächen, Kontrollkästchen, Grafiken und Textnachrichten. Es ermöglicht den Benutzern, mit der Anwendung zu interagieren. Das Backend sind die Daten und die Infrastruktur, die dafür sorgen, dass die Anwendung funktioniert. Es speichert und verarbeitet Anwendungsdaten für die Benutzer.}
 {\cite{awsfrontendbackend}}
 
-Wie aus dieser Definition ersichtlich beinhaltet das Front-End den benutzerspezifischen Teil und das backend den Datenverarbeitungsteil. Im Zuge der Bachelorarbeit werden anschlieden für die Front End Komponente ebenso das Wort „Client“ und für die Backend Komponente das wort „Server“ verwendet.
+Wie aus dieser Definition ersichtlich, beinhaltet das Frontend den benutzerspezifischen Teil und das Backend den Datenverarbeitungsteil. In Anlehnung an die Server-Client-Architektur wird im Zuge der Bachelorarbeit die Frontend Komponente auch als „Client“ und die Backend Komponente als „Server“ bezeichnet.
 
 \section{Serialisierungsformate}
-Bei der Übertragung zwischen der Front-End und Back-End Komponente werden Daten ausgetauscht. Da es eine Vielzahl an Technologien gibt, mit denen die jeweiligen Komponenten realisiert werden können, wurden Standards definiert, damit diese sinnvoll und effizient verarbeitet werden können.
+Bei der Übertragung zwischen dem Frontend und Backend werden Daten ausgetauscht. Da es eine Vielzahl an Formaten gibt, mit denen die jeweiligen Datenobjekte für die Übertragung serialisiert werden können, werden die in der Arbeit verwendeten Serialisierungsformate anschließend erläutert.
 
 \subsection{JSON}
-JSON steht für JavaScript Object Notation und ist ein weit verbreitetes, textbasiertes Datenformat, das vorallem wegen einfacher Lesbarkeit und breiter Unterstützung in vielen Programmiersprachen Verwendung findet. Das Format basiert auf einer Schlüssel-Wert Paar Struktur mit einfacher Syntax ( Klammern, Spalten, Doppelpunkte, Kommas ) und kann folgende Datentypen annehmen:
+JavaScript Object Notation (JSON) ist ein weit verbreitetes, textbasiertes Datenformat, das vor allem wegen seiner einfachen Lesbarkeit und der breiten Unterstützung in vielen Programmiersprachen Verwendung findet. 
+Das Format basiert auf einer Schlüssel-Wert-Paar-Struktur mit einfacher Syntax (Klammern, Doppelpunkte, Kommas) und kann folgende Datentypen annehmen:
+
 
 \begin{itemize}
 	\item String (Zeichenkette)
@@ -27,108 +29,100 @@ JSON steht für JavaScript Object Notation und ist ein weit verbreitetes, textba
 	\item Object (Objekt mit weiteren Schl\"ussel-Wert-Paaren)
 	\item null (leerer Wert)
 \end{itemize}
+\parencite{ecma404-2017}
+
+Beispiel eines JSON-Objekts:
+\begin{verbatim}
+	{
+		"id": 1,
+		"name": "Alice",
+		"email": "alice@example.com",
+		"isActive": true
+	}
+\end{verbatim}
+
+JSON ist der Standard für REST und GraphQL Schnittstellen \parencite{Microsoft2025,GraphQL2025}. 
 
 
-JSON ist der Standard für REST und GraphQL Schnittstellen.
 
 
 \subsection{Protocol Buffers}
-Protocol Buffer sind ein von Google entwickeltes Serialisierungsformat. Es handelt sich hierbei um ein binäres Serialisierungsformat, das entwickelt wurde um möglichst effizient, mit hoher Performance und mit so wenig Overhead wie möglich (ohne Whitespaces oder Satzzeichen wie bei JSON) Daten zu übertragen und zu verarbeiten. Protocul Buffer sind Plattform unabhängig und mit den meisten gängigen Programmiersprachen kompatibel.
+Protocol Buffers sind ein von Google entwickeltes Serialisierungsformat. Es handelt sich hierbei um ein binäres Serialisierungsformat, das entwickelt wurde um möglichst effizient, mit hoher Performance und mit so wenig Overhead wie möglich (ohne Whitespaces oder Satzzeichen wie bei JSON) Daten zu übertragen und zu verarbeiten. Protocul Buffers sind plattformunabhängig und mit den meisten gängigen Programmiersprachen kompatibel.
 
-Ein zentraler Bestandteil Protocol Buffer sind dabei plattformunabhängigen .proto Files, die für die Erzeugung definiert werden müssen.
+Ein zentraler Bestandteil von Protocol Buffers sind die plattformunabhängigen proto Files, die für die Erzeugung definiert werden müssen.
 
-Mit den definierten .proto Files können anschließend mit einem Plattform Abhängigen Protobuf-Compiler-Tool ( z.B. protoc ) Datenobjekte der jeweiligen Programmiersprache generiert werden.
+Mit den definierten proto Files können anschließend mit einem Protobuf-Compiler-Tool ( z.B. protoc ) Datenobjekte der jeweiligs eingesetzten Programmiersprache generiert werden.
 
+\subsubsection*{Aufbau der proto Files}
 
-\newpage
-\textbf{\underline{Aufbau der .proto Files}}
-\newline
-Hauptbestandteil der .proto Files sind messages und services.
-
+Beispiel einer Protocol Buffers Definition mit den Datenobjekten Person und PersonRequest und dem Service PersonService:
 \begin{verbatim}
+	syntax = "proto3";
+	
+	service PersonService {
+		rpc GetPerson (PersonRequest) returns (Person);
+	}
+	
 	message Person {
 		string name = 1;
 		int32 id = 2;
 		string email = 3;
 	}
-\end{verbatim}
-
-Messages geben dabei die Struktur der zu übertragenden Nachricht und den jeweiligen Datentypen an und einer Nummer, die beschreibt an welcher Stelle sich das jeweilige Attribut befindet, an. Die Nummerierung der Felder ist wichtig für die Serialisierung.
-In Protocol Buffers können unter anderem die gängigsten Datentypen wie int32, int64, float, double, bool sowie string und bytes verwendet werden.
-
-\begin{verbatim}
-	service PersonService {
-		rpc GetPerson (PersonRequest) returns (Person);
+	
+	message PersonRequest {
+		int32 id = 1;
 	}
 \end{verbatim}
 
-Services geben an, welche Dienste vom Server bereit gestellt werden und welche Datentypen als Parameter bei Aufruf übermittelt und als Rückgabe zurückgegeben werden. Services müssen auf der Seite des zur Verfügung stellenden Dienstes ausimplementiert werden.
+Hauptbestandteil der proto Files sind Messages und Services.
+Messages definieren die Struktur der zu übertragenden Nachricht. Jedes Feld beseht aus einem Namen, den jeweiligen Datentypen und einer Nummer. Die Nummer beschreibt an welcher Stelle sich das jeweilige Attribut befindet. Die Nummerierung der Felder ist wichtig für die Serialisierung.In Protocol Buffers können unter anderem die gängigsten Datentypen wie int32, int64, float, double, bool sowie string und bytes verwendet werden.
+Services geben an, welche Dienste vom Server bereit gestellt werden und welche Datentypen als Parameter bei Aufruf übermittelt und als Rückgabe zurückgegeben werden. Services müssen auf der Serverseite implementiert werden \parencite{protobufdocs}.
 
-Das Protobuf Serialisierungsformat wurde vorallem für die inter-server Kommunikation ( innherhalb der Backend seitigen Kommunikation) entwickelt, im Zuge der Bachelorarbeit wird diese auf die Verwendung in der Frontend zu Backend Kommunikation untersucht.
 
-\subsection{Übertragung binärer Daten (Blob)}:
-Für das Übertragen von großen binären Objekten ( wie Bilder, Video, Audiodateien, Dokumente, .. ) wird eine große Menge an binären Daten ( Datentyp: byte) gesendet. Solche großen binären Dateien, die bei der Kommunikation zwischen Client und Server gesendet werden, werden in der Webentwicklung, und vorallem im Frontend wo diese Mediendaten verarbeitet werden sollen, oft als Blob ( Binary Large Object ) bezeichnet. 
-
+\subsection{Blob}
+Für das Übertragen von großen binären Objekten (z.B. Bilder, Video, Audiodateien, Dokumente, ..) wird eine große Menge an binären Daten gesendet. Solche Dateien werden in der Webentwicklung, und vor allem im Frontend wo diese Mediendaten verarbeitet werden sollen, oft als Binary Large Object (Blob) bezeichnet \parencite{w3c-fileapi}.
 
 \section{Transportprotokolle}
-Die eigentlichen Daten, die in Form von Serialisierungsformaten zwischen Frontend und backend ausgetauscht werden, werden mithilfe von Transportprotokollen von dem Client and den Server, und umgekehrt, übermittelt. Das Hypertext Transfer Protocol (http) ist dabei für moderne Webanwendungen das zentrale und verbreitetste Transportprotokoll. Im Kontext der Bachelorarbeit, wird insbesondere auf zwei Versionen von http eingegangen:
+Die eigentlichen Daten, die in Form von Serialisierungsformaten zwischen Frontend und Backend ausgetauscht werden, werden mithilfe von Transportprotokollen von dem Client and den Server, und umgekehrt, übermittelt. Das Hypertext Transfer Protocol (HTTP) ist dabei für moderne Webanwendungen das zentrale und verbreitetste Transportprotokoll. Es gibt verschiedene Versionen von HTTP. Im Kontext der Bachelorarbeit wird ausschließlich HTTP/2 verwendet. HTTP funktioniert mittels eines Request-Response Prinzips und überträgt die Daten mittels TCP.
 
-\subsection{HTTP/1.1}
+HTTP/1.1 ist nach wie vor weit verbeitet. Es wird von allen Webbrowsern ohne Einschränkungen unterstützt und bildet die Grundlage für die API-Architekturen REST und GraphQL. Diese Version weist jedoch einige Schwächen auf, so können zum einen nicht mehrere Requests/Responses gleichzeitig über eine TCP Verbindung durchgeführt werden und der Server ist nicht in der Lage von sich aus zusätzliche Ressourcen an die Clients zu senden. 
 
-http/1 Ist der momentan am weitesten verbreitetste Protokoll für die Kommunikation zwischen Frontend und Backend anwendungen. Es wird von allen Webbrowsern ohne einschränkungen unterstützt und bildet die Grundlage für die API Technologien REST und GraphQL. Das Protokoll funktioniert mittels eines request-responds Prinzips und überträgt die Daten über eine textbasierte Verbindung mittels eines TCP Transportprotokolls. 
+Neben Performanceverbesserungen und anderen zusätzlichen Features wurden diese Schwächen mit HTTP/2 behoben.
+Das wichtigste Features von HTTP/2 beinhalten:
 
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=0.7\textwidth]{images/http1_theory.jpg}
-	\caption{3-Way Handshake (for establishing TCP connection)}
-	\label{fig:threewayhandshake}
-\end{figure}
+\begin{itemize}
+	\item \textbf{Multiplexing:} Das wichtigste Merkmal von HTTP/2 ist Multiplexing, durch das es möglich ist, mehrere parallele Anfragen und Antworten über nur eine einzige TCP-Verbindung durchzuführen.
+	\item \textbf{Server-Push Verfahren:} Ermöglicht es dem Server von sich selbst aus Ressourcen an Clients zu senden, ohne dass zuvor ein Request notwendig ist.
+	\item \textbf{Header-Komprimierung:} Geringerer Overhead durch effizientere Übertragung sich wiederholender Headerinformationen.
+	\item \textbf{Binäres Protokoll:} Statt dem textbasierten Protokoll wird nun ein binäres Protokoll verwendet, was zur Effizienzsteigerung führt.
+	\item \textbf{Trailers:} Möglichkeit, zusätzliche Header-Felder am Ende einer Übertragung zu senden.
+\end{itemize}
 
-Der Verbindungsaufbau erfolgt dabei mittels eines Transmission Control Protocol  (TCP) – Handshakes, welcher für eine zuverlässige Verbindung zwischen zwei Systemen verwenden wird. Dabei werden in drei Schritten Steuerpakete ausgetauscht:
+Aufgrund der genannten Verbesserungen wird HTTP/2 besonders in Systemen, in denen eine schnelle und effiziente Datenübertragung wichtig ist, verwendet \parencite{rfc9113}.
 
-1. Zuerst sendet der Client ein SYN (Synchronize( – Paket an den Server
-
-2. Der Server antwortet mit einem SYN – ACK ( Acknowledge) Paket
-
-3. Der Cient antwortet mit einem ACK
-
-Ernst nach diesen Schritten, gilt die Verbindung als aufgebaut und die Daten werden übertragen.
-
-Vorallem wegen der sequentielle Abarbeitung  und die Notwendigkeit von mehreren Verbindungen bei parallelen Requests führt häufig zu Performance Einschränkungen, welche vorallem bei dantenintensiven Anwendungen zu Problemen führen kann. 
-
-
-\subsection{HTTP/2}
-Aufgrund der ber http/1 genannten Performance Problemen wurde eine neue Version namens http/2 Enwickelt, weche viele Schwächen von http/1.1, insbesondere beszogen auf Latenz und Effizienz, ausgleicht.
-Das Hauptmerkmal von http/2 ist Multiplexing, hierbei ist es möglich mehrere parallele Anfragen und Antworten über nur eine einzige TCP-Verbindung durchzuführen.
-Weitere Verbesserungen beinhalten zum Beispiel die Komprimierung von Header-Informationen oder das Server Push-Verfahren, das eine proaktive Übertragung vom Server an den Client erlaubt.
-Aufgrund der oben genannten Verbesserungen wird http/2 besonders in modernen Anwendungen in denen eine schnelle und effiziente Datenübertragung wichtig ist, wie biespielsweise bei gRPC, Echtzeitkommunikation oder Microservices verwendet.
-Webbrowser unterstützen nur eine eingeschränkte Nutzung von http/2 deshalb können bei der Kommunikation zwischen Webbrowsern und Serveranwendungen nicht alle Vorteile ausgenutzt werden. Zwar unterstützen aktuelle Webbrowser mittlerweile http/2, jedoch ist bei der verwendung eine verschlüsselte Übertragung verpflichtend, und wichtige Features wie echted bidirektionales Streaming (gleichzeitiges Senden und Empfangen von Daten durch Client und Server) oder http/2 Trailers (das Übermitteln zusätzlicher Metadaten am Ende einer Übertragung, z.B. zur Fehlerbehandlung, welche bei gRPC zum einsatz kommen, werden in Webbrowsern nicht bzw. nur teilweise unterstützt. Dadurch können bei der Kommunikation zwischen Frontend (Webbrowser) und Backend nicht alle Potenziale von HTTP/2 ausgeschöpft werden 
-
+Zwar unterstützen aktuelle Webbrowser HTTP/2 grundsätzlich, jedoch sind bestimmte Funktionen wie zum Beispiel echtes bidirektionales Streaming (gleichzeitiges Senden und Empfangen von Daten durch Client und Server), in Browserumgebungen nicht beziehungsweise nur bedingt möglich. Dadurch können bei der Kommunikation zwischen Frontend (Webbrowser) und Backend nicht alle Potenziale von HTTP/2 ausgeschöpft werden \parencite{aspnet-grpcweb}.
 
 \section{API-Technologien}
-Eine API ist eine Schnittstelle eines Softwaremoduls, welche es ermöglicht, dass das jeweilige Softwaresystem mit einem anderem System kommunizieren kann.
-Eine Web API sind APIs die von Web-Servern zur Verfügung gestellt werden. Bei webservern findet die Kommunikation mit einem der http bzw. https Protokollen statt. Da sich die Forschungsfragen und der Prototyp gezielt auf die Kommunikation zwischen einem Web Frontend und einem Webserver beziehen, bezieht sich der Begriff API im folgenden immer auf Web APIs.
+Eine API ist eine Schnittstelle eines Softwaremoduls, welche es ermöglicht, dass das jeweilige Softwaresystem mit einem anderen System kommunizieren kann.
+Eine Web-API ist eine API die von Web-Servern zur Verfügung gestellt werden. Bei Web-Servern findet die Kommunikation standardmäßig mit einem HTTP bzw. Hypertext Transfer Protocol Secure (HTTPS) Protokoll statt. 
+Technologien wie REST, GraphQL oder gRPC definieren jeweils Konventionen und Standards, wie etwa den Aufbau von Response/Request, Art der Serialisierungsobjekts oder Art des Transportprotokolls, die neben der technischen Kompatibilität für die Kommunikation auch den Entwicklern hilft, sich effizient in API-Systemen zurecht zu finden
+ \parencite{redhat-apiguide}.
 
-API Technologien wie REST, GraphQL oder gRPC legen Standards fest ( Konventionen, Art der Serialisierungsobjekte, Art des Transportprotokolls) die neben der technischen Kompatibilität für die Kommunikation auch Entwicklern hilft, sich effizient in API-Systemen zurecht zu finden.
+\subsection{REST}
+Der REST-Architekturstil wurde im Jahr 2000 von Roy Fielding im Rahmen seiner Dissertation definiert, mit dem Ziel eine bis dato einfache Alternative für die Kommunikation zwischen zwei Systemen zu schaffen.
 
-
-\subsection{Representational State Transfer (REST)}
-
-Der REST-Architekturstuk wure im Jahr 1994 von Roy Fielding im Rahmen seiner Dissertation entwickelt, mit dem Ziel eine bis dato einfache Alternative für die Kommunikation zwischen zwei Systemen zu schaffen. 
-
-\textbf{\underline{Infrastruktur:}}
+\subsubsection*{Infrastruktur}
 Eine API-Schnittstellt ist nach Definition nur dann im REST Stil umgesetzt, falls folgende 5 Eigenschaften erfüllt werden:
 
 
 \begin{itemize}
 	\item \textbf{Client-Server:}
-	Das System muss sich in einer Server-Client Architektur umgesetzt werden. Besteht aus einem Server, der einen Dienst oder Daten bereitstellt und einem Client, welcher diese Dienste nutzen kann. Server und Client kommunizieren mittels Nachrichten, indem mittel eines Request-Respond Prinzips der Client eine Anfrage (Request) schickt und der Server eine Antwort (Respond)
-	zurückliefert.
+Das System muss in einer Server-Client Architektur umgesetzt werden. Bestehend aus einem Server, der einen Dienst oder Daten bereitstellt und einem Client, welcher diese Dienste nutzen kann. Server und Client kommunizieren mittels Nachrichten, indem mittels eines Request-Response Prinzips der Client eine Anfrage (Request) schickt und der Server eine Antwort (Response) zurückliefert.
 	
 	\item \textbf{Zustandslosigkeit:} 
-	In jeder Nachricht, die zwischen Server-Client verschickt werden müssen alle Informationen enthalten sein, damit der jeweilige Kommunikationspartner die Nachricht verarbeiten kann. Es ist nicht erlaubt Zustandsinformationen zwischen zwei Nachrichten zu speichern.
+In jeder Nachricht, die zwischen Server-Client verschickt werden, müssen alle Informationen enthalten sein, damit der jeweilige Kommunikationspartner die Nachricht verarbeiten kann. Es ist nicht erlaubt Zustandsinformationen zwischen zwei Nachrichten zu speichern.
 	\item \textbf{Caching:}
-	HTTP Caching soll benutzt werden, hierbei werden Daten in einem Cache gespeichert und bei nochmaligem abfragen vom Cache abgefragt, um unnötige Serveranfragen und Datenübertragungen zu vermeiden.
+HTTP Caching soll benutzt werden. Hierbei werden Daten in einem Cache gespeichert und bei nochmaligem Abfragen vom Cache abgefragt, um unnötige Serveranfragen und Datenübertragungen zu vermeiden.
 	\item \textbf{Einheitliche Schnittstelle:}
 	Eine einheitliche Schnittstelle ist wie folgt definiert:
 	
@@ -136,7 +130,7 @@ Eine API-Schnittstellt ist nach Definition nur dann im REST Stil umgesetzt, fall
 		\item \textbf{Addressierbarkeit von Ressourcen:}
 		Jede Ressource im System ist eindeutig über eine URI adressierbar.
 		\item \textbf{Repräsentationen zur Veränderung von Ressourcen:}
-		Ressourcen können durch verschiedene Formate (wie JSON oder XML) repräsentiert und über Standard-HTTP-Methoden verändert werden.
+		Ressourcen können durch verschiedene Formate (wie JSON) repräsentiert und über Standard-HTTP-Methoden verändert werden.
 		
 		\item \textbf{Selbsbeschreibende Nachrichten:}
 		Jede Nachricht enthält alle notwendigen Informationen, damit der Empfänger sie interpretieren und verarbeiten kann.
@@ -150,14 +144,17 @@ Eine API-Schnittstellt ist nach Definition nur dann im REST Stil umgesetzt, fall
 	
 	\item \textbf{Code on Demand (optional):}
 	Im Bedarfsfall kann der Server dem Client Code zur Verfügung stellen. Diese Eigenschaft ist für einen REST Architekturstil jedoch nur optional.
-\end{itemize}
+\end{itemize} 
+\parencite{fielding2000rest}
 
 Viele Web Dienste, erfüllen bereits viele dieser Eigenschaften wodurch sich REST zu einem beliebten Standard entwickelt hat.
 
-\textbf{\underline{Kommunikation zwischen Client – Server:}}
-Die Kommunikation zwischen dem findet bei REST fast ausschließlich über http/HTTPs statt, wobei laut Definition kein spezifisches Transportprotokoll vorgeschrieben wird. Im Zuge der Arbeit und der weiten Verbreitung wird im Zuge der Arbeit ausschließlich http verwendet.
+\clearpage
 
-HTTP stellt für den Zugriff auf Ressourcen eine Reihe an Methoden zur Verfügung. Die wichtigsen http Methoden sind : \newline
+\subsubsection*{Kommunikation zwischen Client- Server:}
+Die Kommunikation zwischen dem Client und Server findet bei REST fast ausschließlich über HTTP/HTTPs statt, wobei laut Definition kein spezifisches Transportprotokoll vorgeschrieben wird. Im Zuge der Arbeit wird ausschließlich HTTPS verwendet.
+
+HTTP stellt für den Zugriff auf Ressourcen eine Reihe an Methoden zur Verfügung. Die wichtigsten HTTP Methoden sind : \newline
 
 \begin{tabularx}{\textwidth}{|l|X|}
 	\hline
@@ -167,100 +164,136 @@ HTTP stellt für den Zugriff auf Ressourcen eine Reihe an Methoden zur Verfügun
 	\hline
 	POST & Fügt in den meisten Fällen eine neue Ressource ein. Kann aber auch verwendet werden, um Methoden zu realisieren, die durch keine andere HTTP-Methode abgedeckt werden. Ändert den Zustand des Servers. \\
 	\hline
-	UPDATE & Ändert den Zustand einer bestehenden Ressource. \\
+PUT & Erstellt eine Ressource neu oder ersetzt eine bestehende Ressource vollständig. \\
+\hline
+PATCH & Nimmt partielle Änderungen an einer bestehenden Ressource vor. \\
 	\hline
 	DELETE & Löscht eine bestehende Ressource. \\
 	\hline
 \end{tabularx} \newline
 
 
-Der Zugriff auf die Resourcen erfolgt bei REST jeweils über die URL.
+Der Zugriff auf die Resourcen erfolgt bei REST jeweils über die URL \parencite{rfc9110}.
 
-\clearpage
+
 \subsection{GraphQL}
-GraphQL ist eine open source Datenabfrage- und Manipulationssprache und wurde im Jahr 2015 von Facebook veröffentlicht.
-Der Standard wurde entwickelt, um eine bessere Alternative für REST Architekturen und SQL bereitzustellen, da bei REST Anwendungen eine vordefinierte Satz von Daten an den Client  zurückgeliefert wird. Vor allem bei mobilen Anwendungen führte diese Einschänkung zu Problemen, da oft zu viele bzw. zu wenig Daten übermittelt wurden, was zu einem unnötigen Übertragungsvolumen führte.
-GraphQL erlaubt es dem Client gezielt die benötigten Daten abzufragen. Außerdem können Daten, welche in mehreren Datenobjekten verschachtelt sind, effizient abgebildet werden. Diese Eigenschaften machen GraphQL im Kontext der Datenabfrage besonders effizient und flexibel, da somit keine unnöige Datenübertragung stattfindet. 
-
+GraphQL ist eine Open Source Datenabfrage- und Manipulationssprache und wurde im Jahr 2015 von Facebook veröffentlicht.
+Der Standard wurde entwickelt, um eine bessere Alternative für REST-Architekturen und SQL bereitzustellen, da bei REST-Anwendungen ein vordefinierter Satz von Daten an den Client  zurückgeliefert wird. Vor allem bei mobilen Anwendungen führte diese Einschränkung zu Problemen, da oft zu viele bzw. zu wenig Daten übermittelt wurden, was zu einem unnötigen Übertragungsvolumen führt.
+GraphQL erlaubt es dem Client gezielt die benötigten Daten abzufragen. Außerdem können Daten, welche in mehreren Datenobjekten verschachtelt sind, effizient abgebildet werden. Diese Eigenschaften machen GraphQL im Kontext der Datenabfrage besonders effizient und flexibel, da somit keine unnötige Datenübertragung stattfindet. 
 
 \subsubsection*{Unterstützte Operationen}
 
 \begin{description}[leftmargin=2cm, style=nextline]
 	\item[Queries (schreibend):]  
-	Queries definieren die exakten Daten die vom Client angefordert werden. Die Daten werden in der selben Struktur an den Client zurückgesendet.
+	Queries definieren die exakten Daten die vom Client angefordert werden. Die Daten werden in der selben Struktur an den Client zurückgesendet. 
 	
 	\item[Mutations (manipulierend): ]  
-	Mit Mutations können Daten manipuliert werden, ähnlich wie POST, UPDATE oder DELETE Funktionen bei REST. Mutations beinhalten Variablen welche vom GraphQL Server verarbeitet werden und die Struktur, welche die Struktur für den Response definiert.
+	Mit Mutations können Daten manipuliert werden, ähnlich wie POST, PUT/PATCH oder DELETE Funktionen bei REST. Mutations beinhalten Variablen welche vom GraphQL Server verarbeitet werden und eine Definition der erwarteten Struktur der Antwort.
 	
 	\item[Subscriptions:]  
-	Erlauben Live Updates von dem Server an den Client. Die Struktur gibt die Struktur der Nachrichten an welche an den Client übermittelt werden. 
+	Erlauben Live Updates von dem Server an den Client. Die Definition legt fest, in welcher Struktur die Nachrichten an den Client übermittelt werden.
 \end{description}
 
 \subsubsection*{Technische Umsetzung}
+Technisch werden GraphQL Requests und Responses in einem JSON Format übertragen und die Kommunikation findet über das HTTP-Protokoll statt. Subscriptions werden jedoch häufig über WebSockets realisiert. Außerdem ist es Konvention, dass typischerweise alle Operationen (Queries, Mutations, Subscriptions) über einen einzigen Endpunkt (/graphql) laufen, üblicherweise über HTTP POST. 
+Die Anfrage wird dabei als String im sogenannten „GraphQL Query Language“-Format an den Server geschickt. Die Antwort enthält die angeforderten Daten innerhalb eines „data“ Feldes und im Fehlerfall ein „errors“-Feld in dem die jeweiligen Fehler und Details angeführt werden \parencite{graphql-org}.
 
-Technische weden GraphQL Requests und responses in einem JSON Format übertragen und die Kommunikation findet über das http Protokoll statt. Außerdem is es Konvention, dass typisherweise alle Operationen (Queries, Mutations, Subscriptions) über einen einzigen Endpunkt (/graphql) laufen.
-Die Anfrage wird dabei als String im sogenannten „GraphQL Query Language“-Format an den Server geschickt. Die Antwort enthält die angeforderten Daten innerhalb eines „data“ Feldes und im Fehlerfall ein „error Feld“ in dem die jeweiligen Fehler und Details angeführt werden.
 
 \clearpage
-\subsection{Google Remote Procedure Calls (gRPC)}
-gRPC ist ein im Jahr 2015 veröffentliches open-source Framework mit dem Remote Procedure Calls (RPC) durchgeführt werden können. Die Grundidee von gRPC geht darauf zurück, dass Google eine modernes und performante Technologie entwickeln wollte, das auf einem bereits intern eingesetztem RPC Framework names Stubby basiert. 
-Stubby wurde ursprünglich innerhalb von Google entwickelt und eingesetzt, um die Kommunikation zwischen einer Vielzahl an Microservices in unterschiedlichen verteilten Systemen effizient umzusetzen. gRPC knüpft an dieser Technologie an und wurde, als Open-Source Nachfolger von Stubby veröffentlicht, um eine performante und sprachübergreifende Lösung für die Interprozesskommunikation bereitzustellen.
+\subsection{gRPC}
+gRPC ist ein im Jahr 2015 veröffentlichtes Open Source Framework mit dem Remote Procedure Calls (RPC) durchgeführt werden können. Die Grundidee von gRPC geht darauf zurück, dass Google eine moderne und performante Technologie entwickeln wollte, das auf einem bereits intern eingesetztem RPC Framework names Stubby basiert. 
+Stubby wurde ursprünglich innerhalb von Google entwickelt und eingesetzt, um die Kommunikation zwischen einer Vielzahl an Microservices in unterschiedlichen verteilten Systemen effizient umzusetzen. gRPC knüpft an dieser Technologie an und wurde, als Open Source Nachfolger von Stubby veröffentlicht, um eine performante und sprachübergreifende Lösung für die Interprozesskommunikation bereitzustellen \parencite{grpc-history}.
 
-\textbf{\underline{Remote Procedure Call:}}
-RPC beschreibt ein Kommunikationsmodell, bei dem ein Programm auf einem anderen Computer ( meist Server ) eine Methode auf einem anderen entfernten System aufruft, als wäre sie lokal vorhanden. Im Unterschied zu REST oder GraphQL sind RPC Calls Methoden (Methodenname, Parameter und Rückgabewert) und nicht Ressourcen orientiert, wodurch die Schnittstelle stärker an der Logik der Anwendung angelehnt ist. 
 
-Hauptanwendung findet gRPC in der Kommunikation von Micro Service Architekturen und in der inter-backend-Kommunikation. Micro Services sind kleine, eigenständigen Dienste, die jeweils eine klar abgegrenzte Aufgabe erfüllen und unabhängig voneinander entwickelt werden, jedoch (häufig in hoher Frequenz und mit großen Datenmengen)miteinander kommunizieren. Hier ist es wichtig, dass die Daten performant zwischen den verschiedenen Services hin und her geschickt werden. gRPC kann jedoch auch für die Kommunikation zwischen Browsern bzw. Mobilgeräten und Backend Services genutzt werden.
+\paragraph{RPC:}
+RPC beschreibt ein Kommunikationsmodell, bei dem ein Programm auf einem anderen Computer (meist Server) eine Methode auf einem anderen entfernten System aufruft, als wäre sie lokal vorhanden. Im Unterschied zu REST oder GraphQL sind RPC Calls Methoden (Methodenname, Parameter und Rückgabewert) und nicht Ressourcen orientiert, wodurch die Schnittstelle stärker an der Logik der Anwendung angelehnt ist \parencite{aws-rpc-vs-rest}.
 
-Die Kommunikation von gRPC findet standardmäßig über http/2 Protokoll statt, wodurch die in http/2 eingeführten Features die zu besserer performance und effizienz führen genutzt werden können. Außerdem wird für die Serialisierung  das in 1.1.1 beschriebe Protobuff Format verwendet, welches durch die binäre Struktur zu einer weiteren Verbesserung der Performance und Effizienz führt.
+\paragraph{Einsatzgebiete von gRPC:} Hauptanwendung findet gRPC in der Kommunikation von Micro Service Architekturen und in der inter-backend-Kommunikation. Micro Services sind kleine, eigenständige Dienste, die jeweils eine klar abgegrenzte Aufgabe erfüllen und unabhängig voneinander entwickelt werden, jedoch häufig in hoher Frequenz und mit großen Datenmengen miteinander kommunizieren. Hier ist es wichtig, dass die Daten performant zwischen den verschiedenen Services hin und her geschickt werden. gRPC kann jedoch auch für die Kommunikation zwischen Browsern bzw. Mobilgeräten und Backend Services genutzt werden \parencite{grpc-about}.
 
+\paragraph{Technische Grundlagen:} Die Kommunikation von gRPC wurde speziell auf Basis von HTTP/2 entwickelt und findet demnach standardmäßig über das HTTP/2 Protokoll statt. \parencite{grpc-googleblog}. Außerdem werden für die Serialisierung Protocul Buffers verwendet, welche durch die binäre Struktur zu einer weiteren Verbesserung der Performance und Effizienz führen \parencite{protobufdocs}.
+
+\clearpage
 \subsection{gRPC Web}
-Obwohl gRPC ursprünglich für die interprozesskommunikation in Micro Services entwickelt wurde, ist es auch möglich gRPC mit Einschränkungen für die Kommunikation zwischen Web-Browsern und Backend Services zu verwenden.
-Da in Web Browsern nicht alle Funktionen von http/2 zur Verfügung stehen kann für die Kommunikation in diesem Szenario nicht gRPC direkt verwendet werden. Für diesen Andwendungsfall wurde ein eigenes Protokoll namens gRPC-Web konzipiert. 
+Obwohl gRPC ursprünglich für die Interprozesskommunikation in Micro Services entwickelt wurde, ist es auch möglich gRPC mit Einschränkungen für die Kommunikation zwischen Web-Browsern und Backend Services zu verwenden.
+Da in Web Browsern nicht alle Funktionen von HTTP/2 zur Verfügung stehen, kann für die Kommunikation in diesem Szenario nicht gRPC direkt verwendet werden. Für diesen Anwendungsfall wurde ein eigenes Protokoll namens gRPC-Web konzipiert. 
+ 
 
 Folgende Funktionen von gRPC stehen dadurch nicht zu Verfügung:
-bidirektionales streaming (Full Duplex Streaming), Volle Kontrolle über HTTP/2-Funktionen (z.B. Header-Komprimierung, Multiplexing, Flow-Control), gRPC-Reflection
-Folgende Eigeschaften bleiben bei der Verwendung des gRPC-Web Protokolls erhalten:
-Protobuf als effizientes Datenformat, , Codegenerieung für Server und Client, Typensicherheit, Contract-first Api mit .proto Dateien, Server-Side Streaming
 
-Oft wird gRPC-Web über einen Proxy ( z.B Envoy oder gRPC-Web-Proxy) an einen regulären gRPC-Server weitergeleitet. Dies muss gemacht werden, da gRPC-Web zwar http/1.1 oder eingeschränktes http/2 (wie es im Browser verfügbar ist) verwendet, der eigentliche gRPC Server jedoch auf vollem http/2 basiert. Ein solcher Proxy übernimmt die „Übersetzung“ zwischen gRPC-Web und grpC (Backend). Für diese Übersetzung gibt es verschiedene gängige Varianten:
+\begin{itemize}
+	\item \textbf{Bidirektionales Streaming:} 
+	Im Browser ist kein echtes bidirektionales Streaming möglich. 
+	Es werden nur Unary RPCs und Server-Streaming unterstützt.
+	
+	\item \textbf{Metadaten und Header-Kompression:} 
+	Nicht alle gRPC-Metadaten können übertragen werden, und eine HTTP/2-Header-Kompression wird nicht untersützt.
+	
+	\item \textbf{Trailers:} 
+	gRPC-Web kann keine echten HTTP/2-Trailer verwenden. 
+	Status- und Fehlercodes werden daher in der Response umkodiert.
+\end{itemize}
+
+Folgende Eigeschaften bleiben bei der Verwendung des gRPC-Web Protokolls erhalten:
+
+\begin{itemize}
+	\item \textbf{Protocol Buffers als effizientes Datenformat.} 
+	\item \textbf{Codegenerierung für Server und Client} 
+	\item \textbf{Typensicherheit}
+	\item \textbf{Server-Side Streaming} 	
+\end{itemize}
+
+
+
+Oft wird gRPC-Web über einen Proxy (zum Beispiel Envoy oder gRPC-Web-Proxy) an einen regulären gRPC-Server weitergeleitet. Dies muss gemacht werden, da gRPC-Web zwar HTTP/1.1 oder eingeschränktes HTTP/2 (wie es im Browser verfügbar ist) verwendet, der eigentliche gRPC Server jedoch auf vollem HTTP/2 basiert. Ein solcher Proxy übernimmt die „Übersetzung“ zwischen gRPC-Web und gRPC (Backend) \parencite{Brandhorst2019}. Für diese Übersetzung gibt es verschiedene gängige Varianten:
 
 \begin{enumerate}
 	\item \textbf{Envoy Proxy:}
-	Envoy ist ein moderner Proxy, der nativ gRPC-Web unterstützt. Er führt die „Übersetzung“ druch und leitet sie intern an den gRPC-Server weiter.
-	→ Vorteil: Skalierbar, performant
-	→ Nachteil: Zusätzlicher Deployment-Aufwand (eigene Proxy-Instanz)
+	Envoy ist ein moderner Proxy, der nativ gRPC-Web unterstützt. Er führt die „Übersetzung“ durch und leitet sie intern an den gRPC-Server weiter.	
+	\begin{itemize}
+		\item Vorteil: Skalierbar und performant
+		\item Nachteil: Zusätzlicher Deployment Aufwand (eigene Proxy-Instanz erforderlich)
+	\end{itemize}
 	
-	\item \textbf{gRPC-Web-Proxy :}
+	\item \textbf{gRPC-Web-Proxy:}
 	Ein Node.js-basierter Proxy, der ebenfalls als Brücke zwischen Browser und gRPC-Backend dient.
-	→ Vorteil: Schnell einzurichten
-	→ Nachteil: Weniger leistungsfähig als Envoy
+	\begin{itemize}
+		\item Vorteil: Schnell einzurichten
+		\item Nachteil: Nicht so leistungsfähig als Envoy
+	\end{itemize}
+
 	
-	\item \textbf{Direkte Serverintegration in ASP.NET Core}
-	→ Vorteil: Einfaches Setup, kein Proxy nötig, ideal für .NET-Umgebungen
-	→ Nachteil: weniger flexibel für komplexe Architekturen
+	\item \textbf{Direkte Serverintegration in ASP.NET Core:}
+	\begin{itemize}
+		\item Vorteil: Einfaches Setup und kein Proxy nötig. Ideal für .NET-Umgebungen
+		\item Nachteil: Nicht so flexibel für komplexe Architekturen
+	\end{itemize}
 \end{enumerate}
 
-Im Rahmen des implementierten Prototyps für diese Arbeit wurde die direkte Serverintegration in ASP.NET Core gewählt.
+Im Rahmen des implementierten Prototyps für diese Arbeit wurde die direkte Serverintegration in ASP.NET Core gewählt \parencite{grpc-web-docs,aspnet-grpcweb}.
 
-Da es in der Arbeit um die Kommunikation zwischen Web Browsern und Backend Services geht, wird in folgendem nur vorallem ein Fokus auf das gRPC Web Protokoll gelegt.
+Da es in der Arbeit um die Kommunikation zwischen Web Browsern und Backend Services geht, wird in den folgenden Kapiteln vor allem ein Fokus auf das gRPC Web Protokoll gelegt.
 
 \clearpage
 \section{Begriffe}
-\subsection{Latenz}
-Der Begriff Latenz bezieht sich im Rahmen der Bachelorarbeit auf die Zeit für die übermittlung der Daten von dem Server an den Client, ab dem Senden des Requests von dem Client.
+\subsection{End-zu-End Latenz}
+OOODer Begriff Latenz bezieht sich im Rahmen der Bachelorarbeit auf die Zeit für die übermittlung der Daten von dem Server an den Client, ab dem Senden des Requests von dem Client.
+
+
 \subsection{Durchschnitt und Median}
 Zur Auswertung von Messergebnissen wurden zwei Lageparameter verwendet: der Durchschnitt (arithmetische Mittel) und der Median. 
 
-Der Durchcshnitt ergibt sich aus der Summe aller gemessenen Werten, dividiert durch die Anzahl der Messungen:
+Der Durchschnitt ergibt sich aus der Summe aller gemessenen Werten, dividiert durch die Anzahl der Messungen:
+
 \[
 \bar{x} = \frac{1}{n} \sum_{i=1}^n x_i
 \]
 
-Der Median bezeichnet jedenen Wert, er in einer sortzierten Messreige genau in der Mitte liegt. Er teilt die Messwerte in zwei gleich große Hälften und ist dadruch robuster gegenüber Ausreißern.
+Der Median bezeichnet jenen Wert, der in einer sortierten Messreihe genau in der Mitte liegt. Er teilt die Messwerte in zwei gleich große Hälften und ist dadurch robuster gegenüber Ausreißern \parencite{ludwig-mayerhofer-statistik}.
 
 \subsection{Browser Engines}
 Jeder moderne Webbrowser besitzt eine sogenannte Browser Engine, diese Engine ist unter anderem für das Rendern von Webseiten, die Verwaltung von Netzwerkverbindungen sowie die interne Verarbeitung von Inhalten zuständig. 
-Bekannte Browser Engines sind zum Beispiel Blink (Chrome, Edge) und Gecko (Firefox).
+Bekannte Browser Engines sind zum Beispiel Blink (Chrome, Edge) und Gecko (Firefox)
+ \parencite{browser-engines}.
 
 
 \chapterend

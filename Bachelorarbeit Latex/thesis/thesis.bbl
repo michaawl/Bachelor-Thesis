@@ -109,6 +109,36 @@
       \verb https://aws.amazon.com/de/compare/the-difference-between-frontend-and-backend/
       \endverb
     \endentry
+    \entry{aws-rpc-vs-rest}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4847e034bb0a55fcbc8a3380d6a3ab80}{%
+           family={{AWS}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{4847e034bb0a55fcbc8a3380d6a3ab80}
+      \strng{fullhash}{4847e034bb0a55fcbc8a3380d6a3ab80}
+      \strng{fullhashraw}{4847e034bb0a55fcbc8a3380d6a3ab80}
+      \strng{bibnamehash}{4847e034bb0a55fcbc8a3380d6a3ab80}
+      \strng{authorbibnamehash}{4847e034bb0a55fcbc8a3380d6a3ab80}
+      \strng{authornamehash}{4847e034bb0a55fcbc8a3380d6a3ab80}
+      \strng{authorfullhash}{4847e034bb0a55fcbc8a3380d6a3ab80}
+      \strng{authorfullhashraw}{4847e034bb0a55fcbc8a3380d6a3ab80}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-08-31}
+      \field{title}{RPC vs REST – Difference Between API Architectures}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://aws.amazon.com/compare/the-difference-between-rpc-and-rest/
+      \endverb
+      \verb{url}
+      \verb https://aws.amazon.com/compare/the-difference-between-rpc-and-rest/
+      \endverb
+    \endentry
     \entry{Brandhorst2019}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=6d67217c63205758858a756d221f8933}{%
@@ -144,6 +174,36 @@
       \verb https://grpc.io/blog/state-of-grpc-web/
       \endverb
     \endentry
+    \entry{browser-engines}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e75d03892c611e6d945c6ac32e599bc5}{%
+           family={{Chrome Developers}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{e75d03892c611e6d945c6ac32e599bc5}
+      \strng{fullhash}{e75d03892c611e6d945c6ac32e599bc5}
+      \strng{fullhashraw}{e75d03892c611e6d945c6ac32e599bc5}
+      \strng{bibnamehash}{e75d03892c611e6d945c6ac32e599bc5}
+      \strng{authorbibnamehash}{e75d03892c611e6d945c6ac32e599bc5}
+      \strng{authornamehash}{e75d03892c611e6d945c6ac32e599bc5}
+      \strng{authorfullhash}{e75d03892c611e6d945c6ac32e599bc5}
+      \strng{authorfullhashraw}{e75d03892c611e6d945c6ac32e599bc5}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-08-31}
+      \field{title}{What is Blink? | Web Platform}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://developer.chrome.com/docs/web-platform/blink
+      \endverb
+      \verb{url}
+      \verb https://developer.chrome.com/docs/web-platform/blink
+      \endverb
+    \endentry
     \entry{ecma404-2017}{standard}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=41c46722588c33c49d98fefc48f47fc6}{%
@@ -173,12 +233,43 @@
       \field{title}{The JSON Data Interchange Syntax}
       \field{type}{Standard, 2nd edition}
       \field{year}{2017}
-      \true{nocite}
       \verb{urlraw}
       \verb https://www.ecma-international.org/wp-content/uploads/ECMA-404_2nd_edition_december_2017.pdf
       \endverb
       \verb{url}
       \verb https://www.ecma-international.org/wp-content/uploads/ECMA-404_2nd_edition_december_2017.pdf
+      \endverb
+    \endentry
+    \entry{envoy_grpc_web}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=84f5e11834cd40c0df54a3d18eea7494}{%
+           family={{Envoy Proxy Authors}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{84f5e11834cd40c0df54a3d18eea7494}
+      \strng{fullhash}{84f5e11834cd40c0df54a3d18eea7494}
+      \strng{fullhashraw}{84f5e11834cd40c0df54a3d18eea7494}
+      \strng{bibnamehash}{84f5e11834cd40c0df54a3d18eea7494}
+      \strng{authorbibnamehash}{84f5e11834cd40c0df54a3d18eea7494}
+      \strng{authornamehash}{84f5e11834cd40c0df54a3d18eea7494}
+      \strng{authorfullhash}{84f5e11834cd40c0df54a3d18eea7494}
+      \strng{authorfullhashraw}{84f5e11834cd40c0df54a3d18eea7494}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Envoy Documentation}
+      \field{note}{Accessed: 2025-08-31}
+      \field{title}{gRPC-Web Support via Envoy Filter}
+      \field{year}{2025}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.envoyproxy.io/docs/envoy/latest/configuration/http/http_filters/grpc_web_filter
+      \endverb
+      \verb{url}
+      \verb https://www.envoyproxy.io/docs/envoy/latest/configuration/http/http_filters/grpc_web_filter
       \endverb
     \endentry
     \entry{restfielding}{misc}{}{}
@@ -198,8 +289,10 @@
       \strng{authornamehash}{87dbbd44b3977c28b71d826a931add3e}
       \strng{authorfullhash}{87dbbd44b3977c28b71d826a931add3e}
       \strng{authorfullhashraw}{87dbbd44b3977c28b71d826a931add3e}
+      \field{extraname}{1}
       \field{sortinit}{F}
       \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
@@ -209,6 +302,45 @@
       \field{title}{{Architectural Styles and the Design of Network-based Software Architectures}}
       \field{year}{2000}
       \true{nocite}
+    \endentry
+    \entry{fielding2000rest}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=87dbbd44b3977c28b71d826a931add3e}{%
+           family={Fielding},
+           familyi={F\bibinitperiod},
+           given={Roy\bibnamedelima Thomas},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {University of California, Irvine}%
+      }
+      \strng{namehash}{87dbbd44b3977c28b71d826a931add3e}
+      \strng{fullhash}{87dbbd44b3977c28b71d826a931add3e}
+      \strng{fullhashraw}{87dbbd44b3977c28b71d826a931add3e}
+      \strng{bibnamehash}{87dbbd44b3977c28b71d826a931add3e}
+      \strng{authorbibnamehash}{87dbbd44b3977c28b71d826a931add3e}
+      \strng{authornamehash}{87dbbd44b3977c28b71d826a931add3e}
+      \strng{authorfullhash}{87dbbd44b3977c28b71d826a931add3e}
+      \strng{authorfullhashraw}{87dbbd44b3977c28b71d826a931add3e}
+      \field{extraname}{2}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-08-31}
+      \field{title}{Architectural Styles and the Design of Network-based Software Architectures}
+      \field{type}{phdthesis}
+      \field{year}{2000}
+      \verb{urlraw}
+      \verb https://ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf
+      \endverb
+      \verb{url}
+      \verb https://ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf
+      \endverb
     \endentry
     \entry{protobufdocs}{online}{}{}
       \name{author}{1}{}{%
@@ -233,12 +365,11 @@
       \field{note}{Accessed: 2024-06-09}
       \field{title}{{Protocol Buffers Documentation}}
       \field{year}{2024}
-      \true{nocite}
       \verb{urlraw}
-      \verb https://protobuf.dev/
+      \verb https://protobuf.dev/overview/
       \endverb
       \verb{url}
-      \verb https://protobuf.dev/
+      \verb https://protobuf.dev/overview/
       \endverb
     \endentry
     \entry{graphql}{misc}{}{}
@@ -255,6 +386,7 @@
       \strng{authornamehash}{f1c9b8a1db233f245c9e6aee46073c54}
       \strng{authorfullhash}{f1c9b8a1db233f245c9e6aee46073c54}
       \strng{authorfullhashraw}{f1c9b8a1db233f245c9e6aee46073c54}
+      \field{extraname}{1}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{extradatescope}{labelyear}
@@ -266,6 +398,71 @@
       \field{title}{{GraphQL Documentation}}
       \field{year}{2024}
       \true{nocite}
+    \endentry
+    \entry{graphql-org}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f1c9b8a1db233f245c9e6aee46073c54}{%
+           family={{GraphQL Foundation}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1c9b8a1db233f245c9e6aee46073c54}
+      \strng{fullhash}{f1c9b8a1db233f245c9e6aee46073c54}
+      \strng{fullhashraw}{f1c9b8a1db233f245c9e6aee46073c54}
+      \strng{bibnamehash}{f1c9b8a1db233f245c9e6aee46073c54}
+      \strng{authorbibnamehash}{f1c9b8a1db233f245c9e6aee46073c54}
+      \strng{authornamehash}{f1c9b8a1db233f245c9e6aee46073c54}
+      \strng{authorfullhash}{f1c9b8a1db233f245c9e6aee46073c54}
+      \strng{authorfullhashraw}{f1c9b8a1db233f245c9e6aee46073c54}
+      \field{extraname}{2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-08-31}
+      \field{title}{GraphQL Documentation}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://graphql.org/
+      \endverb
+      \verb{url}
+      \verb https://graphql.org/
+      \endverb
+    \endentry
+    \entry{rfc9110}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f12ca508f18011ceae5c1b62c7b30082}{%
+           family={Group},
+           familyi={G\bibinitperiod},
+           given={IETF\bibnamedelimb HTTPbis\bibnamedelima Working},
+           giveni={I\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f12ca508f18011ceae5c1b62c7b30082}
+      \strng{fullhash}{f12ca508f18011ceae5c1b62c7b30082}
+      \strng{fullhashraw}{f12ca508f18011ceae5c1b62c7b30082}
+      \strng{bibnamehash}{f12ca508f18011ceae5c1b62c7b30082}
+      \strng{authorbibnamehash}{f12ca508f18011ceae5c1b62c7b30082}
+      \strng{authornamehash}{f12ca508f18011ceae5c1b62c7b30082}
+      \strng{authorfullhash}{f12ca508f18011ceae5c1b62c7b30082}
+      \strng{authorfullhashraw}{f12ca508f18011ceae5c1b62c7b30082}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{RFC 9110}
+      \field{note}{Standards Track, accessed 2025-08-31}
+      \field{title}{Hypertext Transfer Protocol (HTTP): Semantics}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://datatracker.ietf.org/doc/html/rfc9110
+      \endverb
+      \verb{url}
+      \verb https://datatracker.ietf.org/doc/html/rfc9110
+      \endverb
     \endentry
     \entry{grpcdocs}{online}{}{}
       \name{author}{1}{}{%
@@ -316,6 +513,7 @@
       \field{extraname}{2}
       \field{sortinit}{g}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
@@ -330,32 +528,101 @@
       \verb https://grpc.io/about/
       \endverb
     \endentry
-    \entry{http2spec}{misc}{}{}
+    \entry{grpc-about}{online}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=77f41b03f38eadcd42a1afd2710a321e}{%
-           family={{Hypertext Transfer Protocol Working Group}},
-           familyi={H\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=a3a4dde425c214175e79ec479deea1fa}{%
+           family={{gRPC Authors}},
+           familyi={g\bibinitperiod}}}%
       }
-      \strng{namehash}{77f41b03f38eadcd42a1afd2710a321e}
-      \strng{fullhash}{77f41b03f38eadcd42a1afd2710a321e}
-      \strng{fullhashraw}{77f41b03f38eadcd42a1afd2710a321e}
-      \strng{bibnamehash}{77f41b03f38eadcd42a1afd2710a321e}
-      \strng{authorbibnamehash}{77f41b03f38eadcd42a1afd2710a321e}
-      \strng{authornamehash}{77f41b03f38eadcd42a1afd2710a321e}
-      \strng{authorfullhash}{77f41b03f38eadcd42a1afd2710a321e}
-      \strng{authorfullhashraw}{77f41b03f38eadcd42a1afd2710a321e}
-      \field{extraname}{1}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \strng{namehash}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{fullhash}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{fullhashraw}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{bibnamehash}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{authorbibnamehash}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{authornamehash}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{authorfullhash}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{authorfullhashraw}{a3a4dde425c214175e79ec479deea1fa}
+      \field{extraname}{3}
+      \field{sortinit}{g}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://httpwg.org/specs/rfc7540.html}}
-      \field{note}{Accessed: 2024-06-08}
-      \field{title}{{RFC 7540: Hypertext Transfer Protocol Version 2 (HTTP/2)}}
-      \field{year}{2015}
-      \true{nocite}
+      \field{note}{Accessed: 2025-08-31}
+      \field{title}{About gRPC}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://grpc.io/about/
+      \endverb
+      \verb{url}
+      \verb https://grpc.io/about/
+      \endverb
+    \endentry
+    \entry{grpc-history}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a3a4dde425c214175e79ec479deea1fa}{%
+           family={{gRPC Authors}},
+           familyi={g\bibinitperiod}}}%
+      }
+      \strng{namehash}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{fullhash}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{fullhashraw}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{bibnamehash}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{authorbibnamehash}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{authornamehash}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{authorfullhash}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{authorfullhashraw}{a3a4dde425c214175e79ec479deea1fa}
+      \field{extraname}{4}
+      \field{sortinit}{g}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradate}{3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-08-31}
+      \field{title}{About gRPC – The story behind gRPC}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://grpc.io/about/
+      \endverb
+      \verb{url}
+      \verb https://grpc.io/about/
+      \endverb
+    \endentry
+    \entry{grpc-web-docs}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a3a4dde425c214175e79ec479deea1fa}{%
+           family={{gRPC Authors}},
+           familyi={g\bibinitperiod}}}%
+      }
+      \strng{namehash}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{fullhash}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{fullhashraw}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{bibnamehash}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{authorbibnamehash}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{authornamehash}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{authorfullhash}{a3a4dde425c214175e79ec479deea1fa}
+      \strng{authorfullhashraw}{a3a4dde425c214175e79ec479deea1fa}
+      \field{extraname}{5}
+      \field{sortinit}{g}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradate}{4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-08-31}
+      \field{title}{gRPC-Web Basics}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://grpc.io/docs/platforms/web/basics/
+      \endverb
+      \verb{url}
+      \verb https://grpc.io/docs/platforms/web/basics/
+      \endverb
     \endentry
     \entry{http1spec}{misc}{}{}
       \name{author}{1}{}{%
@@ -371,7 +638,6 @@
       \strng{authornamehash}{77f41b03f38eadcd42a1afd2710a321e}
       \strng{authorfullhash}{77f41b03f38eadcd42a1afd2710a321e}
       \strng{authorfullhashraw}{77f41b03f38eadcd42a1afd2710a321e}
-      \field{extraname}{2}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{extradatescope}{labelyear}
@@ -498,6 +764,131 @@
       \verb https://www.diva-portal.org/smash/get/diva2:1878772/FULLTEXT01.pdf
       \endverb
     \endentry
+    \entry{ludwig-mayerhofer-statistik}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e28a01c3ef59ecfbdd104ac2543208f4}{%
+           family={Ludwig-Mayerhofer},
+           familyi={L\bibinithyphendelim M\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e28a01c3ef59ecfbdd104ac2543208f4}
+      \strng{fullhash}{e28a01c3ef59ecfbdd104ac2543208f4}
+      \strng{fullhashraw}{e28a01c3ef59ecfbdd104ac2543208f4}
+      \strng{bibnamehash}{e28a01c3ef59ecfbdd104ac2543208f4}
+      \strng{authorbibnamehash}{e28a01c3ef59ecfbdd104ac2543208f4}
+      \strng{authornamehash}{e28a01c3ef59ecfbdd104ac2543208f4}
+      \strng{authorfullhash}{e28a01c3ef59ecfbdd104ac2543208f4}
+      \strng{authorfullhashraw}{e28a01c3ef59ecfbdd104ac2543208f4}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-08-31}
+      \field{title}{Statistik I – Maßzahlen der zentralen Tendenz}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.uni-siegen.de/phil/sozialwissenschaften/soziologie/mitarbeiter/ludwig-mayerhofer/statistik/statistik_downloads/statistik_i_3.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.uni-siegen.de/phil/sozialwissenschaften/soziologie/mitarbeiter/ludwig-mayerhofer/statistik/statistik_downloads/statistik_i_3.pdf
+      \endverb
+    \endentry
+    \entry{Microsoft2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=85c0d5be1b218b5c5806c66c874657e1}{%
+           family={{Microsoft Azure Architecture Center}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{85c0d5be1b218b5c5806c66c874657e1}
+      \strng{fullhash}{85c0d5be1b218b5c5806c66c874657e1}
+      \strng{fullhashraw}{85c0d5be1b218b5c5806c66c874657e1}
+      \strng{bibnamehash}{85c0d5be1b218b5c5806c66c874657e1}
+      \strng{authorbibnamehash}{85c0d5be1b218b5c5806c66c874657e1}
+      \strng{authornamehash}{85c0d5be1b218b5c5806c66c874657e1}
+      \strng{authorfullhash}{85c0d5be1b218b5c5806c66c874657e1}
+      \strng{authorfullhashraw}{85c0d5be1b218b5c5806c66c874657e1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Documentation on Microsoft Learn}
+      \field{month}{8}
+      \field{note}{Accessed: 2025-08-31}
+      \field{title}{Best practices for RESTful web API design}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design
+      \endverb
+      \verb{url}
+      \verb https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design
+      \endverb
+    \endentry
+    \entry{aspnet-grpcweb}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=97f145fb5f46bb6a966ff2080e4fd120}{%
+           family={{Microsoft Docs}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{97f145fb5f46bb6a966ff2080e4fd120}
+      \strng{fullhash}{97f145fb5f46bb6a966ff2080e4fd120}
+      \strng{fullhashraw}{97f145fb5f46bb6a966ff2080e4fd120}
+      \strng{bibnamehash}{97f145fb5f46bb6a966ff2080e4fd120}
+      \strng{authorbibnamehash}{97f145fb5f46bb6a966ff2080e4fd120}
+      \strng{authornamehash}{97f145fb5f46bb6a966ff2080e4fd120}
+      \strng{authorfullhash}{97f145fb5f46bb6a966ff2080e4fd120}
+      \strng{authorfullhashraw}{97f145fb5f46bb6a966ff2080e4fd120}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-08-31}
+      \field{title}{Use gRPC-Web with .NET}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://learn.microsoft.com/en-us/aspnet/core/grpc/grpcweb?view=aspnetcore-9.0
+      \endverb
+      \verb{url}
+      \verb https://learn.microsoft.com/en-us/aspnet/core/grpc/grpcweb?view=aspnetcore-9.0
+      \endverb
+    \endentry
+    \entry{grpc-googleblog}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e1f84917dc08793bd54664a0a2e31574}{%
+           family={{Mugur Marculescu}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{e1f84917dc08793bd54664a0a2e31574}
+      \strng{fullhash}{e1f84917dc08793bd54664a0a2e31574}
+      \strng{fullhashraw}{e1f84917dc08793bd54664a0a2e31574}
+      \strng{bibnamehash}{e1f84917dc08793bd54664a0a2e31574}
+      \strng{authorbibnamehash}{e1f84917dc08793bd54664a0a2e31574}
+      \strng{authornamehash}{e1f84917dc08793bd54664a0a2e31574}
+      \strng{authorfullhash}{e1f84917dc08793bd54664a0a2e31574}
+      \strng{authorfullhashraw}{e1f84917dc08793bd54664a0a2e31574}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Posted: February 26, 2015; Accessed: 2025-08-31}
+      \field{title}{Introducing gRPC, a new open source HTTP/2 RPC Framework}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://developers.googleblog.com/en/introducing-grpc-a-new-open-source-http2-rpc-framework/
+      \endverb
+      \verb{url}
+      \verb https://developers.googleblog.com/en/introducing-grpc-a-new-open-source-http2-rpc-framework/
+      \endverb
+    \endentry
     \entry{Omer2024}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=6ae9afc96aa3fec4308a320991b508d6}{%
@@ -522,6 +913,36 @@
       \field{title}{{Genereller Vergleich von REST, GraphQL und gRPC}}
       \field{year}{2024}
       \true{nocite}
+    \endentry
+    \entry{redhat-apiguide}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a82007c47b25723539a00ff94e8b3d27}{%
+           family={{Red Hat}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{a82007c47b25723539a00ff94e8b3d27}
+      \strng{fullhash}{a82007c47b25723539a00ff94e8b3d27}
+      \strng{fullhashraw}{a82007c47b25723539a00ff94e8b3d27}
+      \strng{bibnamehash}{a82007c47b25723539a00ff94e8b3d27}
+      \strng{authorbibnamehash}{a82007c47b25723539a00ff94e8b3d27}
+      \strng{authornamehash}{a82007c47b25723539a00ff94e8b3d27}
+      \strng{authorfullhash}{a82007c47b25723539a00ff94e8b3d27}
+      \strng{authorfullhashraw}{a82007c47b25723539a00ff94e8b3d27}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-08-31}
+      \field{title}{An architect's guide to APIs: SOAP, REST, GraphQL, and gRPC}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.redhat.com/en/blog/apis-soap-rest-graphql-grpc
+      \endverb
+      \verb{url}
+      \verb https://www.redhat.com/en/blog/apis-soap-rest-graphql-grpc
+      \endverb
     \endentry
     \entry{koponen2024rpc}{online}{}{}
       \name{author}{1}{}{%
@@ -552,6 +973,76 @@
       \endverb
       \verb{url}
       \verb https://www.researchgate.net/publication/380547826_Understanding_re-emergence_of_the_RPC_model_in_web_development
+      \endverb
+    \endentry
+    \entry{rfc9113}{misc}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a4e224194a64046472d567f5d35b02bc}{%
+           family={Thomson},
+           familyi={T\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=947c3cac0340f764490331b501004c4e}{%
+           family={Bishop},
+           familyi={B\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2163456cdb7782565d2e9b8cbe81ffd9}
+      \strng{fullhash}{2163456cdb7782565d2e9b8cbe81ffd9}
+      \strng{fullhashraw}{2163456cdb7782565d2e9b8cbe81ffd9}
+      \strng{bibnamehash}{2163456cdb7782565d2e9b8cbe81ffd9}
+      \strng{authorbibnamehash}{2163456cdb7782565d2e9b8cbe81ffd9}
+      \strng{authornamehash}{2163456cdb7782565d2e9b8cbe81ffd9}
+      \strng{authorfullhash}{2163456cdb7782565d2e9b8cbe81ffd9}
+      \strng{authorfullhashraw}{2163456cdb7782565d2e9b8cbe81ffd9}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Internet Engineering Task Force (IETF) RFC 9113}
+      \field{note}{Accessed: 2025-08-31}
+      \field{title}{Hypertext Transfer Protocol Version 2 (HTTP/2)}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://datatracker.ietf.org/doc/html/rfc9113
+      \endverb
+      \verb{url}
+      \verb https://datatracker.ietf.org/doc/html/rfc9113
+      \endverb
+    \endentry
+    \entry{w3c-fileapi}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=66c3509f57565d7fbe270a57a403004c}{%
+           family={{World Wide Web Consortium (W3C)}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{66c3509f57565d7fbe270a57a403004c}
+      \strng{fullhash}{66c3509f57565d7fbe270a57a403004c}
+      \strng{fullhashraw}{66c3509f57565d7fbe270a57a403004c}
+      \strng{bibnamehash}{66c3509f57565d7fbe270a57a403004c}
+      \strng{authorbibnamehash}{66c3509f57565d7fbe270a57a403004c}
+      \strng{authornamehash}{66c3509f57565d7fbe270a57a403004c}
+      \strng{authorfullhash}{66c3509f57565d7fbe270a57a403004c}
+      \strng{authorfullhashraw}{66c3509f57565d7fbe270a57a403004c}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{W3C Working Draft, accessed 2025-08-31}
+      \field{title}{File API}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.w3.org/TR/FileAPI/
+      \endverb
+      \verb{url}
+      \verb https://www.w3.org/TR/FileAPI/
       \endverb
     \endentry
   \enddatalist

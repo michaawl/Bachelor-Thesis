@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  29 AUG 2025 21:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  31 AUG 2025 20:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1166,9 +1166,9 @@ Package csquotes Info: ... found 'babel' package.
 Package biblatex Warning: Conflicting options.
 (biblatex)                '<namepart>inits' conflicts with 'uniquename=minyearf
 ull'.
-(biblatex)                Setting 'uniquename=minyearinit on input line 65.
+(biblatex)                Setting 'uniquename=minyearinit on input line 62.
 
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 65
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 62
 .
 (c:/texlive/2025/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -1209,24 +1209,24 @@ LaTeX Warning: Label `chap:intro@cref' multiply defined.
 ) (./chapters/99_acronyms.aux) (./chapters/101_Rohdaten.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
 
 (c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1316,9 +1316,9 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
  (./thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 65.
-Package biblatex Info: Reference segment=0 on input line 65.
-Package hyperref Info: Link coloring ON on input line 65.
+Package biblatex Info: Reference section=0 on input line 62.
+Package biblatex Info: Reference segment=0 on input line 62.
+Package hyperref Info: Link coloring ON on input line 62.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write5
@@ -1423,7 +1423,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 
 
 Package babel Info: 'german' activates 'german' shorthands.
-(babel)             Reported  on input line 113.
+(babel)             Reported  on input line 108.
 [2] (./thesis.lof)
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
@@ -1502,12 +1502,6 @@ e Frontend-Backend-
  (./chapters/02_TheoretischeGrundlagen.tex
 Kapitel 2.
 
-Overfull \hbox (8.02321pt too wide) in paragraph at lines 20--21
-\T1/ptm/m/n/12 vie-len Pro-gram-mier-spra-chen Ver-wen-dung fin-det. Das For-ma
-t ba-siert auf ei-ner Schlüssel-
- []
-
-
 
 [4
 
@@ -1516,76 +1510,72 @@ t ba-siert auf ei-ner Schlüssel-
 
 
 {c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-
-[5]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 48
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 35
 .
- (c:/texlive/2025/texmf-dist/tex/latex/psnfss/t1pcr.fd
+
+(c:/texlive/2025/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 
+LaTeX Warning: Citation 'GraphQL2025' on page 5 undefined on input line 44.
+
+
+
+[5]
+
 [6]
-<images/http1_theory.jpg, id=257, 197.4285pt x 148.1535pt>
-File: images/http1_theory.jpg Graphic file (type jpg)
-<use images/http1_theory.jpg>
-Package pdftex.def Info: images/http1_theory.jpg  used on input line 82.
-(pdftex.def)             Requested size: 288.79422pt x 216.73862pt.
 
-Overfull \hbox (6.15869pt too wide) in paragraph at lines 87--88
-[]\T1/ptm/m/n/12 Der Ver-bin-dungs-auf-bau er-folgt da-bei mit-tels ei-nes Tran
-s-mis-si-on Con-trol Pro-to-col (TCP)
- []
-
-
-
-[7 <./images/http1_theory.jpg>]
+[7]
 
 [8]
+Overfull \hbox (10.04773pt too wide) in paragraph at lines 132--134
+\T1/ptm/m/n/12 nen durch ver-schie-de-ne For-ma-te (wie JSON) re-prä-sen-tiert 
+und über Standard-
+ []
+
+
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
 
 
-[10]
-
-[11
+[10
 
 ]
+Overfull \hbox (35.51373pt too wide) in paragraph at lines 191--192
+\T1/ptm/m/n/12 Mit Mu-ta-ti-ons kön-nen Da-ten ma-ni-pu-liert wer-den, ähn-lich
+ wie POST, PUT/PATCH
+ []
+
+
+
+[11]
 
 [12
 
 ]
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family ptm in TS1 encoding.
-            Default family used instead on input line 230.
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family ptm in TS1 encoding.
-            Default family used instead on input line 231.
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family ptm in TS1 encoding.
-            Default family used instead on input line 235.
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family ptm in TS1 encoding.
-            Default family used instead on input line 236.
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family ptm in TS1 encoding.
-            Default family used instead on input line 239.
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family ptm in TS1 encoding.
-            Default family used instead on input line 240.
+Overfull \hbox (8.8602pt too wide) in paragraph at lines 228--230
+[]\T1/ptm/b/n/12 Metadaten und Header-Kompression: \T1/ptm/m/n/12 Nicht al-le g
+RPC-Metadaten kön-nen über-
+ []
 
 
-[13{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
-[14
+[13
+
+]
+
+[14]
+
+[15
 
 ])
 \openout2 = `chapters/03_VerwandteArbeiten.aux'.
@@ -1606,7 +1596,7 @@ ier-ten Da-ten der Postman-
 
 
 
-[15
+[16
 
 
 
@@ -1626,9 +1616,9 @@ Overfull \hbox (4.4445pt too wide) in paragraph at lines 31--32
 
 
 
-[16]
-
 [17]
+
+[18]
 Overfull \hbox (18.23138pt too wide) in paragraph at lines 51--52
 []\T1/ptm/m/n/12 Spotify nutzt seit 2019 gRPC in der Kom-mu-nik-tai-on zwi-sche
 n sei-nen Backend-
@@ -1642,9 +1632,9 @@ Overfull \hbox (1.51468pt too wide) in paragraph at lines 55--58
 
 
 
-[18]
-
 [19]
+
+[20]
 Overfull \hbox (5.23303pt too wide) in paragraph at lines 76--76
 []\T1/ptm/b/n/14.4 Performance eva-lua-ti-on of mi-cro-ser-vices com-mu-ni-ca-t
 i-on with
@@ -1652,7 +1642,7 @@ i-on with
 
 
 
-[20])
+[21])
 \openout2 = `chapters/04_AnalyseUndVergleich.aux'.
 
  (./chapters/04_AnalyseUndVergleich.tex
@@ -1665,7 +1655,7 @@ Overfull \hbox (57.46356pt too wide) in paragraph at lines 7--7
 
 
 
-[21
+[22
 
 
 
@@ -1678,14 +1668,6 @@ an-satz zu-rück-lie-fern. Hier-
  []
 
 
-
-
-Overfull \hbox (58.32544pt too wide) has occurred while \output is active
-\T1/ptm/m/sl/12 KAPITEL 4.  THEORETISCHE ANALYSE UND VERGLEICH DER API-TECHNOLO
-GIEN: \T1/ptm/m/n/12 22
- []
-
-[22]
 
 
 Overfull \hbox (58.32544pt too wide) has occurred while \output is active
@@ -1717,111 +1699,126 @@ Overfull \hbox (58.32544pt too wide) has occurred while \output is active
 GIEN: \T1/ptm/m/n/12 26
  []
 
-[26])
+[26]
+
+
+Overfull \hbox (58.32544pt too wide) has occurred while \output is active
+\T1/ptm/m/sl/12 KAPITEL 4.  THEORETISCHE ANALYSE UND VERGLEICH DER API-TECHNOLO
+GIEN: \T1/ptm/m/n/12 27
+ []
+
+[27])
 \openout2 = `chapters/05_PraktischerTeil.aux'.
 
  (./chapters/05_PraktischerTeil.tex
 Kapitel 5.
+<images/http1_theory.jpg, id=431, 197.4285pt x 148.1535pt>
+File: images/http1_theory.jpg Graphic file (type jpg)
+<use images/http1_theory.jpg>
+Package pdftex.def Info: images/http1_theory.jpg  used on input line 14.
+(pdftex.def)             Requested size: 288.79422pt x 216.73862pt.
 
-Overfull \hbox (24.41089pt too wide) in paragraph at lines 13--15
+Overfull \hbox (24.41089pt too wide) in paragraph at lines 20--22
 \T1/ptm/m/n/12 Ziel des prak-ti-schen Teils ist es die Lei-stungs-fä-hig-keit v
 on den ge-nann-ten API-Technologien
  []
 
 
-Overfull \hbox (0.2319pt too wide) in paragraph at lines 16--18
+
+[28
+
+
+
+
+
+ <./images/http1_theory.jpg>]
+Overfull \hbox (0.2319pt too wide) in paragraph at lines 23--25
 \T1/ptm/m/n/12 auf die Eig-nung der ein-zel-nen Tech-no-lo-gie für die Kom-mu-n
 i-ka-ti-on zwi-schen Frontend-
  []
 
 
-
-[27
-
-
-
-
-
-]
-Overfull \hbox (3.31836pt too wide) in paragraph at lines 41--42
+Overfull \hbox (3.31836pt too wide) in paragraph at lines 48--49
 \T1/ptm/m/n/12 Back-End Ser-vice statt. Der Web-Client kann auf die REST, Gra-p
 h-QL und gRPC-
  []
 
 
 
-[28]
-Overfull \hbox (2.09242pt too wide) in paragraph at lines 73--74
+[29]
+Overfull \hbox (2.09242pt too wide) in paragraph at lines 80--81
 []\T1/ptm/b/n/12 Einzelabfragen - Web-Client (1 Re-quest): \T1/ptm/m/n/12 Ver-g
 leich der Tech-no-lo-gi-en bei beim
  []
 
 
-Overfull \hbox (6.87108pt too wide) in paragraph at lines 75--76
+
+[30]
+Overfull \hbox (6.87108pt too wide) in paragraph at lines 82--83
 \T1/ptm/m/n/12 wer-den er-neut Ein-zel-re-quests in ver-schie-de-nen Web-brow-s
 ern durch-ge-führt. Durch
  []
 
 
-
-[29]
-Overfull \hbox (15.05551pt too wide) in paragraph at lines 82--83
+Overfull \hbox (15.05551pt too wide) in paragraph at lines 89--90
 \T1/ptm/m/n/12 HTT-P/2.0 Pro-to-koll durch-ge-führt und ver-schlüs-selt mit htt
 -ps ver-sen-det. Bei der Response-
  []
 
 
 
-[30]
-Overfull \hbox (1.72pt too wide) in paragraph at lines 110--112
+[31]
+
+[32]
+Overfull \hbox (1.72pt too wide) in paragraph at lines 117--119
 \T1/ptm/m/n/12 rung ba-siert auf .NET 9, ei-ner platt-for-mu-n-ab-hän-gi-gen Op
 en-Source-Laufzeitumgebung
  []
 
-<images/prakt1.png, id=417, 338.76563pt x 82.80937pt>
+<images/prakt1.png, id=466, 338.76563pt x 82.80937pt>
 File: images/prakt1.png Graphic file (type png)
 <use images/prakt1.png>
-Package pdftex.def Info: images/prakt1.png  used on input line 121.
+Package pdftex.def Info: images/prakt1.png  used on input line 128.
 (pdftex.def)             Requested size: 288.79422pt x 70.59677pt.
 
 
-[31
+[33
 
  <./images/prakt1.png>]
-Overfull \hbox (41.48607pt too wide) in paragraph at lines 154--157
+Overfull \hbox (41.48607pt too wide) in paragraph at lines 161--164
 []\T1/ptm/m/n/12 GraphQlAPI: Die GraphQL-API wur-de mit-tels des \T1/pcr/m/n/12
  .NET\T1/ptm/m/n/12 -Frameworks \T1/pcr/m/n/12 HotChocolate
  []
 
 
-Overfull \hbox (9.36418pt too wide) in paragraph at lines 165--166
+Overfull \hbox (9.36418pt too wide) in paragraph at lines 172--173
 []\T1/ptm/m/n/12 Alle Ab-fra-gen er-fol-gen über \T1/pcr/m/n/12 HTTP POST\T1/pt
 m/m/n/12 -Anfragen an den End-punkt \T1/pcr/m/n/12 /graphql
  []
 
 
 
-[32]
-Overfull \hbox (19.51959pt too wide) in paragraph at lines 172--174
+[34]
+Overfull \hbox (19.51959pt too wide) in paragraph at lines 179--181
 []\T1/ptm/b/n/12 TextService\T1/ptm/m/n/12 : Rück-ga-be der drei Text-grö-ÿen ü
 ber die Me-tho-den \T1/pcr/m/n/12 GetSmall()\T1/ptm/m/n/12 ,
  []
 
 
-Overfull \hbox (44.33504pt too wide) in paragraph at lines 172--174
+Overfull \hbox (44.33504pt too wide) in paragraph at lines 179--181
 \T1/ptm/m/it/12 Rückgabeformat\T1/ptm/m/n/12 : \T1/pcr/m/n/12 TextResponse\T1/p
 tm/m/n/12 -Message mit ei-nem \T1/pcr/m/n/12 string\T1/ptm/m/n/12 -Feld (\T1/pc
 r/m/n/12 content\T1/ptm/m/n/12 ),
  []
 
 
-Overfull \hbox (3.36693pt too wide) in paragraph at lines 175--177
+Overfull \hbox (3.36693pt too wide) in paragraph at lines 182--184
 \T1/ptm/m/it/12 Rückgabeformat\T1/ptm/m/n/12 : Server-Streaming von Chunk-Nachr
 ichten (\T1/pcr/m/n/12 bytes\T1/ptm/m/n/12 -Feld),
  []
 
 
-Overfull \hbox (29.80365pt too wide) in paragraph at lines 178--180
+Overfull \hbox (29.80365pt too wide) in paragraph at lines 185--187
 \T1/ptm/m/it/12 Rückgabeformat\T1/ptm/m/n/12 : \T1/pcr/m/n/12 BlogPostsResponse
  \T1/ptm/m/n/12 (Li-ste von \T1/pcr/m/n/12 BlogPost\T1/ptm/m/n/12 -Nachrichten)
 ,
@@ -1832,22 +1829,22 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[33]
-Overfull \hbox (0.93062pt too wide) in paragraph at lines 216--218
+[35]
+Overfull \hbox (0.93062pt too wide) in paragraph at lines 223--225
 \T1/ptm/m/n/12 setzt. Die Ge-ne-rie-rung der gRPC-Klassen er-folgt mit-tels der
  \T1/pcr/m/n/12 ts-protoc-gen\T1/ptm/m/n/12 -
  []
 
 
-Overfull \hbox (192.80948pt too wide) in paragraph at lines 221--221
+Overfull \hbox (192.80948pt too wide) in paragraph at lines 228--228
  []  \T1/pcr/m/n/12 npx protoc --ts_out src/api/generated --proto_path=src/prot
 o src/proto/*.proto[] 
  []
 
 
 
-[34]
-Overfull \hbox (11.00758pt too wide) in paragraph at lines 243--244
+[36]
+Overfull \hbox (11.00758pt too wide) in paragraph at lines 250--251
 []\T1/ptm/m/n/12 Bei gRPC-Web er-folgt die De-se-ria-li-sie-rung über ge-ne-rie
 r-te Protobuf-Klassen. 
  []
@@ -1857,26 +1854,26 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[35]
-Overfull \hbox (0.7612pt too wide) in paragraph at lines 279--280
+[37]
+Overfull \hbox (0.7612pt too wide) in paragraph at lines 286--287
 []\T1/ptm/b/n/12 gRPC\T1/ptm/m/n/12 : über \T1/pcr/m/n/12 Grpc.Net.Client \T1/p
 tm/m/n/12 di-rekt als na-ti-ve gRPC-Kommunikation 
  []
 
 
-Overfull \hbox (18.91922pt too wide) in paragraph at lines 280--281
+Overfull \hbox (18.91922pt too wide) in paragraph at lines 287--288
 []\T1/ptm/b/n/12 gRPC-Web\T1/ptm/m/n/12 : über \T1/pcr/m/n/12 Grpc.Net.Client.W
 eb \T1/ptm/m/n/12 mit-tels spe-zi-el-ler Web-Handler,
  []
 
 
-Overfull \hbox (18.53038pt too wide) in paragraph at lines 283--285
+Overfull \hbox (18.53038pt too wide) in paragraph at lines 290--292
 []\T1/ptm/m/n/12 Die in-ter-ne Ver-ar-bei-tung wur-de so im-ple-men-tiert, dass
  die Mes-sun-gen der Response-
  []
 
 
-Overfull \hbox (48.7368pt too wide) in paragraph at lines 291--303
+Overfull \hbox (48.7368pt too wide) in paragraph at lines 298--310
  [][] 
  []
 
@@ -1885,30 +1882,16 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[36]
+[38]
 
-[37]
-
-[38
-
-]
-Overfull \hbox (12.65056pt too wide) in paragraph at lines 329--330
-\T1/ptm/m/n/12 Client ge-te-stet, um Un-ter-schie-de zwi-schen brow-ser-ba-sier
--ter und microservice-orientierter
- []
-
-
-
-[39
-
-]
+[39]
 
 [40
 
 ]
-Overfull \hbox (8.47922pt too wide) in paragraph at lines 385--390
-\T1/ptm/m/n/12 von Me-di-en-da-ten. Hier-bei war ent-ge-gen der theor-ti-schen 
-Er-war-tun-gen REST die schnell-
+Overfull \hbox (12.65056pt too wide) in paragraph at lines 336--337
+\T1/ptm/m/n/12 Client ge-te-stet, um Un-ter-schie-de zwi-schen brow-ser-ba-sier
+-ter und microservice-orientierter
  []
 
 
@@ -1920,16 +1903,16 @@ Er-war-tun-gen REST die schnell-
 [42
 
 ]
+Overfull \hbox (8.47922pt too wide) in paragraph at lines 392--397
+\T1/ptm/m/n/12 von Me-di-en-da-ten. Hier-bei war ent-ge-gen der theor-ti-schen 
+Er-war-tun-gen REST die schnell-
+ []
+
+
 
 [43
 
 ]
-Overfull \hbox (3.53085pt too wide) in paragraph at lines 449--451
-\T1/ptm/m/n/12 Derselbe Ver-such mit Einzel-Requests wur-de an-schlie-ÿend in z
-wei wei-te-ren Web Brow-
- []
-
-
 
 [44
 
@@ -1938,45 +1921,59 @@ wei wei-te-ren Web Brow-
 [45
 
 ]
+Overfull \hbox (3.53085pt too wide) in paragraph at lines 456--458
+\T1/ptm/m/n/12 Derselbe Ver-such mit Einzel-Requests wur-de an-schlie-ÿend in z
+wei wei-te-ren Web Brow-
+ []
+
+
 
 [46
 
 ]
-Overfull \hbox (14.65723pt too wide) in paragraph at lines 552--555
+
+[47
+
+]
+
+[48
+
+]
+Overfull \hbox (14.65723pt too wide) in paragraph at lines 559--562
 []\T1/ptm/b/n/12 TextService: \T1/ptm/m/n/12 Al-le Tech-no-lo-gi-en zeig-ten be
 i klei-nen und mitt-le-ren Text-da-ten im Konsolen-
  []
 
 
 
-[47
+[49
 
 ]
-Overfull \hbox (3.26784pt too wide) in paragraph at lines 565--566
+Overfull \hbox (3.26784pt too wide) in paragraph at lines 572--573
 \T1/ptm/m/n/12 Un-ter-schie-den zwi-schen REST, Gra-ph-Ql, gRPC und gRPC-Web be
 -stä-tigt wer-den konn-
  []
 
 
-Overfull \hbox (4.38419pt too wide) in paragraph at lines 573--574
+Overfull \hbox (4.38419pt too wide) in paragraph at lines 580--581
 []\T1/ptm/b/n/12 Konsolenclient (Microservice-Szenario): \T1/ptm/m/n/12 Oh-ne B
 rowser-Overhead und mit dem
  []
 
 
 
-[48
+[50
 
 ]
 
-[49])
+[51])
 \openout2 = `chapters/06_DiskussionUndAusblick.aux'.
 
  (./chapters/06_DiskussionUndAusblick.tex
 Kapitel 6.
 
 
-[50
+[52
 
 
 
@@ -1984,101 +1981,135 @@ Kapitel 6.
 
 ]
 
-[51]
+[53]
 
-[52]
+[54]
 
-[53])
+[55])
 \openout2 = `chapters/99_acronyms.aux'.
 
  (./chapters/99_acronyms.tex
 
-LaTeX Warning: Hyper reference `acro:ABI' on page 54 undefined on input line 24
+LaTeX Warning: Hyper reference `acro:JSON' on page 56 undefined on input line 2
+0.
+
+
+LaTeX Warning: Hyper reference `acro:JSON' on page 56 undefined on input line 2
+0.
+
+
+LaTeX Warning: Hyper reference `acro:REST' on page 56 undefined on input line 2
+1.
+
+
+LaTeX Warning: Hyper reference `acro:REST' on page 56 undefined on input line 2
+1.
+
+
+LaTeX Warning: Hyper reference `acro:GraphQL' on page 56 undefined on input lin
+e 22.
+
+
+LaTeX Warning: Hyper reference `acro:GraphQL' on page 56 undefined on input lin
+e 22.
+
+
+LaTeX Warning: Hyper reference `acro:gRPC' on page 56 undefined on input line 2
+3.
+
+
+LaTeX Warning: Hyper reference `acro:gRPC' on page 56 undefined on input line 2
+3.
+
+
+LaTeX Warning: Hyper reference `acro:HTTP' on page 56 undefined on input line 2
+4.
+
+
+LaTeX Warning: Hyper reference `acro:HTTP' on page 56 undefined on input line 2
+4.
+
+
+LaTeX Warning: Hyper reference `acro:API' on page 56 undefined on input line 25
 .
 
 
-LaTeX Warning: Hyper reference `acro:ABI' on page 54 undefined on input line 24
+LaTeX Warning: Hyper reference `acro:API' on page 56 undefined on input line 25
 .
 
 
-LaTeX Warning: Hyper reference `acro:DOI' on page 54 undefined on input line 25
-.
-
-
-LaTeX Warning: Hyper reference `acro:DOI' on page 54 undefined on input line 25
-.
-
-
-LaTeX Warning: Hyper reference `acro:ISBN' on page 54 undefined on input line 2
+LaTeX Warning: Hyper reference `acro:Blob' on page 56 undefined on input line 2
 6.
 
 
-LaTeX Warning: Hyper reference `acro:ISBN' on page 54 undefined on input line 2
+LaTeX Warning: Hyper reference `acro:Blob' on page 56 undefined on input line 2
 6.
 
 
-LaTeX Warning: Hyper reference `acro:MITM' on page 54 undefined on input line 2
-7.
+LaTeX Warning: Hyper reference `acro:HTTPS' on page 56 undefined on input line 
+27.
 
 
-LaTeX Warning: Hyper reference `acro:MITM' on page 54 undefined on input line 2
-7.
+LaTeX Warning: Hyper reference `acro:HTTPS' on page 56 undefined on input line 
+27.
 
 
-LaTeX Warning: Hyper reference `acro:URL' on page 54 undefined on input line 28
+LaTeX Warning: Hyper reference `acro:RPC' on page 56 undefined on input line 28
 .
 
 
-LaTeX Warning: Hyper reference `acro:URL' on page 54 undefined on input line 28
+LaTeX Warning: Hyper reference `acro:RPC' on page 56 undefined on input line 28
 .
 
 )
 
-[54
-
-
-
-
-
-]
-
-[55
-
-
-]
-
 [56
+
+
+
+
+
+]
+
+[57
+
 
 ]
 
 Package biblatex Warning: No driver for 'standard'.
-(biblatex)                Using fallback driver on input line 199.
+(biblatex)                Using fallback driver on input line 194.
 
 
 
-[57
+[58
 
 ]
 
-[58]
+[59]
+
+[60
+
+]
+
+[61]
 \openout2 = `chapters/101_Rohdaten.aux'.
 
  (./chapters/101_Rohdaten.tex
 Anhang A.
 
 
-[59
+[62
 
 
 ]
 
-[60]
+[63]
 
-[61]
+[64]
 
-[62]
+[65]
 
-[63]) (./thesis.aux (./chapters/01_titlepage.aux) (./chapters/03_abstract.aux)
+[66]) (./thesis.aux (./chapters/01_titlepage.aux) (./chapters/03_abstract.aux)
 (./chapters/01_Einleitung.aux) (./chapters/02_TheoretischeGrundlagen.aux)
 (./chapters/03_VerwandteArbeiten.aux) (./chapters/04_AnalyseUndVergleich.aux)
 (./chapters/05_PraktischerTeil.aux) (./chapters/06_DiskussionUndAusblick.aux)
@@ -2095,32 +2126,36 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 9E1A3B77C6A526409BE6CA7864B11C4C;5067.
+(rerunfilecheck)             Checksum: 9F367F93E3DC9E9618E98847B1DB3F47;5067.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                thesis
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36962 strings out of 469608
- 698521 string characters out of 5474779
- 1610515 words of memory out of 5000000
- 62899 multiletter control sequences out of 15000+600000
- 685607 words of font info for 110 fonts, out of 8000000 for 9000
+ 37090 strings out of 469608
+ 701929 string characters out of 5474779
+ 1618284 words of memory out of 5000000
+ 63003 multiletter control sequences out of 15000+600000
+ 685270 words of font info for 109 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 104i,10n,104p,1660b,2357s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 104i,10n,104p,1753b,2357s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texl
-ive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2025/t
-exmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/texlive/2025/texmf-dist/
-fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/
-helvetic/uhvr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/symbol/usyr.pfb
-><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/
-texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/t
-ype1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utm
-ri8a.pfb>
-Output written on thesis.pdf (70 pages, 316469 bytes).
+ive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/texlive/2025/t
+exmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2025/texmf-dist/fonts/
+type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/symbo
+l/usyr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/tex
+live/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-di
+st/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw
+/times/utmri8a.pfb>
+Output written on thesis.pdf (73 pages, 321549 bytes).
 PDF statistics:
- 736 PDF objects out of 1000 (max. 8388607)
- 633 compressed objects within 7 object streams
- 218 named destinations out of 1000 (max. 500000)
+ 839 PDF objects out of 1000 (max. 8388607)
+ 734 compressed objects within 8 object streams
+ 244 named destinations out of 1000 (max. 500000)
  260 words of extra memory for PDF output out of 10000 (max. 10000000)
 
