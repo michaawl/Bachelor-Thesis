@@ -2399,7 +2399,22 @@
     <bcf:citekey order="21" intorder="2">aspnet-grpcweb</bcf:citekey>
     <bcf:citekey order="22" intorder="1">ludwig-mayerhofer-statistik</bcf:citekey>
     <bcf:citekey order="23" intorder="1">browser-engines</bcf:citekey>
-    <bcf:citekey order="24" intorder="1" nocite="1">*</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">postman2022</bcf:citekey>
+    <bcf:citekey order="24" intorder="2">postman2023</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">stackoverflow2023</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">postman-rest-api-examples</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">graphql-org</bcf:citekey>
+    <bcf:citekey order="27" intorder="2">aws-appsync-why-use-graphql</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">nordicapis-graphql-examples</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">grpc-history</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">netflix-protobuf</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">roblox-analytics</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">spotify-k8s-case</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">Kaminski2022Comparative</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">Bolanowski2022Efficiency</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">BergRedi2023Benchmarking</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">Niswar2024PerformanceEvaluation</bcf:citekey>
+    <bcf:citekey order="37" intorder="1" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

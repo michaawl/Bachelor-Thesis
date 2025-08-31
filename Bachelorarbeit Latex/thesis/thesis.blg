@@ -1,17 +1,15 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is 'thesis.blg'
-[123] biber-MSWIN64:340> INFO - === 
-[190] Biber.pm:420> INFO - Reading 'thesis.bcf'
-[383] Biber.pm:991> INFO - Using all citekeys in bib section 0
-[405] Biber.pm:4463> INFO - Processing section 0
-[426] Biber.pm:4654> INFO - Looking for bibtex file 'thesis.bib' for section 0
-[569] bibtex.pm:1713> INFO - LaTeX decoding ...
-[667] bibtex.pm:1519> INFO - Found BibTeX data source 'thesis.bib'
-[977] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[978] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[978] Biber.pm:4283> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'de-DE'
-[978] Biber.pm:4289> INFO - No sort tailoring available for locale 'de-DE'
-[1025] bbl.pm:676> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
-[1051] bbl.pm:779> INFO - Output to thesis.bbl
-[1052] Biber.pm:131> WARN - Duplicate entry key: 'aspnet-grpcweb' in file 'thesis.bib', skipping ...
-[1052] Biber.pm:133> INFO - WARNINGS: 1
+[189] biber-MSWIN64:340> INFO - === 
+[266] Biber.pm:420> INFO - Reading 'thesis.bcf'
+[467] Biber.pm:991> INFO - Using all citekeys in bib section 0
+[490] Biber.pm:4463> INFO - Processing section 0
+[511] Biber.pm:4654> INFO - Looking for bibtex file 'thesis.bib' for section 0
+[640] bibtex.pm:1713> INFO - LaTeX decoding ...
+[731] bibtex.pm:1519> INFO - Found BibTeX data source 'thesis.bib'
+[1224] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1224] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1224] Biber.pm:4283> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'de-DE'
+[1224] Biber.pm:4289> INFO - No sort tailoring available for locale 'de-DE'
+[1303] bbl.pm:676> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[1378] bbl.pm:779> INFO - Output to thesis.bbl

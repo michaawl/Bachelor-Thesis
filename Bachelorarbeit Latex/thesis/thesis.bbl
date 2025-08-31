@@ -79,6 +79,36 @@
       \field{year}{2022}
       \true{nocite}
     \endentry
+    \entry{aws-appsync-why-use-graphql}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3eb2c1a57a8160029f036e3dcbf84bf1}{%
+           family={{Amazon Web Services}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{fullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{fullhashraw}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{bibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorbibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authornamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorfullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorfullhashraw}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-08-31}
+      \field{title}{Why Use GraphQL over REST?}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://docs.aws.amazon.com/appsync/latest/devguide/why-use-graphql.html
+      \endverb
+      \verb{url}
+      \verb https://docs.aws.amazon.com/appsync/latest/devguide/why-use-graphql.html
+      \endverb
+    \endentry
     \entry{awsfrontendbackend}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=9145c8d27e8df3d15e63d3e2d5c53088}{%
@@ -139,6 +169,131 @@
       \verb https://aws.amazon.com/compare/the-difference-between-rpc-and-rest/
       \endverb
     \endentry
+    \entry{BergRedi2023Benchmarking}{report}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=46670fbee987c2d07ea7be9d3a2cd556}{%
+           family={Berg},
+           familyi={B\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aeb7cc63e8430c2499d67a078605c994}{%
+           family={Redi},
+           familyi={R\bibinitperiod},
+           given={Daniel\bibnamedelima Mebrahtu},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{2}{%
+        {KTH Royal Institute of Technology, School of Electrical Engineering}%
+        {Computer Science (EECS)}%
+      }
+      \list{location}{1}{%
+        {Stockholm, Sweden}%
+      }
+      \strng{namehash}{8df283a7ca1933488d5b28b4643b1d82}
+      \strng{fullhash}{8df283a7ca1933488d5b28b4643b1d82}
+      \strng{fullhashraw}{8df283a7ca1933488d5b28b4643b1d82}
+      \strng{bibnamehash}{8df283a7ca1933488d5b28b4643b1d82}
+      \strng{authorbibnamehash}{8df283a7ca1933488d5b28b4643b1d82}
+      \strng{authornamehash}{8df283a7ca1933488d5b28b4643b1d82}
+      \strng{authorfullhash}{8df283a7ca1933488d5b28b4643b1d82}
+      \strng{authorfullhashraw}{8df283a7ca1933488d5b28b4643b1d82}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{6}
+      \field{number}{TRITA-EECS-EX 2023:437}
+      \field{title}{Benchmarking the request throughput of conventional API calls and gRPC: A comparative study of REST and gRPC}
+      \field{type}{Bachelor’s thesis}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://kth.diva-portal.org/smash/record.jsf?pid=diva2:1792957
+      \endverb
+      \verb{url}
+      \verb https://kth.diva-portal.org/smash/record.jsf?pid=diva2:1792957
+      \endverb
+    \endentry
+    \entry{Bolanowski2022Efficiency}{inproceedings}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=67a0faad027205d2b83b0bc3a484d22c}{%
+           family={Bolanowski},
+           familyi={B\bibinitperiod},
+           given={Marek},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2ba589c8c70ec7bb516897d6b2cc46f0}{%
+           family={Żak},
+           familyi={Ż\bibinitperiod},
+           given={Kamil},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=38c12e788fc4fb3bd265b60357242387}{%
+           family={Paszkiewicz},
+           familyi={P\bibinitperiod},
+           given={Andrzej},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46799cc4888f9ff1a8c1f9ae33386e4a}{%
+           family={Ganzha},
+           familyi={G\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7a9bf22b07dc621f233ca30964427c63}{%
+           family={Paprzycki},
+           familyi={P\bibinitperiod},
+           given={Marcin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f89075ee5497e1caf082558dec8fc2df}{%
+           family={Sowiński},
+           familyi={S\bibinitperiod},
+           given={Piotr},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=39e26273c65743230d753e05b63d0262}{%
+           family={Lacalle},
+           familyi={L\bibinitperiod},
+           given={Ignacio},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0cd73ceec7906e1ce0b70c94e1e15260}{%
+           family={Palau},
+           familyi={P\bibinitperiod},
+           given={Carlos\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7fd2e5244b4c3a991abf11c4f6c38e3d}
+      \strng{fullhash}{7ec679b0c7ee6b55b1c5e740f49faf56}
+      \strng{fullhashraw}{7ec679b0c7ee6b55b1c5e740f49faf56}
+      \strng{bibnamehash}{7ec679b0c7ee6b55b1c5e740f49faf56}
+      \strng{authorbibnamehash}{7ec679b0c7ee6b55b1c5e740f49faf56}
+      \strng{authornamehash}{7fd2e5244b4c3a991abf11c4f6c38e3d}
+      \strng{authorfullhash}{7ec679b0c7ee6b55b1c5e740f49faf56}
+      \strng{authorfullhashraw}{7ec679b0c7ee6b55b1c5e740f49faf56}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the International Conference on Intelligent Software Methodologies, Tools and Techniques (SOMET 2022)}
+      \field{month}{9}
+      \field{note}{Available via ResearchGate: \url{https://www.researchgate.net/publication/362410022_Eficiency_of_REST_and_gRPC_realizing_communication_tasks_in_microservice-based_ecosystems}}
+      \field{title}{Efficiency of REST and gRPC realizing communication tasks in microservice-based ecosystems}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/362410022_Eficiency_of_REST_and_gRPC_realizing_communication_tasks_in_microservice-based_ecosystems
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/362410022_Eficiency_of_REST_and_gRPC_realizing_communication_tasks_in_microservice-based_ecosystems
+      \endverb
+    \endentry
     \entry{Brandhorst2019}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=6d67217c63205758858a756d221f8933}{%
@@ -172,6 +327,39 @@
       \endverb
       \verb{url}
       \verb https://grpc.io/blog/state-of-grpc-web/
+      \endverb
+    \endentry
+    \entry{nordicapis-graphql-examples}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7a7a6eb39763c4f6a847b3310a92971f}{%
+           family={Charboneau},
+           familyi={C\bibinitperiod},
+           given={Tyler},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7a7a6eb39763c4f6a847b3310a92971f}
+      \strng{fullhash}{7a7a6eb39763c4f6a847b3310a92971f}
+      \strng{fullhashraw}{7a7a6eb39763c4f6a847b3310a92971f}
+      \strng{bibnamehash}{7a7a6eb39763c4f6a847b3310a92971f}
+      \strng{authorbibnamehash}{7a7a6eb39763c4f6a847b3310a92971f}
+      \strng{authornamehash}{7a7a6eb39763c4f6a847b3310a92971f}
+      \strng{authorfullhash}{7a7a6eb39763c4f6a847b3310a92971f}
+      \strng{authorfullhashraw}{7a7a6eb39763c4f6a847b3310a92971f}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-08-31}
+      \field{title}{6 Examples of GraphQL in Production at Large Companies}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://nordicapis.com/6-examples-of-graphql-in-production-at-large-companies/
+      \endverb
+      \verb{url}
+      \verb https://nordicapis.com/6-examples-of-graphql-in-production-at-large-companies/
       \endverb
     \endentry
     \entry{browser-engines}{online}{}{}
@@ -424,10 +612,10 @@
       \field{title}{GraphQL Documentation}
       \field{year}{2025}
       \verb{urlraw}
-      \verb https://graphql.org/
+      \verb https://graphql.org/learn/
       \endverb
       \verb{url}
-      \verb https://graphql.org/
+      \verb https://graphql.org/learn/
       \endverb
     \endentry
     \entry{rfc9110}{misc}{}{}
@@ -650,6 +838,71 @@
       \field{year}{2022}
       \true{nocite}
     \endentry
+    \entry{Kaminski2022Comparative}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=0d434bd11a84f9c0103d1cba5fffb264}{%
+           family={Kamiński},
+           familyi={K\bibinitperiod},
+           given={Łukasz},
+           giveni={Ł\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46b97937bd7780ef27927f89251d5f56}{%
+           family={Kozłowski},
+           familyi={K\bibinitperiod},
+           given={Maciej},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d5befbd83c7d1f5aad11522e19aab3dc}{%
+           family={Sporysz},
+           familyi={S\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8ef53353460a8ea7b7a180052c7b2e29}{%
+           family={Wolska},
+           familyi={W\bibinitperiod},
+           given={Katarzyna},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dcf80ac13cff8dfa0ba17eb29fd88857}{%
+           family={Zaniewski},
+           familyi={Z\bibinitperiod},
+           given={Patryk},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2b3c8f70fe7f97dcc335e6ed6edc08b1}{%
+           family={Roszczyk},
+           familyi={R\bibinitperiod},
+           given={Radosław},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{96a8cf075a8db01ec7e74e8e30e32b82}
+      \strng{fullhash}{049cbfe164504c0d146f4e2d9e0fb211}
+      \strng{fullhashraw}{049cbfe164504c0d146f4e2d9e0fb211}
+      \strng{bibnamehash}{049cbfe164504c0d146f4e2d9e0fb211}
+      \strng{authorbibnamehash}{049cbfe164504c0d146f4e2d9e0fb211}
+      \strng{authornamehash}{96a8cf075a8db01ec7e74e8e30e32b82}
+      \strng{authorfullhash}{049cbfe164504c0d146f4e2d9e0fb211}
+      \strng{authorfullhashraw}{049cbfe164504c0d146f4e2d9e0fb211}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint}
+      \field{month}{12}
+      \field{note}{Preprint; DOI: 10.48550/arXiv.2212.07475}
+      \field{title}{Comparative review of selected Internet communication protocols}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/366321051_Comparative_review_of_selected_Internet_communication_protocols
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/366321051_Comparative_review_of_selected_Internet_communication_protocols
+      \endverb
+    \endentry
     \entry{Koponen2024}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=d3028162d80683397c84693945572696}{%
@@ -674,6 +927,36 @@
       \field{title}{{Beschäftigt sich mit der Verwendung des RPC-Modells in Web Anwendungen}}
       \field{year}{2024}
       \true{nocite}
+    \endentry
+    \entry{spotify-k8s-case}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=97d5f1c7ec302d71272e93170d6ec381}{%
+           family={{Kubernetes Authors}},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{97d5f1c7ec302d71272e93170d6ec381}
+      \strng{fullhash}{97d5f1c7ec302d71272e93170d6ec381}
+      \strng{fullhashraw}{97d5f1c7ec302d71272e93170d6ec381}
+      \strng{bibnamehash}{97d5f1c7ec302d71272e93170d6ec381}
+      \strng{authorbibnamehash}{97d5f1c7ec302d71272e93170d6ec381}
+      \strng{authornamehash}{97d5f1c7ec302d71272e93170d6ec381}
+      \strng{authorfullhash}{97d5f1c7ec302d71272e93170d6ec381}
+      \strng{authorfullhashraw}{97d5f1c7ec302d71272e93170d6ec381}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-08-31}
+      \field{title}{Case Study: Spotify}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://kubernetes.io/case-studies/spotify/
+      \endverb
+      \verb{url}
+      \verb https://kubernetes.io/case-studies/spotify/
+      \endverb
     \endentry
     \entry{kurose2021computernetworking}{book}{}{}
       \name{author}{2}{}{%
@@ -889,6 +1172,95 @@
       \verb https://developers.googleblog.com/en/introducing-grpc-a-new-open-source-http2-rpc-framework/
       \endverb
     \endentry
+    \entry{netflix-protobuf}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ced3fcd7e74e07f1c034a27d098917e0}{%
+           family={{Netflix Tech Blog}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{ced3fcd7e74e07f1c034a27d098917e0}
+      \strng{fullhash}{ced3fcd7e74e07f1c034a27d098917e0}
+      \strng{fullhashraw}{ced3fcd7e74e07f1c034a27d098917e0}
+      \strng{bibnamehash}{ced3fcd7e74e07f1c034a27d098917e0}
+      \strng{authorbibnamehash}{ced3fcd7e74e07f1c034a27d098917e0}
+      \strng{authornamehash}{ced3fcd7e74e07f1c034a27d098917e0}
+      \strng{authorfullhash}{ced3fcd7e74e07f1c034a27d098917e0}
+      \strng{authorfullhashraw}{ced3fcd7e74e07f1c034a27d098917e0}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-08-31}
+      \field{title}{Practical API Design at Netflix, Part 1: Using Protobuf \& FieldMask}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://netflixtechblog.com/practical-api-design-at-netflix-part-1-using-protobuf-fieldmask-35cfdc606518
+      \endverb
+      \verb{url}
+      \verb https://netflixtechblog.com/practical-api-design-at-netflix-part-1-using-protobuf-fieldmask-35cfdc606518
+      \endverb
+    \endentry
+    \entry{Niswar2024PerformanceEvaluation}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=85122190271d3caf5142bfccdb8e164d}{%
+           family={Niswar},
+           familyi={N\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=89e65c329363d7bfde44ae73ac3b1bba}{%
+           family={Safruddin},
+           familyi={S\bibinitperiod},
+           given={Reza\bibnamedelima Arisandy},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a7c90173cb4ca2e5acd65d8e0eaa4559}{%
+           family={Bustamin},
+           familyi={B\bibinitperiod},
+           given={Anugrayani},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=db6c6379cd955dad7d8530036d335271}{%
+           family={Aswad},
+           familyi={A\bibinitperiod},
+           given={Iqra},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5360d07a47c8265da4b9b39fd4e53f0a}
+      \strng{fullhash}{a8ea1be7d525c022affe2d35fb47284e}
+      \strng{fullhashraw}{a8ea1be7d525c022affe2d35fb47284e}
+      \strng{bibnamehash}{a8ea1be7d525c022affe2d35fb47284e}
+      \strng{authorbibnamehash}{a8ea1be7d525c022affe2d35fb47284e}
+      \strng{authornamehash}{5360d07a47c8265da4b9b39fd4e53f0a}
+      \strng{authorfullhash}{a8ea1be7d525c022affe2d35fb47284e}
+      \strng{authorfullhashraw}{a8ea1be7d525c022affe2d35fb47284e}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Electronics and Telecommunications}
+      \field{month}{6}
+      \field{number}{2}
+      \field{title}{Performance evaluation of microservices communication with REST, GraphQL, and gRPC}
+      \field{volume}{70}
+      \field{year}{2024}
+      \field{pages}{429\bibrangedash 436}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.24425/ijet.2024.149562
+      \endverb
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/381763921_Performance_evaluation_of_microservices_communication_with_REST_GraphQL_and_gRPC
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/381763921_Performance_evaluation_of_microservices_communication_with_REST_GraphQL_and_gRPC
+      \endverb
+    \endentry
     \entry{Omer2024}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=6ae9afc96aa3fec4308a320991b508d6}{%
@@ -913,6 +1285,98 @@
       \field{title}{{Genereller Vergleich von REST, GraphQL und gRPC}}
       \field{year}{2024}
       \true{nocite}
+    \endentry
+    \entry{postman2022}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6f061e1cad5e2783cea0b2976ed2f4c3}{%
+           family={{Postman}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{6f061e1cad5e2783cea0b2976ed2f4c3}
+      \strng{fullhash}{6f061e1cad5e2783cea0b2976ed2f4c3}
+      \strng{fullhashraw}{6f061e1cad5e2783cea0b2976ed2f4c3}
+      \strng{bibnamehash}{6f061e1cad5e2783cea0b2976ed2f4c3}
+      \strng{authorbibnamehash}{6f061e1cad5e2783cea0b2976ed2f4c3}
+      \strng{authornamehash}{6f061e1cad5e2783cea0b2976ed2f4c3}
+      \strng{authorfullhash}{6f061e1cad5e2783cea0b2976ed2f4c3}
+      \strng{authorfullhashraw}{6f061e1cad5e2783cea0b2976ed2f4c3}
+      \field{extraname}{1}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-08-31}
+      \field{title}{2022 State of the API Report}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.postman.com/state-of-api/2022/
+      \endverb
+      \verb{url}
+      \verb https://www.postman.com/state-of-api/2022/
+      \endverb
+    \endentry
+    \entry{postman2023}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6f061e1cad5e2783cea0b2976ed2f4c3}{%
+           family={{Postman}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{6f061e1cad5e2783cea0b2976ed2f4c3}
+      \strng{fullhash}{6f061e1cad5e2783cea0b2976ed2f4c3}
+      \strng{fullhashraw}{6f061e1cad5e2783cea0b2976ed2f4c3}
+      \strng{bibnamehash}{6f061e1cad5e2783cea0b2976ed2f4c3}
+      \strng{authorbibnamehash}{6f061e1cad5e2783cea0b2976ed2f4c3}
+      \strng{authornamehash}{6f061e1cad5e2783cea0b2976ed2f4c3}
+      \strng{authorfullhash}{6f061e1cad5e2783cea0b2976ed2f4c3}
+      \strng{authorfullhashraw}{6f061e1cad5e2783cea0b2976ed2f4c3}
+      \field{extraname}{2}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-08-31}
+      \field{title}{2023 State of the API Report}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.postman.com/state-of-api/2023/
+      \endverb
+      \verb{url}
+      \verb https://www.postman.com/state-of-api/2023/
+      \endverb
+    \endentry
+    \entry{postman-rest-api-examples}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b756bb151ac5061809e924503208306e}{%
+           family={{Postman Team}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{b756bb151ac5061809e924503208306e}
+      \strng{fullhash}{b756bb151ac5061809e924503208306e}
+      \strng{fullhashraw}{b756bb151ac5061809e924503208306e}
+      \strng{bibnamehash}{b756bb151ac5061809e924503208306e}
+      \strng{authorbibnamehash}{b756bb151ac5061809e924503208306e}
+      \strng{authornamehash}{b756bb151ac5061809e924503208306e}
+      \strng{authorfullhash}{b756bb151ac5061809e924503208306e}
+      \strng{authorfullhashraw}{b756bb151ac5061809e924503208306e}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-08-31}
+      \field{title}{What Is a REST API? Examples, Uses \& Challenges}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://blog.postman.com/rest-api-examples/
+      \endverb
+      \verb{url}
+      \verb https://blog.postman.com/rest-api-examples/
+      \endverb
     \endentry
     \entry{redhat-apiguide}{online}{}{}
       \name{author}{1}{}{%
@@ -944,6 +1408,36 @@
       \verb https://www.redhat.com/en/blog/apis-soap-rest-graphql-grpc
       \endverb
     \endentry
+    \entry{roblox-analytics}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=100a9897f80729245db566230a8a8e85}{%
+           family={{Roblox Newsroom}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{100a9897f80729245db566230a8a8e85}
+      \strng{fullhash}{100a9897f80729245db566230a8a8e85}
+      \strng{fullhashraw}{100a9897f80729245db566230a8a8e85}
+      \strng{bibnamehash}{100a9897f80729245db566230a8a8e85}
+      \strng{authorbibnamehash}{100a9897f80729245db566230a8a8e85}
+      \strng{authornamehash}{100a9897f80729245db566230a8a8e85}
+      \strng{authorfullhash}{100a9897f80729245db566230a8a8e85}
+      \strng{authorfullhashraw}{100a9897f80729245db566230a8a8e85}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-08-31}
+      \field{title}{Roblox’s Path to 2 Trillion Analytics Events a Day}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://corp.roblox.com/newsroom/2025/06/roblox-path-to-2-trillion-analytics-events-a-day
+      \endverb
+      \verb{url}
+      \verb https://corp.roblox.com/newsroom/2025/06/roblox-path-to-2-trillion-analytics-events-a-day
+      \endverb
+    \endentry
     \entry{koponen2024rpc}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=cfba1205f74dea786625b48b25885143}{%
@@ -973,6 +1467,36 @@
       \endverb
       \verb{url}
       \verb https://www.researchgate.net/publication/380547826_Understanding_re-emergence_of_the_RPC_model_in_web_development
+      \endverb
+    \endentry
+    \entry{stackoverflow2023}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=84d7dc19766c446f5e4084e8fce87f82}{%
+           family={{Stack Overflow}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{fullhash}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{fullhashraw}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{bibnamehash}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{authorbibnamehash}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{authornamehash}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{authorfullhash}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{authorfullhashraw}{84d7dc19766c446f5e4084e8fce87f82}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-08-31}
+      \field{title}{Stack Overflow Developer Survey 2023 – Technology page}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://survey.stackoverflow.co/2023/technology/
+      \endverb
+      \verb{url}
+      \verb https://survey.stackoverflow.co/2023/technology/
       \endverb
     \endentry
     \entry{rfc9113}{misc}{}{}

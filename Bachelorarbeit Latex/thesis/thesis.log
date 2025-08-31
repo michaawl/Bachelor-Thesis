@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  31 AUG 2025 20:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  31 AUG 2025 23:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1583,15 +1583,9 @@ RPC-Metadaten kön-nen über-
  (./chapters/03_VerwandteArbeiten.tex
 Kapitel 3.
 
-Overfull \hbox (17.70322pt too wide) in paragraph at lines 11--12
-\T1/ptm/m/n/12 Sowohl REST, Gra-ph-Ql, als auch gRPC sind mo-men-tan weit ver-b
-rei-tet API-Architekturen,
- []
-
-
-Overfull \hbox (1.73154pt too wide) in paragraph at lines 11--12
-\T1/ptm/m/n/12 un-ter 40.261 Ent-wick-lern und API-Professional so-wie ag-gre-g
-ier-ten Da-ten der Postman-
+Overfull \hbox (27.02652pt too wide) in paragraph at lines 11--12
+\T1/ptm/m/n/12 Sowohl REST, Gra-ph-QL, als auch gRPC sind mo-men-tan weit ver-b
+rei-te-te API-Architekturen,
  []
 
 
@@ -1603,31 +1597,31 @@ ier-ten Da-ten der Postman-
 
 
 ]
-Overfull \hbox (7.68176pt too wide) in paragraph at lines 29--31
-[]\T1/ptm/m/n/12 REST gilt nach wie vor als Stan-dard für öf-fent-li-chen Web-A
-PIs und Web-Services,
- []
-
-
-Overfull \hbox (4.4445pt too wide) in paragraph at lines 31--32
-[]\T1/ptm/m/n/12 Führende Cloud-Anbieter wie Ama-zon Web Ser-vics (AWS), Mi-cro
--soft Azu-
+Overfull \hbox (1.68176pt too wide) in paragraph at lines 28--30
+[]\T1/ptm/m/n/12 REST gilt nach wie vor als Stan-dard für öf-fent-li-che Web-AP
+Is und Web-Services,
  []
 
 
 
 [17]
-
-[18]
-Overfull \hbox (18.23138pt too wide) in paragraph at lines 51--52
-[]\T1/ptm/m/n/12 Spotify nutzt seit 2019 gRPC in der Kom-mu-nik-tai-on zwi-sche
-n sei-nen Backend-
+Overfull \hbox (14.68422pt too wide) in paragraph at lines 45--46
+\T1/ptm/m/n/12 sei-nen hun-der-ten Mi-cro-ser-vices. Da-bei wird es vor al-lem 
+be-nutzt um Backend-
  []
 
 
-Overfull \hbox (1.51468pt too wide) in paragraph at lines 55--58
-\T1/ptm/m/n/12 Sta-bi-li-tät oft für öf-fent-li-che APIs ge-nutzt wird und sich
- be-son-ders für brei-te Entwickler-
+
+[18]
+Overfull \hbox (18.23138pt too wide) in paragraph at lines 47--48
+[]\T1/ptm/m/n/12 Spotify nutzt seit 2019 gRPC in der Kom-mu-ni-ka-ti-on zwi-sch
+en sei-nen Backend-
+ []
+
+
+Overfull \hbox (21.79471pt too wide) in paragraph at lines 51--55
+\T1/ptm/m/n/12 und Sta-bi-li-tät oft für öf-fent-li-che APIs ge-nutzt wird und 
+sich be-son-ders für brei-te Entwickler-
  []
 
 
@@ -1635,7 +1629,7 @@ Overfull \hbox (1.51468pt too wide) in paragraph at lines 55--58
 [19]
 
 [20]
-Overfull \hbox (5.23303pt too wide) in paragraph at lines 76--76
+Overfull \hbox (5.23303pt too wide) in paragraph at lines 72--72
 []\T1/ptm/b/n/14.4 Performance eva-lua-ti-on of mi-cro-ser-vices com-mu-ni-ca-t
 i-on with
  []
@@ -1712,7 +1706,7 @@ GIEN: \T1/ptm/m/n/12 27
 
  (./chapters/05_PraktischerTeil.tex
 Kapitel 5.
-<images/http1_theory.jpg, id=431, 197.4285pt x 148.1535pt>
+<images/http1_theory.jpg, id=460, 197.4285pt x 148.1535pt>
 File: images/http1_theory.jpg Graphic file (type jpg)
 <use images/http1_theory.jpg>
 Package pdftex.def Info: images/http1_theory.jpg  used on input line 14.
@@ -1775,7 +1769,7 @@ Overfull \hbox (1.72pt too wide) in paragraph at lines 117--119
 en-Source-Laufzeitumgebung
  []
 
-<images/prakt1.png, id=466, 338.76563pt x 82.80937pt>
+<images/prakt1.png, id=494, 338.76563pt x 82.80937pt>
 File: images/prakt1.png Graphic file (type png)
 <use images/prakt1.png>
 Package pdftex.def Info: images/prakt1.png  used on input line 128.
@@ -2076,40 +2070,44 @@ LaTeX Warning: Hyper reference `acro:RPC' on page 56 undefined on input line 28
 
 ]
 
+[58
+
+]
+
 Package biblatex Warning: No driver for 'standard'.
 (biblatex)                Using fallback driver on input line 194.
 
 
 
-[58
-
-]
-
 [59]
 
-[60
+[60]
+
+[61]
+
+[62
 
 ]
 
-[61]
+[63]
 \openout2 = `chapters/101_Rohdaten.aux'.
 
  (./chapters/101_Rohdaten.tex
 Anhang A.
 
 
-[62
+[64
 
 
 ]
 
-[63]
-
-[64]
-
 [65]
 
-[66]) (./thesis.aux (./chapters/01_titlepage.aux) (./chapters/03_abstract.aux)
+[66]
+
+[67]
+
+[68]) (./thesis.aux (./chapters/01_titlepage.aux) (./chapters/03_abstract.aux)
 (./chapters/01_Einleitung.aux) (./chapters/02_TheoretischeGrundlagen.aux)
 (./chapters/03_VerwandteArbeiten.aux) (./chapters/04_AnalyseUndVergleich.aux)
 (./chapters/05_PraktischerTeil.aux) (./chapters/06_DiskussionUndAusblick.aux)
@@ -2126,7 +2124,7 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 9F367F93E3DC9E9618E98847B1DB3F47;5067.
+(rerunfilecheck)             Checksum: C8F755E429479F9F15A0776A160189D7;5069.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                thesis
@@ -2137,11 +2135,11 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37090 strings out of 469608
- 701929 string characters out of 5474779
- 1618284 words of memory out of 5000000
- 63003 multiletter control sequences out of 15000+600000
- 685270 words of font info for 109 fonts, out of 8000000 for 9000
+ 37193 strings out of 469608
+ 705290 string characters out of 5474779
+ 1627821 words of memory out of 5000000
+ 63089 multiletter control sequences out of 15000+600000
+ 690486 words of font info for 111 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  104i,10n,104p,1753b,2357s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texl
@@ -2152,10 +2150,10 @@ l/usyr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/tex
 live/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-di
 st/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on thesis.pdf (73 pages, 321549 bytes).
+Output written on thesis.pdf (75 pages, 330159 bytes).
 PDF statistics:
- 839 PDF objects out of 1000 (max. 8388607)
- 734 compressed objects within 8 object streams
- 244 named destinations out of 1000 (max. 500000)
+ 932 PDF objects out of 1000 (max. 8388607)
+ 824 compressed objects within 9 object streams
+ 259 named destinations out of 1000 (max. 500000)
  260 words of extra memory for PDF output out of 10000 (max. 10000000)
 
