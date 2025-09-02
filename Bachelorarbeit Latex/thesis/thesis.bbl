@@ -19,66 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global/global}
-    \entry{Ahmad2025}{misc}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=21d73b282329dfd1f20694a366b33e76}{%
-           family={Ahmad},
-           familyi={A\bibinitperiod},
-           given={Arslan},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{21d73b282329dfd1f20694a366b33e76}
-      \strng{fullhash}{21d73b282329dfd1f20694a366b33e76}
-      \strng{fullhashraw}{21d73b282329dfd1f20694a366b33e76}
-      \strng{bibnamehash}{21d73b282329dfd1f20694a366b33e76}
-      \strng{authorbibnamehash}{21d73b282329dfd1f20694a366b33e76}
-      \strng{authornamehash}{21d73b282329dfd1f20694a366b33e76}
-      \strng{authorfullhash}{21d73b282329dfd1f20694a366b33e76}
-      \strng{authorfullhashraw}{21d73b282329dfd1f20694a366b33e76}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{Blog post on DesignGurus.io}
-      \field{month}{8}
-      \field{note}{Accessed: 2025-08-29}
-      \field{title}{REST vs GraphQL vs gRPC}
-      \field{year}{2025}
-      \verb{urlraw}
-      \verb https://www.designgurus.io/blog/rest-graphql-grpc-system-design
-      \endverb
-      \verb{url}
-      \verb https://www.designgurus.io/blog/rest-graphql-grpc-system-design
-      \endverb
-    \endentry
-    \entry{Alkhodary2022}{misc}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=7709da8f2e7507eec82cb5f25bfc1306}{%
-           family={Alkhodary},
-           familyi={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{7709da8f2e7507eec82cb5f25bfc1306}
-      \strng{fullhash}{7709da8f2e7507eec82cb5f25bfc1306}
-      \strng{fullhashraw}{7709da8f2e7507eec82cb5f25bfc1306}
-      \strng{bibnamehash}{7709da8f2e7507eec82cb5f25bfc1306}
-      \strng{authorbibnamehash}{7709da8f2e7507eec82cb5f25bfc1306}
-      \strng{authornamehash}{7709da8f2e7507eec82cb5f25bfc1306}
-      \strng{authorfullhash}{7709da8f2e7507eec82cb5f25bfc1306}
-      \strng{authorfullhashraw}{7709da8f2e7507eec82cb5f25bfc1306}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{To-be-read}
-      \field{title}{{Analyse des Backend-for-Frontend Patterns mittels der Technologien gRPC, REST und GraphQL}}
-      \field{year}{2022}
-      \true{nocite}
-    \endentry
     \entry{aws-appsync-why-use-graphql}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=3eb2c1a57a8160029f036e3dcbf84bf1}{%
@@ -93,8 +33,42 @@
       \strng{authornamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
       \strng{authorfullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
       \strng{authorfullhashraw}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \field{extraname}{1}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-08-31}
+      \field{title}{Why Use GraphQL over REST?}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://docs.aws.amazon.com/appsync/latest/devguide/why-use-graphql.html
+      \endverb
+      \verb{url}
+      \verb https://docs.aws.amazon.com/appsync/latest/devguide/why-use-graphql.html
+      \endverb
+    \endentry
+    \entry{amazon2025graphql}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3eb2c1a57a8160029f036e3dcbf84bf1}{%
+           family={{Amazon Web Services}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{fullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{fullhashraw}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{bibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorbibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authornamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorfullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorfullhashraw}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \field{extraname}{2}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
@@ -329,6 +303,51 @@
       \verb https://grpc.io/blog/state-of-grpc-web/
       \endverb
     \endentry
+    \entry{brito2020graphqlrest}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5df04fab560786c340a4ec184a2701f7}{%
+           family={Brito},
+           familyi={B\bibinitperiod},
+           given={Gleison},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f324ce400373656751c8c5ec06005410}{%
+           family={Valente},
+           familyi={V\bibinitperiod},
+           given={Marco\bibnamedelima Tulio},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{70b6852abcb69e19e094f7d0678eb50c}
+      \strng{fullhash}{70b6852abcb69e19e094f7d0678eb50c}
+      \strng{fullhashraw}{70b6852abcb69e19e094f7d0678eb50c}
+      \strng{bibnamehash}{70b6852abcb69e19e094f7d0678eb50c}
+      \strng{authorbibnamehash}{70b6852abcb69e19e094f7d0678eb50c}
+      \strng{authornamehash}{70b6852abcb69e19e094f7d0678eb50c}
+      \strng{authorfullhash}{70b6852abcb69e19e094f7d0678eb50c}
+      \strng{authorfullhashraw}{70b6852abcb69e19e094f7d0678eb50c}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2020 IEEE International Conference on Software Architecture (ICSA)}
+      \field{note}{Accessed: 2025-08-31}
+      \field{title}{REST vs {GraphQL}: A Controlled Experiment}
+      \field{year}{2020}
+      \field{pages}{81\bibrangedash 91}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/ICSA47634.2020.00016
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2003.04761
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2003.04761
+      \endverb
+    \endentry
     \entry{nordicapis-graphql-examples}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=7a7a6eb39763c4f6a847b3310a92971f}{%
@@ -428,69 +447,6 @@
       \verb https://www.ecma-international.org/wp-content/uploads/ECMA-404_2nd_edition_december_2017.pdf
       \endverb
     \endentry
-    \entry{envoy_grpc_web}{misc}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=84f5e11834cd40c0df54a3d18eea7494}{%
-           family={{Envoy Proxy Authors}},
-           familyi={E\bibinitperiod}}}%
-      }
-      \strng{namehash}{84f5e11834cd40c0df54a3d18eea7494}
-      \strng{fullhash}{84f5e11834cd40c0df54a3d18eea7494}
-      \strng{fullhashraw}{84f5e11834cd40c0df54a3d18eea7494}
-      \strng{bibnamehash}{84f5e11834cd40c0df54a3d18eea7494}
-      \strng{authorbibnamehash}{84f5e11834cd40c0df54a3d18eea7494}
-      \strng{authornamehash}{84f5e11834cd40c0df54a3d18eea7494}
-      \strng{authorfullhash}{84f5e11834cd40c0df54a3d18eea7494}
-      \strng{authorfullhashraw}{84f5e11834cd40c0df54a3d18eea7494}
-      \field{sortinit}{E}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{Envoy Documentation}
-      \field{note}{Accessed: 2025-08-31}
-      \field{title}{gRPC-Web Support via Envoy Filter}
-      \field{year}{2025}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://www.envoyproxy.io/docs/envoy/latest/configuration/http/http_filters/grpc_web_filter
-      \endverb
-      \verb{url}
-      \verb https://www.envoyproxy.io/docs/envoy/latest/configuration/http/http_filters/grpc_web_filter
-      \endverb
-    \endentry
-    \entry{restfielding}{misc}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=87dbbd44b3977c28b71d826a931add3e}{%
-           family={Fielding},
-           familyi={F\bibinitperiod},
-           given={Roy\bibnamedelima Thomas},
-           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{87dbbd44b3977c28b71d826a931add3e}
-      \strng{fullhash}{87dbbd44b3977c28b71d826a931add3e}
-      \strng{fullhashraw}{87dbbd44b3977c28b71d826a931add3e}
-      \strng{bibnamehash}{87dbbd44b3977c28b71d826a931add3e}
-      \strng{authorbibnamehash}{87dbbd44b3977c28b71d826a931add3e}
-      \strng{authornamehash}{87dbbd44b3977c28b71d826a931add3e}
-      \strng{authorfullhash}{87dbbd44b3977c28b71d826a931add3e}
-      \strng{authorfullhashraw}{87dbbd44b3977c28b71d826a931add3e}
-      \field{extraname}{1}
-      \field{sortinit}{F}
-      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
-      \field{extradate}{1}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm}}
-      \field{note}{Accessed: 2024-06-08}
-      \field{title}{{Architectural Styles and the Design of Network-based Software Architectures}}
-      \field{year}{2000}
-      \true{nocite}
-    \endentry
     \entry{fielding2000rest}{thesis}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=87dbbd44b3977c28b71d826a931add3e}{%
@@ -511,10 +467,8 @@
       \strng{authornamehash}{87dbbd44b3977c28b71d826a931add3e}
       \strng{authorfullhash}{87dbbd44b3977c28b71d826a931add3e}
       \strng{authorfullhashraw}{87dbbd44b3977c28b71d826a931add3e}
-      \field{extraname}{2}
       \field{sortinit}{F}
       \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
-      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
@@ -560,33 +514,6 @@
       \verb https://protobuf.dev/overview/
       \endverb
     \endentry
-    \entry{graphql}{misc}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=f1c9b8a1db233f245c9e6aee46073c54}{%
-           family={{GraphQL Foundation}},
-           familyi={G\bibinitperiod}}}%
-      }
-      \strng{namehash}{f1c9b8a1db233f245c9e6aee46073c54}
-      \strng{fullhash}{f1c9b8a1db233f245c9e6aee46073c54}
-      \strng{fullhashraw}{f1c9b8a1db233f245c9e6aee46073c54}
-      \strng{bibnamehash}{f1c9b8a1db233f245c9e6aee46073c54}
-      \strng{authorbibnamehash}{f1c9b8a1db233f245c9e6aee46073c54}
-      \strng{authornamehash}{f1c9b8a1db233f245c9e6aee46073c54}
-      \strng{authorfullhash}{f1c9b8a1db233f245c9e6aee46073c54}
-      \strng{authorfullhashraw}{f1c9b8a1db233f245c9e6aee46073c54}
-      \field{extraname}{1}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://graphql.org/}}
-      \field{note}{Accessed: 2024-06-08}
-      \field{title}{{GraphQL Documentation}}
-      \field{year}{2024}
-      \true{nocite}
-    \endentry
     \entry{graphql-org}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=f1c9b8a1db233f245c9e6aee46073c54}{%
@@ -601,7 +528,6 @@
       \strng{authornamehash}{f1c9b8a1db233f245c9e6aee46073c54}
       \strng{authorfullhash}{f1c9b8a1db233f245c9e6aee46073c54}
       \strng{authorfullhashraw}{f1c9b8a1db233f245c9e6aee46073c54}
-      \field{extraname}{2}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{extradatescope}{labelyear}
@@ -652,7 +578,7 @@
       \verb https://datatracker.ietf.org/doc/html/rfc9110
       \endverb
     \endentry
-    \entry{grpcdocs}{online}{}{}
+    \entry{gRPCAbout}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=a3a4dde425c214175e79ec479deea1fa}{%
            family={{gRPC Authors}},
@@ -669,38 +595,6 @@
       \field{extraname}{1}
       \field{sortinit}{g}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2024-06-08}
-      \field{title}{{gRPC Documentation}}
-      \field{year}{2024}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://grpc.io/docs/
-      \endverb
-      \verb{url}
-      \verb https://grpc.io/docs/
-      \endverb
-    \endentry
-    \entry{gRPCAbout}{misc}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=a3a4dde425c214175e79ec479deea1fa}{%
-           family={{gRPC Authors}},
-           familyi={g\bibinitperiod}}}%
-      }
-      \strng{namehash}{a3a4dde425c214175e79ec479deea1fa}
-      \strng{fullhash}{a3a4dde425c214175e79ec479deea1fa}
-      \strng{fullhashraw}{a3a4dde425c214175e79ec479deea1fa}
-      \strng{bibnamehash}{a3a4dde425c214175e79ec479deea1fa}
-      \strng{authorbibnamehash}{a3a4dde425c214175e79ec479deea1fa}
-      \strng{authornamehash}{a3a4dde425c214175e79ec479deea1fa}
-      \strng{authorfullhash}{a3a4dde425c214175e79ec479deea1fa}
-      \strng{authorfullhashraw}{a3a4dde425c214175e79ec479deea1fa}
-      \field{extraname}{2}
-      \field{sortinit}{g}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
@@ -708,70 +602,6 @@
       \field{labeltitlesource}{title}
       \field{note}{Accessed: 2025-08-29}
       \field{title}{{About gRPC}}
-      \field{year}{2025}
-      \verb{urlraw}
-      \verb https://grpc.io/about/
-      \endverb
-      \verb{url}
-      \verb https://grpc.io/about/
-      \endverb
-    \endentry
-    \entry{grpc-about}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=a3a4dde425c214175e79ec479deea1fa}{%
-           family={{gRPC Authors}},
-           familyi={g\bibinitperiod}}}%
-      }
-      \strng{namehash}{a3a4dde425c214175e79ec479deea1fa}
-      \strng{fullhash}{a3a4dde425c214175e79ec479deea1fa}
-      \strng{fullhashraw}{a3a4dde425c214175e79ec479deea1fa}
-      \strng{bibnamehash}{a3a4dde425c214175e79ec479deea1fa}
-      \strng{authorbibnamehash}{a3a4dde425c214175e79ec479deea1fa}
-      \strng{authornamehash}{a3a4dde425c214175e79ec479deea1fa}
-      \strng{authorfullhash}{a3a4dde425c214175e79ec479deea1fa}
-      \strng{authorfullhashraw}{a3a4dde425c214175e79ec479deea1fa}
-      \field{extraname}{3}
-      \field{sortinit}{g}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradate}{2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2025-08-31}
-      \field{title}{About gRPC}
-      \field{year}{2025}
-      \verb{urlraw}
-      \verb https://grpc.io/about/
-      \endverb
-      \verb{url}
-      \verb https://grpc.io/about/
-      \endverb
-    \endentry
-    \entry{grpc-history}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=a3a4dde425c214175e79ec479deea1fa}{%
-           family={{gRPC Authors}},
-           familyi={g\bibinitperiod}}}%
-      }
-      \strng{namehash}{a3a4dde425c214175e79ec479deea1fa}
-      \strng{fullhash}{a3a4dde425c214175e79ec479deea1fa}
-      \strng{fullhashraw}{a3a4dde425c214175e79ec479deea1fa}
-      \strng{bibnamehash}{a3a4dde425c214175e79ec479deea1fa}
-      \strng{authorbibnamehash}{a3a4dde425c214175e79ec479deea1fa}
-      \strng{authornamehash}{a3a4dde425c214175e79ec479deea1fa}
-      \strng{authorfullhash}{a3a4dde425c214175e79ec479deea1fa}
-      \strng{authorfullhashraw}{a3a4dde425c214175e79ec479deea1fa}
-      \field{extraname}{4}
-      \field{sortinit}{g}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradate}{3}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2025-08-31}
-      \field{title}{About gRPC – The story behind gRPC}
       \field{year}{2025}
       \verb{urlraw}
       \verb https://grpc.io/about/
@@ -794,10 +624,10 @@
       \strng{authornamehash}{a3a4dde425c214175e79ec479deea1fa}
       \strng{authorfullhash}{a3a4dde425c214175e79ec479deea1fa}
       \strng{authorfullhashraw}{a3a4dde425c214175e79ec479deea1fa}
-      \field{extraname}{5}
+      \field{extraname}{2}
       \field{sortinit}{g}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradate}{4}
+      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
@@ -811,32 +641,6 @@
       \verb{url}
       \verb https://grpc.io/docs/platforms/web/basics/
       \endverb
-    \endentry
-    \entry{http1spec}{misc}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=77f41b03f38eadcd42a1afd2710a321e}{%
-           family={{Hypertext Transfer Protocol Working Group}},
-           familyi={H\bibinitperiod}}}%
-      }
-      \strng{namehash}{77f41b03f38eadcd42a1afd2710a321e}
-      \strng{fullhash}{77f41b03f38eadcd42a1afd2710a321e}
-      \strng{fullhashraw}{77f41b03f38eadcd42a1afd2710a321e}
-      \strng{bibnamehash}{77f41b03f38eadcd42a1afd2710a321e}
-      \strng{authorbibnamehash}{77f41b03f38eadcd42a1afd2710a321e}
-      \strng{authornamehash}{77f41b03f38eadcd42a1afd2710a321e}
-      \strng{authorfullhash}{77f41b03f38eadcd42a1afd2710a321e}
-      \strng{authorfullhashraw}{77f41b03f38eadcd42a1afd2710a321e}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://httpwg.org/specs/rfc9112.html}}
-      \field{note}{Accessed: 2024-06-09}
-      \field{title}{{RFC 9112: HTTP/1.1}}
-      \field{year}{2022}
-      \true{nocite}
     \endentry
     \entry{Kaminski2022Comparative}{article}{}{}
       \name{author}{6}{}{%
@@ -903,31 +707,6 @@
       \verb https://www.researchgate.net/publication/366321051_Comparative_review_of_selected_Internet_communication_protocols
       \endverb
     \endentry
-    \entry{Koponen2024}{misc}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=d3028162d80683397c84693945572696}{%
-           family={Koponen},
-           familyi={K\bibinitperiod}}}%
-      }
-      \strng{namehash}{d3028162d80683397c84693945572696}
-      \strng{fullhash}{d3028162d80683397c84693945572696}
-      \strng{fullhashraw}{d3028162d80683397c84693945572696}
-      \strng{bibnamehash}{d3028162d80683397c84693945572696}
-      \strng{authorbibnamehash}{d3028162d80683397c84693945572696}
-      \strng{authornamehash}{d3028162d80683397c84693945572696}
-      \strng{authorfullhash}{d3028162d80683397c84693945572696}
-      \strng{authorfullhashraw}{d3028162d80683397c84693945572696}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{To-be-read}
-      \field{title}{{Beschäftigt sich mit der Verwendung des RPC-Modells in Web Anwendungen}}
-      \field{year}{2024}
-      \true{nocite}
-    \endentry
     \entry{spotify-k8s-case}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=97d5f1c7ec302d71272e93170d6ec381}{%
@@ -956,95 +735,6 @@
       \endverb
       \verb{url}
       \verb https://kubernetes.io/case-studies/spotify/
-      \endverb
-    \endentry
-    \entry{kurose2021computernetworking}{book}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=940597b1d3215b2b17b93101036fbb5e}{%
-           family={Kurose},
-           familyi={K\bibinitperiod},
-           given={James\bibnamedelima F.},
-           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=c2e119f22d4ef9df7cfb63c82975b459}{%
-           family={Ross},
-           familyi={R\bibinitperiod},
-           given={Keith\bibnamedelima W.},
-           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Pearson}%
-      }
-      \strng{namehash}{79b9c386af384b822481cee1fccbb76a}
-      \strng{fullhash}{79b9c386af384b822481cee1fccbb76a}
-      \strng{fullhashraw}{79b9c386af384b822481cee1fccbb76a}
-      \strng{bibnamehash}{79b9c386af384b822481cee1fccbb76a}
-      \strng{authorbibnamehash}{79b9c386af384b822481cee1fccbb76a}
-      \strng{authornamehash}{79b9c386af384b822481cee1fccbb76a}
-      \strng{authorfullhash}{79b9c386af384b822481cee1fccbb76a}
-      \strng{authorfullhashraw}{79b9c386af384b822481cee1fccbb76a}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{8}
-      \field{isbn}{978-0-13-668155-7}
-      \field{note}{Online‑PDF über Harsh K. Kapadia, abgerufen Juni 2025}
-      \field{title}{Computer Networking: A Top‐Down Approach}
-      \field{year}{2021}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://networking.harshkapadia.me/files/books/computer-networking-a-top-down-approach-8th-edition.pdf
-      \endverb
-      \verb{url}
-      \verb https://networking.harshkapadia.me/files/books/computer-networking-a-top-down-approach-8th-edition.pdf
-      \endverb
-    \endentry
-    \entry{diva2024kafka}{thesis}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=a364253e96d87ed9938b1009bd917862}{%
-           family={Larsson},
-           familyi={L\bibinitperiod},
-           given={Mikael},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b5858e501edc9e8e46a65a37dfc3fe5e}{%
-           family={Lindh},
-           familyi={L\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{institution}{1}{%
-        {Umeå University}%
-      }
-      \strng{namehash}{e40f74a21bf1a066af9226a30ddaf030}
-      \strng{fullhash}{e40f74a21bf1a066af9226a30ddaf030}
-      \strng{fullhashraw}{e40f74a21bf1a066af9226a30ddaf030}
-      \strng{bibnamehash}{e40f74a21bf1a066af9226a30ddaf030}
-      \strng{authorbibnamehash}{e40f74a21bf1a066af9226a30ddaf030}
-      \strng{authornamehash}{e40f74a21bf1a066af9226a30ddaf030}
-      \strng{authorfullhash}{e40f74a21bf1a066af9226a30ddaf030}
-      \strng{authorfullhashraw}{e40f74a21bf1a066af9226a30ddaf030}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{DiVA id: diva2:1878772}
-      \field{title}{Evaluating the Performance of Serialization Protocols in Apache Kafka}
-      \field{type}{Master's thesis}
-      \field{year}{2024}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://www.diva-portal.org/smash/get/diva2:1878772/FULLTEXT01.pdf
-      \endverb
-      \verb{url}
-      \verb https://www.diva-portal.org/smash/get/diva2:1878772/FULLTEXT01.pdf
       \endverb
     \endentry
     \entry{ludwig-mayerhofer-statistik}{online}{}{}
@@ -1261,31 +951,6 @@
       \verb https://www.researchgate.net/publication/381763921_Performance_evaluation_of_microservices_communication_with_REST_GraphQL_and_gRPC
       \endverb
     \endentry
-    \entry{Omer2024}{misc}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=6ae9afc96aa3fec4308a320991b508d6}{%
-           family={Omer},
-           familyi={O\bibinitperiod}}}%
-      }
-      \strng{namehash}{6ae9afc96aa3fec4308a320991b508d6}
-      \strng{fullhash}{6ae9afc96aa3fec4308a320991b508d6}
-      \strng{fullhashraw}{6ae9afc96aa3fec4308a320991b508d6}
-      \strng{bibnamehash}{6ae9afc96aa3fec4308a320991b508d6}
-      \strng{authorbibnamehash}{6ae9afc96aa3fec4308a320991b508d6}
-      \strng{authornamehash}{6ae9afc96aa3fec4308a320991b508d6}
-      \strng{authorfullhash}{6ae9afc96aa3fec4308a320991b508d6}
-      \strng{authorfullhashraw}{6ae9afc96aa3fec4308a320991b508d6}
-      \field{sortinit}{O}
-      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{To-be-read. Vergleichsdaten}
-      \field{title}{{Genereller Vergleich von REST, GraphQL und gRPC}}
-      \field{year}{2024}
-      \true{nocite}
-    \endentry
     \entry{postman2022}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=6f061e1cad5e2783cea0b2976ed2f4c3}{%
@@ -1438,37 +1103,6 @@
       \verb https://corp.roblox.com/newsroom/2025/06/roblox-path-to-2-trillion-analytics-events-a-day
       \endverb
     \endentry
-    \entry{koponen2024rpc}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=cfba1205f74dea786625b48b25885143}{%
-           family={{Ruupert Koponen}},
-           familyi={R\bibinitperiod}}}%
-      }
-      \strng{namehash}{cfba1205f74dea786625b48b25885143}
-      \strng{fullhash}{cfba1205f74dea786625b48b25885143}
-      \strng{fullhashraw}{cfba1205f74dea786625b48b25885143}
-      \strng{bibnamehash}{cfba1205f74dea786625b48b25885143}
-      \strng{authorbibnamehash}{cfba1205f74dea786625b48b25885143}
-      \strng{authornamehash}{cfba1205f74dea786625b48b25885143}
-      \strng{authorfullhash}{cfba1205f74dea786625b48b25885143}
-      \strng{authorfullhashraw}{cfba1205f74dea786625b48b25885143}
-      \field{sortinit}{R}
-      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2024-06-11}
-      \field{title}{{Understanding re-emergence of the RPC model in web development}}
-      \field{year}{2024}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://www.researchgate.net/publication/380547826_Understanding_re-emergence_of_the_RPC_model_in_web_development
-      \endverb
-      \verb{url}
-      \verb https://www.researchgate.net/publication/380547826_Understanding_re-emergence_of_the_RPC_model_in_web_development
-      \endverb
-    \endentry
     \entry{stackoverflow2023}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=84d7dc19766c446f5e4084e8fce87f82}{%
@@ -1493,10 +1127,10 @@
       \field{title}{Stack Overflow Developer Survey 2023 – Technology page}
       \field{year}{2023}
       \verb{urlraw}
-      \verb https://survey.stackoverflow.co/2023/technology/
+      \verb https://survey.stackoverflow.co/2023/
       \endverb
       \verb{url}
-      \verb https://survey.stackoverflow.co/2023/technology/
+      \verb https://survey.stackoverflow.co/2023/
       \endverb
     \endentry
     \entry{rfc9113}{misc}{}{}

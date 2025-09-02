@@ -364,26 +364,28 @@ Für eine sinnvolle Auswertung der Daten, wurden jeweils 30 Requests unabhängig
 		& Media & Foto        & 36.1 & 36.5 \\
 		&       & Audio       & 148.9 & 151.6 \\
 		&       & Video       & 365.0 & 353.6 \\
-		& Blog  & —           & 8.6 & 8.2 \\
+		& Blog  & -           & 8.6 & 8.2 \\
 		\hline
 		GraphQL & Text  & small text  & 7.6 & 7.4 \\
 		&       & medium text & 7.7 & 7.6 \\
 		&       & large text  & 10.1 & 9.8 \\
 		& Media & Foto        & 511.7 & 490.5 \\
 		&       & Audio       & 5896.9 & 5658.3 \\
-		&       & Video       & — & — \\
-		& Blog  & —           & 7.6 & 7.2 \\
+		&       & Video       & - & - \\
+		& Blog  & -           & 7.6 & 7.2 \\
 		\hline
 		gRPC & Text  & small text  & 7.5 & 7.5 \\
 		&       & medium text & 8.4 & 8.3 \\
 		&       & large text  & 18.8 & 18.8 \\
 		& Media & Foto        & 182.0 & 162.6 \\
 		&       & Audio       & 2372.5 & 2355.0 \\
-		&       & Video       & — & — \\
-		& Blog  & —           & 7.9 & 7.8 \\
+		&       & Video       & - & - \\
+		& Blog  & -           & 7.9 & 7.8 \\
 		\hline
 	\end{tabular}
 \end{table}
+
+
 
 \clearpage
 \textbf{TextService:}  
@@ -417,24 +419,24 @@ Bei der Durchführung von 20 parallelen Requests wurden jeweils pro API und Serv
 		&       & large text  & 92.1 & 93.6 \\
 		& Media & Foto        & 385.8 & 384.6 \\
 		&       & Audio       & 2420.1 & 2393.4 \\
-		&       & Video       & — & — \\
-		& Blog  & —           & 53.0 & 48.3 \\
+		&       & Video       & - & - \\
+		& Blog  & -           & 53.0 & 48.3 \\
 		\hline
 		GraphQL & Text  & small text  & 31.4 & 29.0 \\
 		&       & medium text & 35.4 & 33.4 \\
 		&       & large text  & 71.1 & 68.7 \\
 		& Media & Foto        & 16159.6 & 15745.7 \\
-		&       & Audio       & - & — \\
-		&       & Video       & — & — \\
-		& Blog  & —           & 34.6 & 33.0 \\
+		&       & Audio       & - & - \\
+		&       & Video       & - & - \\
+		& Blog  & -           & 34.6 & 33.0 \\
 		\hline
 		gRPC & Text  & small text  & 33.4 & 32.1 \\
 		&       & medium text & 43.5 & 40.9 \\
 		&       & large text  & 145.3 & 145.4 \\
 		& Media & Foto        & 5736.2 & 5682.4 \\
 		&       & Audio       & 126026.5 & 107938.0 \\
-		&       & Video       & — & — \\
-		& Blog  & —           & 34.5 & 31.3 \\
+		&       & Video       & - & - \\
+		& Blog  & -           & 34.5 & 31.3 \\
 		\hline
 	\end{tabular}
 \end{table}
@@ -471,23 +473,23 @@ Bei der Messung wurden jeweils 10 Requests pro Technologie und Service durchgef�
 			& Media & Foto        & 36.1  & 54.4  & 36.3 \\
 			&       & Audio       & 148.9 & 248.7 & 144.9 \\
 			&       & Video       & 365.0 & 676.4 & 422.8 \\
-			& Blog  & —           & 8.6   & 6.7   & 7.9  \\
+			& Blog  & -           & 8.6   & 6.7   & 7.9  \\
 			\hline
 			GraphQL & Text  & small text  & 7.6   & 9.4   & 5.61 \\
 			&       & medium text & 7.7   & 11.1  & 5.68 \\
 			&       & large text  & 10.1  & 15.8  & 8.21 \\
 			& Media & Foto        & 511.7 & 1743.4 & 402.8 \\
 			&       & Audio       & 5896.9 & 13253.3 & 6442.1 \\
-			&       & Video       & —     & 90091  & — \\
-			& Blog  & —           & 7.6   & 9.6   & 5.6 \\
+			&       & Video       & -     & 90091  & - \\
+			& Blog  & -           & 7.6   & 9.6   & 5.6 \\
 			\hline
 			gRPC & Text  & small text  & 7.5   & 9.4   & 5.5 \\
 			&       & medium text & 8.4   & 9.4   & 5.7 \\
 			&       & large text  & 18.8  & 24.2  & 20.3 \\
 			& Media & Foto        & 182.0 & 248.1 & 186.4 \\
 			&       & Audio       & 2372.5 & 2455.6 & 2744.9 \\
-			&       & Video       & —     & 8984.8 & 7984.6 \\
-			& Blog  & —           & 7.9   & 8.0   & 5.2 \\
+			&       & Video       & -     & 8984.8 & 7984.6 \\
+			& Blog  & -           & 7.9   & 8.0   & 5.2 \\
 			\hline
 		\end{tabular}
 	\end{table}
@@ -526,15 +528,15 @@ Um die Kommunikationsleistung der einzelnen Technologien ohne Einfluss eines Bro
 		& Media & Foto        & 45.9 & 41.5 \\
 		&       & Audio       & 250.4 & 249.5 \\
 		&       & Video       & 540.2 & 515.0 \\
-		& Blog  & —           & 1.0 & 1.0 \\
+		& Blog  & -           & 1.0 & 1.0 \\
 		\hline
 		GraphQL & Text  & small text  & 2.3 & 2.0 \\
 		&       & medium text & 2.2 & 2.0 \\
 		&       & large text  & 5.5 & 5.0 \\
 		& Media & Foto        & 5716.2 & 5742.0 \\
-		&       & Audio       & — & — \\
-		&       & Video       & — & — \\
-		& Blog  & —           & 2.4 & 2.0 \\
+		&       & Audio       & - & - \\
+		&       & Video       & - & - \\
+		& Blog  & -           & 2.4 & 2.0 \\
 		\hline
 		gRPC-Web & Text  & small text  & 2.2 & 2.0 \\
 		&       & medium text & 2.8 & 3.0 \\
@@ -542,7 +544,7 @@ Um die Kommunikationsleistung der einzelnen Technologien ohne Einfluss eines Bro
 		& Media & Foto        & 51.3 & 53.0 \\
 		&       & Audio       & 251.4 & 248.0 \\
 		&       & Video       & 705.1 & 717.5 \\
-		& Blog  & —           & 2.9 & 3.0 \\
+		& Blog  & -           & 2.9 & 3.0 \\
 		\hline
 		gRPC & Text  & small text  & 1.2 & 1.0 \\
 		&       & medium text & 1.5 & 1.5 \\
@@ -550,7 +552,7 @@ Um die Kommunikationsleistung der einzelnen Technologien ohne Einfluss eines Bro
 		& Media & Foto        & 42.7 & 41.0 \\
 		&       & Audio       & 252.1 & 249.0 \\
 		&       & Video       & 610.0 & 615.0 \\
-		& Blog  & —           & 1.1 & 1.0 \\
+		& Blog  & -           & 1.1 & 1.0 \\
 		\hline
 	\end{tabular}
 \end{table}
