@@ -73,7 +73,7 @@ Grundsätzlich, kann auf 3 verschiedene Services zugegriffen werden:
 	
 \end{itemize}
 
-Alle Services wurden seperat mit den Technologien REST, GraphQL, gRPC und gRPC-Web implementiert und können somit von den jeweiligen Clients abgefragt und verglichen werden.
+Alle Services wurden separat mit den Technologien REST, GraphQL, gRPC und gRPC-Web implementiert und können somit von den jeweiligen Clients abgefragt und verglichen werden.
 
 \subsection*{Testfälle:}
 Zur Analyse der Client-Server Kommunikation wurden folgende Testfälle definiert:  
@@ -87,14 +87,14 @@ Zur Analyse der Client-Server Kommunikation wurden folgende Testfälle definiert
 Da es in Web Browsern nicht möglich ist "normales" gRPC zu verwenden, konnte diese Messung im Rahmen des Browser-Client-Versuchsaufbaus nicht durchgeführt werden. Um Messwerte zwischen gRPC und gRPC-Web zu vergleichen, und um zu sehen inwiefern sich die Performance zwischen Browser-Backend und Microservice-Backend unterscheiden, wurde der zweite Versuchsaufbau mittels eines Konsolen-Clients durchgeführt.
 
 \subsection*{Rahmenbedingungen}
-Um einen fairen Vergleich herzustellen, wurden alle Requests ausschließlich mit dem HTTP/2 Protokoll durchgeführt und verschlüsselt mit HTTPS versendet. Bei der Response-Zeit handelt es sich jeweils um die End-zu-End-Latenz aus der Sicht des Nutzers. Es wird dabei die Zeit ab dem Absenden des Requestes bis zu dem Zeitpunkt, ab dem die Daten tatächlichen im Client fertig verarbeitet bereitstehen gemessen. Die Response Zeit beinhaltet also: 
+Um einen fairen Vergleich herzustellen, wurden alle Requests ausschließlich mit dem HTTP/2 Protokoll durchgeführt und verschlüsselt mit HTTPS versendet. Bei der Response-Zeit handelt es sich jeweils um die End-zu-End-Latenz aus der Sicht des Nutzers. Es wird dabei die Zeit ab dem Absenden des Requestes bis zu dem Zeitpunkt, ab dem die Daten tatsächlichen im Client fertig verarbeitet bereitstehen gemessen. Die Response Zeit beinhaltet also: 
 
 \begin{enumerate}
 	\item die Transportzeit über das Netzwerk:
 	Zeit für den Hin- und Rückweg des Pakets durch das Netzwerk.
 	
 	\item Serverseitige-Verarbeitung:
-	Die serverseitige Verabeitung des Requests
+	Die serverseitige Verarbeitung des Requests
 	
 	\item Antwortübertragung:
 	Zeit für das Senden der Antwort(inklusive Header und Payload) zurück an den Client.
@@ -489,7 +489,7 @@ Für Video- bzw. Audiodateien (GraphQL) wurden aufgrund des bereits bei den Einz
 
 
 \textbf{Blog-Service:}  
-Bei den Abfragen der Blogdaten lagen die Antwortzeiten aller Technologien im zweistelligen ms Bereich. Ähnlich wie bei kleineren Textdaten, sind gRPC-Web und GraphQL mit jeweis 35 ms gleichauf, gefolgt von REST mit 53 ms.
+Bei den Abfragen der Blogdaten lagen die Antwortzeiten aller Technologien im zweistelligen ms Bereich. Ähnlich wie bei kleineren Textdaten, sind gRPC-Web und GraphQL mit jeweils 35 ms gleichauf, gefolgt von REST mit 53 ms.
 
 \clearpage
 \subsection{Browser-Vergleich}

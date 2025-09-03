@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  3 SEP 2025 21:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  3 SEP 2025 22:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1747,7 +1747,7 @@ Package pdftex.def Info: images/BackendService.png  used on input line 57.
 (pdftex.def)             Requested size: 350.68274pt x 211.73695pt.
 
 Overfull \hbox (2.07913pt too wide) in paragraph at lines 76--77
-[]\T1/ptm/m/n/12 Alle Ser-vices wur-den se-pe-rat mit den Tech-no-lo-gi-en REST
+[]\T1/ptm/m/n/12 Alle Ser-vices wur-den se-pa-rat mit den Tech-no-lo-gi-en REST
 , Gra-ph-QL, gRPC und gRPC-
  []
 
@@ -2171,10 +2171,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37256 strings out of 469608
- 705862 string characters out of 5474779
- 1623970 words of memory out of 5000000
- 63160 multiletter control sequences out of 15000+600000
+ 37262 strings out of 469608
+ 705934 string characters out of 5474779
+ 1625024 words of memory out of 5000000
+ 63166 multiletter control sequences out of 15000+600000
  702661 words of font info for 135 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  104i,11n,104p,1760b,2347s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2187,10 +2187,10 @@ exlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-
 dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/u
 rw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on thesis.pdf (69 pages, 633795 bytes).
+Output written on thesis.pdf (69 pages, 634444 bytes).
 PDF statistics:
- 966 PDF objects out of 1000 (max. 8388607)
- 851 compressed objects within 9 object streams
+ 978 PDF objects out of 1000 (max. 8388607)
+ 863 compressed objects within 9 object streams
  247 named destinations out of 1000 (max. 500000)
  301 words of extra memory for PDF output out of 10000 (max. 10000000)
 

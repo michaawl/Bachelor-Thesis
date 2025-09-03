@@ -47,7 +47,7 @@ JSON ist der Standard für REST und GraphQL Schnittstellen \parencite{Microsoft2
 
 
 \subsection{Protocol Buffers}
-Protocol Buffers sind ein von Google entwickeltes Serialisierungsformat. Es handelt sich hierbei um ein binäres Serialisierungsformat, das entwickelt wurde um möglichst effizient, mit hoher Performance und mit so wenig Overhead wie möglich (ohne Whitespaces oder Satzzeichen wie bei JSON) Daten zu übertragen und zu verarbeiten. Protocul Buffers sind plattformunabhängig und mit den meisten gängigen Programmiersprachen kompatibel.
+Protocol Buffers sind ein von Google entwickeltes Serialisierungsformat. Es handelt sich hierbei um ein binäres Serialisierungsformat, das entwickelt wurde um möglichst effizient, mit hoher Performance und mit so wenig Overhead wie möglich (ohne Whitespaces oder Satzzeichen wie bei JSON) Daten zu übertragen und zu verarbeiten. Protocol Buffers sind plattformunabhängig und mit den meisten gängigen Programmiersprachen kompatibel.
 
 Ein zentraler Bestandteil von Protocol Buffers sind die plattformunabhängigen proto Files, die für die Erzeugung definiert werden müssen.
 
@@ -75,7 +75,7 @@ Beispiel einer Protocol Buffers Definition mit den Datenobjekten Person und Pers
 \end{verbatim}
 
 Hauptbestandteil der proto Files sind Messages und Services.
-Messages definieren die Struktur der zu übertragenden Nachricht. Jedes Feld beseht aus einem Namen, den jeweiligen Datentypen und einer Nummer. Die Nummer beschreibt an welcher Stelle sich das jeweilige Attribut befindet. Die Nummerierung der Felder ist wichtig für die Serialisierung. In Protocol Buffers können unter anderem die gängigsten Datentypen wie int32, int64, float, double, bool sowie string und bytes verwendet werden.
+Messages definieren die Struktur der zu übertragenden Nachricht. Jedes Feld besteht aus einem Namen, dem jeweiligen Datentyp und einer Nummer. Die Nummer beschreibt an welcher Stelle sich das jeweilige Attribut befindet. Die Nummerierung der Felder ist wichtig für die Serialisierung. In Protocol Buffers können unter anderem die gängigsten Datentypen wie int32, int64, float, double, bool sowie string und bytes verwendet werden.
 Services geben an, welche Dienste vom Server bereit gestellt werden und welche Datentypen als Parameter bei Aufruf übermittelt und als Rückgabe zurückgegeben werden. Services müssen auf der Serverseite implementiert werden \parencite{protobufdocs}.
 
 
@@ -83,9 +83,9 @@ Services geben an, welche Dienste vom Server bereit gestellt werden und welche D
 Für das Übertragen von großen binären Objekten (z.B. Bilder, Video, Audiodateien, Dokumente, ..) wird eine große Menge an binären Daten gesendet. Solche Dateien werden in der Webentwicklung, und vor allem im Frontend wo diese Mediendaten verarbeitet werden sollen, oft als Binary Large Object (Blob) bezeichnet \parencite{w3c-fileapi}.
 
 \section{Transportprotokolle}
-Die eigentlichen Daten, die in Form von Serialisierungsformaten zwischen Frontend und Backend ausgetauscht werden, werden mithilfe von Transportprotokollen von dem Client and den Server, und umgekehrt, übermittelt. Das Hypertext Transfer Protocol (HTTP) ist dabei für moderne Webanwendungen das zentrale und verbreitetste Transportprotokoll. Es gibt verschiedene Versionen von HTTP. Im Kontext der Bachelorarbeit wird ausschließlich HTTP/2 verwendet. HTTP funktioniert mittels eines Request-Response Prinzips und überträgt die Daten mittels TCP.
+Die eigentlichen Daten, die in Form von Serialisierungsformaten zwischen Frontend und Backend ausgetauscht werden, werden mithilfe von Transportprotokollen von dem Client an den Server, und umgekehrt, übermittelt. Das Hypertext Transfer Protocol (HTTP) ist dabei für moderne Webanwendungen das zentrale und verbreitetste Transportprotokoll. Es gibt verschiedene Versionen von HTTP. Im Kontext der Bachelorarbeit wird ausschließlich HTTP/2 verwendet. HTTP funktioniert mittels eines Request-Response Prinzips und überträgt die Daten mittels TCP.
 
-HTTP/1.1 ist nach wie vor weit verbeitet. Es wird von allen Webbrowsern ohne Einschränkungen unterstützt und bildet die Grundlage für die API-Architekturen REST und GraphQL. Diese Version weist jedoch einige Schwächen auf, so können zum einen nicht mehrere Requests/Responses gleichzeitig über eine TCP Verbindung durchgeführt werden und der Server ist nicht in der Lage von sich aus zusätzliche Ressourcen an die Clients zu senden. 
+HTTP/1.1 ist nach wie vor weit verbreitet. Es wird von allen Webbrowsern ohne Einschränkungen unterstützt und bildet die Grundlage für die API-Architekturen REST und GraphQL. Diese Version weist jedoch einige Schwächen auf, so können zum einen nicht mehrere Requests/Responses gleichzeitig über eine TCP Verbindung durchgeführt werden und der Server ist nicht in der Lage von sich aus zusätzliche Ressourcen an die Clients zu senden. 
 
 Neben Performanceverbesserungen und anderen zusätzlichen Features wurden diese Schwächen mit HTTP/2 behoben.
 Die wichtigsten Features von HTTP/2 beinhalten:
@@ -105,14 +105,14 @@ Zwar unterstützen aktuelle Webbrowser HTTP/2 grundsätzlich, jedoch sind bestim
 \section{API-Technologien}
 Eine API ist eine Schnittstelle eines Softwaremoduls, welche es ermöglicht, dass das jeweilige Softwaresystem mit einem anderen System kommunizieren kann.
 Eine Web-API ist eine API die von Web-Servern zur Verfügung gestellt werden. Bei Web-Servern findet die Kommunikation standardmäßig mit einem HTTP bzw. Hypertext Transfer Protocol Secure (HTTPS) Protokoll statt. 
-Technologien wie REST, GraphQL oder gRPC definieren jeweils Konventionen und Standards, wie etwa den Aufbau von Response/Request, Art der Serialisierungsobjekts oder Art des Transportprotokolls, die neben der technischen Kompatibilität für die Kommunikation auch den Entwicklern hilft, sich effizient in API-Systemen zurecht zu finden
+Technologien wie REST, GraphQL oder gRPC definieren jeweils Konventionen und Standards, wie etwa den Aufbau von Response/Request, Art der Serialisierungsobjekte oder Art des Transportprotokolls, die neben der technischen Kompatibilität für die Kommunikation auch den Entwicklern hilft, sich effizient in API-Systemen zurecht zu finden
  \parencite{redhat-apiguide}.
 
 \subsection{REST}
 Der REST-Architekturstil wurde im Jahr 2000 von Roy Fielding im Rahmen seiner Dissertation definiert, mit dem Ziel eine bis dato einfache Alternative für die Kommunikation zwischen zwei Systemen zu schaffen.
 
 \subsubsection*{Infrastruktur}
-Eine API-Schnittstellt ist nach Definition nur dann im REST Stil umgesetzt, falls folgende 5 Eigenschaften erfüllt werden:
+Eine API-Schnittstelle ist nach Definition nur dann im REST Stil umgesetzt, falls folgende 5 Eigenschaften erfüllt werden:
 
 
 \begin{itemize}
@@ -127,12 +127,12 @@ HTTP Caching soll benutzt werden. Hierbei werden Daten in einem Cache gespeicher
 	Eine einheitliche Schnittstelle ist wie folgt definiert:
 	
 	\begin{enumerate}
-		\item \textbf{Addressierbarkeit von Ressourcen:}
+		\item \textbf{Adressierbarkeit von Ressourcen:}
 		Jede Ressource im System ist eindeutig über eine URI adressierbar.
 		\item \textbf{Repräsentationen zur Veränderung von Ressourcen:}
 		Ressourcen können durch verschiedene Formate (wie JSON) repräsentiert und über Standard-HTTP-Methoden verändert werden.
 		
-		\item \textbf{Selbsbeschreibende Nachrichten:}
+		\item \textbf{Selbstbeschreibende Nachrichten:}
 		Jede Nachricht enthält alle notwendigen Informationen, damit der Empfänger sie interpretieren und verarbeiten kann.
 		
 		\item \textbf{„Hypermedia as the Engine of Application State“ (HATEOAS):} 
@@ -151,10 +151,10 @@ Viele Web Dienste, erfüllen bereits viele dieser Eigenschaften wodurch sich RES
 
 \clearpage
 
-\subsubsection*{Kommunikation zwischen Client- Server:}
+\subsubsection*{Kommunikation zwischen Client-Server:}
 Die Kommunikation zwischen dem Client und Server findet bei REST fast ausschließlich über HTTP/HTTPS statt, wobei laut Definition kein spezifisches Transportprotokoll vorgeschrieben wird. Im Zuge der Arbeit wird ausschließlich HTTPS verwendet.
 
-HTTP stellt für den Zugriff auf Ressourcen eine Reihe an Methoden zur Verfügung. Die wichtigsten HTTP Methoden sind : \newline
+HTTP stellt für den Zugriff auf Ressourcen eine Reihe an Methoden zur Verfügung. Die wichtigsten HTTP-Methoden sind: \newline
 
 \begin{tabularx}{\textwidth}{|l|X|}
 	\hline
@@ -226,7 +226,7 @@ Folgende Funktionen von gRPC stehen dadurch nicht zu Verfügung:
 	Es werden nur Unary RPCs und Server-Streaming unterstützt.
 	
 	\item \textbf{Metadaten und Header-Kompression:} 
-	Nicht alle gRPC-Metadaten können übertragen werden, und eine HTTP/2-Header-Kompression wird nicht untersützt.
+	Nicht alle gRPC-Metadaten können übertragen werden, und eine HTTP/2-Header-Kompression wird nicht unterstützt.
 	
 	\item \textbf{Trailers:} 
 	gRPC-Web kann keine echten HTTP/2-Trailer verwenden. 
@@ -276,7 +276,7 @@ Da es in der Arbeit um die Kommunikation zwischen Web Browsern und Backend-Servi
 \clearpage
 \section{Begriffe}
 \subsection{End-zu-End Latenz}
-Unter dem Begriff Latenz versteht man in der Natzwerktechnik die Verzögerung, die zwischen dem Absenden einer Anfrage (Request) und dem Eintreffen der dazugehörigen Antwort (Response) auftritt \parencite{aws-latency}. Im Rahmen der Bachelorarbeit bezieht sich der Begriff jedoch auf die End-zu-End Latenz. Also jener Zeit ab dem Senden des Requests von dem Client bis zur vollständigen Verarbeitung und Bereitstellung der Antwort im Client. 
+Unter dem Begriff Latenz versteht man in der Netzwerktechnik die Verzögerung, die zwischen dem Absenden einer Anfrage (Request) und dem Eintreffen der dazugehörigen Antwort (Response) auftritt \parencite{aws-latency}. Im Rahmen der Bachelorarbeit bezieht sich der Begriff jedoch auf die End-zu-End Latenz. Also jener Zeit ab dem Senden des Requests von dem Client bis zur vollständigen Verarbeitung und Bereitstellung der Antwort im Client. 
 
 
 \subsection{Durchschnitt und Median}

@@ -2446,7 +2446,13 @@
     <bcf:citekey order="57" intorder="1">redhat-apiguide</bcf:citekey>
     <bcf:citekey order="57" intorder="2">gRPCAbout</bcf:citekey>
     <bcf:citekey order="58" intorder="1">muehlberger2025</bcf:citekey>
-    <bcf:citekey order="59" intorder="1" nocite="1">*</bcf:citekey>
+    <bcf:citekey order="59" intorder="1">Bolanowski2022Efficiency</bcf:citekey>
+    <bcf:citekey order="59" intorder="2">BergRedi2023Benchmarking</bcf:citekey>
+    <bcf:citekey order="60" intorder="1">Niswar2024PerformanceEvaluation</bcf:citekey>
+    <bcf:citekey order="61" intorder="1">Bolanowski2022Efficiency</bcf:citekey>
+    <bcf:citekey order="61" intorder="2">BergRedi2023Benchmarking</bcf:citekey>
+    <bcf:citekey order="61" intorder="3">Niswar2024PerformanceEvaluation</bcf:citekey>
+    <bcf:citekey order="62" intorder="1" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
