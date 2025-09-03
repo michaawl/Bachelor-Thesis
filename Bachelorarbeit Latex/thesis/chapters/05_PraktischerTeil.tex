@@ -123,11 +123,27 @@ Die Services stellen für jede der APIs dieselben Daten zur Verfügung und könn
 	\item gRPC und gRPC-Web: als typisierte RPC call (HTTP/2, Protobuf) 
 \end{itemize}
 
-\begin{figure}[htbp]
+\begin{table}[h]
 	\centering
-	\includegraphics[width=0.7\textwidth]{images/prakt1.png}
-	\caption{Daten}
-\end{figure}
+	\caption{Vergleich der API-Endpunkte}
+	\label{tab:api-comparison}
+	\renewcommand{\arraystretch}{1.2}
+	\setlength{\tabcolsep}{4pt}
+	\small
+	\begin{tabularx}{\textwidth}{|l|>{\ttfamily}l|>{\ttfamily}l|>{\ttfamily}X|}
+		\hline
+		\textbf{Inhalt} & \textbf{REST-Endpunkt} & \textbf{gRPC-Methode} & \textbf{GraphQL-Abfrage} \\
+		\hline
+		Großer Text & GET /text/large & Text.GetLarge() & query \{ large \{ content \} \} \\
+		\hline
+		Video (MP4) & GET /media/video & Media.GetVideo() & query \{ video \} \\
+		\hline
+		Blogposts & GET /api/blog & Blog.GetAll() & query \{ posts \{ title, author... \} \} \\
+		\hline
+	\end{tabularx}
+\end{table}
+
+
 
 
 Die Struktur des Backend-Services gliedert sich in 4 eigenständige Projekte:
@@ -385,9 +401,15 @@ Für eine sinnvolle Auswertung der Daten, wurden jeweils 30 Requests unabhängig
 	\end{tabular}
 \end{table}
 
-
-
 \clearpage
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{images/Webclient.png}
+	\caption{Web-Client - Einzel-Request: End-to-End-Latenz (Median) je Datentyp und Technologie [ms]}
+	\label{fig:webclient-single-median}
+\end{figure}
+
 \textbf{TextService:}  
 Es ist zu erkennen, dass kleinere Textdaten (1–10 kB) von allen Schnittstellen relativ schnell verarbeitet werden konnten. gRPC Web und GraphQL weisen hierbei jedoch die geringsten Antwortzeiten (7.5-8.5 ms) auf, REST benötigte ungefähr 8-9 ms für kleinere Textdaten. Bei größeren Textmengen (200 kB) steigt die Latenz erwartungsgemäß bei allen Technologien etwas an, wobei diese bei GraphQl mit 10 ms und REST mit 13 ms deutlich schneller als bei gRPC Web (19 ms) bereitstehen. 
 
@@ -401,7 +423,6 @@ Bei der Übertagung von Videodaten (100 MB ) konnte in Chrome keine vergleichbar
 \textbf{BlogService:}  
 Bei der Messung der Blog-Datenstrukturen, konnten geringe Unterschiede in den Abfragezeiten zwischen den Technologien identifiziert werden. GraphQl war hierbei mit einer mittleren latenz von 7.6 ms leicht schneller als gprc ( 7.9 ms) und Rest (8.6 ms).
 
-\clearpage
 \subsubsection{20 parallele Requests}
 Bei der Durchführung von 20 parallelen Requests wurden jeweils pro API und Service 30 Messwerte ( bei MedienService Messwerte) gemessen und anschließend der Durchschnittswert und Median berechnet. Es zeigten sich erwartungsgemäß höhere Latenzen gegenüber denr Einzelabfragen. 
 
@@ -440,8 +461,15 @@ Bei der Durchführung von 20 parallelen Requests wurden jeweils pro API und Serv
 		\hline
 	\end{tabular}
 \end{table}
-
 \clearpage
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{images/Parallelrequests.png}
+	\caption{Web-Client - 20 parallele Requests: End-to-End-Latenz (Median) je Datentyp und Technologie [ms]}
+	\label{fig:webclient-20req-median}
+\end{figure}
+
 \textbf{TextService:}  
 Während kleinere Textdaten noch performant verarbeitet werden können, nehmen die Unterschiede bei größeren Lasten stärker zu. Bei sehr kleinen Textdaten von 1 KB sind gRPC und Graph!l jeweils mit einer Antwortzeit von 31ms bei GraphQl und 33 ms bei gRPC-Web gleichauf, bei 10 kB ist graphQl mit 35 ms ungefähr 9 ms schneller als gRPC mit 44 ms. Je größer die Daten werden, desto langsamer wird gRPC. Rest benötigte bei den kleineren Lasen 46 ms für 1Kb und 62 ms für 10kB. Auch bei größeren Textdaten ist GraphQl mit 71 ms am schnellsten, gefolgt von REST mit 92 ms und gRPC mit 145 ms. 
 
@@ -495,6 +523,14 @@ Bei der Messung wurden jeweils 10 Requests pro Technologie und Service durchgef�
 	\end{table}
 
 \clearpage
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{images/Browserperformance.png}
+	\caption{Web-Client - Browser-Vergleich (Einzel-Request): End-to-End-Latenz (Median) je Datentyp und Technologie [ms]}
+	\label{fig:webclient-browser-comparison}
+\end{figure}
+
 \textbf{Textdaten:}  
 Bei den Messungen reagierte Edge in allen Schnittstellen mit den niedrigsten Antwortzeiten, dabei konnten bei allen drei API-Architekturen deutliche Unterschiede gemessen werden. Für kleinere Textdaten (1 kB und 10 kB) benötigten Chrome und Firefox bei REST 8.5-9.5 ms während Edge nur 4.8 und 6.3 ms benötigten. Ähnlich ist das Verhalten bei GraphQl und gRPC wobei Chrome bei diesen Architekturen deutlich schneller als Firefox ist. Auch bei größeren Textmengen blieg Edge bei allen Technologien am performantesten. Bei GraphQl und gRPC war Chrome wieder schneller als Firefox, bei dem REST Service war Firefox jedoch mit 11 ms schneller als CHrome (13 ms).
 
@@ -558,6 +594,14 @@ Um die Kommunikationsleistung der einzelnen Technologien ohne Einfluss eines Bro
 \end{table}
 
 \clearpage
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{images/Konsolenclient.png}
+	\caption{Konsolen-Client - Einzel-Request: End-to-End-Latenz (Median) je Datentyp und Technologie [ms]}
+	\label{fig:console-client-1req}
+\end{figure}
+
 \textbf{TextService:}  
 Alle Technologien zeigten bei kleinen und mittleren Textdaten im Konsolen-Client sehr geringe Antwortzeiten. gRPC hatte hier jedoch eindeutlig die schnellste Response Zeit mit nur 1.2 für 1kB und 1.5 ms für 10 kB. REST, GraphQl und gRPC-Wen haben ungefähr die selbe Zeit von 2 ms für beide Textgrößen wobei gRPC-Web mit 2.2 ms für 1kB und für  2.8 ms für 10kB am langsamsten ist.
 Auch bei großen Textdaten ist gRPC mit 4.1ms am schnellste, gefolgt von GraphQl mit 5.5 ms, REST mit 6.4 ms und gRPC Web mit 6.8 ms.

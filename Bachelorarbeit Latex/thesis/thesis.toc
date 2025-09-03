@@ -63,13 +63,13 @@
 \contentsline {section}{\numberline {5.2}Implementierung:}{32}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Backend Service:}{32}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Web-Client:}{35}{subsection.5.2.2}%
-\contentsline {paragraph}{Textdaten}{36}{section*.32}%
-\contentsline {paragraph}{Mediendaten}{36}{section*.33}%
-\contentsline {paragraph}{Blogdaten}{36}{section*.34}%
+\contentsline {paragraph}{Textdaten}{36}{section*.33}%
+\contentsline {paragraph}{Mediendaten}{36}{section*.34}%
+\contentsline {paragraph}{Blogdaten}{36}{section*.35}%
 \contentsline {subsection}{\numberline {5.2.3}Konsolen-Client}{36}{subsection.5.2.3}%
 \contentsline {section}{\numberline {5.3}Spezifikationen des Testsystems}{39}{section.5.3}%
-\contentsline {paragraph}{Hardwarekonfiguration}{39}{section*.38}%
-\contentsline {paragraph}{Betriebssystem:}{39}{section*.39}%
+\contentsline {paragraph}{Hardwarekonfiguration}{39}{section*.39}%
+\contentsline {paragraph}{Betriebssystem:}{39}{section*.40}%
 \contentsline {section}{\numberline {5.4}Messung}{40}{section.5.4}%
 \contentsline {subsubsection}{\numberline {5.4.0.1}20 parallele Requests}{43}{subsubsection.5.4.0.1}%
 \contentsline {subsubsection}{\numberline {5.4.0.2}Browser-Vergleich}{45}{subsubsection.5.4.0.2}%
@@ -77,6 +77,6 @@
 \contentsline {chapter}{\numberline {6}Zusammenfassung und Fazit}{51}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Beantwortung der Forschungsfragen}{51}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Ausblick}{54}{section.6.2}%
-\contentsline {chapter}{Literaturverzeichnis}{57}{appendix*.49}%
+\contentsline {chapter}{Literaturverzeichnis}{57}{appendix*.50}%
 \contentsline {chapter}{\numberline {A}Anhang}{61}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Rohdaten der Messungen}{61}{section.A.1}%

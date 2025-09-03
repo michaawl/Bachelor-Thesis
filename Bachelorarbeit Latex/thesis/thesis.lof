@@ -9,6 +9,9 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces 3-Way Handshake (for establishing TCP connection)}}{27}{figure.5.1}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Daten}}{32}{figure.5.2}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Web-Client - Einzel-Request: End-to-End-Latenz (Median) je Datentyp und Technologie [ms]}}{42}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Web-Client - 20 parallele Requests: End-to-End-Latenz (Median) je Datentyp und Technologie [ms]}}{44}{figure.5.3}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Web-Client - Browser-Vergleich (Einzel-Request): End-to-End-Latenz (Median) je Datentyp und Technologie [ms]}}{46}{figure.5.4}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Konsolen-Client - Einzel-Request: End-to-End-Latenz (Median) je Datentyp und Technologie [ms]}}{48}{figure.5.5}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

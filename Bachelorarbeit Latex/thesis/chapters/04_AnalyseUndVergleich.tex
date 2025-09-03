@@ -71,15 +71,15 @@ Im folgenden Abschnitt werden jeweils die Vor- und Nachteile der API-Architektur
 \section{Effizienzvergleich: Latenz, Datenvolumen und Ressourcenverbrauch}
 Mehrere Studien zeigen, dass gRPC in Bezug auf Latenz, Datenvolumen und CPU-Verbrauch am performantesten ist. Die Ergebnisse werden nicht im Detail wiederholt, sondern in Bezug auf die drei API-Technologien eingeordnet.
 
-\paragraph{Latenz und Antwortzeit:} gRPC erreicht durch HTTP/2 und Protobuf geringere Latenzen als REST und GraphQL. REST hat durch das Verwenden von JSON einen Overhead, kann aber bei wiederholten Requests vom Cache profitieren. GraphQL weist die höchsten Latenzen auf, kann aber durch individuelle Datenabfrage die Zahl der benötigten Requests minimieren und dadurch in Summe effizienter sein.
+\paragraph{Latenz und Antwortzeit:} gRPC erreicht durch HTTP/2 und Protobuf geringere Latenzen als REST und GraphQL \parencite{Niswar2024PerformanceEvaluation,BergRedi2023Benchmarking}. REST hat durch das Verwenden von JSON einen Overhead, kann aber bei wiederholten Requests vom Cache profitieren \parencite{redhat-apiguide}. GraphQL weist die höchsten Latenzen auf, kann aber durch individuelle Datenabfrage die Zahl der benötigten Requests minimieren und dadurch in Summe effizienter sein \parencite{amazon2025graphql}.
 
 
 \paragraph{Datenvolumen:}  
-gRPC überträgt die Daten durch Protobuf sehr kompakt. REST und GraphQL haben durch die Verwendung vom textbasierten JSON einen Overhead. GraphQL eignet sich am wenigsten für die Übertragung von Blobs, da diese in Base64 kodiert werden müssen, das den Overhead um ein Drittel erhöht.
+gRPC überträgt die Daten durch Protobuf sehr kompakt. REST und GraphQL haben durch die Verwendung vom textbasierten JSON einen Overhead. GraphQL eignet sich am wenigsten für die Übertragung von Blobs, da diese in Base64 kodiert werden müssen, das den Overhead um ein Drittel erhöht \parencite{BergRedi2023Benchmarking,redhat-apiguide,amazon2025graphql}.
 
 
 \paragraph{Ressourcenverbrauch:}  
-gRPC ist hinsichtlich der CPU-Auslastung am effizientesten, da Protobuf schneller verarbeitet wird als JSON. REST und GraphQL benötigen durch die aufwendigere Serialisierung und Deserialisierung mehr Rechenressourcen.
+gRPC ist hinsichtlich der CPU-Auslastung am effizientesten, da Protobuf schneller verarbeitet wird als JSON. REST und GraphQL benötigen durch die aufwendigere Serialisierung und Deserialisierung mehr Rechenressourcen \parencite{Niswar2024PerformanceEvaluation,BergRedi2023Benchmarking}.
 
 \section{Erlernbarkeit}
 
