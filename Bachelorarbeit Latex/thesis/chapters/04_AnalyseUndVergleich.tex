@@ -3,16 +3,16 @@
 \label{chap:intro}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapterstart
-Aufbauend auf den theoretischen Grundlagen und dem Stand der Technik, sollen anschließend die ausgewählten API-Technologien: REST, GraphQL, gRPC und gRPC-Web direkt miteinander verglichen werden. Neben den technischen Eigenschaften sollen auch Aspekte wie Erlernbarkeit, Effizienz und Ressourcenverbrauch betrachtet werden. Ziel des Kapitels ist es, die jeweiligen Stärken und Schwächen der Technologien herauszuarbeiten und aufzuzeigen.
+Aufbauend auf den theoretischen Grundlagen und dem Stand der Technik, sollen anschließend die ausgewählten API-Technologien: REST, GraphQL, gRPC und gRPC-Web direkt miteinander verglichen werden. Neben den technischen Eigenschaften sollen auch Aspekte wie Erlernbarkeit, Effizienz und Ressourcenverbrauch betrachtet werden. Ziel des Kapitels ist es, die jeweiligen Stärken und Schwächen der Technologien herauszuarbeiten.
 
 \section{Vor- und Nachteile der API-Technologien}
-Im folgenden Abschnitt werden jeweils die Vor- und Nachteile der API-Architekturen herausgearbeitet, um diese im direkten Vergleich gegenüberstellen zu können. 
+Im folgenden Abschnitt werden die Vor- und Nachteile der API-Architekturen zusammengefasst.
 \subsection{REST}
 
 \paragraph{Vorteile:}
 \begin{itemize}
 	\item REST ist der etablierteste API-Standard für Web-APIs.
-	\item Ein Großteil der Entwickler ist bereits mit dem Standard vertraut.
+	\item Ein Großteil der Entwickler ist bereits mit REST vertraut.
 	\item Durch die weite Verbreitung gibt es eine Vielzahl an Tools für die Entwicklung und das Testing (z.B. Postman, Swagger) \parencite{postman2022, postman2023}.
 	\item Wird in den meisten Web-Clients nativ unterstützt und liefert typischerweise JSON, welches für Menschen leicht lesbar ist.
 	\item Es ist im Vergleich einfach und intuitiv aufgebaut.
@@ -41,10 +41,10 @@ Im folgenden Abschnitt werden jeweils die Vor- und Nachteile der API-Architektur
 \paragraph{Nachteile:}
 \begin{itemize}
 	\item Die Flexibilität die durch GraphQl für das Frontend schafft, verlagert die Komplexität auf den Server. 
-	\item Die Implementierung kann ohne Batch-Loading oder Caching-Strategien zu Performance Einbußen führen, da meistens alle Abfragen über nur einen einzigen /graphql-Endpoint per POST laufen, und somit das übliche http-Caching- nicht automatisch funktioniert. 
+	\item Die Implementierung kann ohne Batch-Loading oder Caching-Strategien zu Performance Einbußen führen, da meistens alle Abfragen über nur einen einzigen /graphql-Endpoint per POST laufen, und somit das übliche HTTP-Caching- nicht automatisch funktioniert. 
 	\item Das fehlen des eingebauten HTTP-Caching führt dazu, dass Entwickler eigeine Cashing-Lösungen implementieren müssen. 
-	\item Durch die frei gestaltbaren Queries ist es außerdem schwierig, paschale Limits oder Vorhersagen über Lasten zu definieren \parencite{graphql-org,amazon2025graphql,redhat-apiguide}.
-	\item Im Gegensatz zu REST ist GraphQl nicht weniger verbreitet und es gibt eine begrenztere Anzahl an Debugging Möglichkeiten \parencite{postman2022, postman2023}.
+	\item Durch die frei gestaltbaren Queries ist es außerdem schwierig, pauschale Limits oder Vorhersagen über Lasten zu definieren \parencite{graphql-org,amazon2025graphql,redhat-apiguide}.
+	\item Im Gegensatz zu REST ist GraphQl nicht weniger verbreitet und es gibt eine begrenztere Anzahl an Community Support \parencite{postman2022, postman2023}.
 \end{itemize}
 
 \subsection{gRPC}
@@ -53,18 +53,18 @@ Im folgenden Abschnitt werden jeweils die Vor- und Nachteile der API-Architektur
 \begin{itemize}
 	\item gRPC ist für Performance ausgelegt.  
 	\item Durch das Verwenden von Protocol Buffers, sind die gesendeten Nachrichten binär kodiert, äußerst kompakt und dadurch schneller übertragen als z.B. JSON. In der Web-Variabte gRPC-Web können diese Vorteile zum Teil auch im Browser genutzt werden. 
-	\item In Kombination mit http/2.0 als Transport ermöglicht gRPC eine sehr niedrige Latenz und effiziente Ausnutzung der Verbindung (Multiplexing). 
+	\item In Kombination mit HTTP/2.0 als Transport ermöglicht gRPC eine sehr niedrige Latenz und effiziente Ausnutzung der Verbindung (Multiplexing). 
 	\item gRPC ist streng typisiert, und die zu sendenden Datenstrukturen als auch zur Verfügung stehenden Dienste sind in einer .proto Definition klar definiert. 
-	\item Der klare Vertrag zwischen Client und Server erhöht die Typsicherheit, reduziert messstände und Fehler zur Laufzeit.
+	\item Der klare Vertrag zwischen Client und Server erhöht die Typsicherheit, reduziert Missstände und Fehler zur Laufzeit.
 	\item gRPC unterstützt bidirektionales Streaming. 
 	\item gRPC generiert automatisch Client-Code für viele Programmiersprachen \parencite{gRPCAbout}.
 \end{itemize}
 
 \paragraph{Nachteile:}
 \begin{itemize}
-	\item Da gRPC auf http/2 basiert und davon spezielle Features nutzt, die von vielen Webbrowsern nicht unterstützt werden, ist es ohne Weiteres nicht in Browser Umgebungen nutzbar. Die Lösung hierfür ist die Übersetzung von gRPC zu gRPC-Web, welches im Browser benutzt werden kann.
-	\item Diese Die Übersetzung von gRPC zu gRPC-Web erhöht die Infrastruktur-Komplexität, kann zu Fehlerquellen führen, und mindert die Performance \parencite{grpc-web-docs}.
-	\item gRPC wird nicht so häufig für die Kommunikation zwischen Web und Backend benutzt, dadurch gibt es weniger Debugging-Tools.
+	\item Da gRPC auf HTTP/2 basiert und davon spezielle Features nutzt, die von vielen Webbrowsern nicht unterstützt werden, ist es ohne Weiteres nicht in Browser Umgebungen nutzbar. Die Lösung hierfür ist die Übersetzung von gRPC zu gRPC-Web, welches im Browser benutzt werden kann.
+	\item Die Übersetzung von gRPC zu gRPC-Web erhöht die Infrastruktur-Komplexität, kann zu Fehlerquellen führen, und mindert die Performance \parencite{grpc-web-docs}.
+	\item gRPC wird nicht so häufig für die Kommunikation zwischen Web und Backend benutzt, dadurch gibt es weniger Tools und Community Support.
 	\item Die Nutzung von gRPC ist nicht so intuitiv und einfach wie REST und erfordert eine Einarbeitung in neue Tools und Konzepte \parencite{redhat-apiguide}.
 \end{itemize}
 
@@ -84,18 +84,17 @@ gRPC ist hinsichtlich der CPU-Auslastung am effizientesten, da Protobuf schnelle
 \section{Erlernbarkeit}
 
 \subsection{REST}
-Abgesehen von der weiten Verbreitung von REST, gilt diese Technologie auch als einfach erlernbar und schnell einsetzbar. Durch die Nutzung von Standard-http und einfachen CRUD-Methoden (GET, POST, etc. ) wird eine flache Lernkurve aufgewiesen. Es gibt zahlreiche Tools und Beispiele, was den Einstieg zusätzlich erleichtert. \parencite{redhat-apiguide,postman2023}.
+Abgesehen von der weiten Verbreitung von REST, gilt diese Technologie auch als einfach erlernbar und schnell einsetzbar. Durch die Nutzung von Standard-HTTP Methoden wird eine flache Lernkurve aufgewiesen. Es gibt zahlreiche Tools und Beispiele, was den Einstieg zusätzlich erleichtert. \parencite{redhat-apiguide,postman2023}.
 
 \subsection{GraphQL}
-GraphQl bringt aufgrund neuer Konzepte wie, Schemas, Queries, der eigenen Abfragesprache und der Resolver-Logik eine steilere Lernkurve als Rest auf \parencite{redhat-apiguide}.
-Ein kontrolliertes Experiment zeigt jedoch auf, dass die Implementierung konkreter Abfragen mit GraphQL weniger Aufwand erfordern kann als REST \parencite{brito2020graphqlrest}. Generell ist GraphQl auch weniger verbreitet als REST wodurch Anfänger auf weniger Ressourcen zurückgreifen können
+GraphQL bringt aufgrund neuer Konzepte wie, Schemas, Queries, der eigenen Abfragesprache und der Resolver-Logik eine steilere Lernkurve als REST auf \parencite{redhat-apiguide}.
+Ein kontrolliertes Experiment zeigt jedoch auf, dass die Implementierung konkreter Abfragen mit GraphQL weniger Aufwand erfordern kann als REST \parencite{brito2020graphqlrest}. Generell ist GraphQL auch weniger verbreitet als REST wodurch Anfänger auf weniger Ressourcen zurückgreifen können
  \parencite{postman2023}.
 
 \subsection{gRPC}
 
-Auch gRPC hat im Vergleich zu REST einen erhöhten Einarbeitungsaufwand, da für die Verwendung die Konzepte von Protocol Buffers, Streaming-Kommunikation und dem Kompilieren von .proto-Dateien vertraut sein müssen. Außerdem braucht man eine spezfisiche Toolchain wie protoc und passende Codegeneratoren für die jeweilige Sprache. Entwicklerumfragen  zeigen auf, dass gRPC im Vergleich zu REST deutlich seltener eingesetzt wird und aufzeigt, dass Tools, Beispiele und Comunity-Ressourcen weniger verbeitet sind als bei REST \parencite{redhat-apiguide,gRPCAbout}.
+Auch gRPC hat im Vergleich zu REST einen erhöhten Einarbeitungsaufwand, da für die Verwendung die Konzepte von Protocol Buffers, Streaming-Kommunikation und dem Kompilieren von .proto-Dateien vertraut sein müssen. Außerdem braucht man eine spezifische Tools wie protoc und passende Codegeneratoren für die jeweilige Sprache. Entwicklerumfragen  zeigen auf, dass gRPC im Vergleich zu REST deutlich seltener eingesetzt wird was aufzeigt, dass Tools, Beispiele und Comunity Ressourcen weniger verbeitet sind als bei REST \parencite{redhat-apiguide,gRPCAbout}.
 
-Auch Entwicklerumfragen zeigen auf, dass REST die am einfachste zu erlerndende Technologie ist.
 
 
 \chapterend

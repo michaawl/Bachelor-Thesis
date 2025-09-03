@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  3 SEP 2025 13:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  3 SEP 2025 14:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1694,12 +1694,6 @@ GIEN \T1/ptm/m/n/12 24
  []
 
 [24]
-Overfull \hbox (26.8936pt too wide) in paragraph at lines 66--67
-[]\T1/ptm/m/n/12 Diese Die Über-set-zung von gRPC zu gRPC-Web er-höht die Infra
-struktur-Komplexität,
- []
-
-
 
 
 Overfull \hbox (54.98956pt too wide) has occurred while \output is active
@@ -2024,6 +2018,12 @@ Kapitel 6.
 ]
 
 [51]
+Overfull \hbox (7.26295pt too wide) in paragraph at lines 36--37
+[]\T1/ptm/m/n/12 Zusammenfassend ist gRPC-Web im Brow-se-rum-feld aus per-for-m
+an-ce-tech-ni-schen Grün-
+ []
+
+
 
 [52]
 
@@ -2202,7 +2202,7 @@ exlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-
 dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/u
 rw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on thesis.pdf (70 pages, 570329 bytes).
+Output written on thesis.pdf (70 pages, 570114 bytes).
 PDF statistics:
  963 PDF objects out of 1000 (max. 8388607)
  851 compressed objects within 9 object streams
