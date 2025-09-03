@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  3 SEP 2025 18:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  3 SEP 2025 21:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1547,10 +1547,6 @@ LaTeX Font Info:    Trying to load font information for T1+pcr on input line 35
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 
-LaTeX Warning: Citation 'GraphQL2025' on page 5 undefined on input line 44.
-
-
-
 [5]
 
 [6]
@@ -1635,16 +1631,6 @@ Is und Web-Services,
 
 
 [17]
-
-LaTeX Warning: Citation 'grpc-history' on page 18 undefined on input line 43.
-
-
-Overfull \hbox (16.15405pt too wide) in paragraph at lines 43--45
-\T1/ptm/m/n/12 stungs-fä-hi-gen, mo-der-nen und ef-fi-zi-en-ten Fra-me-works fü
-r RPC Calls ([]). 
- []
-
-
 Overfull \hbox (14.68422pt too wide) in paragraph at lines 45--46
 \T1/ptm/m/n/12 sei-nen hun-der-ten Mi-cro-ser-vices. Da-bei wird es vor al-lem 
 be-nutzt um Backend-
@@ -1732,7 +1718,7 @@ Overfull \hbox (24.41089pt too wide) in paragraph at lines 13--15
 on den ge-nann-ten API-Technologien
  []
 
-<images/Prototypschema.png, id=504, 1568.86125pt x 936.49875pt>
+<images/Prototypschema.png, id=506, 1568.86125pt x 936.49875pt>
 File: images/Prototypschema.png Graphic file (type png)
 <use images/Prototypschema.png>
 Package pdftex.def Info: images/Prototypschema.png  used on input line 26.
@@ -1746,12 +1732,6 @@ Package pdftex.def Info: images/Prototypschema.png  used on input line 26.
 
 
 ]
-Overfull \hbox (3.31836pt too wide) in paragraph at lines 46--47
-\T1/ptm/m/n/12 Back-End Ser-vice statt. Der Web-Client kann auf die REST, Gra-p
-h-QL und gRPC-
- []
-
-
 Overfull \hbox (0.1031pt too wide) in paragraph at lines 47--48
 \T1/ptm/m/n/12 Kon-so-lenan-wen-dung und dem Back-End Ser-vice statt. Der Kon-s
 o-len Cli-ent kann
@@ -1760,7 +1740,7 @@ o-len Cli-ent kann
 
 
 [28 <./images/Prototypschema.png>]
-<images/BackendService.png, id=519, 1900.09875pt x 1147.28625pt>
+<images/BackendService.png, id=521, 1900.09875pt x 1147.28625pt>
 File: images/BackendService.png Graphic file (type png)
 <use images/BackendService.png>
 Package pdftex.def Info: images/BackendService.png  used on input line 57.
@@ -1783,6 +1763,12 @@ leich der Tech-no-lo-gi-en bei beim
 Overfull \hbox (1.18979pt too wide) in paragraph at lines 84--85
 \T1/ptm/m/n/12 des Web-Clients wird der Ver-such er-neut mit ei-nem mircoservic
 e-ähnlichen Kon-
+ []
+
+
+Overfull \hbox (19.38693pt too wide) in paragraph at lines 90--91
+\T1/ptm/m/n/12 HTT-P/2 Pro-to-koll durch-ge-führt und ver-schlüs-selt mit HTT-P
+S ver-sen-det. Bei der Response-
  []
 
 
@@ -1815,9 +1801,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--146
 [32
 
 ]
-Overfull \hbox (49.47813pt too wide) in paragraph at lines 180--183
-[]\T1/ptm/m/n/12 GraphQL-API: Die GraphQL-API wur-de mit-tels des \T1/pcr/m/n/1
-2 .NET\T1/ptm/m/n/12 -Frameworks \T1/pcr/m/n/12 HotChocolate
+Overfull \hbox (45.48218pt too wide) in paragraph at lines 180--183
+[]\T1/ptm/m/n/12 GraphQLAPI: Die GraphQL-API wur-de mit-tels des \T1/pcr/m/n/12
+ .NET\T1/ptm/m/n/12 -Frameworks \T1/pcr/m/n/12 HotChocolate
  []
 
 
@@ -1860,11 +1846,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [34]
-<images/frontendclient.png, id=564, 328.72812pt x 318.18875pt>
+<images/frontendclient.png, id=566, 318.18875pt x 292.09125pt>
 File: images/frontendclient.png Graphic file (type png)
 <use images/frontendclient.png>
 Package pdftex.def Info: images/frontendclient.png  used on input line 235.
-(pdftex.def)             Requested size: 330.05322pt x 319.47942pt.
+(pdftex.def)             Requested size: 330.05322pt x 302.97884pt.
 
 
 [35 <./images/frontendclient.png>]
@@ -1923,7 +1909,7 @@ Overfull \hbox (12.65056pt too wide) in paragraph at lines 362--363
 [40
 
 ]
-<images/Webclient.png, id=604, 360.912pt x 210.021pt>
+<images/Webclient.png, id=606, 360.912pt x 210.021pt>
 File: images/Webclient.png Graphic file (type png)
 <use images/Webclient.png>
 Package pdftex.def Info: images/Webclient.png  used on input line 418.
@@ -1941,7 +1927,7 @@ Er-war-tun-gen REST die schnell-
  <./images/Webclient.png>]
 
 [42]
-<images/Parallelrequests.png, id=616, 364.416pt x 208.926pt>
+<images/Parallelrequests.png, id=618, 364.416pt x 208.926pt>
 File: images/Parallelrequests.png Graphic file (type png)
 <use images/Parallelrequests.png>
 Package pdftex.def Info: images/Parallelrequests.png  used on input line 478.
@@ -1961,7 +1947,7 @@ wei wei-te-ren Web Brow-
 [44
 
 ]
-<images/Browserperformance.png, id=627, 488.808pt x 192.282pt>
+<images/Browserperformance.png, id=629, 488.808pt x 192.282pt>
 File: images/Browserperformance.png Graphic file (type png)
 <use images/Browserperformance.png>
 Package pdftex.def Info: images/Browserperformance.png  used on input line 539.
@@ -1976,7 +1962,7 @@ Package pdftex.def Info: images/Browserperformance.png  used on input line 539.
 [46
 
 ]
-<images/Konsolenclient.png, id=638, 416.319pt x 254.04pt>
+<images/Konsolenclient.png, id=640, 416.319pt x 254.04pt>
 File: images/Konsolenclient.png Graphic file (type png)
 <use images/Konsolenclient.png>
 Package pdftex.def Info: images/Konsolenclient.png  used on input line 610.
@@ -1985,12 +1971,6 @@ Package pdftex.def Info: images/Konsolenclient.png  used on input line 610.
 Overfull \hbox (18.65318pt too wide) in paragraph at lines 615--618
 []\T1/ptm/b/n/12 Text-Service: \T1/ptm/m/n/12 Al-le Tech-no-lo-gi-en zeig-ten b
 ei klei-nen und mitt-le-ren Text-da-ten im Konsolen-
- []
-
-
-Overfull \hbox (9.20964pt too wide) in paragraph at lines 620--622
-[]\T1/ptm/b/n/12 Media-Service: \T1/ptm/m/n/12 Bis auf REST, war die Über-tra-g
-ung der Me-di-en-da-ten auch im Konsolen-
  []
 
 
@@ -2191,10 +2171,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37254 strings out of 469608
- 705838 string characters out of 5474779
- 1625004 words of memory out of 5000000
- 63158 multiletter control sequences out of 15000+600000
+ 37256 strings out of 469608
+ 705862 string characters out of 5474779
+ 1623970 words of memory out of 5000000
+ 63160 multiletter control sequences out of 15000+600000
  702661 words of font info for 135 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  104i,11n,104p,1760b,2347s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2207,10 +2187,10 @@ exlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-
 dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/u
 rw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on thesis.pdf (69 pages, 634389 bytes).
+Output written on thesis.pdf (69 pages, 633795 bytes).
 PDF statistics:
- 962 PDF objects out of 1000 (max. 8388607)
- 847 compressed objects within 9 object streams
+ 966 PDF objects out of 1000 (max. 8388607)
+ 851 compressed objects within 9 object streams
  247 named destinations out of 1000 (max. 500000)
  301 words of extra memory for PDF output out of 10000 (max. 10000000)
 

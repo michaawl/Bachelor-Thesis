@@ -34,17 +34,17 @@ Im folgenden Abschnitt werden die Vor- und Nachteile der API-Architekturen zusam
 \begin{itemize}
 	\item GraphQL bietet eine präzise Datenabfrage, der Client bekommt genau die Menge an Daten, die benötigt wird, Over-Fetching bzw. Under-Fetching wird verhindert.
 	\item Mehrere Ressourcen können in einer Anfrage kombiniert werden, im Gegensatz zu REST, wo mehrere Endpunkte separat aufgerufen werden müssen. Diese Eigenschaft verringert die Netzwerkrundläufe, was vor allem bei langsamen oder mobilen Verbindungen effizient ist.
-	\item . GraphQl ist stark typisiert, alle verfügbaren Datenytpen und Felder sind definiert und können vom Client abgefragt werden, was die Entwicklung erleichtert. 
+	\item GraphQL ist stark typisiert, alle verfügbaren Datenytpen und Felder sind definiert und können vom Client abgefragt werden, was die Entwicklung erleichtert. 
 	\item Neue Felder können einfach hinzugefügt werden ohne bestehende Queries verändern zu müssen.
 \end{itemize}
 
 \paragraph{Nachteile:}
 \begin{itemize}
-	\item Die Flexibilität die durch GraphQl für das Frontend schafft, verlagert die Komplexität auf den Server. 
+	\item Die Flexibilität die GraphQL für das Frontend schafft, verlagert die Komplexität auf den Server. 
 	\item Die Implementierung kann ohne Batch-Loading oder Caching-Strategien zu Performance Einbußen führen, da meistens alle Abfragen über nur einen einzigen /graphql-Endpoint per POST laufen, und somit das übliche HTTP-Caching- nicht automatisch funktioniert. 
 	\item Das fehlen des eingebauten HTTP-Caching führt dazu, dass Entwickler eigeine Cashing-Lösungen implementieren müssen. 
 	\item Durch die frei gestaltbaren Queries ist es außerdem schwierig, pauschale Limits oder Vorhersagen über Lasten zu definieren \parencite{graphql-org,amazon2025graphql,redhat-apiguide}.
-	\item Im Gegensatz zu REST ist GraphQl nicht weniger verbreitet und es gibt eine begrenztere Anzahl an Community Support \parencite{postman2022, postman2023}.
+	\item Im Gegensatz zu REST ist GraphQL nicht weniger verbreitet und es gibt eine begrenztere Anzahl an Tools \parencite{postman2022, postman2023}.
 \end{itemize}
 
 \subsection{gRPC}
@@ -53,7 +53,7 @@ Im folgenden Abschnitt werden die Vor- und Nachteile der API-Architekturen zusam
 \begin{itemize}
 	\item gRPC ist für Performance ausgelegt.  
 	\item Durch das Verwenden von Protocol Buffers, sind die gesendeten Nachrichten binär kodiert, äußerst kompakt und dadurch schneller übertragen als z.B. JSON. In der Web-Variabte gRPC-Web können diese Vorteile zum Teil auch im Browser genutzt werden. 
-	\item In Kombination mit HTTP/2.0 als Transport ermöglicht gRPC eine sehr niedrige Latenz und effiziente Ausnutzung der Verbindung (Multiplexing). 
+	\item In Kombination mit HTTP/2 als Transport ermöglicht gRPC eine sehr niedrige Latenz und effiziente Ausnutzung der Verbindung (Multiplexing). 
 	\item gRPC ist streng typisiert, und die zu sendenden Datenstrukturen als auch zur Verfügung stehenden Dienste sind in einer .proto Definition klar definiert. 
 	\item Der klare Vertrag zwischen Client und Server erhöht die Typsicherheit, reduziert Missstände und Fehler zur Laufzeit.
 	\item gRPC unterstützt bidirektionales Streaming. 
@@ -93,7 +93,7 @@ Ein kontrolliertes Experiment zeigt jedoch auf, dass die Implementierung konkret
 
 \subsection{gRPC}
 
-Auch gRPC hat im Vergleich zu REST einen erhöhten Einarbeitungsaufwand, da für die Verwendung die Konzepte von Protocol Buffers, Streaming-Kommunikation und dem Kompilieren von .proto-Dateien vertraut sein müssen. Außerdem braucht man eine spezifische Tools wie protoc und passende Codegeneratoren für die jeweilige Sprache. Entwicklerumfragen  zeigen auf, dass gRPC im Vergleich zu REST deutlich seltener eingesetzt wird was aufzeigt, dass Tools, Beispiele und Comunity Ressourcen weniger verbeitet sind als bei REST \parencite{redhat-apiguide,gRPCAbout}.
+Auch gRPC hat im Vergleich zu REST einen erhöhten Einarbeitungsaufwand, da für die Verwendung die Konzepte von Protocol Buffers, Streaming-Kommunikation und dem Kompilieren von .proto-Dateien vertraut sein müssen. Außerdem braucht man eine spezifische Tools wie protoc und passende Codegeneratoren für die jeweilige Programmiersprache. Entwicklerumfragen  zeigen auf, dass gRPC im Vergleich zu REST deutlich seltener eingesetzt wird was aufzeigt, dass Tools, Beispiele und Community Ressourcen weniger verbeitet sind als bei REST \parencite{redhat-apiguide,gRPCAbout}.
 
 
 

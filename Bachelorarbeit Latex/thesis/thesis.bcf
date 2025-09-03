@@ -2380,7 +2380,7 @@
     <bcf:citekey order="4" intorder="1">awsfrontendbackend</bcf:citekey>
     <bcf:citekey order="5" intorder="1">ecma404-2017</bcf:citekey>
     <bcf:citekey order="6" intorder="1">Microsoft2025</bcf:citekey>
-    <bcf:citekey order="6" intorder="2">GraphQL2025</bcf:citekey>
+    <bcf:citekey order="6" intorder="2">graphql-org</bcf:citekey>
     <bcf:citekey order="7" intorder="1">protobufdocs</bcf:citekey>
     <bcf:citekey order="8" intorder="1">w3c-fileapi</bcf:citekey>
     <bcf:citekey order="9" intorder="1">rfc9113</bcf:citekey>
@@ -2407,7 +2407,7 @@
     <bcf:citekey order="28" intorder="1">graphql-org</bcf:citekey>
     <bcf:citekey order="28" intorder="2">amazon2025graphql</bcf:citekey>
     <bcf:citekey order="29" intorder="1">nordicapis-graphql-examples</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">grpc-history</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">gRPCAbout</bcf:citekey>
     <bcf:citekey order="31" intorder="1">netflix-protobuf</bcf:citekey>
     <bcf:citekey order="32" intorder="1">roblox-analytics</bcf:citekey>
     <bcf:citekey order="33" intorder="1">spotify-k8s-case</bcf:citekey>
