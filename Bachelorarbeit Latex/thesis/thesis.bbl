@@ -19,38 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global/global}
-    \entry{aws-appsync-why-use-graphql}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=3eb2c1a57a8160029f036e3dcbf84bf1}{%
-           family={{Amazon Web Services}},
-           familyi={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
-      \strng{fullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
-      \strng{fullhashraw}{3eb2c1a57a8160029f036e3dcbf84bf1}
-      \strng{bibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
-      \strng{authorbibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
-      \strng{authornamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
-      \strng{authorfullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
-      \strng{authorfullhashraw}{3eb2c1a57a8160029f036e3dcbf84bf1}
-      \field{extraname}{1}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradate}{1}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2025-08-31}
-      \field{title}{Why Use GraphQL over REST?}
-      \field{year}{2025}
-      \verb{urlraw}
-      \verb https://docs.aws.amazon.com/appsync/latest/devguide/why-use-graphql.html
-      \endverb
-      \verb{url}
-      \verb https://docs.aws.amazon.com/appsync/latest/devguide/why-use-graphql.html
-      \endverb
-    \endentry
     \entry{amazon2025graphql}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=3eb2c1a57a8160029f036e3dcbf84bf1}{%
@@ -65,15 +33,13 @@
       \strng{authornamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
       \strng{authorfullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
       \strng{authorfullhashraw}{3eb2c1a57a8160029f036e3dcbf84bf1}
-      \field{extraname}{2}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2025-08-31}
+      \field{note}{Accessed: 2025-08-15}
       \field{title}{Why Use GraphQL over REST?}
       \field{year}{2025}
       \verb{urlraw}
@@ -104,7 +70,7 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2024-06-09}
+      \field{note}{Accessed: 2025-06-09}
       \field{title}{{The difference between frontend and backend explained}}
       \field{year}{2024}
       \verb{urlraw}
@@ -135,7 +101,7 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2025-09-03}
+      \field{note}{Accessed: 2025-06-09}
       \field{title}{What is Latency?}
       \field{year}{2025}
       \verb{urlraw}
@@ -165,7 +131,7 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2025-08-31}
+      \field{note}{Accessed: 2025-06-09}
       \field{title}{RPC vs REST – Difference Between API Architectures}
       \field{year}{2025}
       \verb{urlraw}
@@ -325,7 +291,7 @@
       \field{labeltitlesource}{title}
       \field{howpublished}{Blog post on gRPC.io}
       \field{month}{1}
-      \field{note}{Accessed: 2025-08-29}
+      \field{note}{Accessed: 2025-06-09}
       \field{title}{The state of gRPC in the browser}
       \field{year}{2019}
       \verb{urlraw}
@@ -365,7 +331,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2020 IEEE International Conference on Software Architecture (ICSA)}
-      \field{note}{Accessed: 2025-08-31}
+      \field{note}{Accessed: 2025-08-15}
       \field{title}{REST vs {GraphQL}: A Controlled Experiment}
       \field{year}{2020}
       \field{pages}{81\bibrangedash 91}
@@ -403,7 +369,7 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2025-08-31}
+      \field{note}{Accessed: 2025-06-10}
       \field{title}{6 Examples of GraphQL in Production at Large Companies}
       \field{year}{2022}
       \verb{urlraw}
@@ -505,7 +471,7 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2025-08-31}
+      \field{note}{Accessed: 2025-06-12}
       \field{title}{Architectural Styles and the Design of Network-based Software Architectures}
       \field{type}{phdthesis}
       \field{year}{2000}
@@ -536,7 +502,7 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2024-06-09}
+      \field{note}{Accessed: 2025-06-09}
       \field{title}{{Protocol Buffers Documentation}}
       \field{year}{2024}
       \verb{urlraw}
@@ -566,7 +532,7 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2025-08-31}
+      \field{note}{Accessed: 2025-06-09}
       \field{title}{GraphQL Documentation}
       \field{year}{2025}
       \verb{urlraw}
@@ -632,7 +598,7 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2025-08-29}
+      \field{note}{Accessed: 2025-08-20}
       \field{title}{{About gRPC}}
       \field{year}{2025}
       \verb{urlraw}
@@ -664,7 +630,7 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2025-08-31}
+      \field{note}{Accessed: 2025-06-09}
       \field{title}{gRPC-Web Basics}
       \field{year}{2025}
       \verb{urlraw}
@@ -759,7 +725,7 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2025-08-31}
+      \field{note}{Accessed: 2025-08-15}
       \field{title}{Case Study: Spotify}
       \field{year}{2025}
       \verb{urlraw}
@@ -792,7 +758,7 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2025-08-31}
+      \field{note}{Accessed: 2025-08-15}
       \field{title}{Statistik I – Maßzahlen der zentralen Tendenz}
       \field{year}{2025}
       \verb{urlraw}
@@ -824,7 +790,7 @@
       \field{labeltitlesource}{title}
       \field{howpublished}{Documentation on Microsoft Learn}
       \field{month}{8}
-      \field{note}{Accessed: 2025-08-31}
+      \field{note}{Accessed: 2025-06-15}
       \field{title}{Best practices for RESTful web API design}
       \field{year}{2025}
       \verb{urlraw}
@@ -854,7 +820,7 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2025-08-31}
+      \field{note}{Accessed: 2025-08-10}
       \field{title}{Use gRPC-Web with .NET}
       \field{year}{2025}
       \verb{urlraw}
@@ -884,7 +850,7 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Posted: February 26, 2015; Accessed: 2025-08-31}
+      \field{note}{Posted: February 26, 2015; Accessed: 2025-06-10}
       \field{title}{Introducing gRPC, a new open source HTTP/2 RPC Framework}
       \field{year}{2015}
       \verb{urlraw}
@@ -1032,7 +998,7 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2025-08-31}
+      \field{note}{Accessed: 2025-08-15}
       \field{title}{2022 State of the API Report}
       \field{year}{2022}
       \verb{urlraw}
@@ -1063,7 +1029,7 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2025-08-31}
+      \field{note}{Accessed: 2025-06-09}
       \field{title}{2023 State of the API Report}
       \field{year}{2023}
       \verb{urlraw}
@@ -1093,7 +1059,7 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2025-08-31}
+      \field{note}{Accessed: 2025-06-09}
       \field{title}{What Is a REST API? Examples, Uses \& Challenges}
       \field{year}{2023}
       \verb{urlraw}
@@ -1123,7 +1089,7 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2025-08-31}
+      \field{note}{Accessed: 2025-08-20}
       \field{title}{An architect's guide to APIs: SOAP, REST, GraphQL, and gRPC}
       \field{year}{2020}
       \verb{urlraw}
@@ -1153,7 +1119,7 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2025-08-31}
+      \field{note}{Accessed: 2025-08-15}
       \field{title}{Roblox’s Path to 2 Trillion Analytics Events a Day}
       \field{year}{2025}
       \verb{urlraw}
@@ -1183,7 +1149,7 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2025-08-31}
+      \field{note}{Accessed: 2025-08-20}
       \field{title}{Stack Overflow Developer Survey 2023 – Technology page}
       \field{year}{2023}
       \verb{urlraw}
@@ -1223,7 +1189,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{Internet Engineering Task Force (IETF) RFC 9113}
-      \field{note}{Accessed: 2025-08-31}
+      \field{note}{Accessed: 2025-06-15}
       \field{title}{Hypertext Transfer Protocol Version 2 (HTTP/2)}
       \field{year}{2022}
       \verb{urlraw}
@@ -1253,7 +1219,7 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{W3C Working Draft, accessed 2025-08-31}
+      \field{note}{W3C Working Draft, accessed 2025-08-20}
       \field{title}{File API}
       \field{year}{2024}
       \verb{urlraw}
