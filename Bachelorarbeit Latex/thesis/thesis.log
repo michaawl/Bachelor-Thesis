@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  3 SEP 2025 17:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.14)  3 SEP 2025 18:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1364,6 +1364,12 @@ l.26 \end{abstract}
 
 
 ]
+Overfull \hbox (5.47655pt too wide) in paragraph at lines 47--53
+\T1/ptm/m/n/12 auf La-tenz, Ef-fi-zi-enz und Res-sour-cen-nut-zung in der Front
+end-Backend-Kommunikation
+ []
+
+
 Overfull \hbox (3.2201pt too wide) in paragraph at lines 47--53
 \T1/ptm/m/n/12 din-gun-gen der Ein-satz von gRPC-Web für die Frontend-Backend-K
 ommunikation sinn-
@@ -1437,8 +1443,14 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 Package babel Info: 'german' activates 'german' shorthands.
 (babel)             Reported  on input line 108.
 [2] (./thesis.lof
-Overfull \hbox (0.82193pt too wide) in paragraph at lines 17--17
- [][] []\T1/ptm/m/n/12 Konsolen-Client - Einzel-Request: End-to-End-Latenz (Me-
+Overfull \hbox (0.94205pt too wide) in paragraph at lines 16--16
+ [][] []\T1/ptm/m/n/12 Web-Client - Browser-Vergleich (Einzel-Request): End-zu-
+End-Latenz 
+ []
+
+
+Overfull \hbox (2.81398pt too wide) in paragraph at lines 17--17
+ [][] []\T1/ptm/m/n/12 Konsolen-Client - Einzel-Request: End-zu-End-Latenz (Me-
 di-an) je Da- 
  []
 
@@ -2181,7 +2193,7 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 Here is how much of TeX's memory you used:
  37254 strings out of 469608
  705838 string characters out of 5474779
- 1624988 words of memory out of 5000000
+ 1625004 words of memory out of 5000000
  63158 multiletter control sequences out of 15000+600000
  702661 words of font info for 135 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -2195,7 +2207,7 @@ exlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-
 dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/u
 rw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on thesis.pdf (69 pages, 634504 bytes).
+Output written on thesis.pdf (69 pages, 634389 bytes).
 PDF statistics:
  962 PDF objects out of 1000 (max. 8388607)
  847 compressed objects within 9 object streams

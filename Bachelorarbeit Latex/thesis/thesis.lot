@@ -10,7 +10,7 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {5.1}{\ignorespaces Vergleich der API-Endpunkte}}{32}{table.caption.29}%
 \contentsline {table}{\numberline {5.2}{\ignorespaces Verwendete Technologien Backend}}{35}{table.caption.30}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces Verwendete Frontend-Technologien}}{37}{table.caption.36}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Verwendete Frontend-Technologien des Web-Clients}}{37}{table.caption.36}%
 \contentsline {table}{\numberline {5.4}{\ignorespaces Verwendete Technologien des Konsolen-Clients}}{38}{table.caption.38}%
 \contentsline {table}{\numberline {5.5}{\ignorespaces Chrome-Client – Einzel-Requests: Durchschnitt und Median (Antwortzeit in ms)}}{40}{table.caption.41}%
 \contentsline {table}{\numberline {5.6}{\ignorespaces Chrome-Client – 20 parallele Requests: Durchschnitt und Median (Antwortzeit in ms)}}{42}{table.caption.42}%

@@ -51,7 +51,7 @@ Protocol Buffers sind ein von Google entwickeltes Serialisierungsformat. Es hand
 
 Ein zentraler Bestandteil von Protocol Buffers sind die plattformunabhängigen proto Files, die für die Erzeugung definiert werden müssen.
 
-Mit den definierten proto Files können anschließend mit einem Protobuf-Compiler-Tool ( z.B. protoc ) Datenobjekte der jeweiligs eingesetzten Programmiersprache generiert werden.
+Mit den definierten proto Files können anschließend mit einem Protobuf-Compiler-Tool (z.B. protoc) Datenobjekte der jeweils eingesetzten Programmiersprache generiert werden.
 
 \subsubsection*{Aufbau der proto Files}
 
@@ -75,7 +75,7 @@ Beispiel einer Protocol Buffers Definition mit den Datenobjekten Person und Pers
 \end{verbatim}
 
 Hauptbestandteil der proto Files sind Messages und Services.
-Messages definieren die Struktur der zu übertragenden Nachricht. Jedes Feld beseht aus einem Namen, den jeweiligen Datentypen und einer Nummer. Die Nummer beschreibt an welcher Stelle sich das jeweilige Attribut befindet. Die Nummerierung der Felder ist wichtig für die Serialisierung.In Protocol Buffers können unter anderem die gängigsten Datentypen wie int32, int64, float, double, bool sowie string und bytes verwendet werden.
+Messages definieren die Struktur der zu übertragenden Nachricht. Jedes Feld beseht aus einem Namen, den jeweiligen Datentypen und einer Nummer. Die Nummer beschreibt an welcher Stelle sich das jeweilige Attribut befindet. Die Nummerierung der Felder ist wichtig für die Serialisierung. In Protocol Buffers können unter anderem die gängigsten Datentypen wie int32, int64, float, double, bool sowie string und bytes verwendet werden.
 Services geben an, welche Dienste vom Server bereit gestellt werden und welche Datentypen als Parameter bei Aufruf übermittelt und als Rückgabe zurückgegeben werden. Services müssen auf der Serverseite implementiert werden \parencite{protobufdocs}.
 
 
@@ -88,7 +88,7 @@ Die eigentlichen Daten, die in Form von Serialisierungsformaten zwischen Fronten
 HTTP/1.1 ist nach wie vor weit verbeitet. Es wird von allen Webbrowsern ohne Einschränkungen unterstützt und bildet die Grundlage für die API-Architekturen REST und GraphQL. Diese Version weist jedoch einige Schwächen auf, so können zum einen nicht mehrere Requests/Responses gleichzeitig über eine TCP Verbindung durchgeführt werden und der Server ist nicht in der Lage von sich aus zusätzliche Ressourcen an die Clients zu senden. 
 
 Neben Performanceverbesserungen und anderen zusätzlichen Features wurden diese Schwächen mit HTTP/2 behoben.
-Das wichtigste Features von HTTP/2 beinhalten:
+Die wichtigsten Features von HTTP/2 beinhalten:
 
 \begin{itemize}
 	\item \textbf{Multiplexing:} Das wichtigste Merkmal von HTTP/2 ist Multiplexing, durch das es möglich ist, mehrere parallele Anfragen und Antworten über nur eine einzige TCP-Verbindung durchzuführen.
@@ -152,7 +152,7 @@ Viele Web Dienste, erfüllen bereits viele dieser Eigenschaften wodurch sich RES
 \clearpage
 
 \subsubsection*{Kommunikation zwischen Client- Server:}
-Die Kommunikation zwischen dem Client und Server findet bei REST fast ausschließlich über HTTP/HTTPs statt, wobei laut Definition kein spezifisches Transportprotokoll vorgeschrieben wird. Im Zuge der Arbeit wird ausschließlich HTTPS verwendet.
+Die Kommunikation zwischen dem Client und Server findet bei REST fast ausschließlich über HTTP/HTTPS statt, wobei laut Definition kein spezifisches Transportprotokoll vorgeschrieben wird. Im Zuge der Arbeit wird ausschließlich HTTPS verwendet.
 
 HTTP stellt für den Zugriff auf Ressourcen eine Reihe an Methoden zur Verfügung. Die wichtigsten HTTP Methoden sind : \newline
 
@@ -173,7 +173,7 @@ PATCH & Nimmt partielle Änderungen an einer bestehenden Ressource vor. \\
 \end{tabularx} \newline
 
 
-Der Zugriff auf die Resourcen erfolgt bei REST jeweils über die URL \parencite{rfc9110}.
+Der Zugriff auf die Ressourcen erfolgt bei REST jeweils über die URL \parencite{rfc9110}.
 
 
 \subsection{GraphQL}
@@ -206,15 +206,15 @@ Stubby wurde ursprünglich innerhalb von Google entwickelt und eingesetzt, um di
 
 
 \paragraph{RPC:}
-RPC beschreibt ein Kommunikationsmodell, bei dem ein Programm auf einem anderen Computer (meist Server) eine Methode auf einem anderen entfernten System aufruft, als wäre sie lokal vorhanden. Im Unterschied zu REST oder GraphQL sind RPC Calls Methoden (Methodenname, Parameter und Rückgabewert) und nicht Ressourcen orientiert, wodurch die Schnittstelle stärker an der Logik der Anwendung angelehnt ist \parencite{aws-rpc-vs-rest}.
+RPC beschreibt ein Kommunikationsmodell, bei dem ein Programm eine Methode auf einem anderen entfernten System aufruft, als wäre sie lokal vorhanden. Im Unterschied zu REST oder GraphQL sind RPC Calls Methoden (Methodenname, Parameter und Rückgabewert) und nicht Ressourcen orientiert, wodurch die Schnittstelle stärker an der Logik der Anwendung angelehnt ist \parencite{aws-rpc-vs-rest}.
 
-\paragraph{Einsatzgebiete von gRPC:} Hauptanwendung findet gRPC in der Kommunikation von Micro Service Architekturen und in der inter-backend-Kommunikation. Micro Services sind kleine, eigenständige Dienste, die jeweils eine klar abgegrenzte Aufgabe erfüllen und unabhängig voneinander entwickelt werden, jedoch häufig in hoher Frequenz und mit großen Datenmengen miteinander kommunizieren. Hier ist es wichtig, dass die Daten performant zwischen den verschiedenen Services hin und her geschickt werden. gRPC kann jedoch auch für die Kommunikation zwischen Browsern bzw. Mobilgeräten und Backend Services genutzt werden \parencite{gRPCAbout}.
+\paragraph{Einsatzgebiete von gRPC:} Hauptanwendung findet gRPC in der Kommunikation von Microservice-Architekturen und in der inter-backend-Kommunikation. Microservices sind kleine, eigenständige Dienste, die jeweils eine klar abgegrenzte Aufgabe erfüllen und unabhängig voneinander entwickelt werden, jedoch häufig in hoher Frequenz und mit großen Datenmengen miteinander kommunizieren. Hier ist es wichtig, dass die Daten performant zwischen den verschiedenen Services hin und her geschickt werden. gRPC kann jedoch auch für die Kommunikation zwischen Browsern bzw. Mobilgeräten und Backend-Services genutzt werden \parencite{gRPCAbout}.
 
-\paragraph{Technische Grundlagen:} Die Kommunikation von gRPC wurde speziell auf Basis von HTTP/2 entwickelt und findet demnach standardmäßig über das HTTP/2 Protokoll statt. \parencite{grpc-googleblog}. Außerdem werden für die Serialisierung Protocul Buffers verwendet, welche durch die binäre Struktur zu einer weiteren Verbesserung der Performance und Effizienz führen \parencite{protobufdocs}.
+\paragraph{Technische Grundlagen:} Die Kommunikation von gRPC wurde speziell auf Basis von HTTP/2 entwickelt und findet demnach standardmäßig über das HTTP/2 Protokoll statt. \parencite{grpc-googleblog}. Außerdem werden für die Serialisierung Protocol Buffers verwendet, welche durch die binäre Struktur zu einer weiteren Verbesserung der Performance und Effizienz führen \parencite{protobufdocs}.
 
 \clearpage
-\subsection{gRPC Web}
-Obwohl gRPC ursprünglich für die Interprozesskommunikation in Micro Services entwickelt wurde, ist es auch möglich gRPC mit Einschränkungen für die Kommunikation zwischen Web-Browsern und Backend Services zu verwenden.
+\subsection{gRPC-Web}
+Obwohl gRPC ursprünglich für die Interprozesskommunikation in Microservices entwickelt wurde, ist es auch möglich gRPC mit Einschränkungen für die Kommunikation zwischen Web-Browsern und Backend Services zu verwenden.
 Da in Web Browsern nicht alle Funktionen von HTTP/2 zur Verfügung stehen, kann für die Kommunikation in diesem Szenario nicht gRPC direkt verwendet werden. Für diesen Anwendungsfall wurde ein eigenes Protokoll namens gRPC-Web konzipiert. 
  
 
@@ -236,7 +236,7 @@ Folgende Funktionen von gRPC stehen dadurch nicht zu Verfügung:
 Folgende Eigeschaften bleiben bei der Verwendung des gRPC-Web Protokolls erhalten:
 
 \begin{itemize}
-	\item \textbf{Protocol Buffers als effizientes Datenformat.} 
+	\item \textbf{Protocol Buffers als effizientes Datenformat} 
 	\item \textbf{Codegenerierung für Server und Client} 
 	\item \textbf{Typensicherheit}
 	\item \textbf{Server-Side Streaming} 	
@@ -271,12 +271,12 @@ Oft wird gRPC-Web über einen Proxy (zum Beispiel Envoy oder gRPC-Web-Proxy) an 
 
 Im Rahmen des implementierten Prototyps für diese Arbeit wurde die direkte Serverintegration in ASP.NET Core gewählt \parencite{grpc-web-docs,aspnet-grpcweb}.
 
-Da es in der Arbeit um die Kommunikation zwischen Web Browsern und Backend Services geht, wird in den folgenden Kapiteln vor allem ein Fokus auf das gRPC Web Protokoll gelegt.
+Da es in der Arbeit um die Kommunikation zwischen Web Browsern und Backend-Services geht, wird in den folgenden Kapiteln vor allem ein Fokus auf das gRPC-Web Protokoll gelegt.
 
 \clearpage
 \section{Begriffe}
 \subsection{End-zu-End Latenz}
-Unter dem Begriff Latenz versteht man in der Natzwerktechnik die Verzögerung, die zwischen dem Absenden einer Anfrage (Request) und dem Eintreffen der dazugehörigen Antwort (Response) auftritt \parencite{aws-latency}. Im Rahmen der Bachelorarbeit bezieht sich der Begriff jedoch auf die End-zu-End Latenz. Also jener Zeit für die übermittlung der Daten von dem Server an den Client, ab dem Senden des Requests von dem Client bis zur vollständigen Verarbeitung und Bereitstellung der Antwort im Client. 
+Unter dem Begriff Latenz versteht man in der Natzwerktechnik die Verzögerung, die zwischen dem Absenden einer Anfrage (Request) und dem Eintreffen der dazugehörigen Antwort (Response) auftritt \parencite{aws-latency}. Im Rahmen der Bachelorarbeit bezieht sich der Begriff jedoch auf die End-zu-End Latenz. Also jener Zeit ab dem Senden des Requests von dem Client bis zur vollständigen Verarbeitung und Bereitstellung der Antwort im Client. 
 
 
 \subsection{Durchschnitt und Median}
