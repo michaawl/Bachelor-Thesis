@@ -9,13 +9,6 @@ Bei den Messungen wurde die Zeit des Datenaustauschs zwischen den zwei Kommunika
 Die so gewonnenen Daten sollen anschließend die Basis dafür bilden, 
 um die zuvor theoretisch untersuchten Eigenschaften der Technologien unter realen Bedingungen zu überprüfen.
 
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=0.7\textwidth]{images/http1_theory.jpg}
-	\caption{3-Way Handshake (for establishing TCP connection)}
-	\label{fig:threewayhandshake}
-\end{figure}
-
 \subsection*{Zielsetzung}
 Ziel des praktischen Teils ist es die Leistungsfähigkeit von den genannten API-Technologien zu untersuchen und gegenüberzustellen. Der Prototyp soll so implementiert werden, sodass für jede Technologie eine vergleichbare Umgebung mit den ähnlichen Bedingungen entsteht. 
 Im Fokus der Messungen steht die End-To-End Latenz, also jene Zeitspanne vom Absenden einer Anfrage bis zur vollständigen Verarbeitung und Bereitstellung der Antwort im Client. 
@@ -28,7 +21,12 @@ Auf dieser Grundlage und mit Rücksichtnahme auf den Rechercheteil, werden ansch
 Der entwickelte Prototyp besteht grundsätzlich aus 3 verschiedenen Komponenten: 
 Ein Backend-Service, ein Web-Client und ein Microservice ähnlicher Konsolen-Client.
 
-Abbildung X [TO-DO] zeigt den schematischen Aufbau des Versuches.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{images/BackendService.png}
+	\caption{Schematischer Aufbau des Versuchs}
+	\label{fig:backendservice}
+\end{figure}
 
 Die zwei verschiedenen Client-Typen können hierbei mit dem gemeinsamen Backend-System kommunizieren.
 
@@ -54,6 +52,13 @@ Der Versuchsaufbau beinhaltet zwei unabhängige Clients, welche jeweils auf eine
 Der Backend-Service stellt verschiedene Services zur Verfügung und kann von beiden Front-End Clients Anfragen entgegen nehmen.
 Die verschiedenen Services wurden so ausgewählt, sodass die gesendeten Daten möglichst realitätsnahe Anwendungsfälle der Frontend-Backend Kommunikation abdecken.
 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.85\textwidth]{images/BackendService.png}
+	\caption{Schematischer Aufbau des Backend-Services mit Text-, Media- und Blog-Service}
+	\label{fig:backendservice}
+\end{figure}
+
 Grundsätzlich, kann auf 3 verschiedene Services zugegriffen werden:
 
 \begin{itemize}
@@ -71,8 +76,6 @@ Grundsätzlich, kann auf 3 verschiedene Services zugegriffen werden:
 Die in den Services verwendeten Datentypen, sind die gängigsten Datentypen in der Frontend-Backend Kommunikation.
 
 Alle Services wurden seperat mit den Technologien REST, GraphQl, gRPC und gRPC-Web implementiert und können somit von den jeweiligen Clients abgefragt und verglichen werden.
-
-Abbildung X [TO-DO] zeigt den schematischen Aufbau der Backend-Services.
 
 \subsection*{Testfälle:}
 Zur Analyse der Client-Server Kommunikation wurden folgende Testfälle definiert, welche relevante Aspekte der Front-End Kommunikation abdecken und für einen adäquaten Vergleich der API-Technologien herangezogen werden können: 
@@ -104,11 +107,13 @@ Um einen fairen Vergleich herzustellen, wurden alle Requests ausschließlich mit
 \end{enumerate}
 
 \clearpage
-\section{Implementierung:}
+\section{Implementierung}
 Der Prototyp beinhaltet einen Backendservice, einen Web-Client und einen Konsolen Client. Dieser Abschnitt befasst sich mit der Implementierung der jeweiligen Komponenten. 
 
 Um die Vergleichbarkeit der jeweiligen API-Technologien zu erhöhen, wurden alle Clients und Services so minimalistisch wie möglich umgesetzt, da weitere Frameworks oder Logik die Datenverarbeitung beeinflussen, und somit die tatsächlichen Zeiten verzerren könnten.
 Jeder Service liefert ausschließlich den für den Testfall angeforderten Daten. 
+Die konkrete Implementierung ist auf GitHub verfügbar (siehe Quelle: \cite{muehlberger2025}).
+
 
 Ziel dieses Abschnittes ist es die Architekturentscheidungen, Funktionsweisen sowie die technischen Aspekte darzustellen, auf Basis anschließend die Messungen durchgeführt werden.
 
@@ -327,7 +332,6 @@ Die Struktur des Backend-Services gliedert sich in 4 eigenständige Projekte:
 	
 \end{enumerate}
 
-\clearpage
 \section{Spezifikationen des Testsystems}
 Um die Messergebnisse korrekt und vergleichbar einordnen zu können, ist es notwendig darzustellen, unter welchen technischen Rahmenbedingungen die jeweiligen Messungen durchgeführt wurden. Da die Leistungsfähigkeit der Hardware sowie die Softwareversionen die Messzeiten beeinflussen können, werden in diesem Abschnitt die relevanten Komponenten des Testsystems dargestellt.
 
@@ -351,7 +355,7 @@ Die Responsezeiten beschreiben die tatsächliche Zeit, bis die jeweiligen Daten 
 
 Untersucht wurde die Response-Zeit von Einzel-Requests, Mehrfachabfragen (20 parallele Requests) und browserabhängige Unterschiede in einem Web-Client. Zusätzlich wurden alle Technologien (REST, GraphQl, gRPC-Web und gRPC) im Konsolen-Client getestet, um Unterschiede zwischen browserbasierter und microservice-orientierter Kommunikation sichtbar zu machen und Unterschiede zwischen gRPC und gRPC-Web zu ermitteln.
 
-Für den Vergleich der Messwerte wurde der gerundete arithmetische Mittelwert herangezogen, sofern die Abweichung zum Median nicht zu groß war und damit ausgeschlossen werden konnte, dass der Mittelwert durch Ausreißer verzerrt ist.
+Für den Vergleich der Messwerte wurde der Median herangezogen, damit ausgeschlossen werden konnte, dass die Analyse nicht durch Ausreißer verzerrt wird. Zur besseren grafischen Darstellung der Daten wurde die y-Achse logarithmisch skaliert.
 
 Die Messungen wurden ausschließlich lokal auf localhost durchgeführt. Dadurch können zusätzliche Einflüsse wie Paketverlust, Routing-Latenz oder Bandbreitenschwankungen, die bei realen Bedingungen auftreten würden, ausgeschlossen worden. Ziel der Messungen war es, tatsächliche Unterschiede zwischen den API Technologien (gRPC, gRPC-Web, REST, GraphQL) unter optimalen Bedingungen und reproduzierbar zu ermitteln.
 Die Ergebnisse repräsentieren daher keine realen Szenarien. Der Fokus wurde ausschließlich auf den Vergleich der Kommunikationsprotokolle und deren Verarbeitung gelegt.
@@ -360,7 +364,7 @@ Die Ergebnisse der Messungen liefern eine Grundlage zur Beantwortung der Forschu
 Die nachfolgenden Abschnitte stellen die gemessenen Daten dar und geben einen direkten Vergleich der Technologien.
 
 \clearpage
-\subsection*{Messdaten: Web-Client (Einzel-Request)}
+\subsection{Web-Client (Einzel-Request)}
 
 Bei der Messung der End-To-End Latenz ergaben sich zwischen den einzelnen Technologien erhebliche Unterschiede. 
 Für eine sinnvolle Auswertung der Daten, wurden jeweils 30 Requests unabhängig voneinander durchgeführt die Durschnittszeiten und der Median der aus den gemessenen Daten ermittelt. 
@@ -423,7 +427,7 @@ Bei der Übertagung von Videodaten (100 MB ) konnte in Chrome keine vergleichbar
 \textbf{BlogService:}  
 Bei der Messung der Blog-Datenstrukturen, konnten geringe Unterschiede in den Abfragezeiten zwischen den Technologien identifiziert werden. GraphQl war hierbei mit einer mittleren latenz von 7.6 ms leicht schneller als gprc ( 7.9 ms) und Rest (8.6 ms).
 
-\subsubsection{20 parallele Requests}
+\subsection{{Web-Client (Parallele-Requests)}}
 Bei der Durchführung von 20 parallelen Requests wurden jeweils pro API und Service 30 Messwerte ( bei MedienService Messwerte) gemessen und anschließend der Durchschnittswert und Median berechnet. Es zeigten sich erwartungsgemäß höhere Latenzen gegenüber denr Einzelabfragen. 
 
 \begin{table}[h]
@@ -482,7 +486,7 @@ Für Videodateien bzw. Audiodateien ( GraphQl ) wurde in dieser Testreihe aufgru
 Bei den Abfragen der Blogdaten lagen die Antwortzeiten aller Technologien im zweistelligen ms bereich. Ähnlich wie bei geringen Textdaten, sind gRPC und graphQl mit jeweis 35 ms gleichauf, gefolgt von REST mit 53 ms.
 
 \clearpage
-\subsubsection{Browser-Vergleich}
+\subsection{Browser-Vergleich}
 Derselbe Versuch mit Einzel-Requests wurde anschließend in zwei weiteren Web Browsern durchgeführt, um festzustellen, ob es bei der Performance der APIs eine Abhängigkeit vom Webbrowser gibt. 
 Bei der Messung wurden jeweils 10 Requests pro Technologie und Service durchgeführt und daraus der Durchschnitt und der Median ermittelt.
 
@@ -546,7 +550,7 @@ Bei dem Senden von Videodaten war Chrome am performantesten. Hier hatte REST ein
 
 
 \clearpage
-\subsubsection{Messungen im Konsolen-Client}
+\subsection{Konsolen-Client (Einzel-Request)}
 Um die Kommunikationsleistung der einzelnen Technologien ohne Einfluss eines Browers zu ermitteln, und um einen direkten Performancevergleich zwischen gRPC und gRPC-Web zu ermitteln wurden ebenfalls Messungen in der Kommunikation innerhalb einer Microservice basierten Architektur untersucht. Wie erwartet sind die Messewerte in dieser Messung zum größten Teil deutlich besser als zwischen Web-Client und Backend Service.  
 
 \begin{table}[h]

@@ -97,6 +97,7 @@
       \strng{authornamehash}{9145c8d27e8df3d15e63d3e2d5c53088}
       \strng{authorfullhash}{9145c8d27e8df3d15e63d3e2d5c53088}
       \strng{authorfullhashraw}{9145c8d27e8df3d15e63d3e2d5c53088}
+      \field{extraname}{1}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{extradatescope}{labelyear}
@@ -111,6 +112,37 @@
       \endverb
       \verb{url}
       \verb https://aws.amazon.com/de/compare/the-difference-between-frontend-and-backend/
+      \endverb
+    \endentry
+    \entry{aws-latency}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9145c8d27e8df3d15e63d3e2d5c53088}{%
+           family={{Amazon Web Services, Inc.}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{9145c8d27e8df3d15e63d3e2d5c53088}
+      \strng{fullhash}{9145c8d27e8df3d15e63d3e2d5c53088}
+      \strng{fullhashraw}{9145c8d27e8df3d15e63d3e2d5c53088}
+      \strng{bibnamehash}{9145c8d27e8df3d15e63d3e2d5c53088}
+      \strng{authorbibnamehash}{9145c8d27e8df3d15e63d3e2d5c53088}
+      \strng{authornamehash}{9145c8d27e8df3d15e63d3e2d5c53088}
+      \strng{authorfullhash}{9145c8d27e8df3d15e63d3e2d5c53088}
+      \strng{authorfullhashraw}{9145c8d27e8df3d15e63d3e2d5c53088}
+      \field{extraname}{2}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-09-03}
+      \field{title}{What is Latency?}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://aws.amazon.com/de/what-is/latency/
+      \endverb
+      \verb{url}
+      \verb https://aws.amazon.com/de/what-is/latency/
       \endverb
     \endentry
     \entry{aws-rpc-vs-rest}{online}{}{}
@@ -862,6 +894,34 @@
       \verb https://developers.googleblog.com/en/introducing-grpc-a-new-open-source-http2-rpc-framework/
       \endverb
     \endentry
+    \entry{muehlberger2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e7fe6e470f180a93960e14f60e10990e}{%
+           family={Mühlberger},
+           familyi={M\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e7fe6e470f180a93960e14f60e10990e}
+      \strng{fullhash}{e7fe6e470f180a93960e14f60e10990e}
+      \strng{fullhashraw}{e7fe6e470f180a93960e14f60e10990e}
+      \strng{bibnamehash}{e7fe6e470f180a93960e14f60e10990e}
+      \strng{authorbibnamehash}{e7fe6e470f180a93960e14f60e10990e}
+      \strng{authornamehash}{e7fe6e470f180a93960e14f60e10990e}
+      \strng{authorfullhash}{e7fe6e470f180a93960e14f60e10990e}
+      \strng{authorfullhashraw}{e7fe6e470f180a93960e14f60e10990e}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/michaelmuehlberger/bachelorarbeit-prototyp/}}
+      \field{note}{Zugriff am 03.09.2025}
+      \field{title}{Bachelorarbeit Prototyp (GitHub Repository)}
+      \field{year}{2025}
+    \endentry
     \entry{netflix-protobuf}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=ced3fcd7e74e07f1c034a27d098917e0}{%
@@ -1045,18 +1105,18 @@
     \endentry
     \entry{redhat-apiguide}{online}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=a82007c47b25723539a00ff94e8b3d27}{%
-           family={{Red Hat}},
+        {{un=0,uniquepart=base,hash=184a913e122c18374ca03bc02b30c050}{%
+           family={{Red Hat, Inc.}},
            familyi={R\bibinitperiod}}}%
       }
-      \strng{namehash}{a82007c47b25723539a00ff94e8b3d27}
-      \strng{fullhash}{a82007c47b25723539a00ff94e8b3d27}
-      \strng{fullhashraw}{a82007c47b25723539a00ff94e8b3d27}
-      \strng{bibnamehash}{a82007c47b25723539a00ff94e8b3d27}
-      \strng{authorbibnamehash}{a82007c47b25723539a00ff94e8b3d27}
-      \strng{authornamehash}{a82007c47b25723539a00ff94e8b3d27}
-      \strng{authorfullhash}{a82007c47b25723539a00ff94e8b3d27}
-      \strng{authorfullhashraw}{a82007c47b25723539a00ff94e8b3d27}
+      \strng{namehash}{184a913e122c18374ca03bc02b30c050}
+      \strng{fullhash}{184a913e122c18374ca03bc02b30c050}
+      \strng{fullhashraw}{184a913e122c18374ca03bc02b30c050}
+      \strng{bibnamehash}{184a913e122c18374ca03bc02b30c050}
+      \strng{authorbibnamehash}{184a913e122c18374ca03bc02b30c050}
+      \strng{authornamehash}{184a913e122c18374ca03bc02b30c050}
+      \strng{authorfullhash}{184a913e122c18374ca03bc02b30c050}
+      \strng{authorfullhashraw}{184a913e122c18374ca03bc02b30c050}
       \field{sortinit}{R}
       \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
       \field{extradatescope}{labelyear}
